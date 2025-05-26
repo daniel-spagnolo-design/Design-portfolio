@@ -1,0 +1,1751 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="apple-mobile-web-app-capable" content="yes">
+    	<meta name="color-scheme" content="dark light">
+    	<meta name="description" content="Visual search casestudy">
+    	<meta name="author" content="Daniel Spagnolo">
+		<title>Daniel Spagnolo / Mad on Heels casestudy</title>
+
+		<!--displays favicon in browser/mobile tabs. https://www.favicon-generator.org/-->
+		<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">		
+
+		<!-- Bootstrap core CSS -->
+	    <link href="css/bootstrap-grid.css" rel="stylesheet"> 
+
+	    <!-- Styling CSS -->
+	    <link rel="preload stylesheet" type="text/css" href="css/styles-2022-mini.css">
+
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+	    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52715158-2"></script>
+		    <script>
+		      window.dataLayer = window.dataLayer || [];
+		      function gtag(){dataLayer.push(arguments);}
+		      gtag('js', new Date());
+
+		      gtag('config', 'UA-52715158-2');
+		    </script>
+
+	</head>
+
+	<body>	
+
+
+	<!-- Navigation module ___________________________________________________________________________________________________________________________ -->
+
+
+
+		<header>
+
+			<div class="header-grid center">
+
+			  	<div class="logo-job-title no-padding">
+			  		<a href="index.html#top-module" class="logo no-padding" aria-label="Home">
+			        	<!-- <a href="#"><img src="img/logo2016.gif" width="60px" height="85px" alt="Daniel Spagnolo's portfolio"></a> -->
+			        	
+			        	<!-- Logo svg -->
+			        	<svg class="logo-default" xmlns="https://www.w3.org/2000/svg" viewBox="90.1 -1.6 65 90">
+						  <path fill="#00A1FF" d="M105.1 68.8l19-2-9-30"/>
+						  <path fill="#008BDB" d="M123.1 38.9l1 27.9-9-29.9"/>
+						  <path fill="#00A1FF" d="M124.1 66.8l19-23-20-5M119.1 20.8l-2-13.9 11 15.9M91.1 31.9l21-4 5-21-25.9 25"/>
+						  <path fill="#4ABCFF" d="M127.1 12.9l-10-6 11 15.9M112.1 27.8l-7 41 10-31.9M117.1 6.9l2 13.9-7 7"/>
+						  <path fill="#EB3886" d="M154.1 38.6l-23-39.8 7 27-15 13.1 20 5"/>
+						  <path fill="#006FB0" d="M127.1 12.9l4-14.1-14 8.1"/>
+						  <path fill="#29AFFF" d="M131.1-1.2l-4 14 11 13"/>
+						  <g fill="#00A1FF">
+						    <path d="M128.1 22.8l2 10-3-19.9M138.1 25.8l-11-13 3 20"/>
+						  </g>
+						  <path fill="#006FB0" d="M91.1 31.9l11 54.9 10-58.9"/>
+						  <path fill="#FFF" d="M124.1 39.4l-9.5-2.6-2.5-9.4 6.9-7 9.5 2.6 2.5 9.4"/>
+						</svg>
+
+			        </a> <!-- end logo -->
+
+			        <div>
+			        	<p class="name">Daniel Spagnolo <span class="muted job-title">(He/Him) | Product Designer</span></p>
+			        </div> <!-- end by-line -->
+
+			  	</div> <!-- end logo-job-title -->
+
+
+				
+			  	<!-- <div class="nav_theme-switch"> -->
+
+			  		<nav class="clearfix center-text no-padding">  
+			        	<ul>
+			            	<li class="alternative"><a href="index.html#work-module" aria-label="Work">Work</a></li>
+			            	<li class="alternative"><a href="index.html#about-me-module" aria-label="About me">About</a></li>
+			          	</ul>
+			      	</nav>
+
+			      	<!-- Added a fieldset, ARIA roles, and heading (can be outer or within a legend if you prefer. Thanks to Steve Faulkner and Heydon Pickering https://twitter.com/stevefaulkner/status/1021327778334019585 & https://twitter.com/heydonworks/status/1021329851066830848 -->
+
+					<fieldset aria-label="theme switcher" role="radiogroup">
+
+						<div class="button-toggle">
+
+							<span class="button-toggle-container">
+								
+								<input type="radio" name="theme" id="light" checked="">
+								<input type="radio" name="theme" id="dark">
+
+									<span aria-hidden="true" class="button-toggle__background"></span> <!-- end button-toggle__background -->
+										
+										<span>
+										<!-- sun icon -->
+											<svg class="icon-sun" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+										        <g transform="translate(-1327.000000, -53.000000)">
+									            <g transform="translate(1316.000000, 42.000000)">
+								                <g transform="translate(11.000000, 11.000000)">
+							                    <circle cx="11" cy="11" r="4"></circle> <!-- orb -->
+							                    <g> <!-- rays -->
+							                        <rect x="10" y="0" width="1" height="4" rx="0.5"></rect>
+							                        <rect x="0" y="10" width="4" height="1" rx="0.5"></rect>
+							                        <rect transform="translate(5.000000, 4.500000) rotate(-315.000000) translate(-5.000000, -4.500000) " x="3" y="4" width="4" height="1" rx="0.5"></rect>
+							                        <rect x="18" y="10" width="4" height="1" rx="0.5"></rect>
+							                        <rect transform="translate(17.000000, 4.500000) rotate(-45.000000) translate(-17.000000, -4.500000) " x="15" y="4" width="4" height="1" rx="0.5"></rect>
+							                        <rect transform="translate(10.500000, 20.000000) scale(1, -1) translate(-10.500000, -20.000000) " x="10" y="18" width="1" height="4" rx="0.5"></rect>
+							                        <rect transform="translate(5.000000, 16.500000) scale(1, -1) rotate(-315.000000) translate(-5.000000, -16.500000) " x="3" y="16" width="4" height="1" rx="0.5"></rect>
+							                        <rect transform="translate(17.000000, 16.500000) scale(1, -1) rotate(-45.000000) translate(-17.000000, -16.500000) " x="15" y="16" width="4" height="1" rx="0.5"></rect>
+							                    </g>
+								                </g>
+									            </g>
+										        </g>
+											</svg>
+
+											<!-- moon icon -->
+											<svg class="icon-moon" viewBox="0 0 17 18" xmlns="http://www.w3.org/2000/svg">
+										        <g transform="translate(-1370.000000, -55.000000)">
+									            <g transform="translate(1316.000000, 42.000000)">
+								                <g transform="translate(54.000000, 13.000000)"> 
+								                    <path d="M5.625,4.5 C5.625,9.47056275 9.65443725,13.5 14.625,13.5 C15.434709,13.5 16.2194437,13.3930721 16.9658537,13.1925665 C15.4583806,16.0511593 12.4567783,18 9,18 C4.02943725,18 0,13.9705627 0,9 C0,4.83950856 2.82307582,1.3383818 6.65814446,0.307702722 C5.99834193,1.56121389 5.625,2.9870076 5.625,4.5 Z"></path>
+								                </g>
+									            </g>
+										        </g>
+											    </g>
+											</svg>
+
+										</span>
+									
+										<span aria-hidden="true" class="button-toggle__switcher"></span> <!-- end button-toggle-switcher -->
+							
+							</span> <!-- end button-toggle-container -->
+
+						</div> <!-- end button-toggle -->
+
+					</fieldset>		
+
+			  	
+				<!-- </div>  end nav_theme-switch -->
+
+			</div> <!-- end header container -->
+
+		</header>
+
+
+
+<main>
+
+
+	<!-- Hero module ___________________________________________________________________________________________________________________________ -->
+
+
+		<section id="deep-hero-module" class="hero-module hero-margin-top">
+
+				<div class="container">
+
+					<div class="row">
+					
+			        	<!-- Sub title -->
+			            	<div class="col-md-6 center-text center">
+			            		<!-- <h6>Avoiding shoe FOMO</h6> -->
+			            		<span class="header-caption">Discovering shoes</span>
+			            	</div>
+
+
+			        	<!-- Title -->
+			            	<div class="col-md-8 center-text center">
+			            		<h1>Visual search</h1>
+			              	</div>
+
+
+			        	<!-- large horizontal line -->
+			            	<div class="horizontal-line-large center">
+			            	</div>
+
+
+			        	<!-- Reading time -->
+			            	<div class="center-text">
+			            		<p class="no-padding-btm">Read time: 8 minutes</p>
+			            	</div>
+		            
+		            </div> <!-- end row -->   
+
+	          	</div> <!-- end container -->
+
+
+	          	<!-- Angled top | found at https://css-tricks.com/creating-non-rectangular-headers/-->
+	          	<svg class="angle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+					<polygon points="0,0 140,0 0,100"/>
+				</svg>
+
+
+
+				<!-- Hero image-->
+		        	<div class="row col-xs-12 col-sm-12 col-md-10 col-lg-8 center">
+		            	<figure>
+		              		<img srcset="img/moh/moh-hero@2x.png 2x"
+		              			src="img/moh/moh-hero@1x.png" class="img-responsive center" alt="Two Apple phones with Mad on Heels screens">
+		            	</figure>
+		          	</div>
+				
+
+    	</section> <!-- end Hero module -->
+
+
+
+	<!-- Details module ___________________________________________________________________________________________________________________________ -->
+
+		<section class="details-module clearfix">
+
+			<div class="container no-padding-top">
+				
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+	        		<!-- company, role, timeframe, skills -->
+	            		<div class="col-md-12">
+	            			<h5>Company:</h5>
+	            			<p>Side project &mdash; London</p>
+	            		</div>
+
+	            		<div class="col-md-12">
+	        				<h5>Founders:</h5>
+	        				<p>Simon Emery (Developer) / Katy Magrane
+	        			</div>
+
+	            		<div class="col-md-12">
+	            			<h5>My role:</h5>
+	            			<p>Product Designer</p>
+	        			</div>
+
+	            		<div class="col-md-12">
+	            			<h5>Timeframe:</h5>
+	            			<p>Six months (part-time)</p>
+	        			</div>
+
+	        			<div class="col-md-12">
+	            			<h5>Skills:</h5>
+	            			<p>Research analysis, UX/UI design, branding, prototyping, usability testing</p>
+	        			</div>
+
+	            	
+
+	        	</div> <!-- end row -->
+
+            </div>  <!-- end container -->
+
+    	</section> <!-- end Details module -->
+
+
+
+	<!-- Problem module ___________________________________________________________________________________________________________________________ -->
+
+		<section class="special-module">
+
+			<div class="container">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h2>The problem</h2>
+							<div class="horizontal-line-small">
+							</div>
+					</div>
+
+					<div>
+						<p>Shoes mean more to a lot of people than just a random purchase &mdash; they are a bold fashion accessory and an integral part of their personal identity and style. So what happens when they see a pair of shoes they love, but have no idea where to get them? They could be at a party and a friends wearing them, see somebody on the street with great shoes, or just flicking through a magazine and seeing their favourite celeb wearing an awesome pair of shoes.</p>
+
+						<p>We wanted a shoe-lover in these moments to have the ability to find the same (or similar) shoes instantly and be able to purchase them right there if they wanted to.</p>
+					</div>
+
+				</div> <!-- end row -->
+
+			</div> <!-- end container -->
+
+		</section> <!-- end Problem module -->
+
+
+
+
+	<!-- Quote module  __________________________________________________________________________________________________________________________________-->
+
+		<section class="quote-module">
+
+			<div class="container no-padding-btm">
+
+				<div class="row">
+	            	<div class="horizontal-line-small center"></div>
+            	</div>
+
+
+
+				<div class="row col-xs-10 col-sm-10 col-md-7 col-lg-6 center">		
+						<div>
+				    		<blockquote class="center-text">“I remember a girl coming out of the tube wearing the yellow sandals that I wanted. I was like where did she get them?”</blockquote>
+				    		<figcaption>Anonymous tester | London Stylist fashion show</figcaption>
+				    	</div> 
+		    	</div>
+
+			    	<div class="row">
+		            	<div class="horizontal-line-small center"></div>
+            		</div>
+
+			</div> <!-- end container -->
+
+		</section> <!-- end Quote module --> 
+
+
+
+
+	<!-- Solution module ___________________________________________________________________________________________________________________________ -->
+
+		<section class="solution-module">
+
+			<div class="container no-padding-btm">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h4 aria-label="Too long, didn't read">TL;DR</h4>
+					</div>
+
+					<div>
+						<h2>The solution</h2>
+							<div class="horizontal-line-small"></div>
+					</div>
+
+					<div>
+						<p>Removing the fear of missing out and uncertainty about where to find "newly discovered" shoes was one of the main drivers in creating this app.</p>
+
+						<p>Our MVP gave shoe-lovers the ability to "in-the-moment" take a snap of shoes (found or seen anywhere) with their mobile phone and then, at a convenient time for them, bring up a visually curated list of shoes based on this photo. On top of this simple flow was a modern and bright visual aesthetic that would appeal to the fashion conscious user.</p>
+					</div>
+
+				</div>
+
+			</div>
+
+		</section> <!-- end Solution module -->
+
+
+
+
+
+
+
+
+	<!-- Casestudy coming soon module  _______________________________________________________________________________________________________________________-->
+
+		<!-- <section class="quote-module">
+
+			<div class="container no-padding-btm">
+
+				<div class="row">
+	            	<div class="horizontal-line-small-pink center"></div>
+            	</div>
+
+
+
+				<div class="row col-xs-10 col-sm-10 col-md-7 col-lg-6 center">		
+						<div>
+				    		<blockquote class="center-text">Full casestudy coming soon</blockquote>
+				    		<h5 class="center-text">&#x1F60A;</h5>
+				    	</div> 
+		    	</div>
+
+			    	<div class="row">
+		            	<div class="horizontal-line-small-pink center"></div>
+            		</div>
+
+			</div>
+
+		</section>  --> 	
+
+
+
+
+
+	<!-- Prototype (generic module) ________________________________________________________________________________________________________________________ -->
+
+		<section class="generic-module">
+
+			<div class="container">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">			
+
+				<!-- Video __________________________________________________________________________________________--> 
+
+					<div class="col-md-12 center-text">
+
+						<video controls class="video" poster="img/moh/video-static-screen@2x.jpg" width="50%" controls="true" preload="metadata" alt="Video of the user journey from searching for a shoe to end of purchase.">
+							<source src="video/moh-low.mp4" type="video/mp4">
+							<source src="" type="video/ogg">
+							"Your browser doesn't support playing this video<span role="img" aria-label="Crying face"> 😢</span>. Try <a href="video/moh-low.mp4">downloading</a> it."
+						</video>
+						<figcaption>Video of the prototyped core flow</figcaption>
+
+					</div>
+
+				</div> <!-- end row --> 	
+
+			</div> <!-- end container -->
+
+		</section>
+
+
+
+	<!-- Casestudy begins ___________________________________________________________________________________________________________________________ -->
+		
+		<section class="padding-btm">
+			
+			<div class="container padding-btm">
+
+				<div class="row">
+
+	            	<div class="horizontal-line-small center"></div>
+
+            	</div> <!-- end row -->
+
+
+				<div class="row col-xs-10 col-sm-10 col-md-7 col-lg-6 center">		
+						
+					<div>
+			    		<h6 class="center-text">Read the in-depth casestudy below<span class="no-italic" role="img" aria-label="nerd face"> 🤓</span></h6>
+			    	</div> 
+
+		    	</div> <!-- end row -->
+
+		    	<div class="row padding-btm">	
+
+					<figure aria-hidden="true" class="center-text arrow-bubble">
+	              		<!-- <img src="img/arrow-down-bubble.svg" alt=""> -->
+
+	              		<svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+        				<circle cx="24" cy="24" r="24"/>
+	        				<g class="inner-arrow" transform="matrix(0 1 -1 0 35 12)">
+								<g transform="matrix(-.69465837 -.7193398 .7193398 -.69465837 11.116257 22.62397)">
+	        						<rect height="4" rx="2" width="16" y="12"/>
+	        						<rect height="16" rx="2" width="4"/>
+	    						</g><path d="m0 11c0-1.1045695.89821238-2 1.99079514-2h16.01840976c1.0994858 0 1.9907951.88772964 1.9907951 2 0 1.1045695-.8982124 2-1.9907951 2h-16.01840976c-1.0994858 0-1.99079514-.8877296-1.99079514-2z"/></g>
+	        				</g>
+	            	</svg>
+
+	            	</figure>
+
+        		</div> <!-- end image row -->
+
+			    					
+			</div> <!-- end container -->
+
+		</section> <!-- end section -->
+
+
+
+	<!-- Section break module ___________________________________________________________________________________________________________________________ -->
+
+		<section class="section-break-module">
+
+				<div class="container">
+
+		    		<div class="row col-md-12 center-text">
+					
+			        	<!-- Sub title -->
+			            	<div>
+			            		<p class="dark-text no-padding">A little context</p>
+			            	</div>
+
+
+			        	<!-- Title -->
+			            	<div>
+			            		<h1>Background</h1>
+			              	</div>
+
+		            </div> <!-- end row -->
+
+	            </div> <!-- end container -->
+
+            </section> <!-- end Section break module -->
+
+
+
+	<!-- Background (Generic module) ___________________________________________________________________________________________________________________________ -->
+
+		<section class="generic-module">
+
+			<div class="container padding-btm">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+
+					<div>
+						<p>It started like most startup stories do<span role="img" aria-label="Winking face"> 😉</span>. Two product owners (Simon and Katy) kept hearing their fashion-loving friends talk about the latest fashion and not knowing where to buy similar items &mdash; specifically shoes in this case &mdash; and they decided to explore the problem space.</p>
+
+						<p>Their idea was simple, instead of someone having to do extensive online searches and figuring out the correct search terms to use, they could instead just take a photo of the item to get similar results and then purchase an item.</p>
+
+						<p>I joined them a few weeks later when they realised they needed a product designer to help conceptualise their idea. Our main goal (other than to have fun) was to come up with a product concept that we thought was worth pursuing.</p>
+					</div>
+
+				</div> <!-- end row -->
+
+
+			</div> <!-- end conatiner -->
+
+
+		</section> <!-- end background -->   
+
+
+
+	<!-- Section break module ___________________________________________________________________________________________________________________________ -->
+
+		<section class="section-break-module">
+
+				<div class="container">
+
+		    		<div class="row col-md-12 center-text">
+
+					
+		        		<!-- Sub title -->
+		            	<div>
+		            		<p class="dark-text no-padding">The beginning</p>
+		            	</div>
+
+
+			        	<!-- Title -->
+			            	<div>
+			            		<h1>Research</h1>
+			              	</div>
+
+		            </div> <!-- end row -->
+
+	            </div> <!-- end container -->
+
+            </section> <!-- end Section break module -->
+
+
+
+	<!-- Research and discovery (part 1)  ___________________________________________________________________________________________________________________________ -->
+
+		<section class="generic-module">
+
+			<div class="container no-padding-btm">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<p>Simon and Katy had done some initial research into the problem space with a survey, some interviews, and a workshop to better understand the target users. I came into the project just as we were doing the analysis of the research.</p>
+
+					</div>
+
+				</div> <!-- end row -->
+
+
+				<div class="row col-md-12 center padding-btm">	
+
+					<figure>
+	              		<img srcset="img/moh/workshop-group@2x.jpg 2x"
+	              			src="img/moh/workshop-group@1x.jpg" class="img-responsive center" alt="The workshop with six attendees discussing where they would put a post-it note in the journey.">
+	              		<figcaption>
+	              			Workshop attendees mapping out an online shoe buying experience
+	              		</figcaption>
+	            	</figure>
+
+        		</div> <!-- end image row -->
+
+
+        		<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+        			<div>
+						<h2>Research takeaways</h2>
+							<div class="horizontal-line-small"></div>
+					</div>
+
+        			<div>
+
+						<h5>People want help comparing and buying shoes online</h5>
+						<p>Even if a person knows exactly what they are searching for they’d still like to know of similar options</p>
+
+						<h5>Are shoe sizes “true to size”?</h5>
+						<p>Online shoe shopping shows there is a range of discrepancies in sizing between companies</p>
+
+						<h5>Pinterest was regularly used as a “lookbook”</h5>
+						<p>Shoes found online were saved to boards in Pinterest, but these didn’t give you details or where to buy</p>
+
+						<h5>Two types of fashionable shoe buyers emerged</h5>
+						<p>1) Those that bought shoes as an “expression of themselves” and the emotional pleasure and 2) Those that were more concerned with comfort and “cost per wear” of shoes</p>
+							
+					</div>
+
+				</div> <!-- end row -->							
+
+			</div> <!-- end container -->
+
+		</section> <!-- end research (part 1) -->   
+
+
+
+	<!-- The insight ___________________________________________________________________________________________________________________________ -->
+
+		<section>
+
+			<div class="container">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h4 class="pink-accent">OUR BIG INSIGHT</h4>
+					</br>
+					</div>
+
+					<div>
+						<h2>The experience should be about the discovery, not finding an exact match</h2>
+							<div class="horizontal-line-small-pink"></div>
+					</div>
+
+				</div> <!-- end row --> 
+
+			</div> <!-- end container -->
+
+		</section> <!-- end module -->	
+
+
+
+	<!-- Research and discovery (part 2)  ___________________________________________________________________________________________________________________________ -->
+
+		<section class="generic-module grey-module">
+
+			<div class="container">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+        			<div>
+						<h2>Our primary user</h2>
+							<div class="horizontal-line-small"></div>
+					</div>					
+
+					<div>
+						<p>We collated what we learnt from our research into a persona to represent our behavioural audience segment. We did this by getting our workshop attendees to place themselves on a set of behavioural scales and then we could analyse later where clustering occurred. This was then used to flesh out our primary user whose goal is to discover a pair of shoes that make them feel good.</p>
+
+					</div>
+
+				</div> <!-- end row -->
+
+
+				<div class="row col-md-10 center padding-btm">	
+
+					<figure>
+	              		<img src="img/moh/behaviour-scales.svg" class="img-responsive center" alt="Mapped behaviour scales.">
+	              		<figcaption>
+	              			The behaviour clusters helped us clarify our user persona
+	              		</figcaption>
+	            	</figure>
+
+        		</div> <!-- end image row -->
+
+
+        		<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+        			<div>
+						<h2>Meet Lauren</h2>
+							<div class="horizontal-line-small"></div>
+					</div>
+
+        			<div>
+						<p>Our user is a busy professional who loves fashion and shoes, but doesn’t have the time to research and find a great pair of shoes. They get pleasure by showing off their latest shoe finds to their friends, but need help finding the shoes they want.</p>
+							
+					</div>
+
+				</div> <!-- end row -->	
+
+
+				<div class="row col-md-12 center padding-btm">	
+
+					<figure>
+	              		<img srcset="img/moh/lauren-persona@2x.jpg 2x"
+	              			src="img/moh/lauren-persona@1x.jpg" class="img-responsive center" alt="Lauren was the name of our primary user. Her quote: 'I don’t get the chance to go to stores most of the time.'">
+	              		<figcaption>
+	              			Lauren would find the most value using our app
+	              		</figcaption>
+	            	</figure>
+
+        		</div> <!-- end image row -->										
+
+			</div> <!-- end container -->
+
+		</section> <!-- end section -->
+
+
+
+		<section class="generic-module">
+
+			<div class="container">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+        			<div>
+						<h2>The lean canvas</h2>
+							<div class="horizontal-line-small"></div>
+					</div>					
+
+					<div>
+						<p>We used the lean canvas approach (how could we not with two product owners<span role="img" aria-label="Winking face"> 😉</span>) to make sure we had a unified vision on the product and market fit. We would continually go back to this every few weeks to update with any new information or changes and to make sure we were still heading in the right direction.</p>
+					</div>
+
+				</div> <!-- end row -->
+
+
+				<div class="row col-md-12 center padding-btm">	
+
+					<figure>
+	              		<img srcset="img/moh/lean-canvas@2x.jpg 2x"
+	              			src="img/moh/lean-canvas@1x.jpg" class="img-responsive center" alt="The lean canvas vision was 'It's about the discovery, not the exact match.">
+	              		<figcaption>
+	              			The lean canvas helped us look at the product holistically
+	              		</figcaption>
+	            	</figure>
+
+        		</div> <!-- end image row -->
+
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+
+        			<div>
+						<h2>The concept scope</h2>
+							<div class="horizontal-line-small"></div>
+					</div>					
+
+					<div>
+						<p>We decided to concentrate on the most important part of the flow &mdash; the user journey from searching on an image to completion of a purchase. The question we wanted the concept to  answer was, <span class="italic">would our users get good enough results and information to make a purchase?</span></p>
+
+					</div>
+
+				</div> <!-- end row -->        		
+
+
+		</section> <!-- end research (part 2) --> 	
+
+
+
+	<!-- Section break module ___________________________________________________________________________________________________________________________ -->
+
+		<section class="section-break-module">
+
+				<div class="container">
+
+		    		<div class="row col-md-12 center-text">
+					
+			        	<!-- Sub title -->
+			            	<div>
+			            		<p class="dark-text no-padding">The litmus test</p>
+			            	</div>
+
+
+			        	<!-- Title -->
+			            	<div>
+			            		<h1>Early testiing</h1>
+			              	</div>
+
+		            </div> <!-- end row -->
+
+	            </div> <!-- end container -->
+
+            </section> <!-- end Section break module -->
+
+
+
+	<!-- Early testing (Generic module) ___________________________________________________________________________________________________________________________ -->
+
+		<section class="generic-module">
+
+			<div class="container no-padding-btm">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<p>Early on we had the opportunity to test out the concept with real fashionistas at the London Stylist Live show. Katy had gotten herself an exclusive invite and we realised this was too good a chance to not get our idea in front of our target users.</p>
+
+						<p>Within a few days we had thrown together a responsive website using an open-sourced image matching SDK, Amazon for results, and some design assets to get the basic idea into a working state. Katy then spent the day (in-between socialising and watching fashion shows) finding willing participants to get their thoughts on our idea.</p>
+					</div>
+
+				</div> <!-- end row -->
+
+
+				<div class="row col-md-10 center">	
+
+					<figure>
+	              		<img srcset="img/moh/early-web-prototype@2x.jpg 2x"
+	              			src="img/moh/early-web-prototype@1x.jpg" class="img-responsive center" alt="The prototype flow: Intro, take a photo of a shoe, search for a shoe, and finally results based on photo.">
+	              		<figcaption>
+	              			The very first "lean" prototype
+	              		</figcaption>
+	            	</figure>
+
+            	</div> <!-- end image row -->
+
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+					
+					<h3>Testing takeaways</h3>
+						<ul>
+							<li>Everyone understood the concept right away<span role="img" aria-label="Smiling face with sunglasses"> 😎</span></li>
+							<li>People liked that it was focused purely on shoes</li>
+							<li>People were unsure of the best way to take a photo ("Will this have an impact on my results?")</li>
+							<li>The results took forever to return (Katy distracted them at this point<span role="img" aria-label="Smiling face with open mouth and cold sweat"> 😅</span>)</li>
+						</ul>
+
+				</div> <!-- end row --> 
+
+			</div> <!-- end container -->
+
+		</section> <!-- end early testing (part 1) -->
+
+
+
+	<!-- Quote module ___________________________________________________________________________________________________________________________ -->
+
+		<section class="quote-module">
+
+			<div class="container">
+
+				<div class="row">
+	            	<div class="horizontal-line-small center"></div>
+            	</div>
+
+				<div class="row col-xs-10 col-sm-10 col-md-7 col-lg-6 center">		
+						<div>
+				    		<blockquote>“It’s like Shazam, but for shoes!</blockquote>
+				    		<figcaption>Anonymous tester</figcaption>
+				    	</div> 
+		    	</div>
+
+		    	<div class="row">
+	            	<div class="horizontal-line-small center"></div>
+            	</div>
+
+			</div> <!-- end container -->
+
+		</section> <!-- end Quote module --> 
+
+
+
+	<!-- Early testing (part 2) -->
+
+		<section class="generic-module">
+
+			<div class="container padding-btm no-padding-top">
+
+				<div class="row col-md-12 center padding-btm">	
+
+					<figure>
+	              		<img srcset="img/moh/stylist-event@2x.jpg 2x"
+	              			src="img/moh/stylist-event@1x.jpg" class="img-responsive center" alt="A model on the catwalk and a panoramic view of the event.">
+	              		<figcaption>
+	              			The Stylist Live event in London
+	              		</figcaption>
+	            	</figure>
+
+	            	<figure>
+	              		<img srcset="img/moh/shoe-photos-stylist@2x.jpg 2x"
+	              			src="img/moh/shoe-photos-stylist@1x.jpg" class="img-responsive center" alt="">
+	              		<figcaption>
+	              			Photos that testers took of shoes using their mobile phones
+	              		</figcaption>
+	            	</figure>
+
+            	</div> <!-- end image row -->	
+
+
+            	<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+
+					<div>
+						<p>We came away from this analysis pretty chuffed with how our crappy prototyped idea had been received, though we didn’t want to delude ourselves that reactions may have also been influenced slightly by the consumption of champagne.<span role="img" aria-label="Clinking glasses"> 🥂</span></p>
+					</div>
+
+				</div> <!-- end row -->			           		
+
+
+			</div> <!-- end conatiner -->
+
+
+		</section> <!-- end Early testing -->   
+
+
+
+	<!-- Section break module ___________________________________________________________________________________________________________________________ -->
+
+		<section class="section-break-module">
+
+				<div class="container">
+
+		    		<div class="row col-md-12 center-text">
+
+		    			<!-- Sub title -->
+		            	<div>
+		            		<p class="no-padding dark-text">Shoe discovery</p>
+		            	</div>
+
+
+			        	<!-- Title -->
+			            	<div>
+			            		<h1>The challenges</h1>
+			              	</div>
+
+		            </div> <!-- end row -->
+
+	            </div> <!-- end container -->
+
+            </section> <!-- end Section break module -->	
+
+
+
+	<!-- The challenges  ___________________________________________________________________________________________________________________________ -->
+
+		
+<!-- Standing out from the crowd -->
+
+		<section class="generic-module">
+
+			<div class="container">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+
+        			<div>
+						<h2>Standing out from the crowd</h2>
+							<div class="horizontal-line-small"></div>
+					</div>					
+
+					<div>
+						<p>Looking around at the market we could see their were many products already trying to do the whole “take a picture and search to buy thing” &mdash; we needed some way to make ourselves stand out in this red ocean. When showing these products to our target users we kept hearing things like “they’re all pretty samey” and “they’re kinda bland”, and they would never be able to recall anything about the app at a later time. We saw this as the competitions lack of vision, branding, and audience focus and we needed a differentiator.</p>
+					</div>
+
+				</div> <!-- end row -->
+
+
+				<div class="row col-md-12 center padding-btm">	
+
+					<figure>
+	              		<img srcset="img/moh/competitor-shots@2x.jpg 2x"
+	              			src="img/moh/competitor-shots@1x.jpg" class="img-responsive center" alt="Screenshots of competitor apps.">
+	              		<figcaption>
+	              			The competition visually looked all the same
+	              		</figcaption>
+	            	</figure>
+
+        		</div> <!-- end image row --> 
+
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+
+        			<div>
+						<h3>Brand personification</h3>
+					</div>					
+
+					<div>
+						<p>We decided to create a persona called Maddie to represent our brand. She would be the influence on our whole concept &mdash; someone who our users could relate to, help with a tone of voice, and steer the visual direction.</p>
+					</div>
+
+				</div> <!-- end row -->  
+
+
+				<div class="row col-md-10 center padding-btm">	
+
+					<figure>
+	              		<img srcset="img/moh/maddie-persona@2x.jpg 2x"
+	              			src="img/moh/maddie-persona@1x.jpg" class="img-responsive center" alt="Maddie's quote: 'Style is an expression of yourself — be bold and share your joy.'">
+	              		<figcaption>
+	              			The Maddie persona
+	              		</figcaption>
+	            	</figure>
+
+	            	<figure>
+	              		<img srcset="img/moh/styletiles@2x.jpg 2x"
+	              			src="img/moh/styletiles@1x.jpg" class="img-responsive center" alt="">
+	              		<figcaption>
+	              			I created three styletiles to help with visual direction discussions
+	              		</figcaption>
+	            	</figure>
+
+        		</div> <!-- end image row --> 
+
+
+        		<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+
+					<div>
+						<p>I settled on a vibrant two tone yellow and fuchsia palette as it was a colour palette that expressed playfulness and joy, set us apart from competitor branding, and visual styling that none of the other products were using.</p>
+
+						<p class="no-padding-btm">I created guidelines around how these colours would be used:</p>
+							<ul>
+								<li>A minimal use throughout the rest of the UI when the user was actively engaged</li>
+								<li>A pronounced use when Maddie was on screen and the user was passively engaged</li>
+								<li>All text colours to meet AA contrast standards</li>
+							</ul>
+					</div>
+
+				</div> <!-- end row -->  
+
+
+				<div class="row col-md-10 center padding-btm">	
+
+					<figure>
+	              		<img srcset="img/moh/moodboard@2x.jpg 2x"
+	              			src="img/moh/moodboard@1x.jpg" class="img-responsive center" alt="">
+	              		<figcaption>
+	              			A moodboard helped to refine the final visual styling 
+	              		</figcaption>
+	            	</figure>
+
+	            	<!-- <figure>
+	              		<img srcset="img/liveness/ 2x"
+	              			src="img/liveness/" class="img-responsive center" alt="[image: Styleguide]">
+	              		<figcaption>
+	              			[image: Styleguide]
+	              		</figcaption>
+	            	</figure> -->
+
+	            	<figure>
+	              		<img srcset="img/moh/maddie-visual-style@2x.jpg 2x"
+	              			src="img/moh/maddie-visual-style@1x.jpg" class="img-responsive center" alt="The splash, searching, and purchase complete screens had the pronounced styling of yellow and fuschia applied to them.">
+	              		<figcaption>
+	              			Final screens using the <span class="italic">pronounced</span> visual guideline
+	              		</figcaption>
+	            	</figure>
+
+        		</div> <!-- end image row -->   
+
+    		</div> <!-- end container -->
+
+		</section> <!-- end Standing out from the crowd -->	  
+
+
+
+<!-- How will people use this? -->
+
+		<section class="generic-module grey-module">
+
+			<div class="container">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+
+        			<div>
+						<h2>How will people use this?</h2>
+							<div class="horizontal-line-small"></div>
+					</div>					
+
+					<div>
+						<p>We went through a few iterations of how our users would use the app in their day-to-day. Originally we assumed users would begin by opening the app to take a photo, but after some testing we found we were wrong about this &mdash; most users would take the photo “in the moment”, but they would actually use the app later to search on the photo. At this point I decided to create a scenario of how Lauren would use this app.</p>
+
+						<h3>Lauren's scenario</h3>
+						<p>Lauren is on her lunch break and on the way back from the sandwich shop she pops into retail store. There she sees some shoes she really likes, but she doesn’t have time to wait around for the right size so she takes a photo of them. Later on the train back home she remembers the shoes, opens our app, and searches for shoes based on her photo.</p>
+
+						<p>We also explored other scenarios with someone being at home flicking through a magazine, someone finding great shoes on Pinterest, and someone having a wedding to go to soon.</p>
+
+						<p>With this new behavioural knowledge we were able to create a flow that made a lot more sense to how people would actually use the app.</p>
+					</div>
+
+				</div> <!-- end row -->
+
+
+				<div class="row col-md-8 center padding-btm">	
+
+					<figure>
+	              		<img srcset="img/moh/storymap-sketch@2x.jpg 2x"
+	              			src="img/moh/storymap-sketch@1x.jpg" class="img-responsive center" alt="[image: user scenarios, sketches, stories]">
+	              		<figcaption>
+	              			I sketched out some of the entry points into our flow
+	              		</figcaption>
+	            	</figure>
+
+            	</div> <!-- end image row -->	
+
+
+
+            	<div class="row col-md-12 center padding-btm">
+
+
+	            	<figure>
+	              		<img srcset="img/moh/storymapping@2x.jpg 2x"
+	              			src="img/moh/storymapping@1x.jpg" class="img-responsive center" alt="Lots of post-it notes on a wall.">
+	              		<figcaption>
+	              			I ran a story mapping workshop to uncover some of our user flow problems
+	              		</figcaption>
+	            	</figure>
+
+        		</div> <!-- end image row --> 
+
+
+				<div class="row col-md-10 center padding-btm">	
+
+					<figure>
+	              		<img srcset="img/moh/wireframes-opening-flow@2x.jpg 2x"
+	              			src="img/moh/wireframes-opening-flow@1x.jpg" class="img-responsive center" alt="Wireframed iterations">
+	              		<figcaption>
+	              			Various iterations on the opening screen
+	              		</figcaption>
+	            	</figure>
+
+            	</div> <!-- end image row --> 
+
+	            <div class="row col-md-10 center padding-btm">
+
+	            	<figure>
+	              		<img srcset="img/moh/opening-flow-final@2x.jpg 2x"
+	              			src="img/moh/opening-flow-final@1x.jpg" class="img-responsive center" alt="Screenshot shows a recent photos scrollable grid and a floating action button at top so users can select other photos from libraries.">
+	              		<figcaption>
+	              			The final opening screen supported our users behaviour
+	              		</figcaption>
+	            	</figure>
+
+        		</div> <!-- end image row -->   
+
+    		</div> <!-- end container -->
+
+		</section> <!-- end How will people use this? -->	
+
+
+
+<!-- Search results return time -->
+
+		<section class="generic-module">
+
+			<div class="container">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+
+        			<div>
+						<h2>Search results return-time</h2>
+							<div class="horizontal-line-small"></div>
+					</div>					
+
+					<div>
+						<p>After testing different image recognition APIs we settled on the one that produced the best results, but it came with a catch &mdash; it could take 5-8 seconds for results to appear to the user!<span role="img" aria-label="Disappointed face"> 😔</span></p>
+
+						<p>From previous experience I knew that a wait-time could be perceived to be faster by making a <span class="italic">passive wait</span> ("This is sooo long and boring!") into an <span class="italic">active wait</span> (time seems slower as user is occupied). I decided to break this active wait into two steps to not make the wait seem so long.</p>
+					</div>
+
+					<div>
+						<h3>First interaction</h3>
+						<p>The first screen was dedicated to the first 4 seconds of the wait. The screen included two things that would ease this wait for the user:</p>
+
+						<h5>1. A quote from Maddie</h5>
+						<p>This quote would change every time someone searched and I estimated it would take 2-3 seconds for users to read it</p>
+
+						<h5>2. A progress bar</h5>
+						<p>This was to allow the user to see something was already happening. The progress bar would never actually reach the end to give the perception that loading was happening faster than expected.</p>
+					</div>
+
+				</div> <!-- end row -->
+
+
+				<div class="row col-md-10 center padding-btm">	
+
+					<figure>
+	              		<img srcset="img/moh/passive-search@2x.jpg 2x"
+	              			src="img/moh/passive-search@1x.jpg" class="img-responsive center" alt="Screenshot shows loading bar with Maddie quote card: 'Wear the right shoes, and you can conquer the world.'">
+	              		<figcaption>
+	              			The first "waiting interaction" screen with quote card
+	              		</figcaption>
+	            	</figure>	
+
+        		</div> <!-- end image row --> 
+
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+
+					<div>
+						<h3>Second interaction</h3>
+						<p>The next screen was the results screen, which would take up the remaining load time. This screen included:</p>
+
+						<h5>1. Number of items returned</h5>
+						<p>By this time we knew how many items would be shown to the user</p>
+
+						<h5>2. Skeleton loading cards</h5>
+						<p>The content details would still be loading into each card so I used a skeleton screen loader, which took 0.8 seconds to animate in</p>
+					</div>
+
+				</div> <!-- end row -->  
+
+
+				<div class="row col-md-10 center padding-btm">	
+
+					<figure>
+	              		<img srcset="img/moh/active-waiting@2x.jpg 2x"
+	              			src="img/moh/active-waiting@1x.jpg" class="img-responsive center" alt="First screenshot with a skeleton loading screen and second screenshot with the results fully loaded.">
+	              		<figcaption>
+	              			The second waiting screen with a skeleton loading animation before results are displayed
+	              		</figcaption>
+	            	</figure>	
+
+        		</div> <!-- end image row --> 				
+
+    		</div> <!-- end container -->
+
+		</section> <!-- end Search results return-times -->				       	          				           		           
+
+
+
+<!-- How to get a good image to use in search? -->
+
+		<section class="generic-module grey-module">
+
+			<div class="container">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+
+        			<div>
+						<h2>How to get a good image to use in search?</h2>
+							<div class="horizontal-line-small"></div>
+					</div>					
+
+					<div>
+						<p>From testing the image recognition API we found that the best results came back from an image of one or both shoes included with as few other objects in the image as possible.</p>
+					</div>
+
+				</div> <!-- end row -->
+
+
+				<div class="row col-md-6 center padding-btm">	
+
+					<figure>
+	              		<img srcset="img/moh/normal-vs-zoomed-photo@2x.jpg 2x"
+	              			src="img/moh/normal-vs-zoomed-photo@1x.jpg" class="img-responsive center" alt="A photo of a female sitting on steps, and the same photo zoomed in tight on one of her shoes.">
+	              		<figcaption>
+	              			Images were best without extra object noise
+	              		</figcaption>
+	            	</figure>
+
+        		</div> <!-- end image row --> 
+
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">				
+
+					<div>
+						<p>Obviously when people take photos (or use images from magazines or online) they’re usually not going to have an image of a beautifully zoomed in pair of shoes. We had to come up with a way for users to provide the best image for the API without it adding too much friction to the flow.</p>
+
+						<p>I sketched out multiple versions of ways to crop to just the shoe, including drawing around the shoe, but in the end we found that just the familiar drag to crop worked best. I had also played around with the user tagging the shoe type from a list which could help the image recognition algorithm further (a lot of images were tagged with this metadata) and we all decided to include it as it would definitely help with the results.</p>
+					</div>
+
+				</div> <!-- end row -->  
+
+
+
+            	<div class="row col-md-10 center padding-btm">
+
+	            	<figure>
+	              		<img srcset="img/moh/shoe-zoom-flow@2x.jpg 2x"
+	              			src="img/moh/shoe-zoom-flow@1x.jpg" class="img-responsive center" alt="Screenshot of the drag-to-crop photo function and the select a shoe type function.">
+	              		<figcaption>
+	              			The final screen where users improved the search algorithm
+	              		</figcaption>
+	            	</figure>
+
+        		</div> <!-- end image row --> 
+
+
+    		</div> <!-- end container -->
+
+		</section> <!-- end How to get good a good image to use in search? -->	 
+
+
+
+
+<!-- This module still to be done when images ready --------------------------------------------------------------------------------------------------------- -->
+
+<!-- Demonstrating value
+
+		<section class="generic-module">
+
+			<div class="container">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+
+        			<div>
+						<h2>Demonstrating value</h2>
+							<div class="horizontal-line-small"></div>
+					</div>					
+
+					<div>
+						<p>Demonstrating the core value from the user perspective needs to happen in the first few moments for a new user. From our research stage users understood our concept and we used language from that use in a three step on-boarding flow. The hardest part was writing short succinct copy that sounded like Maddie, but we had found out that Katy was our surrogate Maddie and she became the voice of our concept. 🙃</p>
+					</div>
+
+				</div> 
+
+
+				<div class="row col-md-12 center padding-btm">	
+
+					<figure>
+	              		<img srcset="img/liveness/ 2x"
+	              			src="img/liveness/" class="img-responsive center" alt="[image: On-boarding flow]">
+	              		<figcaption>
+	              			[image: On-boarding flow]
+	              		</figcaption>
+	            	</figure>
+
+        		</div> 
+
+    		</div> 
+
+		</section> end Demonstrating value -->	
+
+
+
+
+
+
+
+<!-- Importance of product details -->
+
+		<section class="generic-module">
+
+			<div class="container">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+
+        			<div>
+						<h2>Importance of product details</h2>
+							<div class="horizontal-line-small"></div>
+					</div>					
+
+					<div>
+						<h3>Shoe results list</h3>
+						<p>It was crucial to provide users with adequate product information on the results list so it would help them with shoe comparisons and overview before selecting a shoe they're interested in.</p>
+
+						<p>The most important pieces of information for our users would be available in right size, out of stock, new item, brand name, short description, price, and being able to save it to their lookbook.</p>
+					</div>	
+
+				</div> <!-- end row -->
+
+
+				<div class="row col-md-10 center padding-btm">	
+
+					<figure>
+	              		<img srcset="img/moh/shoe-results-list@2x.jpg 2x"
+	              			src="img/moh/shoe-results-list@1x.jpg" class="img-responsive center" alt="Screenshot of the shoe results view with scrollable shoe list, and closeup of the shoe results card which shows company name, short shoe description, shoe size available, price, and 'like' ability.">
+	              		<figcaption>
+	              			 Final results list screen with individual shoe card showing information
+	              		</figcaption>
+	            	</figure>
+
+        		</div> <!-- end image row --> 
+
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+
+					<div>
+						<h3>Full shoe details</h3>
+						<p>Once the user knew which shoe they wanted to view we would show them: more images of the shoe, size selection (which would default to the recommended size based on previous purchases), delivery information, return policies, and sizing information. Information such as delivery data was not always available to us though, so we decided to just not show any piece of data that was not provided by the API.</p>
+					</div>
+
+				</div> <!-- end row -->
+
+
+				<div class="row col-md-10 center padding-btm">	
+
+					<figure>
+	              		<img srcset="img/moh/shoe-details@2x.jpg 2x"
+	              			src="img/moh/shoe-details@1x.jpg" class="img-responsive center" alt="[image: Full details screen]">
+	              		<figcaption>
+	              			Final shoe details screen 
+	              		</figcaption>
+	            	</figure>
+
+        		</div> <!-- end image row --> 
+
+
+    		</div> <!-- end container -->
+
+		</section> <!-- end Importance of product details -->
+
+
+
+	<!-- User interface (generic module) ________________________________________________________________________________________________________________________ -->
+
+		<section class="generic-module">      		
+
+
+        	<div class="container grey-module full-width">
+
+        		<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h2 class="no-padding-top">Final UI</h2>
+							<div class="horizontal-line-small"></div>
+					</div>
+
+				</div> <!-- end row -->
+
+				<div class="row center no-padding">
+
+					<figure class="col-md-8 center">
+						<img srcset="img/moh/section-1@2x.jpg 2x" 
+							src="img/moh/section-1@1x.jpg" class="img-responsive center" alt="Screenshots showing splash, camera roll, and photo cropping.">
+						<figcaption>
+							(screens from left) Splash, recent photos/camera, photo crop/tagging
+						</figcaption>
+					</figure>	
+
+					<figure class="col-md-8 center">
+						<img srcset="img/moh/section-2@2x.jpg 2x" 
+							src="img/moh/section-2@1x.jpg" class="img-responsive center" alt="Screenshots showing photo crop complete, searching for shoes, loading shoes found.">
+						<figcaption>
+							(screens from left) Photo crop ready, searching for shoes, loading shoe list
+						</figcaption>
+					</figure>
+
+					<figure class="col-md-8 center">
+						<img srcset="img/moh/section-3@2x.jpg 2x" 
+							src="img/moh/section-3@1x.jpg" class="img-responsive center" alt="Screenshots showing discovered shoes, filter, and shoe details.">
+						<figcaption>
+							(screens from left) Discovered shoes, filtering, and shoe details
+						</figcaption>
+					</figure>	
+
+					<figure class="col-md-8 center">
+						<img srcset="img/moh/section-4@2x.jpg 2x" 
+							src="img/moh/section-4@1x.jpg" class="img-responsive center" alt="Screenshot showing shoe supplier website purchase.">
+						<figcaption>
+							(screens from left) Shoe supplier website (contained within app), and after purchase thank you
+						</figcaption>
+					</figure>									
+
+            	</div> <!-- end row --> 							
+
+			</div> <!-- end container -->
+
+		</section> <!-- end UI section --> 						
+
+
+
+
+
+	<!-- Outcome (section) module ___________________________________________________________________________________________________________________________ -->
+
+		<section class="section-break-module">
+
+			<div class="container">
+
+	    		<div class="row col-md-12 center center-text">
+	
+	        		<!-- Sub title -->
+	            	<div>
+	            		<p class="dark-text no-padding">Ending it together</p>
+	            	</div>
+
+
+	        		<!-- Title -->
+	            	<div>
+	            		<h1>Outcome</h1>
+	              	</div>
+
+	            </div> <!-- end row -->
+
+            </div> <!-- end container -->
+
+        </section> <!-- end Outcome (section) module --> 			
+
+
+
+<!-- Ending it together (the outcome) -->
+
+		<section class="generic-module">
+
+			<div class="container">			
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+
+
+					<div>	
+						<p>After working on the concept for about five months we began asking ourselves how we could make Maddie more personal to the user &mdash; almost like a fashion confidant. We felt this was our biggest differentiator and we wanted to expand upon it.</p>
+
+						<p>We started to explore turning Maddie into a conversational UI experience, even talking about doing away with the app concept and building a Facebook Messenger bot instead. We spent the next month working on how the user would interact with Maddie to discover shoes, the scripting of how the communication between the user and Maddie may work, and the many branching scenarios that this could throw up.</p>
+
+						<p>It was at this stage that we came to the realisation that the concept we originally had was starting to morph into something else. Understanding why this was made us aware that there were some products already doing what we wanted to do and they were way ahead of us. To continue moving forward with our concept would require much more commitment of time, effort, and money &mdash; which in the end we were not willing to commit.</p>
+
+						<p>So we ended the concept there and moved on with our lives.<span role="img" aria-label="Smiling face with halo"> 😇</span></p>
+					</div>
+
+
+					<div>
+						<h3>Closure...</h3>
+					</div>					
+
+					<div>
+						<p>I still thought there was value in continuing to build the core concept into the high-fidelity prototype that we had envisioned. Maybe I was too attached to the idea to let it go so quickly, but being able to see it through to the hi-fi prototype stage created a sense of accomplishment and a better ending then where we would have left it.<span role="img" aria-label="Nerd face"> 🤓</span></p>
+					</div>
+
+				</div> <!-- end row -->
+
+
+			</div> <!-- end container -->
+
+		</section> <!-- end Outcome -->
+
+
+
+
+
+<!-- Reflections (generic-grey module) _______________________________________________________________________________________________________________ -->
+
+		<section class="special-module">
+
+			<div class="container">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center no-padding-btm">
+
+					<div>
+						<h2 class="no-padding-top">Reflections</h2>
+						<div class="horizontal-line-small-pink"></div>
+					</div>
+
+					<div class="padding-btm">
+						<h5>Sometimes it’s all about timing</h5>
+						</br>
+						<p>If we had done this two years later we would have had a plethora of open-source image recognition APIs, machine learning tools, and AR tools at our disposal which could have made a lot of the technical obstacles we came up against a lot easier to circumnavigate. So why don’t we get together and give it a go now then? Well people move on with their lives, have babies, move away, and now sadly the right time is the wrong time for us.</p>
+					</div>
+
+
+					<div class="padding-btm">
+						<h5>Side projects with friends</h5>
+						</br>
+						<p>Working on any side project is a great way to get away from the usual serious work-related headspace and do something fun and exciting &mdash; doing it with friends makes it even more so. But slowly coming to the realisation that to continue the side project meant plowing a lot more time, effort, and money into it (and possibly losing the fun element) was probably one of the key factors to ending it. It went from a low-pressure, low-risk, labour of love to something that began to feel like a “job” &mdash; and that’s not why you’re doing it.</p>
+					</div>
+
+					<div class="padding-btm">
+						<h5>Solve the “little” problems</h5>
+						</br>
+						<p>Although we had uncovered some great insights in the research stage, such as shoe sizes not matching and shoe comfort, as we developed our MVP concept we pushed a lot of these problems aside for later. I feel that if we had really wanted to differentiate ourselves from others we could have dived much deeper into these problems — instead of focusing on the “happy path” concept. These problems affect a lot more shoppers online and so would have been more beneficial to a wider range of our users.</p>
+					</div>
+
+				</div> <!-- end row -->
+
+			</div> <!-- end container -->
+
+		</section> <!-- end Reflections --> 					 		
+
+
+
+
+
+<!-- Social media module __________________________________________________________________________________________________________________________________________ -->
+
+		<section class="social-media-module">
+			
+			<div class="social-media-grid container padding-btm">
+
+				<div class="row social-media-title col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h2 class="center-text">Find me on these</h2>
+					</div>
+
+				</div>
+
+
+				<!-- Social media platforms --------------------------------------------------- -->
+
+				<!-- LinkedIn icon -->
+				<div class="social-media-platform-1">
+					<a href="https://www.linkedin.com/in/dspagnolo/" target="_self" aria-label="LinkedIn profile">
+						
+						<svg xmlns="https://www.w3.org/2000/svg" width="80" height="80" viewBox="300 0 80 80">
+							<path class="social-icon linkedin-icon" d="M340 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zm-9.8 56.6h-8.1V30.5h8.1v26.1zm-4.1-29.3c-2.6 0-4.2-1.8-4.2-4.1s1.7-4 4.3-4 4.2 1.8 4.3 4c0 2.3-1.7 4.1-4.4 4.1zm33.7 29.3h-8.1V42.1c0-3.4-1.2-5.6-4.1-5.6-2.2 0-3.6 1.5-4.2 3-.2.5-.3 1.3-.3 2v15H335V38.8c0-3.3-.1-6-.2-8.3h7l.4 3.6h.2c1.1-1.7 3.7-4.2 8-4.2 5.3 0 9.3 3.6 9.3 11.2v15.5z"/>
+						</svg>
+
+						<h5 class="icon-label">LinkedIn</h5>
+
+					</a>
+				</div>
+
+
+				<!-- Twitter icon -->
+				<div class="social-media-platform-2">
+					<a href="https://twitter.com/daniel_spagnolo" target="_self" aria-label="Twitter profile">
+						
+						<svg xmlns="https://www.w3.org/2000/svg" width="80" height="80" viewBox="200 0 80 80">
+							<path class="social-icon twitter-icon" d="M240 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zm16.3 32.8v1c0 10.4-7.9 22.4-22.4 22.4-4.5 0-8.6-1.3-12.1-3.5.6.1 1.2.1 1.9.1 3.7 0 7.1-1.3 9.8-3.4-3.4-.1-6.4-2.3-7.4-5.5.5.1 1 .1 1.5.1.7 0 1.4-.1 2.1-.3-3.6-.7-6.3-3.9-6.3-7.7 1.1.6 2.3.9 3.6 1-2.1-1.4-3.5-3.8-3.5-6.6 0-1.4.4-2.8 1.1-4 3.9 4.8 9.7 7.9 16.2 8.2-.1-.6-.2-1.2-.2-1.8 0-4.3 3.5-7.9 7.9-7.9 2.3 0 4.3 1 5.8 2.5 1.8-.4 3.5-1 5-1.9-.6 1.8-1.8 3.4-3.5 4.4 1.6-.2 3.1-.6 4.5-1.2-1.2 1.6-2.5 3-4 4.1z"/>
+						</svg>
+
+						<h5 class="icon-label">Twitter</h5>
+
+					</a>
+				</div>
+
+
+				<!-- Medium icon -->
+				<div class="social-media-platform-3">
+					<a href="https://medium.com/@daniel_spagnolo" target="_self" aria-label="Medium articles">
+						
+						<svg xmlns="https://www.w3.org/2000/svg" x="0px" y="0px" width="80px" height="80px" viewBox="100 0 80 80">
+							<path class="social-icon medium-icon" d="M140 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zM125.3 30.8c0-.5-.1-.9-.5-1.2l-3.4-4.3v-.6h10.4l8.1 18.6 7.1-18.6h9.9v.6l-2.9 2.9c-.2.2-.4.5-.3.8v21.3c0 .3.1.6.3.8l3 2.9v.6h-14.1V54l2.9-3c.3-.3.3-.4.3-.8V33L138 54.6h-1.1L127.5 33v14.4c-.1.6.1 1.2.5 1.7l3.8 4.8v.6h-10.7V54l3.8-4.8c.4-.4.6-1.1.5-1.7V30.8z"/>
+						</svg>
+
+						<h5 class="icon-label">Medium</h5>
+
+					</a>
+				</div>
+									
+			</div> <!-- end container -->
+
+		</section> <!-- end Social media module -->  
+
+
+</main>	
+
+
+<!-- Footer module ________________________________________________________________________________________________________________________________________________ -->
+
+<footer>
+
+	<div class="center-text">
+		<a href="index.html#top-module" class="logo no-padding" aria-label="Return to top of page">
+			<!-- <a href="#"><img src="img/logo2016.gif" width="60px" height="85px" alt="Portfolio logo"></a> --> 
+
+			<!-- Logo svg -->
+	    	<svg class="logo-default" xmlns="https://www.w3.org/2000/svg" width="65" height="90" viewBox="90.1 -1.6 65 90">
+			  <path fill="#00A1FF" d="M105.1 68.8l19-2-9-30"/>
+			  <path fill="#008BDB" d="M123.1 38.9l1 27.9-9-29.9"/>
+			  <path fill="#00A1FF" d="M124.1 66.8l19-23-20-5M119.1 20.8l-2-13.9 11 15.9M91.1 31.9l21-4 5-21-25.9 25"/>
+			  <path fill="#4ABCFF" d="M127.1 12.9l-10-6 11 15.9M112.1 27.8l-7 41 10-31.9M117.1 6.9l2 13.9-7 7"/>
+			  <path fill="#EB3886" d="M154.1 38.6l-23-39.8 7 27-15 13.1 20 5"/>
+			  <path fill="#006FB0" d="M127.1 12.9l4-14.1-14 8.1"/>
+			  <path fill="#29AFFF" d="M131.1-1.2l-4 14 11 13"/>
+			  <g fill="#00A1FF">
+			    <path d="M128.1 22.8l2 10-3-19.9M138.1 25.8l-11-13 3 20"/>
+			  </g>
+			  <path fill="#006FB0" d="M91.1 31.9l11 54.9 10-58.9"/>
+			  <path fill="#FFF" d="M124.1 39.4l-9.5-2.6-2.5-9.4 6.9-7 9.5 2.6 2.5 9.4"/>
+			</svg>
+		</a>
+	</div>
+
+
+
+	<div class="row">
+		<nav>
+			<ul class="center-text clearfix">
+				<li class="alternative"><a href="index.html#work-module" aria-label="Back to Work">Work</a></li>
+				<li class="alternative"><a href="index.html#about-me-module" aria-label="Back to About me">About</a></li>
+			</ul>
+		</nav>
+	</div>
+
+		<div class="row col-md-12 center-text">
+			<small>Made with <span role="img" aria-label="Love" class="heart"></span> in London | &copy; whatever year this is</small>
+		</div>
+
+
+</footer> <!-- end Footer module --> 
+
+
+
+<!-- JS scripts/files (placed at end of file so pages will load faster) _____________________________________________________________________________________ -->
+
+		<!-- link to jquery library to get the nav shrinking to work below -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+			<script>
+			$(function(){
+			 var shrinkHeader = 150;
+			  $(window).scroll(function() {
+			    var scroll = getCurrentScroll();
+			      if ( scroll >= shrinkHeader ) {
+			           $('header').addClass('shrink'),
+			           $('header.logo-size').addClass('shrink'),
+			           $('header nav ul').addClass('shrink'),
+			           $('header nav ul li').addClass('shrink'),
+			           $('header nav li a').addClass('shrink'),
+			           $('header p').addClass('shrink'),
+			           $('header svg').addClass('shrink'),
+			           $('header a.logo').addClass('shrink'),
+			           $('header nav .alternative a:hover').addClass('shrink'),
+			           $('header nav').addClass('shrink'),
+			           $('header .logo-job-title').addClass('shrink');
+			        }
+			        else {
+			            $('header').removeClass('shrink'),
+			            $('header.logo-size').removeClass('shrink'),
+			            $('header nav ul').removeClass('shrink'),
+			            $('header nav ul li').removeClass('shrink'),
+			            $('header nav li a').removeClass('shrink'),
+			            $('header p').removeClass('shrink'),
+			            $('header svg').removeClass('shrink'),
+			            $('header a.logo').removeClass('shrink'),
+			            $('header nav .alternative a:hover').removeClass('shrink'),
+			            $('header nav').removeClass('shrink'),
+			            $('header .logo-job-title').removeClass('shrink');
+			        }
+			  });
+			function getCurrentScroll() {
+			    return window.pageYOffset || document.documentElement.scrollTop;
+			    }
+			});
+			</script>
+
+	<!-- Light/dark theme toggle (Guide I used for dark/light mode:- https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web) -->
+    	<script>
+	    	
+	    	// Select the button
+			const btn = document.querySelector(".button-toggle"); // The "button-toggle" class (on colour theme toggle/btn) will change the "body" colour theme when clicked
+			// Check for dark mode preference at the OS level
+			const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+			 
+			// Get the user's theme preference from local storage, if it's available
+			const currentTheme = localStorage.getItem("theme");
+			// If the user's preference in localStorage is dark...
+			if (currentTheme == "dark") {
+			  // ...let's toggle the .dark-theme class on the body
+			  document.body.classList.toggle("dark-theme");
+			// Otherwise, if the user's preference in localStorage is light...
+			} else if (currentTheme == "light") {
+			  // ...let's toggle the .light-theme class on the body
+			  document.body.classList.toggle("light-theme");
+			}
+			 
+			// Listen for a click on the button 
+			btn.addEventListener("click", function() {
+			  // If the user's OS setting is dark and matches our .dark-theme class...
+			  if (prefersDarkScheme.matches) {
+			    // ...then toggle the light theme class
+			    document.body.classList.toggle("light-theme");
+			    // ...but use .dark-theme if the .light-theme class is already on the body,
+			    var theme = document.body.classList.contains("light-theme") ? "light" : "dark";
+			  } else {
+			    // Otherwise, let's do the same thing, but for .dark-theme
+			    document.body.classList.toggle("dark-theme");
+			    var theme = document.body.classList.contains("dark-theme") ? "dark" : "light";
+			  }
+			  // Finally, let's save the current preference to localStorage to keep using it
+			  localStorage.setItem("theme", theme);
+			});
+
+    	</script>					
+
+
+
+</body>
+</html>

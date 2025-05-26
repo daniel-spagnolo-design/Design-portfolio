@@ -1,0 +1,2025 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="apple-mobile-web-app-capable" content="yes">
+    	<meta name="color-scheme" content="dark light">
+    	<meta name="description" content="Identity verification casestudy">
+    	<meta name="author" content="Daniel Spagnolo">
+		<title>Daniel Spagnolo / Identity verification casestudy</title>
+
+				<!--displays favicon in browser/mobile tabs. https://www.favicon-generator.org/-->
+		<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+
+		<!-- Bootstrap core CSS -->
+	    <link href="css/bootstrap-grid.css" rel="stylesheet"> 
+
+	    <!-- Styling CSS -->
+	    <link rel="preload stylesheet" type="text/css" href="css/styles-2022-mini.css">
+
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+	    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52715158-2"></script>
+		    <script>
+		      window.dataLayer = window.dataLayer || [];
+		      function gtag(){dataLayer.push(arguments);}
+		      gtag('js', new Date());
+
+		      gtag('config', 'UA-52715158-2');
+		    </script>
+
+
+	</head>
+
+	<body>	
+
+
+
+
+
+
+	<!-- Navigation module ___________________________________________________________________________________________________________________________ -->
+
+
+
+		<header>
+
+			<div class="header-grid center">
+
+			  	<div class="logo-job-title no-padding">
+			  		<a href="index.html#top-module" class="logo no-padding" aria-label="Home">
+			        	<!-- <a href="#"><img src="img/logo2016.gif" width="60px" height="85px" alt="Daniel Spagnolo's portfolio"></a> -->
+			        	
+			        	<!-- Logo svg -->
+			        	<svg class="logo-default" xmlns="https://www.w3.org/2000/svg" viewBox="90.1 -1.6 65 90">
+						  <path fill="#00A1FF" d="M105.1 68.8l19-2-9-30"/>
+						  <path fill="#008BDB" d="M123.1 38.9l1 27.9-9-29.9"/>
+						  <path fill="#00A1FF" d="M124.1 66.8l19-23-20-5M119.1 20.8l-2-13.9 11 15.9M91.1 31.9l21-4 5-21-25.9 25"/>
+						  <path fill="#4ABCFF" d="M127.1 12.9l-10-6 11 15.9M112.1 27.8l-7 41 10-31.9M117.1 6.9l2 13.9-7 7"/>
+						  <path fill="#EB3886" d="M154.1 38.6l-23-39.8 7 27-15 13.1 20 5"/>
+						  <path fill="#006FB0" d="M127.1 12.9l4-14.1-14 8.1"/>
+						  <path fill="#29AFFF" d="M131.1-1.2l-4 14 11 13"/>
+						  <g fill="#00A1FF">
+						    <path d="M128.1 22.8l2 10-3-19.9M138.1 25.8l-11-13 3 20"/>
+						  </g>
+						  <path fill="#006FB0" d="M91.1 31.9l11 54.9 10-58.9"/>
+						  <path fill="#FFF" d="M124.1 39.4l-9.5-2.6-2.5-9.4 6.9-7 9.5 2.6 2.5 9.4"/>
+						</svg>
+
+			        </a> <!-- end logo -->
+
+			        <div>
+			        	<p class="name">Daniel Spagnolo <span class="muted job-title">(He/Him) | Product Designer</span></p>
+			        </div> <!-- end by-line -->
+
+			  	</div> <!-- end logo-job-title -->
+
+
+				
+			  	<!-- <div class="nav_theme-switch"> -->
+
+			  		<nav class="clearfix center-text no-padding">  
+			        	<ul>
+			            	<li class="alternative"><a href="index.html#work-module" aria-label="Work">Work</a></li>
+			            	<li class="alternative"><a href="index.html#about-me-module" aria-label="About me">About</a></li>
+			          	</ul>
+			      	</nav>
+
+			      	<!-- Added a fieldset, ARIA roles, and heading (can be outer or within a legend if you prefer. Thanks to Steve Faulkner and Heydon Pickering https://twitter.com/stevefaulkner/status/1021327778334019585 & https://twitter.com/heydonworks/status/1021329851066830848 -->
+
+					<fieldset aria-label="theme switcher" role="radiogroup">
+
+						<div class="button-toggle">
+
+							<span class="button-toggle-container">
+								
+								<input type="radio" name="theme" id="light" checked="">
+								<input type="radio" name="theme" id="dark">
+
+									<span aria-hidden="true" class="button-toggle__background"></span> <!-- end button-toggle__background -->
+										
+										<span>
+										<!-- sun icon -->
+											<svg class="icon-sun" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+										        <g transform="translate(-1327.000000, -53.000000)">
+									            <g transform="translate(1316.000000, 42.000000)">
+								                <g transform="translate(11.000000, 11.000000)">
+							                    <circle cx="11" cy="11" r="4"></circle> <!-- orb -->
+							                    <g> <!-- rays -->
+							                        <rect x="10" y="0" width="1" height="4" rx="0.5"></rect>
+							                        <rect x="0" y="10" width="4" height="1" rx="0.5"></rect>
+							                        <rect transform="translate(5.000000, 4.500000) rotate(-315.000000) translate(-5.000000, -4.500000) " x="3" y="4" width="4" height="1" rx="0.5"></rect>
+							                        <rect x="18" y="10" width="4" height="1" rx="0.5"></rect>
+							                        <rect transform="translate(17.000000, 4.500000) rotate(-45.000000) translate(-17.000000, -4.500000) " x="15" y="4" width="4" height="1" rx="0.5"></rect>
+							                        <rect transform="translate(10.500000, 20.000000) scale(1, -1) translate(-10.500000, -20.000000) " x="10" y="18" width="1" height="4" rx="0.5"></rect>
+							                        <rect transform="translate(5.000000, 16.500000) scale(1, -1) rotate(-315.000000) translate(-5.000000, -16.500000) " x="3" y="16" width="4" height="1" rx="0.5"></rect>
+							                        <rect transform="translate(17.000000, 16.500000) scale(1, -1) rotate(-45.000000) translate(-17.000000, -16.500000) " x="15" y="16" width="4" height="1" rx="0.5"></rect>
+							                    </g>
+								                </g>
+									            </g>
+										        </g>
+											</svg>
+
+											<!-- moon icon -->
+											<svg class="icon-moon" viewBox="0 0 17 18" xmlns="http://www.w3.org/2000/svg">
+										        <g transform="translate(-1370.000000, -55.000000)">
+									            <g transform="translate(1316.000000, 42.000000)">
+								                <g transform="translate(54.000000, 13.000000)"> 
+								                    <path d="M5.625,4.5 C5.625,9.47056275 9.65443725,13.5 14.625,13.5 C15.434709,13.5 16.2194437,13.3930721 16.9658537,13.1925665 C15.4583806,16.0511593 12.4567783,18 9,18 C4.02943725,18 0,13.9705627 0,9 C0,4.83950856 2.82307582,1.3383818 6.65814446,0.307702722 C5.99834193,1.56121389 5.625,2.9870076 5.625,4.5 Z"></path>
+								                </g>
+									            </g>
+										        </g>
+											    </g>
+											</svg>
+
+										</span>
+									
+										<span aria-hidden="true" class="button-toggle__switcher"></span> <!-- end button-toggle-switcher -->
+							
+							</span> <!-- end button-toggle-container -->
+
+						</div> <!-- end button-toggle -->
+
+					</fieldset>		
+
+			  	
+				<!-- </div>  end nav_theme-switch -->
+
+			</div> <!-- end header container -->
+
+		</header>
+
+
+
+<main>
+
+
+	<!-- Hero module ___________________________________________________________________________________________________________________________ -->
+
+
+		<section class="hero-module hero-margin-top">
+
+				<div class="container">
+
+					<div class="row">
+					
+			        	<!-- Sub title -->
+			            	<div class="col-md-6 center-text center">
+			            		<span class="header-caption">Streamlining user focus</span>
+			            	</div>
+
+
+			        	<!-- Title -->
+			            	<div class="col-md-8 center-text center">
+			            		<h1>Identity <br>verification</h1>
+			              	</div>
+
+
+			        	<!-- large horizontal line -->
+			            	<div class="horizontal-line-large center">
+			            	</div>
+
+
+			        	<!-- Reading time -->
+			            	<div class="center-text">
+			            		<p class="no-padding-btm">Read time: 12 minutes</p>
+			            	</div>
+		            
+		            </div> <!-- end row -->   
+
+	          	</div> <!-- end container -->
+
+
+	          	<!-- Angled top | found at https://css-tricks.com/creating-non-rectangular-headers/-->
+	          	<svg class="angle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+					<polygon points="0,0 140,0 0,100"/>
+				</svg>
+
+
+
+				<!-- Hero image-->
+		        	<div class="row col-xs-12 col-sm-12 col-md-10 col-lg-8 center">
+		            	<figure aria-hidden="true">
+		              		<img srcset="img/verification/verification-hero@2x.png 2x"
+		              			src="img/verification/verification-hero@1x.png" class="img-responsive center" alt="">
+		            	</figure>
+		          	</div>
+				
+
+    	</section> <!-- end Hero module -->
+
+
+
+	<!-- Details module ___________________________________________________________________________________________________________________________ -->
+
+		<section class="details-module clearfix">
+
+			<div class="container no-padding-top">
+				
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+	        		<!-- company, role, timeframe, skills -->
+	            	<div class="col-md-12">
+	            			<h5>Company:</h5>
+	            			<p><a class="link" href="https://onfido.com/" target="_self" aria-label="Onfido website">Onfido</a> &mdash; London</p>
+	            		</div>
+	            	<div class="col-md-12">
+	            			<h5>My role:</h5>
+	            			<p>Product Designer</p>
+	        			</div>
+	            	<div class="col-md-12">
+	            			<h5>Timeframe:</h5>
+	            			<p>Three months</p>
+	        			</div>
+	            	<div class="col-md-12">
+	        				<h5>Skills:</h5>
+	        				<p>Research analysis, UX/UI design, workshopping, usability testing</p>
+	        			</div>
+
+	        		<!-- skills 
+	            	<div class="col-md-4">
+	            		<div>
+	            			<h5 class="skills">Skills</h5>
+	            			<p class="col-md-6 col-md-push-6 no-padding">Research, workshopping, usability testing, prototyping, A/B testing, UI design</p>
+	            		</div>
+	            	</div> -->
+
+	        	</div> <!-- end row -->
+
+            </div>   <!-- end container -->
+
+    	</section> <!-- end Details module -->
+
+
+
+	<!-- Problem module ___________________________________________________________________________________________________________________________ -->
+
+		<section class="special-module">
+
+			<div class="container">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h2>The problem</h2>
+							<div class="horizontal-line-small">
+							</div>
+					</div>
+
+					<div>
+						<p class="no-padding-btm">Onfido's applicant form requires users to upload documents to verify their identity. For applicants this is a high friction point and  was leading to around 25% of users dropping out. This needed to be reduced so we could:</p>
+						<ol>
+							<li>Keep current clients happy with our product</li>
+							<li>Prove to potential clients that we could onboard their new customers easier</li>
+						</ol>
+					</div>
+
+					<!-- <div>
+						<p>Users of Onfido’s applicant form were unaware of identity documentation requirements that would allow them to be verified successfully on the first attempt. This meant applications needed to be “re-opened” (with users having to re-upload documentation again) if these requirements were not met, which slowed down the time it took clients to receive verification results.</p>
+					</div> -->
+
+				</div> <!-- end row -->
+
+			</div> <!-- end container -->
+
+		</section> <!-- end Problem module -->
+
+
+	<!-- Solution module ___________________________________________________________________________________________________________________________ -->
+
+		<section class="solution-module">
+
+			<div class="container no-padding-btm">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h4 aria-label="Too long, didn't read">TL;DR</h4>
+					</div>
+
+					<div>
+						<h2>The solution</h2>
+							<div class="horizontal-line-small"></div>
+					</div>
+
+					<div>
+						<p class="no-padding-btm">We made what is a complex and regulation heavy process into an easy to understand and helpful approach for users. We were able to reduce drop-off rates and show the value  of well thought out design to the business by:</p>
+						<ul>
+							<li>Providing important information upfront to help applicant choices</li>
+							<li>Only showing to applicants what they needed to know when needed</li>
+							<li>Rethinking the underlying system logic to be more user-focused</li>
+							<li>Designing with a mobile-first mindset</li>
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+
+		</section> <!-- end Solution module -->
+
+
+
+
+	<!-- Quote module  __________________________________________________________________________________________________________________________________-->
+
+		<section class="quote-module">
+
+			<div class="container no-padding-btm">
+
+				<div class="row">
+	            	<div class="horizontal-line-small center"></div>
+            	</div>
+
+
+
+				<div class="row col-xs-10 col-sm-10 col-md-7 col-lg-6 center">		
+						<div>
+				    		<blockquote class="center-text">“This is perfect. The design team has done a beautiful job on this UX! I can see why you have such high completion rates.”</blockquote>
+				    		<figcaption>Bob Summers | Product manager @ Google</figcaption>
+				    	</div> 
+		    	</div>
+
+			    	<div class="row">
+		            	<div class="horizontal-line-small center"></div>
+            		</div>
+
+
+			</div> <!-- end container -->
+
+		</section> <!-- end Quote module --> 
+
+
+
+	<!-- Casestudy begins ___________________________________________________________________________________________________________________________ -->
+		
+		<section class="padding-btm">
+			
+			<div class="container padding-btm">
+
+
+				<div class="row col-xs-10 col-sm-10 col-md-7 col-lg-6 center">		
+						
+					<div>
+			    		<h6 class="center-text">Read the in-depth casestudy below<span class="no-italic" role="img" aria-label="nerd face"> 🤓</span></h6>
+			    	</div> 
+
+		    	</div> <!-- end row -->
+
+		    	<div class="row padding-btm">	
+
+					<figure aria-hidden="true" class="center-text arrow-bubble">
+	              		<!-- <img src="img/arrow-down-bubble.svg" alt=""> -->
+
+	              		<svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+        				<circle cx="24" cy="24" r="24"/>
+	        				<g class="inner-arrow" transform="matrix(0 1 -1 0 35 12)">
+								<g transform="matrix(-.69465837 -.7193398 .7193398 -.69465837 11.116257 22.62397)">
+	        						<rect height="4" rx="2" width="16" y="12"/>
+	        						<rect height="16" rx="2" width="4"/>
+	    						</g><path d="m0 11c0-1.1045695.89821238-2 1.99079514-2h16.01840976c1.0994858 0 1.9907951.88772964 1.9907951 2 0 1.1045695-.8982124 2-1.9907951 2h-16.01840976c-1.0994858 0-1.99079514-.8877296-1.99079514-2z"/></g>
+	        				</g>
+	            	</svg>
+
+	            	</figure>
+
+        		</div> <!-- end image row -->
+
+			    					
+			</div> <!-- end container -->
+
+		</section> <!-- end section -->					
+
+
+
+	<!-- Section break module ___________________________________________________________________________________________________________________________ -->
+
+		<section class="section-break-module">
+
+				<div class="container">
+
+		    		<div class="row col-md-12 center-text">
+					
+			        	<!-- Sub title -->
+			            	<div>
+			            		<p class="no-padding dark-text">A little context</p>
+			            	</div>
+
+
+			        	<!-- Title -->
+			            	<div>
+			            		<h1>Background</h1>
+			              	</div>
+
+		            </div> <!-- end row -->
+
+	            </div> <!-- end container -->
+
+            </section> <!-- end Section break module -->
+
+
+
+	<!-- Background (Generic module) ___________________________________________________________________________________________________________________________ -->
+
+		<section class="generic-module">
+
+			<div class="container no-padding-btm">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+
+					<div>
+						<h2>Who are we?</h2>
+							<div class="horizontal-line-small"></div>
+					</div>
+
+					<div>
+						<p>Onfido is an online identity verification platform that verifies people are who they say they are using physical sources (such as passports, driver's licenses, and utility bills) and biometric data (such as facial similarity and liveness detection). With sharing economy clients such as Uber and Deliveroo, household names such as Tesco, and fintechs like Monzo and Revolut using our service it’s of utmost importance that we continued to improve the onboarding speed of trusted people onto their platforms and weed out the fraudsters.</p>
+					</div>
+
+				</div> <!-- end row -->
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h2>The applicant form</h2>
+							<div class="horizontal-line-small"></div>
+					</div>					
+
+					<div>
+						<p class="no-padding-btm">As part of the applicant form team (where users can supply details and upload their identity documentation), our main quarterly goal was to make it easier for applicants to provide us with the correct documents (with good image quality) on their first attempt. From our data we could see that the document upload step in the form had a drop-off rate of ~25% (slightly larger on mobile) so improving this part of the form would provide the most value to both applicants and the business. To measure the success of this project we set ourselves the following success metrics:</p>
+
+						<ol>
+							<li>Decrease document step drop off rate by 10%</li>
+							<li>Decrease application re-open rate (due to incorrect documents being provided) by 10%</li>
+						</ol>
+					</div>
+
+				</div> <!-- end row -->
+
+				<div class="row col-md-8 center">	
+
+					<figure>
+	              		<img srcset="img/verification/app-form-doc-step@2x.png 2x"
+	              		src="img/verification/app-form-doc-step@1x.png" class="img-responsive center" alt="The applicant form consisted of 5 steps: Personal details, Address history, Education and employment, Document upload, and Confirmation.">
+	              		<figcaption>
+	              			We knew that improving the document upload step would provide the most value.
+	              		</figcaption>
+	            	</figure>
+
+            	</div> <!-- end image row -->
+
+			</div> <!-- end conatiner -->
+
+		</section> <!-- end Choice of two -->  		
+
+
+
+
+	<!-- Existing system (Generic module) ___________________________________________________________________________________________________________________________ -->
+
+		<section class="generic-module">
+
+			<div class="container">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h2>The existing document upload step</h2>
+							<div class="horizontal-line-small"></div>
+					</div>
+
+					<div>
+						<p>The document upload flow had been designed around three years ago when Onfido had first started, so even though there had been minor iterations made on it since, it was still using the underlying logic of this first designed system still. The existing system would advise the applicant to upload one document at the start then they would have to keep uploading documents until they had provided enough documentation to complete the check(s) – which lead to a frustrating experience for many.</p>
+					</div>
+
+				</div>
+
+				<div class="row col-md-12 center">
+
+					<figure>
+
+	              		<img srcset="img/verification/old-screen-flow@2x.png 2x" 
+	              			src="img/verification/old-screen-flow@1x.png" class="img-responsive center" alt="">
+	              		<figcaption>
+	              			The applicant would have to: (1) choose a document to download, (2) fill in document details and upload, (3) and if they needed to upload another document they would then see another dropdown selection box. This whole flow left the applicant with constant unanswered questions and surprises.
+	              		</figcaption>
+
+	            	</figure>
+
+            	</div> <!-- end image row -->
+
+			</div> <!-- end row -->
+
+		</section> <!-- end Existing system -->  
+
+
+
+	<!-- Section break module ___________________________________________________________________________________________________________________________ -->
+
+		<section class="section-break-module">
+
+				<div class="container">
+
+		    		<div class="row col-md-12 center-text">
+
+					
+		        		<!-- Sub title -->
+		            	<div>
+		            		<p class="no-padding dark-text">The beginning</p>
+		            	</div>
+
+
+			        	<!-- Title -->
+			            	<div>
+			            		<h1>Discovery</h1>
+			              	</div>
+
+		            </div> <!-- end row -->
+
+	            </div> <!-- end container -->
+
+            </section> <!-- end Section break module -->
+
+
+
+
+	<!-- Who am I designing for? ___________________________________________________________________________________________________________________________ -->
+
+		<section class="generic-module">
+
+			<div class="container no-padding-btm">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h2>Who am I designing for?</h2>
+							<div class="horizontal-line-small"></div>
+					</div>
+
+					<div>
+						<p>As only the second product designer brought into the business my first priority was learn as much as I could about the online identity verification space – who are our users and clients, who are the competitors, what is the company's goals and vision, what are the regulatory constraints we have to work with, and how does this product integrate with other Onfido products?</p>
+					</div>
+
+					<div>
+						<p>In a fast moving start-up environment it’s sometimes just not possible to get a good amount of time for user research and validation, so I undertook a quick discovery phase to find out about users.</p>
+					</div>
+
+					<div>
+						<p>I broke the discovery phase into the following steps:</p>
+						<ol>
+							<li>Go through and analyse prior research </li>
+							<li>Create a primary proto-persona based on internal research and knowledge</li>
+							<li>Complete a task analysis of the applicant uploading documents</li>
+							<li>Organising a sketching workshop to generate ideas</li>
+							<li>Create design principles to guide the project</li>
+						</ol>
+					</div>
+
+				</div> <!-- end row -->
+
+			</div> <!-- end container -->
+
+		</section> <!-- end Who am I designing for? -->
+
+
+
+
+	<!-- Understanding applicants ___________________________________________________________________________________________________________________________ -->
+
+		<section class="generic-module">
+
+			<div class="container no-padding-btm">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h2>Understanding applicants</h2>
+							<div class="horizontal-line-small"></div>
+					</div>
+
+					<div>
+						<p>Using a combination of desk research, who our applicant form clients were and who were their users, and speaking to internal stakeholders it became clear that most applicants were applying for jobs in the on-demand service economy eg. ride-sharing drivers, food delivery riders, cleaners, handymen, etc. These applicants could be UK migrants applying for their first job, people looking to supplement their income with a second job, or full time gig economy workers. With these insights we put together our primary proto-persona called Marco &mdash; a recent migrant to the UK from Italy, with basic English skills, currently using his old iPhone to access the web, and looking for part-time work as a stop-gap measure until he can get a full-time job. We did have two other personas, but I didn't have the time to flesh these out with more research — though I made sure to keep them in mind when designing.</p>
+					</div>
+
+				</div>
+
+
+				<div class="row col-md-8 center">	
+					<figure aria-hidden="true">
+	              		<img srcset="img/verification/persona-marco@2x.jpg 2x" 
+	              		src="img/verification/persona-marco@1x.jpg" class="img-responsive center" alt="Our primary persona — Marco the stop-gapper. Doing part-time work as a stop-gap measure while looking for a full-time job.">
+	              		<figcaption>
+	              			Marco our "stop-gapper" target persona.
+	              		</figcaption>
+	            	</figure>
+            	</div>
+
+
+			</div> <!-- end container --> 
+
+		</section> <!-- end understanding applicants --> 
+
+
+
+	<!-- Task analysis (Generic module) ___________________________________________________________________________________________________________________________ -->
+
+		<section class="generic-module">
+
+			<div class="container no-padding-btm">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h2>Task analysis</h2>
+							<div class="horizontal-line-small"></div>
+					</div>
+
+					<div>
+						<p>To gain a better understanding of the problem and how Marco could approach the document upload step I ran a task analysis. Breaking the analysis into before, during, and after uploading documents helped me to gain an understanding of the questions, concerns, and environment that could affect Marco’s journey through this part of the form.</p>
+					</div>
+
+				</div>
+
+				<div class="row col-md-12 center padding-btm">	
+					<figure aria-hidden="true">
+	              		<img srcset="img/verification/task-analysis@2x.gif 2x" 
+	              		src="img/verification/task-analysis@1x.gif" class="img-responsive center" alt="Tasks that the user will do mapped out">
+	              		<figcaption>
+	              			Task analysis &mdash; Marco still has a lot of unanswered questions and concerns.
+	              		</figcaption>
+	            	</figure>
+            	</div>
+
+            	<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<p>Grouping these questions and concerns into three document upload phases (before, during, and after) it was clear that the existing document upload step didn't answer most of these concerns. Reviewing the analysis with the team allowed them to see where we were letting applicants down and enabled us to a better discussion about which user painpoints to prioritise for this project.</p>
+					</div>
+
+						<h3>Painpoint prioritisation</h3>
+
+						<div class="padding-btm">
+							<h5 class="inline-block">BEFORE document upload</h5>
+							<ul>
+								<li>"What documents do I need to provide?”</li>
+								<li>“Are the documents I have going to pass my check?”</li>
+								<li>“How many documents will I need to upload?”</li>
+								<li>“What if I don’t have all of the documents right now?”</li>
+							</ul>					
+					</div>
+
+					<div class="padding-btm">
+						<h5 class="inline-block">DURING document upload</h5>
+						<ul>
+							<li>“What information is required to be seen on this document picture?”</li>
+							<li>“Is all the document information needed included in my photo?”</li>
+						</ul>					
+					</div>
+
+					<div>
+						<h5 class="inline-block">AFTER document upload</h5>
+						<ul>
+							<li>“What if I need to come back later to complete this step?”</li>
+						</ul>					
+					</div>
+
+				</div>
+
+			</div>
+
+
+		</section> <!-- end Task analysis -->  			    	
+
+
+	<!-- Sketching and collaboration ___________________________________________________________________________________________________________________________ -->
+
+		<section class="generic-module">
+
+			<div class="container no-padding-btm">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center"> 
+					<div>
+						<h2>Sketching and collaboration</h2>
+							<div class="horizontal-line-small"></div>
+					</div>
+
+					<div>
+						<p>I’ve always found doing a sketching workshop using the design studio method a great way to get stakeholders ideas out in the open and for them to really engage with the project – and as this was my first project I really wanted to get some different internal perspectives on the problem.</p>
+					</div>
+
+				</div> <!-- end row --> 
+
+
+				<div class="row col-md-12 center">
+
+					<figure class="col-md-12">
+	              		<img srcset="img/verification/sketching-session@2x.jpg 2x" 
+	              		src="img/verification/sketching-session@1x.jpg" class="img-responsive center" alt="People sitting around a table busily sketching.">
+	              		<figcaption>
+	              			Various stakeholders drawing squares and boxes (and also collaboration!).
+	              		</figcaption>
+	            	</figure>
+
+            	</div> <!-- end row --> 
+
+        	</div> <!-- end container -->
+
+
+
+        	<div class="container no-padding-top">
+
+        		<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center"> 
+					
+					<div>
+						<h3>Workshop ideas:</h3>
+						<ul>
+							<li>Documents like passports and driver's license are easier to process so we should be pushing applicants to provide those first</li>
+							<li>Use of OCR technology to extract data from a supplied document</li>
+							<li>A chatbot-like experience to guide the applicant</li>
+							<li>If applicants don’t have the correct documents then offer them advice on how to obtain them</li>
+						</ul>
+					</div>
+				
+				</div> <!-- end row --> 
+
+			</div> <!-- end container --> 
+
+
+		</section> <!-- end Sketching and collaboration --> 
+
+
+
+	<!-- Section break module Alternative ___________________________________________________________________________________________________________________________ -->
+
+        <section class="section-break-module-alternative">
+
+			<div class="container">
+
+	    		<div class="row col-md-6 center center-text">
+
+				
+	        		<!-- Sub title -->
+	            	<div>
+	            		<p class="no-padding dark-text">Guiding design decisions</p>
+	            	</div>
+
+
+		        	<!-- Title -->
+		            	<div>
+		            		<h1>Principles</h1>
+		              	</div>
+
+	            </div> <!-- end row -->
+
+            </div> <!-- end container --> 
+
+        </section> <!-- end Section break module alternative -->
+
+
+	<!-- Design principles ___________________________________________________________________________________________________________________________ -->
+
+		<section class="generic-module">
+
+			<div class="container">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-top"> 
+
+					<div>
+						<p>After completing this upfront research work it was time to distill everything we had learned into a set of four principles which would become the foundation on which to guide our design decisions.</p>
+
+							<h3>1. Better options now</h3>
+							<div class="horizontal-line-small-pink-no-margin-top"></div>
+							<p>Use information already provided by the applicant to surface better options at the right moment.</p>
+
+							<h3>2. Don’t overwhelm</h3>
+							<div class="horizontal-line-small-pink-no-margin-top"></div>
+							<p>Limit options and choice until the user wants to see more. Don't let them see behind the "regulatory curtain".</p>
+
+							<h3>3. We’re the experts</h3>
+							<div class="horizontal-line-small-pink-no-margin-top"></div>
+							<p>Surface important document requirements first to help users with decision making.</p>
+
+							<h3>4. Words matter</h3>
+							<div class="horizontal-line-small-pink-no-margin-top"></div>
+							<p>Turn regulatory language into plain language so even non-native English speakers can understand.</p>
+					</div>
+
+				</div> <!-- end row -->
+
+			</div> <!-- end container -->
+
+
+		</section> <!-- end Design principles -->
+
+
+
+	<!-- Section break module ___________________________________________________________________________________________________________________________ -->
+
+		<section class="section-break-module">
+
+				<div class="container">
+
+		    		<div class="row col-md-12 center-text">
+
+		        		<!-- Sub title -->
+		            	<div>
+		            		<p class="no- dark-text">Reducing complexity</p>
+		            	</div>
+
+
+			        	<!-- Title -->
+		            	<div>
+		            		<h1>The challenge</h1>
+		              	</div>
+
+		            </div> <!-- end row -->
+
+	            </div> <!-- end container -->
+
+            </section> <!-- end Section break module -->		
+
+
+	<!-- The challenge ___________________________________________________________________________________________________________________________ -->
+
+		<section class="generic-module">
+
+			<div class="container">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-top padding-btm">
+
+					<div>
+						<p>Onfido offers various identity checks to companies, who then pick and choose which of these checks they wanted to run on applicants. Each of these individual checks have their own regulatory rules to follow (eg. what documents are allowed), but once checks are combined with other checks then these rules start to overlap and the complexity headache begins.</p>
+
+						<p class="no-padding-btm">Some of the things we needed to think about when combining different checks were:</p>
+						<ul>
+							<li>Which check takes a higher priority over other checks?</li>
+							<li>What happens if a document supplied covers other check requirements?</li>
+							<li>Is an additional document now needed to complete regulation requirements?</li>
+							<li>How do we handle checks that have document overlaps with other checks?</li>
+							<li>How do we show the smallest amount of document options to the user that they need?</li>
+							<li>How do we make our solution scalable and easy to maintain for future regulation changes?</li>
+						</ul>
+						
+						<p>The major challenge in this project was to not expose these underlying complexities and regulatory constraints to the user. All of this behind the scenes logic had to be streamlined in the backend so only what the user needed to know was shown to them in the interface.</p>
+					</div>
+
+				</div> <!-- end row -->
+
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h2>The source of truth</h2>
+						<div class="horizontal-line-small"></div>
+					</div>
+
+					<div>
+						<p>SeeWah (product manager) and myself put together a spreadsheet of all of these checks and mapped out the requirements for each. This became our “source of truth” and being able to visualise check requirements and how they overlapped really helped the development team come up with a new and better document-check logic schema. This schema was then refined as we continued the design phase.</p>
+					</div>
+
+				</div> <!-- end row --> 
+
+				<div class="row col-md-8 center">
+
+					<figure aria-hidden="true">
+						<img srcset="img/verification/requirement-spreadsheet@2x.png 2x" 
+						src="img/verification/requirement-spreadsheet@1x.png" class="img-responsive center" alt="Just a part of the document logic source of all truth spreadsheet">
+						<figcaption>Just a part of the document logic "source of all truth" spreadsheet.</figcaption>
+					</figure>
+
+            	</div> <!-- end row --> 					
+
+			</div> <!-- end container -->
+
+		</section> <!-- end The challenge --> 
+
+
+	<!-- Section break module ___________________________________________________________________________________________________________________________ -->
+
+		<section class="section-break-module">
+
+
+				<div class="container">
+
+		    		<div class="row col-md-6 center center-text">
+
+					
+		        		<!-- Sub title -->
+		            	<div>
+		            		<p class="no-padding dark-text">Bringing it to life</p>
+		            	</div>
+
+
+			        	<!-- Title -->
+		            	<div>
+		            		<h1>Ideation</h1>
+		              	</div>
+
+		            </div> <!-- end row -->
+
+	            </div> <!-- end container -->
+
+            </section> <!-- end Section break module -->
+
+
+	<!-- What documents do I need? (generic module) ________________________________________________________________________________________________________________ -->
+
+		<section class="generic-module">
+
+			<div class="container no-padding-btm">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h2 class="no-padding-top">"What documents do I need?"</h2>
+						<div class="horizontal-line-small"></div>
+					</div>
+
+					<div>
+						<p>Applicants needed an idea of what documents they needed to upload rather than just keep uploading documents until the system didn’t ask for another. The existing document step could be described as a confusing and mysterious black box which provided no real feedback to the user that they had supplied the right documents – this needed to change.</p>
+
+						<p>My initial sketches took inspiration from online taxation software which were also tackling similar problems. I looked at highly acclaimed online products such as TurboTax and SimpleTax and found how they asked simple questions of the user upfront and then surfaced only the documentation users needed based on these answers.</p>
+					</div>
+
+            	</div> <!-- end row --> 
+
+
+
+				<div class="row col-md-12 center">
+
+					<figure>
+						<img srcset="img/verification/sketch-idea-01-alt@2x.png 2x" 
+							src="img/verification/sketch-idea-01-alt@1x.png" class="img-responsive center" alt="">
+						<figcaption class="padding-btm">
+							An early exploration letting applicants choose any documents they have first and a star rating showing when enough documents have been chosen to meet the verification check.
+						</figcaption>
+					</figure>
+
+					<figure>
+						<img srcset="img/verification/sketch-idea-02@2x.png 2x" 
+							src="img/verification/sketch-idea-02@1x.png" class="img-responsive center" alt="">
+						<figcaption>
+							Exploration shown to the team (based on online tax forms) where applicants were given a question and answer format which built a customised document upload step.
+						</figcaption>
+					</figure>
+
+            	</div> <!-- end row --> 
+
+        	</div> <!-- End container -->
+
+
+        	<div class="container">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">	
+
+					<div>	
+						<p class="no-padding-btm">Bringing the team and other designers together for a design critique session of this first iteration proved invaluable. After presenting and discussing these first sketches we all agreed the question and answer format could be replaced with user data already known using:</p>
+
+						<ul>
+							<li>Information supplied by the user in previous steps of the applicant form</li>
+							<li>Our own data showing popular documents used for particular checks</li>
+						</ul>
+
+						<p>Seeing how this idea was reshaped with the help of others was a great reminder that presenting work early is the best way to remove your own biases and bring in different perspectives to help a design become better.</p>
+					</div>
+
+            	</div> <!-- end row --> 
+
+
+
+
+				<div class="row col-md-12 center">
+
+					<figure>
+						<img srcset="img/verification/design-critique-workshop@2x.jpg 2x" 
+							src="img/verification/design-critique-workshop@1x.jpg" class="img-responsive center" alt="People sitting in a meeting room and looking at sketches on a whiteboard.">
+						<figcaption class="padding-btm">
+							The team in the design critique session — looking very impressed with my early exploration.
+						</figcaption>
+					</figure>
+
+            	</div> <!-- end row --> 
+
+
+
+
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">	
+
+					<div>
+						<p>I applied these critique session changes into my next round of sketching – removing the question flow and starting the user on the document overview screen which was now customised with the documents the applicant most likely had based on our data and applciant information supplied on the form.</p>
+					</div>
+
+				</div> <!-- end row --> 
+
+
+				<div class="row col-md-12 center">
+
+					<figure aria-hidden="true">
+						<img src="img/verification/sketches-document-upload.jpg" class="img-responsive center" alt="Sketches of the new direction following the critique session.">
+						<figcaption>
+							New direction sketches after the critique session.
+						</figcaption>
+					</figure>
+
+            	</div> <!-- end row --> 
+
+
+        	</div> <!-- end container -->
+
+
+
+
+        	<div class="container grey-module full-width">
+
+				<div class="row center no-padding">
+
+					<figure>
+						<img srcset="img/verification/document-upload-flow-wireframes@2x.png 2x" 
+							src="img/verification/document-upload-flow-wireframes@1x.png" class="img-responsive center" alt="First mobile wireframes of the document upload">
+						<figcaption>
+							Initial mobile wireframes showing the document upload flow.
+						</figcaption>
+					</figure>
+
+					<figure>
+						<img srcset="img/verification/document-upload-flow-hifi@2x.png 2x" 
+							src="img/verification/document-upload-flow-hifi@1x.png" class="img-responsive center" alt="Final UI showing document upload flow on mobile">
+						<figcaption>
+							Final UI for the document upload flow on mobile.
+						</figcaption>		
+					</figure>					
+
+            	</div> <!-- end row --> 
+
+        	</div> <!-- end container --> 
+
+
+
+			<div class="container">
+
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h2 class="no-padding-top">Support documentation</h2>
+						<div class="horizontal-line-small"></div>
+					</div>
+
+					<div>
+						<p>Due to regulation some documents types (like birth certificate) required supporting documentation to reach a level of identification accuracy. In the existing form when a user chose a primary document (that required support documentation) these support documents were added to the next list of document options – without the user being aware that these new list additions were related to their <span class="italic">primary</span> previous document selection!</p>
+
+						<p>We made this whole <span class="italic">primary plus support document</span> process into an easy to follow flow that showed upfront when support documentation would be needed. This allowed the user to see exactly how their primary document selection could lead to more documents to upload — no nasty surprises or confusion. After doing some quick user testing of two flows we chose to go with the flow that best supported users mental model of choosing and uploading a primary plus support document.</p>
+					</div>
+
+				</div> <!-- End row -->
+
+
+
+				<div class="row col-md-12 center">
+
+					<figure>
+						<img srcset="img/verification/support-upload-flows@2x.gif 2x" 
+						src="img/verification/support-upload-flows@1x.gif" class="img-responsive center" alt="The support upload flow of choose primary document, choose support document, upload primary document, and the upload support document was the flow that matched users mental models.">
+						<figcaption>
+							We user tested flows 1 and 2 to find the best mental model match. Flow 3 was based on our existing backend logic.
+						</figcaption>
+					</figure>
+
+            	</div> <!-- end row --> 
+
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h3>Support document understanding</h3>
+						<p>A problem that we had here was how to show to the applicant that a primary document needed supporting documentation and how to show this secondary list of options? I decided to user test some ideas internally to see what reaction I would get.</p>
+					</div>
+
+            	</div> <!-- end row -->            	
+
+
+				<div class="row col-md-12 center">
+
+					<figure>
+						<img srcset="img/verification/support-document-interaction-ideas@2x.png 2x" 
+							src="img/verification/support-document-interaction-ideas@1x.png" class="img-responsive center" alt="We tested two different support document ideas — 1. A card with the primary document choice and empty support module 2. A card with the primary document and when clicked on the support documents would drop down to choose from. The first option was received best, so we iterated on it to get our final version.">
+						<figcaption class="padding-btm">
+							We tested two different ideas, iterated and tested the "winner" to get our final version.
+						</figcaption>
+					</figure>
+
+            	</div> <!-- end row -->  
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<p class="no-padding-btm">We tested two different support document ideas:</p>
+						<ol>
+							<li>A card with the primary document choice and empty support module</li>
+							<li>The same as above, but when clicked support documents would drop down to choose from</li>
+						</ol>
+						<p>The first option was received best (even though I would have loved to explore the second option more), so we iterated on it to make it a easier to understand visually.</p>
+					</div>
+
+            	</div> <!-- end row -->              	          	
+
+			</div> <!-- end container --> 
+
+
+
+        	<div class="container grey-module full-width">
+
+				<div class="row center no-padding">
+
+					<figure>
+						<img srcset="img/verification/support-doc-upload-flow-wireframes@2x.png 2x" 
+							src="img/verification/support-doc-upload-flow-wireframes@1x.png" class="img-responsive center" alt="First mobile wireframes of the primary plus support document upload flow">
+						<figcaption>
+							Initial mobile wireframes showing the primary plus support document upload flow.
+						</figcaption>
+					</figure>
+
+					<figure>
+						<img srcset="img/verification/support-document-upload-flow-hifi@2x.png 2x" 
+							src="img/verification/support-document-upload-flow-hifi@1x.png" class="img-responsive center" alt="Final UI showing support document upload flow.">
+						<figcaption>
+							Final UI for the support document upload flow on mobile.
+						</figcaption>
+					</figure>					
+
+            	</div> <!-- end row --> 
+
+           	</div> <!-- end container --> 	
+	
+
+        	<div class="container no-padding-btm">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">            	
+
+					<div>
+						<h3>Legacy constraints</h3>
+						<p>I now had a flow that matched the mental model of users, but I now came up against a major technical constraint – allowing users to upload their document right after selection could not be implemented easily with the legacy backend logic. As much as I knew from initial user testing that this was the flow that made more sense to users I reluctantly had to concede that we couldn’t implement this ideal flow right now as it would add too much time to the project &mdash; time that we didn’t have. Though I did make sure this was added to a priority list of items that needed to be looked at after launch.</p>
+					</div>
+
+            	</div> <!-- end row --> 					
+
+
+        	</div> <!-- end container --> 	
+
+
+
+		</section> <!-- end What docs do I need? --> 
+
+
+	<!-- Reducing options (generic module) __________________________________________________________________________________________________________________________ -->
+
+		<section class="generic-module">
+
+			<div class="container no-padding-btm">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h2 class="no-padding-top">Reducing options</h2>
+							<div class="horizontal-line-small"></div>
+					</div>
+
+					<div>
+						<p>Hick's law states that the more choices you present to a user the longer it will take them to reach a decision. This was especially true for the existing system as it presented far too many document options upfront to the user and with no indication of which option was best for them.</p>
+
+						<p>Using our existing document upload data we came to the decision to only show the five most popular document options to the user upfront. If the user's document choice was not listed they could then drill down further with a “more” button to view the next five. This meant that most users decision-making time was reduced as they could easily find popular documents in the list.</p>
+					</div>
+
+				</div> <!-- end row --> 
+
+				<div class="row col-md-12 center">	
+
+					<figure class="col-md-8 center">
+
+						<img srcset="img/verification/reducing-options-list@2x.gif 2x" 
+							src="img/verification/reducing-options-list@1x.gif" class="img-responsive center" alt="One column showing all the previous choices and a second column showing the reduced choices.">
+						<figcaption>
+							An applicant could see up to sixteen options in the old dropdown list! We reduced it to the five most popular options shown first — the applicant could decide if they needed to see more.
+						</figcaption>
+
+					</figure>
+
+					<figure class="col-md-6 center">
+
+						<img srcset="img/verification/reducing-options-ui@2x.png 2x" 
+							src="img/verification/reducing-options-ui@1x.png" class="img-responsive center" alt="The selection UI on mobile">
+						<figcaption>
+							From a long dropdown box of options to this.
+						</figcaption>
+
+					</figure>
+
+				</div> <!-- end image row --> 
+
+			</div> <!-- end container --> 
+
+		</section> <!-- end Reducing options --> 
+
+
+	<!-- Supplying the right documents (generic module) ___________________________________________________________________________________________________________ -->
+
+		<section class="generic-module">
+
+			<div class="container no-padding-btm">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h2 class="no-padding-top">Supplying the right documents &mdash; first time</h2>
+							<div class="horizontal-line-small"></div>
+					</div>
+
+					<div>
+						<p>Applicant’s concern about not knowing if the documents they uploaded would be enough to pass a check was another of the issues we needed to address. This was also important from a business point of view as re-opening cases due to wrong or missing documents cost Onfido money and time.</p>
+
+						<p>Looking through the requirements for each document to pass checks we saw that these requirements could be broken down into two distinct groups – primary requirements and secondary requirements.</p>
+
+						<p>We decided to only surface the most important piece(s) of document data to the user at the point where they would be selecting a document – this allowed the user to only see the information related to making a decision about the document type they could use. Once they had selected the document type we then surfaced the next level of important data related to the selected document. These pieces of document data were broken into primary and secondary data types.</p>
+					</div>
+
+				</div> <!-- end row -->
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+						<h4>Primary information</h4>
+						<ul>
+							<li>Document expiry date</li>
+							<li>Expired document allowed/not allowed</li>
+							<li>Valid document date ranges</li>
+						</ul>
+
+						<h4>Secondary information</h4>
+						<ul>
+							<li>What to be shown on document</li>
+							<li>Tips on how a photo should, and should not, look</li>
+						</ul>
+
+				</div> <!-- end row -->
+
+
+
+				<div class="row col-md-12 center">	
+
+					<figure class="col-md-10 center">
+
+						<img srcset="img/verification/primary-secondary-information@2x.png 2x" 
+							src="img/verification/primary-secondary-information@1x.png" class="img-responsive center" alt="The primary peice of information is shown to the user to make a choice of document, then once chosen they are shown secondary information on the document upload screen when needed.">
+						<figcaption>
+							The primary piece of information is shown to the user to make a choice of document, then once chosen they are shown Secondary information on the document upload screen when needed.
+						</figcaption>
+
+					</figure>
+
+				</div> <!-- end image row --> 				
+
+			</div> <!-- end container --> 
+
+		</section> <!-- end Supplying the right documents --> 
+
+
+
+	<!-- Streamlining user focus (generic module) __________________________________________________________________________________________________ -->
+
+		<section class="generic-module">
+
+			<div class="container">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h2 class="no-padding-top">Streamlining user focus</h2>
+							<div class="horizontal-line-small"></div>
+					</div>
+
+					<div>
+						<p>The existing step did all the changing, adding, and uploading of documents on the one screen. This meant choosing documents from long drop-down lists and uploading documents inside cramped narrow modules creating a very poor interaction experience on both desktop and mobile &mdash; and also creating an almost claustrophobic feeling on the screen. We decided to clear away all of these distractions by moving to a full screen overlays when the user was making choices or uploading documents. This allowed the user to focus on only what they needed to be doing in the moment and allowed us to be able to better present options and assistance to them as there was more screen real-estate available.</p>
+					</div>
+
+				</div> <!-- end row -->
+
+			</div> <!-- end container --> 
+
+        	<div class="container grey-module no-padding-top full-width">
+
+				<div class="row center no-padding">
+
+					<figure>
+						<img srcset="img/verification/overlay-screens-hifi@2x.png 2x" 
+							src="img/verification/overlay-screens-hifi@1x.png" class="img-responsive center" alt="???">
+						<figcaption>
+							Allowing the user to focus on the task at hand with fullscreen overlays.
+						</figcaption>
+					</figure>					
+
+            	</div> <!-- end image row --> 
+
+			</div> <!-- end container --> 
+
+		</section> <!-- end Streamlining user focus --> 
+
+
+
+	<!-- "Is my document photo good enough?" (generic module) __________________________________________________________________________________________________ -->
+
+		<section class="generic-module">
+
+			<div class="container">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h2 class="no-padding-top">"Is my document photo good enough?"</h2>
+							<div class="horizontal-line-small"></div>
+					</div>
+
+					<div>
+						<p>Most people aren't the best photographers so getting them to take a picture of a document comes with the possibility that important information may be missing eg. parts of documents out of frame, glare that makes a number unreadable, a finger partly covering numbers etc. Onfido used machine learning to read information off of documents and so missing information was something we wanted to eradicate as much as possible from supplied images.</p>
+						
+						<p>Going through our data for each document type we were able to see the main reasons for photo quality failure. Using these insights we were able to present to the applicant helpful tips and advice on how to take the best picture regarding the document they were about to upload. </p>
+					</div>
+
+				</div> <!-- end row -->
+
+				<div class="row col-md-12 center">
+
+					<figure class="col-md-12">
+						
+						<img srcset="img/verification/tips-screens@2x.png 2x" 
+							src="img/verification/tips-screens@1x.png" class="img-responsive center" alt="???">
+						<figcaption>
+							Just a few of the many document upload tip modules that had to be photographed and created.
+						</figcaption>
+
+					</figure>
+
+        		</div> <!-- end row --> 
+
+			</div> <!-- end container --> 
+
+		</section> <!-- end Is my document photo good enough? --> 
+
+
+	<!-- Section break module ___________________________________________________________________________________________________________________________ -->
+
+		<section class="section-break-module">
+
+				<div class="container">
+
+		    		<div class="row col-md-12 center center-text">
+					
+		        		<!-- Sub title -->
+		            	<div>
+		            		<p class="no-padding dark-text">Usability testing</p>
+		            	</div>
+
+
+		        		<!-- Title -->
+		            	<div>
+		            		<h1>Valuing empathy</h1>
+		              	</div>
+
+		            </div> <!-- end row -->	
+
+	            </div> <!-- end container -->
+
+            </section> <!-- end Section break module -->
+
+
+
+
+	<!-- Deliveroo testing (generic module) ________________________________________________________________________________________________________________________ -->
+
+		<section class="generic-module">
+
+			<div class="container">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h2 class="no-padding-top">Deliveroo testing</h2>
+							<div class="horizontal-line-small"></div>
+					</div>
+
+					<div>
+						<p>After the initial positive feedback from internal testing it was time for some external user testing. After discussing what we wanted to test and creating a higher fidelity mobile prototype we were lucky enough to spend a few hours at Deliveroo’s rider sign-on center conducting usability sessions.</p>
+					</div>
+
+				</div> <!-- end row -->
+
+
+				<div class="row col-md-12 center">	
+					<figure class="col-md-12">
+						<img src="img/verification/user-testing-deliveroo.jpg" class="img-responsive center" alt="Comparison of old and new registration with the copy changes">
+						<figcaption class="padding-btm">
+							User testing at the Deliveroo offices with a rider.
+						</figcaption>
+					</figure>
+        		</div> <!-- end row --> 
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<p>Being in an environment with real end-users of the product was a great learning experience for me. A lot of the riders spend the whole day going through rider training, information sessions, and filling in online forms which can easily become a stressful situation, especially if you really need this job to earn money. Seeing this firsthand made me appreciate that a lot of our users come to our product already stressed and so we needed to provide an experience that was as simple and stress-free as possible.</p>
+					</div>
+
+					<div>
+						<h3>Usability insights</h3>
+						<p>The main issues to come from the testing were then shared with the rest of the team and we prioritised the top five issues that needed addressing for the first release.</p>
+
+						<h5>Issue 1: User confusion</h5>
+						<p>Ability to change a document on the document upload card (after a document had been uploaded) caused hesitation and confusion for users as we now had an "edit" button and a "change" button. We decided once a user had uploaded a document successfully we would replace the “Change document” button with a success tick. This meant that the user now would be less confused with a “Change” and an “edit” button being displayed at the same time.</p>
+					</div>
+
+				</div> <!-- end row -->
+
+				<div class="row col-md-10 center">	
+
+					<figure class="col-md-10 center">
+
+						<img srcset="img/verification/button-change@2x.png 2x" 
+							src="img/verification/button-change@1x.png" class="img-responsive center" alt="Replacing the 'change' button with a tick on the completed document card eradicated the confusion with the 'edit' button.">
+						<figcaption class="padding-btm">
+							Replacing the "change" button with a tick on the completed document card eradicated the confusion with the "edit" button.
+						</figcaption>
+
+					</figure>
+
+				</div> <!-- end image row -->
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+        			<div>
+        				<h5>Issue 2: Saved feedback</h5>
+						<p class="no-padding-btm">Users expressed a need for some kind of confirmation that the document they had uploaded was successful and had been saved. We made two changes here:</p>
+
+						<ol>
+							<li>After the user had uploaded a document we showed an animation to let them know it had successfully uploaded and been saved.</li>
+							<li>We replaced the “Change document” button with a success tick after a document had successfully uploaded <span class="italic">(as above)</span> &mdash; meaning the user could see at any time that this document had successfully uploaded even if they had been distracted and missed the upload success animation.</li>
+						</ol>
+					</div>
+
+				</div> <!-- end row -->
+
+				<div class="row col-md-12 center">	
+					<figure class="col-md-12 center">
+						<img srcset="img/verification/animation-flow@2x.png 2x" 
+							src="img/verification/animation-flow@1x.png" class="img-responsive center" alt="The three main screens of the saving animation">
+						<figcaption class="padding-btm">
+							Flow of the saving animation after a successful document upload.
+						</figcaption>
+					</figure>
+				</div> <!-- end image row -->
+
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center no-padding-btm">
+
+        			<div>
+        				<h5>Issue 3: Adding another document </h5>
+						<p class="no-padding-btm">Some clients required other documentation (besides the ones needed for checks) to be uploaded. To allow for this we had included an "Add another document" link to the screen, but this option was confusing users (some were just clicking it to see what happened!). Adding an “optional” tag to the module and also adding some microcopy underneath advising applicant they would have been informed if other documents needed we thought would be a solution to this.</p>
+					</div>
+
+				</div> <!-- end row -->
+
+				<div class="row col-md-12 center">	
+
+					<figure class="col-md-12 center">
+
+						<img srcset="img/verification/add-document-link-versions@2x.png 2x" 
+							src="img/verification/add-document-link-versions@1x.png" class="img-responsive center" alt="Three versions of the add another document link component">
+						<figcaption class="padding-btm">
+							Users had no idea if they were meant to use this link. Making it optional and adding a short clarification helped.
+						</figcaption>
+
+					</figure>
+
+				</div> <!-- end image row -->	
+
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+        			<div>
+        				<h5>Issue 4: Document name uncertainity </h5>
+						<p>Users wanted clarification of what certain document type names meant eg. “Government letter” and “Utility bill”. Instead of having generic options like “Government letter” or “Utility bill” which were ambiguous to users, we broke these options into the exact documents allowed eg. “Utility bill” option was broken into options of “Electricity bill”, “Gas bill”, and “Water bill”.</p>
+					</div>
+
+				</div> <!-- end row -->							
+
+
+			</div> <!-- end container --> 
+
+
+		</section> <!-- end Deliveroo testing --> 
+
+
+
+	<!-- Section break module ___________________________________________________________________________________________________________________________ -->
+
+		<section class="section-break-module">
+
+				<div class="container">
+
+		    		<div class="row col-md-12 center center-text">
+
+					
+		        		<!-- Sub title -->
+		            	<div>
+		            		<p class="no-padding dark-text">A more modern feel</p>
+		            	</div>
+
+
+		        		<!-- Title -->
+		            	<div>
+		            		<h1>The interface</h1>
+		              	</div>
+
+		            </div> <!-- end row -->	
+
+	            </div> <!-- end container -->
+
+            </section> <!-- end Section break module -->
+
+
+
+	<!-- User interface (generic module) ________________________________________________________________________________________________________________________ -->
+
+		<section class="generic-module">
+
+			<div class="container no-padding-btm">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h2 class="no-padding-top">Trust building</h2>
+							<div class="horizontal-line-small"></div>
+					</div>
+
+					<div>
+						<p>We all know that the look of a website should establish trust amongst users right away, but the existing applicant form didn’t really convey this (uploading your identity documents is a big deal after all!). It actually felt a little like a relic from the past and some real attention was needed to get that professional and trustworthy look.</p>
+
+						<p>Obviously I wanted to create a more professional and modern aesthetic, but I also had to design components that wouldn’t seem too out-of-place within the existing styling. So the first thing I did was establish some structure and consistency rules to the visuals:</p>
+
+						<ul>
+							<li>Introduced an 8pt grid system to keep a consistent vertical and horizontal rhythm</li>
+							<li>Created a semantic and responsive typography system</li>
+							<li>Reduced the many colours being used to only those required</li>
+							<li>Made sure all colours and typography met (or exceeded) AA accessibility standards</li>
+							<li>Designed larger touch target areas on all clickable/tappable components across all devices</li>
+						</ul>
+					</div>
+
+				</div> <!-- end row -->
+
+				<div class="row col-md-12 center">	
+
+					<figure class="col-md-8 center">
+
+						<img srcset="img/verification/8pt-grid-card@2x.png 2x" 
+							src="img/verification/8pt-grid-card@1x.png" class="img-responsive center" alt="Document upload completed card with comparison between grid overlayed on top and final version.">
+						<figcaption>
+							Using an 8pt grid system created a foundation to build a more professional modern look.
+						</figcaption>
+
+					</figure>
+				
+				</div> <!-- end row  -->
+
+			</div> <!-- end container -->
+
+        	<div class="container full-width">
+
+        		<div>
+
+					<figure class="col-md-10 center">
+
+						<img srcset="img/verification/components-sample@2x.png 2x" 
+							src="img/verification/components-sample@1x.png" class="img-responsive center" alt="Sample components from the styleguide.">
+						<figcaption class="padding-btm">
+							A sample of the styleguide with design components.
+						</figcaption>
+
+					</figure>
+
+				</div> <!-- end image row -->								
+
+			</div> <!-- end container -->       		
+
+
+        	<div class="container grey-module full-width">
+
+        		<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h2 class="no-padding-top">Final UI</h2>
+							<div class="horizontal-line-small"></div>
+					</div>
+
+				</div> <!-- end row -->
+
+				<div class="row center no-padding">
+
+					<figure class="col-md-8 center">
+						<img srcset="img/verification/overview-screens@2x.png 2x" 
+							src="img/verification/overview-screens@1x.png" class="img-responsive center" alt="Screens-shots of overview screens on both desktop and mobile.">
+						<figcaption>
+							Document overview screens (both empty and completed cards shown on desktop).
+						</figcaption>
+					</figure>	
+
+					<figure class="col-md-8 center">
+						<img srcset="img/verification/selection-screens@2x.png 2x" 
+							src="img/verification/selection-screens@1x.png" class="img-responsive center" alt="Screens-shots of document selection screens on both desktop and mobile.">
+						<figcaption>
+							Document selection screens.
+						</figcaption>
+					</figure>
+
+					<figure class="col-md-8 center">
+						<img srcset="img/verification/uploading-screens@2x.png 2x" 
+							src="img/verification/uploading-screens@1x.png" class="img-responsive center" alt="Screens-shots of document upload screens on both desktop and mobile.">
+						<figcaption>
+							Document upload screens.
+						</figcaption>
+					</figure>	
+
+					<figure class="col-md-8 center">
+						<img srcset="img/verification/delete-doc-screens@2x.png 2x" 
+							src="img/verification/delete-doc-screens@1x.png" class="img-responsive center" alt="Screens-shots of document error screens on both desktop and mobile.">
+						<figcaption>
+							Document delete screens. </br>(Desktop: Navigating away from a partially completed upload screen - Mobile: Deleting an already uploaded document on the overview screen).
+						</figcaption>
+					</figure>								
+
+            	</div> <!-- end row --> 							
+
+			</div> <!-- end container -->
+
+		</section> <!-- end UI section --> 	
+
+
+	
+	<!-- Outcome (section) module ___________________________________________________________________________________________________________________________ -->
+
+		<section class="section-break-module">
+
+			<div class="container">
+
+	    		<div class="row col-md-12 center center-text">
+	
+	        		<!-- Sub title -->
+	            	<div>
+	            		<p class="no-padding dark-text">Document upload step</p>
+	            	</div>
+
+
+	        		<!-- Title -->
+	            	<div>
+	            		<h1>Outcome</h1>
+	              	</div>
+
+	            </div> <!-- end row -->
+
+            </div> <!-- end container -->
+
+        </section> <!-- end Outcome (section) module -->
+
+
+
+
+	<!-- Outcome (generic module) _______________________________________________________________________________________________________________ -->
+
+		<section class="generic-module">
+
+			<div class="container no-padding-btm">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-top">
+
+					<div>
+	            		<p>The redesign of the document step has had a really positive impact since we launched it. Not only did we surpass all of the success metrics we'd set ourselves, but getting great feedback from large clients about how this was helping them and their users was also great.</p>
+            		</div>
+
+            		<div class="outcome-metrics center-text">
+	            		<div>
+	            			<h1>-11%</h1>
+            			</div>
+
+            			<div>
+	            			<p>in document step dropouts</p>
+	            		</div>
+            		</div>
+
+            		<div class="outcome-metrics center-text">
+	            		<div>
+	            			<h1>-12%</h1>
+            			</div>
+
+            			<div>
+	            			<p>in applicant form re-opens</p>
+	            		</div>
+            		</div> 
+
+            		<div class="outcome-metrics center-text">
+	            		<div>
+	            			<h1>+12%</h1>
+            			</div>
+
+            			<div>
+	            			<p>in applicant form completions</p>
+	            		</div>
+            		</div>            		           		            		
+
+				</div> <!-- end row --> 
+
+			</div> <!-- end container -->
+
+		</section> <!-- end outcome --> 
+
+
+
+	<!-- Quote module ___________________________________________________________________________________________________________________________ -->
+
+		<section class="quote-module">
+
+			<div class="container">
+
+				<div class="row">
+	            	<div class="horizontal-line-small center"></div>
+            	</div>
+
+				<div class="row col-xs-10 col-sm-10 col-md-7 col-lg-6 center">		
+						<div>
+				    		<blockquote class="center-text">“This update is great. Really clear, concise, and so easy to understand.”</blockquote>
+				    		<figcaption>Paul Edwards | UK operations manager @ Uber eats</figcaption>
+				    	</div> 
+		    	</div>
+
+		    	<div class="row">
+	            	<div class="horizontal-line-small center"></div>
+            	</div>
+
+			</div> <!-- end container -->
+
+		</section> <!-- end Quote module --> 
+		
+
+
+		       				
+
+
+
+	<!-- Reflections (generic-grey module) _______________________________________________________________________________________________________________ -->
+
+		<section class="special-module">
+
+			<div class="container">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center no-padding-btm">
+
+					<div>
+						<h2 class="no-padding-top">Reflections</h2>
+						<div class="horizontal-line-small-pink"></div>
+					</div>
+
+					<div>
+						<p>Early on in the project I learnt a valuable lesson in becoming fixated on one idea too early. I feel if I’d involved the team a little earlier in my exploration of the question and answer format I would have not have wasted a few days exploring and sketching this solution. A great reminder to show my work and thinking earlier, even if I’m not comfortable with it.</p>
+
+						<p>I also had a nagging doubt in the back of my head throughout the project of my understanding of the actual users. It wasn’t until I spent a day user testing at Deliveroo that I finally felt I had a proper understanding and empathy with the real users. I wish I had had the chance in the research phase to talk to actual users rather than just relying on previous company research. I learnt so much in that one day about how an applicant could be stressed or tired when using the applicant form.</p>
+
+						<p>Overall I felt this project really succeeded in making a positive impact on how people within Onfido thought about design. Everyone knew that this document step needed big improvements, but there were so many different solutions coming from different people that being able to bring a focus was needed &mdash; and a design process helped to bring this focus to find a solution in a collaborative and non-subjective way. It was great to hear from members of the sales team later that it was so much easier to pitch the Applicant form to clients when they had a great looking and usable product that they were confident in.</p>
+					</div>
+
+				</div>
+
+			</div>
+
+		</section> <!-- end Reflections --> 
+
+
+
+
+
+<!-- Social media module __________________________________________________________________________________________________________________________________________ -->
+
+		<section class="social-media-module">
+			
+			<div class="social-media-grid container padding-btm">
+
+				<div class="row social-media-title col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h2 class="center-text">Find me on these</h2>
+					</div>
+
+				</div>
+
+
+				<!-- Social media platforms --------------------------------------------------- -->
+
+				<!-- LinkedIn icon -->
+				<div class="social-media-platform-1">
+					<a href="https://www.linkedin.com/in/dspagnolo/" target="_self" aria-label="LinkedIn profile">
+						
+						<svg xmlns="https://www.w3.org/2000/svg" width="80" height="80" viewBox="300 0 80 80">
+							<path class="social-icon linkedin-icon" d="M340 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zm-9.8 56.6h-8.1V30.5h8.1v26.1zm-4.1-29.3c-2.6 0-4.2-1.8-4.2-4.1s1.7-4 4.3-4 4.2 1.8 4.3 4c0 2.3-1.7 4.1-4.4 4.1zm33.7 29.3h-8.1V42.1c0-3.4-1.2-5.6-4.1-5.6-2.2 0-3.6 1.5-4.2 3-.2.5-.3 1.3-.3 2v15H335V38.8c0-3.3-.1-6-.2-8.3h7l.4 3.6h.2c1.1-1.7 3.7-4.2 8-4.2 5.3 0 9.3 3.6 9.3 11.2v15.5z"/>
+						</svg>
+
+						<h5 class="icon-label">LinkedIn</h5>
+
+					</a>
+				</div>
+
+
+				<!-- Twitter icon -->
+				<div class="social-media-platform-2">
+					<a href="https://twitter.com/daniel_spagnolo" target="_self" aria-label="Twitter profile">
+						
+						<svg xmlns="https://www.w3.org/2000/svg" width="80" height="80" viewBox="200 0 80 80">
+							<path class="social-icon twitter-icon" d="M240 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zm16.3 32.8v1c0 10.4-7.9 22.4-22.4 22.4-4.5 0-8.6-1.3-12.1-3.5.6.1 1.2.1 1.9.1 3.7 0 7.1-1.3 9.8-3.4-3.4-.1-6.4-2.3-7.4-5.5.5.1 1 .1 1.5.1.7 0 1.4-.1 2.1-.3-3.6-.7-6.3-3.9-6.3-7.7 1.1.6 2.3.9 3.6 1-2.1-1.4-3.5-3.8-3.5-6.6 0-1.4.4-2.8 1.1-4 3.9 4.8 9.7 7.9 16.2 8.2-.1-.6-.2-1.2-.2-1.8 0-4.3 3.5-7.9 7.9-7.9 2.3 0 4.3 1 5.8 2.5 1.8-.4 3.5-1 5-1.9-.6 1.8-1.8 3.4-3.5 4.4 1.6-.2 3.1-.6 4.5-1.2-1.2 1.6-2.5 3-4 4.1z"/>
+						</svg>
+
+						<h5 class="icon-label">Twitter</h5>
+
+					</a>
+				</div>
+
+
+				<!-- Medium icon -->
+				<div class="social-media-platform-3">
+					<a href="https://medium.com/@daniel_spagnolo" target="_self" aria-label="Medium articles">
+						
+						<svg xmlns="https://www.w3.org/2000/svg" x="0px" y="0px" width="80px" height="80px" viewBox="100 0 80 80">
+							<path class="social-icon medium-icon" d="M140 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zM125.3 30.8c0-.5-.1-.9-.5-1.2l-3.4-4.3v-.6h10.4l8.1 18.6 7.1-18.6h9.9v.6l-2.9 2.9c-.2.2-.4.5-.3.8v21.3c0 .3.1.6.3.8l3 2.9v.6h-14.1V54l2.9-3c.3-.3.3-.4.3-.8V33L138 54.6h-1.1L127.5 33v14.4c-.1.6.1 1.2.5 1.7l3.8 4.8v.6h-10.7V54l3.8-4.8c.4-.4.6-1.1.5-1.7V30.8z"/>
+						</svg>
+
+						<h5 class="icon-label">Medium</h5>
+
+					</a>
+				</div>
+									
+			</div> <!-- end container -->
+
+		</section> <!-- end Social media module -->  
+
+
+</main>	
+
+
+<!-- Footer module ________________________________________________________________________________________________________________________________________________ -->
+
+<footer>
+
+	<div class="center-text">
+		<a href="index.html#top-module" class="logo no-padding" aria-label="Return to top of page">
+			<!-- <a href="#"><img src="img/logo2016.gif" width="60px" height="85px" alt="Portfolio logo"></a> --> 
+
+			<!-- Logo svg -->
+	    	<svg class="logo-default" xmlns="https://www.w3.org/2000/svg" width="65" height="90" viewBox="90.1 -1.6 65 90">
+			  <path fill="#00A1FF" d="M105.1 68.8l19-2-9-30"/>
+			  <path fill="#008BDB" d="M123.1 38.9l1 27.9-9-29.9"/>
+			  <path fill="#00A1FF" d="M124.1 66.8l19-23-20-5M119.1 20.8l-2-13.9 11 15.9M91.1 31.9l21-4 5-21-25.9 25"/>
+			  <path fill="#4ABCFF" d="M127.1 12.9l-10-6 11 15.9M112.1 27.8l-7 41 10-31.9M117.1 6.9l2 13.9-7 7"/>
+			  <path fill="#EB3886" d="M154.1 38.6l-23-39.8 7 27-15 13.1 20 5"/>
+			  <path fill="#006FB0" d="M127.1 12.9l4-14.1-14 8.1"/>
+			  <path fill="#29AFFF" d="M131.1-1.2l-4 14 11 13"/>
+			  <g fill="#00A1FF">
+			    <path d="M128.1 22.8l2 10-3-19.9M138.1 25.8l-11-13 3 20"/>
+			  </g>
+			  <path fill="#006FB0" d="M91.1 31.9l11 54.9 10-58.9"/>
+			  <path fill="#FFF" d="M124.1 39.4l-9.5-2.6-2.5-9.4 6.9-7 9.5 2.6 2.5 9.4"/>
+			</svg>
+		</a>
+	</div>
+
+
+
+	<div class="row">
+		<nav>
+			<ul class="center-text clearfix">
+				<li class="alternative"><a href="index.html#work-module" aria-label="Back to Work">Work</a></li>
+				<li class="alternative"><a href="index.html#about-me-module" aria-label="Back to About me">About</a></li>
+			</ul>
+		</nav>
+	</div>
+
+		<div class="row col-md-12 center-text">
+			<small>Made with <span role="img" aria-label="Love" class="heart"></span> in London | &copy; whatever year this is</small>
+		</div>
+
+
+</footer> <!-- end Footer module --> 
+
+
+
+
+<!-- JS scripts/files (placed at end of file so pages will load faster) _____________________________________________________________________________________ -->
+
+		<!-- link to jquery library to get the nav shrinking to work below -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+			<script>
+			$(function(){
+			 var shrinkHeader = 150;
+			  $(window).scroll(function() {
+			    var scroll = getCurrentScroll();
+			      if ( scroll >= shrinkHeader ) {
+			           $('header').addClass('shrink'),
+			           $('header.logo-size').addClass('shrink'),
+			           $('header nav ul').addClass('shrink'),
+			           $('header nav ul li').addClass('shrink'),
+			           $('header nav li a').addClass('shrink'),
+			           $('header p').addClass('shrink'),
+			           $('header svg').addClass('shrink'),
+			           $('header a.logo').addClass('shrink'),
+			           $('header nav .alternative a:hover').addClass('shrink'),
+			           $('header nav').addClass('shrink'),
+			           $('header .logo-job-title').addClass('shrink');
+			        }
+			        else {
+			            $('header').removeClass('shrink'),
+			            $('header.logo-size').removeClass('shrink'),
+			            $('header nav ul').removeClass('shrink'),
+			            $('header nav ul li').removeClass('shrink'),
+			            $('header nav li a').removeClass('shrink'),
+			            $('header p').removeClass('shrink'),
+			            $('header svg').removeClass('shrink'),
+			            $('header a.logo').removeClass('shrink'),
+			            $('header nav .alternative a:hover').removeClass('shrink'),
+			            $('header nav').removeClass('shrink'),
+			            $('header .logo-job-title').removeClass('shrink');
+			        }
+			  });
+			function getCurrentScroll() {
+			    return window.pageYOffset || document.documentElement.scrollTop;
+			    }
+			});
+			</script>
+
+	<!-- Light/dark theme toggle (Guide I used for dark/light mode:- https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web) -->
+    	<script>
+	    	
+	    	// Select the button
+			const btn = document.querySelector(".button-toggle"); // The "button-toggle" class (on colour theme toggle/btn) will change the "body" colour theme when clicked
+			// Check for dark mode preference at the OS level
+			const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+			 
+			// Get the user's theme preference from local storage, if it's available
+			const currentTheme = localStorage.getItem("theme");
+			// If the user's preference in localStorage is dark...
+			if (currentTheme == "dark") {
+			  // ...let's toggle the .dark-theme class on the body
+			  document.body.classList.toggle("dark-theme");
+			// Otherwise, if the user's preference in localStorage is light...
+			} else if (currentTheme == "light") {
+			  // ...let's toggle the .light-theme class on the body
+			  document.body.classList.toggle("light-theme");
+			}
+			 
+			// Listen for a click on the button 
+			btn.addEventListener("click", function() {
+			  // If the user's OS setting is dark and matches our .dark-theme class...
+			  if (prefersDarkScheme.matches) {
+			    // ...then toggle the light theme class
+			    document.body.classList.toggle("light-theme");
+			    // ...but use .dark-theme if the .light-theme class is already on the body,
+			    var theme = document.body.classList.contains("light-theme") ? "light" : "dark";
+			  } else {
+			    // Otherwise, let's do the same thing, but for .dark-theme
+			    document.body.classList.toggle("dark-theme");
+			    var theme = document.body.classList.contains("dark-theme") ? "dark" : "light";
+			  }
+			  // Finally, let's save the current preference to localStorage to keep using it
+			  localStorage.setItem("theme", theme);
+			});
+
+    	</script>				
+
+
+
+
+</body>
+</html>
+
+
+

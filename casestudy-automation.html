@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="apple-mobile-web-app-capable" content="yes">
+    	<meta name="color-scheme" content="dark light">
+    	<meta name="description" content="Babylon Health's GP at Hand automation casestudy">
+    	<meta name="author" content="Daniel Spagnolo">
+		<title>Daniel Spagnolo / GP at Hand automation casestudy</title>
+
+		<!--displays favicon in browser/mobile tabs. https://www.favicon-generator.org/-->
+		<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">		
+
+		<!-- Bootstrap core CSS -->
+	    <link href="css/bootstrap-grid.css" rel="stylesheet"> 
+
+	    <!-- Styling CSS -->
+	    <link rel="preload stylesheet" type="text/css" href="css/styles-2022-mini.css">
+
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52715158-2"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-52715158-2');
+		</script>
+
+	</head>
+
+	<body>	
+
+
+	<!-- Navigation module ___________________________________________________________________________________________________________________________ -->
+
+
+
+		<header>
+
+			<div class="header-grid center">
+
+			  	<div class="logo-job-title no-padding">
+			  		<a href="index.html#top-module" class="logo no-padding" aria-label="Home">
+			        	<!-- <a href="#"><img src="img/logo2016.gif" width="60px" height="85px" alt="Daniel Spagnolo's portfolio"></a> -->
+			        	
+			        	<!-- Logo svg -->
+			        	<svg class="logo-default" xmlns="https://www.w3.org/2000/svg" viewBox="90.1 -1.6 65 90">
+						  <path fill="#00A1FF" d="M105.1 68.8l19-2-9-30"/>
+						  <path fill="#008BDB" d="M123.1 38.9l1 27.9-9-29.9"/>
+						  <path fill="#00A1FF" d="M124.1 66.8l19-23-20-5M119.1 20.8l-2-13.9 11 15.9M91.1 31.9l21-4 5-21-25.9 25"/>
+						  <path fill="#4ABCFF" d="M127.1 12.9l-10-6 11 15.9M112.1 27.8l-7 41 10-31.9M117.1 6.9l2 13.9-7 7"/>
+						  <path fill="#EB3886" d="M154.1 38.6l-23-39.8 7 27-15 13.1 20 5"/>
+						  <path fill="#006FB0" d="M127.1 12.9l4-14.1-14 8.1"/>
+						  <path fill="#29AFFF" d="M131.1-1.2l-4 14 11 13"/>
+						  <g fill="#00A1FF">
+						    <path d="M128.1 22.8l2 10-3-19.9M138.1 25.8l-11-13 3 20"/>
+						  </g>
+						  <path fill="#006FB0" d="M91.1 31.9l11 54.9 10-58.9"/>
+						  <path fill="#FFF" d="M124.1 39.4l-9.5-2.6-2.5-9.4 6.9-7 9.5 2.6 2.5 9.4"/>
+						</svg>
+
+			        </a> <!-- end logo -->
+
+			        <div>
+			        	<p class="name">Daniel Spagnolo <span class="muted job-title">(He/Him) | Product Designer</span></p>
+			        </div> <!-- end by-line -->
+
+			  	</div> <!-- end logo-job-title -->
+
+
+				
+			  	<!-- <div class="nav_theme-switch"> -->
+
+			  		<nav class="clearfix center-text no-padding">  
+			        	<ul>
+			            	<li class="alternative"><a href="index.html#work-module" aria-label="Work">Work</a></li>
+			            	<li class="alternative"><a href="index.html#about-me-module" aria-label="About me">About</a></li>
+			          	</ul>
+			      	</nav>
+
+			      	<!-- Added a fieldset, ARIA roles, and heading (can be outer or within a legend if you prefer. Thanks to Steve Faulkner and Heydon Pickering https://twitter.com/stevefaulkner/status/1021327778334019585 & https://twitter.com/heydonworks/status/1021329851066830848 -->
+
+					<fieldset aria-label="theme switcher" role="radiogroup">
+
+						<div class="button-toggle">
+
+							<span class="button-toggle-container">
+								
+								<input type="radio" name="theme" id="light" checked="">
+								<input type="radio" name="theme" id="dark">
+
+									<span aria-hidden="true" class="button-toggle__background"></span> <!-- end button-toggle__background -->
+										
+										<span>
+										<!-- sun icon -->
+											<svg class="icon-sun" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+										        <g transform="translate(-1327.000000, -53.000000)">
+									            <g transform="translate(1316.000000, 42.000000)">
+								                <g transform="translate(11.000000, 11.000000)">
+							                    <circle cx="11" cy="11" r="4"></circle> <!-- orb -->
+							                    <g> <!-- rays -->
+							                        <rect x="10" y="0" width="1" height="4" rx="0.5"></rect>
+							                        <rect x="0" y="10" width="4" height="1" rx="0.5"></rect>
+							                        <rect transform="translate(5.000000, 4.500000) rotate(-315.000000) translate(-5.000000, -4.500000) " x="3" y="4" width="4" height="1" rx="0.5"></rect>
+							                        <rect x="18" y="10" width="4" height="1" rx="0.5"></rect>
+							                        <rect transform="translate(17.000000, 4.500000) rotate(-45.000000) translate(-17.000000, -4.500000) " x="15" y="4" width="4" height="1" rx="0.5"></rect>
+							                        <rect transform="translate(10.500000, 20.000000) scale(1, -1) translate(-10.500000, -20.000000) " x="10" y="18" width="1" height="4" rx="0.5"></rect>
+							                        <rect transform="translate(5.000000, 16.500000) scale(1, -1) rotate(-315.000000) translate(-5.000000, -16.500000) " x="3" y="16" width="4" height="1" rx="0.5"></rect>
+							                        <rect transform="translate(17.000000, 16.500000) scale(1, -1) rotate(-45.000000) translate(-17.000000, -16.500000) " x="15" y="16" width="4" height="1" rx="0.5"></rect>
+							                    </g>
+								                </g>
+									            </g>
+										        </g>
+											</svg>
+
+											<!-- moon icon -->
+											<svg class="icon-moon" viewBox="0 0 17 18" xmlns="http://www.w3.org/2000/svg">
+										        <g transform="translate(-1370.000000, -55.000000)">
+									            <g transform="translate(1316.000000, 42.000000)">
+								                <g transform="translate(54.000000, 13.000000)"> 
+								                    <path d="M5.625,4.5 C5.625,9.47056275 9.65443725,13.5 14.625,13.5 C15.434709,13.5 16.2194437,13.3930721 16.9658537,13.1925665 C15.4583806,16.0511593 12.4567783,18 9,18 C4.02943725,18 0,13.9705627 0,9 C0,4.83950856 2.82307582,1.3383818 6.65814446,0.307702722 C5.99834193,1.56121389 5.625,2.9870076 5.625,4.5 Z"></path>
+								                </g>
+									            </g>
+										        </g>
+											    </g>
+											</svg>
+
+										</span>
+									
+										<span aria-hidden="true" class="button-toggle__switcher"></span> <!-- end button-toggle-switcher -->
+							
+							</span> <!-- end button-toggle-container -->
+
+						</div> <!-- end button-toggle -->
+
+					</fieldset>		
+
+			  	
+				<!-- </div>  end nav_theme-switch -->
+
+			</div> <!-- end header container -->
+
+		</header>
+
+
+
+<main>
+
+
+	<!-- Hero module ___________________________________________________________________________________________________________________________ -->
+
+
+		<section class="hero-module hero-margin-top">
+
+				<div class="container">
+
+					<div class="row">
+					
+			        	<!-- Sub title -->
+			            	<div class="col-md-6 center-text center">
+			            		<span class="header-caption">Improving data quality</span>
+			            	</div>
+
+
+			        	<!-- Title -->
+			            	<div class="col-md-8 center-text center">
+			            		<h1>More than automation</h1>
+			              	</div>
+
+
+			        	<!-- large horizontal line -->
+			            	<div class="horizontal-line-large center">
+			            	</div>
+
+
+			        	<!-- Reading time -->
+			            	<div class="center-text">
+			            		<p class="no-padding-btm">Read time: 12 minutes</p>
+			            	</div>
+		            
+		            </div> <!-- end row -->   
+
+	          	</div> <!-- end container -->
+
+
+	          	<!-- Angled top | found at https://css-tricks.com/creating-non-rectangular-headers/-->
+	          	<svg class="angle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+					<polygon points="0,0 140,0 0,100"/>
+				</svg>
+
+
+
+				<!-- Hero image-->
+		        	<div class="row col-xs-12 col-sm-12 col-md-10 col-lg-8 center">
+		            	<figure aria-hidden="true">
+		              		<img srcset="img/automation/automation-hero@2x.png 2x"
+		              			src="img/automation/automation-hero@1x.png" class="img-responsive center" alt="">
+		            	</figure>
+		          	</div>
+				
+
+    	</section> <!-- end Hero module -->
+
+
+
+	<!-- Details module ___________________________________________________________________________________________________________________________ -->
+
+		<section class="details-module clearfix">
+
+			<div class="container no-padding-top">
+				
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+	        		<!-- company, role, timeframe, skills -->
+	            	<div class="col-md-12">
+	            			<h5>Company:</h5>
+	            			<p><a class="link" href="https://babylonhealth.com/" target="_self" aria-label="Babylon Health">Babylon Health</a> &mdash; London</p>
+	            		</div>
+	            	<div class="col-md-12">
+	            			<h5>My role:</h5>
+	            			<p>Product Designer (for iOS/Android/Web)</p>
+	        			</div>
+	            	<div class="col-md-12">
+	            			<h5>Timeframe:</h5>
+	            			<p>3 months</p>
+	        			</div>
+	            	<div class="col-md-12">
+	        				<h5>Skills:</h5>
+	        				<p>UX/UI design and prototyping</p>
+	        			</div>
+
+	        	</div> <!-- end row -->
+
+            </div>  <!-- end container -->
+
+    	</section> <!-- end Details module -->
+
+
+
+	<!-- Problem module ___________________________________________________________________________________________________________________________ -->
+
+		<section class="special-module">
+
+			<div class="container">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h2>The problem</h2>
+							<div class="horizontal-line-small">
+							</div>
+					</div>
+
+					<div>
+						<p>To enrol patients into Babylon Health's GP at Hand service customer support had to manually check patient data &mdash; a time-intensive process of checking user provided data against the UK’s NHS (National Health Service) system, and updating Babylon's system to match. Automating this manual process was a cost-saving priority for Babylon, but for this to succeed the quality of user-provided address data needed to improve. As the team responsible for GP at Hand's registration flow we needed to find a way to get this better quality address data from users, so that new patient registrations had a higher chance of being automated.</p>
+					</div>
+
+				</div> <!-- end row -->
+
+
+			</div> <!-- end container -->
+
+		</section> <!-- end Problem module -->
+
+
+	<!-- Solution module ___________________________________________________________________________________________________________________________ -->
+
+		<section class="solution-module">
+
+			<div class="container no-padding-btm">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h4 aria-label="Too long, didn't read">TL;DR</h4>
+					</div>
+
+					<div>
+						<h2>The solution</h2>
+							<div class="horizontal-line-small"></div>
+					</div>
+
+					<div>
+						<p>While we succeeded in solving the business defined objective (getting better address information for automation), the real success came from embracing a more human-focused solution. This not only helped end-users avoid accidentally providing bad quality data (and in-turn helping them to register with GP at Hand on their first attempt), but it also reduced the excess workload placed on customer support &mdash; both at the registration stage, and at later stages in a users journey through Babylon’s system.</p>
+							
+					</div>
+
+					<div>
+						<p class="no-padding-btm">This was achieved by making the following cross-platform improvements:</p>
+							<ul>
+								<li>Designing a more suitable address picker component that guided users to select from an “automation ready” address list first, before using manual entry;</li>
+								<li>Making eligibility content clearer as to why a home postcode was required; and</li>
+								<li>Improving the clarity of the forms question interactions to reduce accidental user mistakes.</li>
+							</ul>
+					</div>
+
+				</div> <!-- end row -->
+
+			</div> <!-- end container --> 			
+
+
+
+				<div class="row col-md-12 center padding-btm">
+
+					<figure>
+						<img srcset="img/automation/solutions-snippet@2x.jpg 2x" 
+							src="img/automation/solutions-snippet@1x.jpg" class="img-responsive center" alt="Three iPhone screens showing visual improvements. Screen 1: Address picker component. A postcode input field and an address list within a modal view. Screen 2: Clearer eligibility content. Title reads 'Where do you live?', body text reads 'This must be your current address. We'll post your confidential NHS documents here.', followed by a postcode input field. Screen 3: Improved question interactions. Medical related user questions, each followed by 'yes' and 'no' radio buttons.">
+					</figure>
+
+            	</div> <!-- end image row --> 
+
+
+		</section> <!-- end Solution module --> 
+
+
+
+	<!-- Outcome (generic module) _______________________________________________________________________________________________________________ -->
+
+		<section class="generic-module">
+
+			<div class="container no-padding-btm no-padding-top">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-top">
+
+
+					<div>
+						<h2>Outcomes</h2>
+							<div class="horizontal-line-small"></div>
+					</div>            		
+
+            		<div class="outcome-metrics center-text padding-btm">
+	            		<div>
+	            			<h1>+10%</h1>
+            			</div>
+
+            			<div>
+	            			<p>in successful first-time registrations</p>
+	            		</div>
+            		</div>
+
+            		<div class="outcome-metrics center-text padding-btm">
+	            		<div>
+	            			<h1>+5%</h1>
+            			</div>
+
+            			<div>
+	            			<p>patient matches found in NHS system</p>
+	            		</div>
+            		</div> 
+
+            		<div class="outcome-metrics center-text padding-btm">
+	            		<div>
+	            			<h1>~358</h1>
+            			</div>
+
+            			<div>
+	            			<p>hours per month saved in manual processing</p>
+	            		</div>
+            		</div>         		           		            		
+
+				</div> <!-- end row --> 
+
+			</div> <!-- end container -->
+
+		</section> <!-- end outcome --> 		
+
+
+
+	<!-- Casestudy begins ___________________________________________________________________________________________________________________________ -->
+		
+		<section class="padding-btm">
+			
+			<div class="container padding-btm">
+
+
+				<div class="row col-xs-10 col-sm-10 col-md-7 col-lg-6 center">		
+						
+					<div>
+			    		<h6 class="center-text">Read the in-depth casestudy below<span class="no-italic" role="img" aria-label="nerd face"> 🤓</span></h6>
+			    	</div> 
+
+		    	</div> <!-- end row -->
+
+		    	<div class="row padding-btm">	
+
+					<figure aria-hidden="true" class="center-text arrow-bubble">
+	              		<!-- <img src="img/arrow-down-bubble.svg" alt=""> -->
+
+	              		<svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+        				<circle cx="24" cy="24" r="24"/>
+	        				<g class="inner-arrow" transform="matrix(0 1 -1 0 35 12)">
+								<g transform="matrix(-.69465837 -.7193398 .7193398 -.69465837 11.116257 22.62397)">
+	        						<rect height="4" rx="2" width="16" y="12"/>
+	        						<rect height="16" rx="2" width="4"/>
+	    						</g><path d="m0 11c0-1.1045695.89821238-2 1.99079514-2h16.01840976c1.0994858 0 1.9907951.88772964 1.9907951 2 0 1.1045695-.8982124 2-1.9907951 2h-16.01840976c-1.0994858 0-1.99079514-.8877296-1.99079514-2z"/></g>
+	        				</g>
+	            	</svg>
+
+	            	</figure>
+
+        		</div> <!-- end image row -->
+
+			    					
+			</div> <!-- end container -->
+
+		</section> <!-- end section -->	
+
+
+		
+
+	<!-- Section break module ___________________________________________________________________________________________________________________________ -->
+
+		<section class="section-break-module">
+
+				<div class="container">
+
+		    		<div class="row col-md-12 center-text">
+					
+			        	<!-- Sub title -->
+			            	<div>
+			            		<p class="light-text no-padding">A little context</p>
+			            	</div>
+
+
+			        	<!-- Title -->
+			            	<div>
+			            		<h1>Background</h1>
+			              	</div>
+
+		            </div> <!-- end row -->
+
+	            </div> <!-- end container -->
+
+            </section> <!-- end Section break module -->
+
+
+
+	<!-- Background & Prioritisation (Generic module) _____________________________________________________________________________________________________ -->
+
+		<section class="generic-module">
+
+			<div class="container padding-btm">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+
+					<div>
+						<p>Babylon Health is a digital health service provider that provides video and phone GP consultations on a mobile, health monitoring and checking tools, and a symptom checker. Its most popular and well-known service is GP at Hand, which allows UK NHS (National Health Service) patients to book free video consultations with an NHS GP.</p>
+
+						<p>As the sole product designer in the GP at Hand registration squad, I was responsible for all design across Web, iOS, and Android. The first six months flew by; delivering on an inherited backlog, understanding the NHS system and healthcare regulations, and grasping Babylon’s many internal systems (both departmental and backend).</p>
+					</div>
+
+				</div> <!-- end row -->
+
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h2>GP at Hand service</h2>
+							<div class="horizontal-line-small"></div>
+					</div>					
+
+					<div>
+						<p>The GP at Hand registration journey is made up of four distinct parts:</p>
+
+						<ol>
+							<li>Introduction / Eligibility</li>
+							<li>NHS form</li>
+							<li>Identity check</li>	
+							<li>Application summary</li>
+						</ol>
+					</div>
+
+				</div> <!-- end row -->
+
+				<div class="row col-md-12 center padding-btm">	
+
+					<figure>
+	              		<img srcset="img/automation/1.0_old-flow_intro@2x.png 2x"
+	              			src="img/automation/1.0_old-flow_intro@1x.png" class="img-responsive center" alt="The 'Introduction and eligibililty' is made up of three steps: 1. GP at Hand intro, 2. Eligibility check, and 3. GP practice transfer info.">
+	            	</figure>
+
+	            	<figure>
+	              		<img srcset="img/automation/2.0_old-flow_nhs-form@2x.png 2x"
+	              			src="img/automation/2.0_old-flow_nhs-form@1x.png" class="img-responsive center" alt="The 'NHS form' is made up of two steps: 1. Personal info, and 2. GP practice info. This information was then checked against existing NHS records.">
+	            	</figure>
+
+	            	<figure>
+	              		<img srcset="img/automation/3.0_4.0_old-flow_ID@2x.png 2x"
+	              			src="img/automation/3.0_4.0_old-flow_ID@1x.png" class="img-responsive center" alt="The 'ID step' goes to a 3rd party ID checking service, and the 'Application summary' shows the status of NHS records check and ID check. Behind the scenes customer support manually updates the NHS records (if a matching record has been found), or manually checks application and contacts patient for updated information.">
+	              		<figcaption>
+	              			Customer support had to handle the behind the scenes enrolment work manually after an application was submitted
+	              		</figcaption>
+	            	</figure>
+
+            	</div> <!-- end image row -->
+
+
+            	<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+
+					<div>
+						<h2>Outcome prioritisation</h2>
+							<div class="horizontal-line-small"></div>
+					</div>
+
+					<div>
+						<p>We spoke to various business stakeholders regarding automation impact, but by far the most enlightening sessions were with customer service. Being told how accidental user registration “errors” created extra administrative work (in addition to the current manual processing), I could see a way to reframe this problem to be a more human-focused opportunity.</p>
+					</div>
+
+				</div> <!-- end row -->	
+
+
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+
+					<div>
+						<h4 class="pink-accent padding-btm-xsmall">THE OPPORTUNITY</h4>
+					</div>
+
+					<div class="padding-btm">
+						<h2>Reducing the chance for users to submit incorrect data <span class="pink-accent">now</span> &mdash; will lead to less errors needing customer support to rectify <span class="pink-accent">later</span>.</h2>
+							<div class="horizontal-line-small-pink"></div>
+					</div>
+
+					<div>
+						<p>Myself and Graeme (our PM) agreed on three project outcomes &mdash; we both saw how expanding this project's scope would further benefit customer service, users, and the business.</p>
+					</div>
+
+					<div class="padding-btm">
+						<h5>1. Obtain high-quality address data</h5>
+						<p>This was the highest business priority — a successful automation process needed an address that was 100% accurate</p>
+
+						<h5>2. Obtain the correct postcode data</h5>
+						<p>Helping users understand we needed their current residential postcode would reduce both user-frustration and customer service work later on</p>
+
+						<h5>3. Reduce chances for users to provide incorrect data</h5>
+						<p>Making the question and answer interaction clearer would reduce incorrect data being accidentally provided. </p>
+							
+					</div>
+
+					<div>
+						<p class="no-padding-btm">We believed that achieving these outcomes would lead to:</p>
+						
+						<ul class="padding-btm">
+							<li>Reducing PDS (Personal Demographics Service) error rates</li>
+							<li>Increasing first-time conversion rates from application to registration-success</li>
+							<li>Reducing clinical safety risks and issues</li>
+							<li>Increasing correct medical data for GP consultations and service use</li>
+							<li>Reducing time spent by customer support having to manually contact users</li>
+						</ul>
+
+						<p>We then worked together to make sure we had ways to measure our above outcome beliefs.</p>
+
+					</div>
+
+
+			</div> <!-- end conatiner -->
+
+
+		</section> <!-- end Background & Prioritisation -->  
+
+
+
+<!-- Section break module ___________________________________________________________________________________________________________________________ -->
+
+		<section class="section-break-module">
+
+				<div class="container">
+
+		    		<div class="row col-md-12 center-text">
+					
+			        	<!-- Sub title -->
+			            	<div>
+			            		<p class="light-text no-padding">Asking for home postcode</p>
+			            	</div>
+
+
+			        	<!-- Title -->
+			            	<div>
+			            		<h1>Eligibility</h1>
+			              	</div>
+
+		            </div> <!-- end row -->
+
+	            </div> <!-- end container -->
+
+            </section> <!-- end Section break module --> 
+
+
+
+<!-- Eligibility screen changes  ___________________________________________________________________________________________________________________________ -->
+
+		<section class="generic-module">
+
+			<div class="container">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<p>As part of Babylon’s agreement with the NHS, only people that lived within the Greater London area could register with GP at Hand. This constraint had been rendered as an “eligibility gateway”, where users provided their postcode to find if they’re eligible for the service. This postcode was then re-used later (in a non-editable field) to show associated addresses to the user in the registration form.</p>
+					</div>
+
+				</div> <!-- end row -->
+
+
+				<div class="row col-md-12 center padding-btm">	
+
+					<figure aria-hidden="true">
+	              		<img srcset="img/automation/eligibility-to-form_postcode@2x.png 2x"
+	              			src="img/automation/eligibility-to-form_postcode@1x.png" class="img-responsive center" alt="">
+	              		<figcaption>
+	              			The postcode provided at eligibility was re-used later to find a user's home address
+	              		</figcaption>
+	            	</figure>
+
+        		</div> <!-- end image row -->
+
+
+        		<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+
+        			<div>
+						<p class="no-padding-btm">This flow assumed that people would put in their home postcode, but as this had not been explicitly stated we were seeing some users providing other postcodes. This meant users were not seeing their residential address listed when asked to provide their address later — many just manually adding their address. This was leading to:</p>
+
+						<ul>
+							<li>Registrations failing as address details didn’t match any PDS records</li>
+							<li>Customer support having to perform manual checks and contact users</li>
+							<li>Clinical safety risks for any medical issues where a home address was needed eg. Ambulance emergency or mail correspondence</li>
+							<li>Babylon losing money for each user who couldn’t be registered first-time</li>
+						</ul>
+
+						<p>With this list of issues in front of us we realised how vital even the “small win” of making it clear to users <span class="p-bold">why</span> we needed their <span class="p-bold">home</span> postcode at this step was, and so we quickly prioritised this work to be completed, approved, and implemented within the sprint.</p>
+					</div>
+
+				</div> <!-- end row -->
+
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h2>Clear content is king</h2>
+							<div class="horizontal-line-small"></div>
+					</div>					
+
+					<div>
+						<p>Working with our content designer Nick, I went through four design iterations until the reason <span class="p-bold">why</span> we needed a user's home postcode became clearer. It was a careful balancing act to provide the right motivation behind the why to users, without alarming or frightening people with medical reasons.</p>
+					</div>
+
+				</div> <!-- end row -->	
+
+
+				<div class="row col-md-12 center padding-btm">	
+
+					<figure>
+	              		<img srcset="img/automation/eligibility_iterations_portrait@2x.png 2x"
+	              			src="img/automation/eligibility_iterations_portrait@1x.png" class="img-responsive center" alt="Earlier iterations mentioned 'emergency services' and talked about a 'home' postcode. The final copy became: (title) 'Where do you live?'. (body) 'This must be your current residence. We'll post your confidential NHS documents here.'">
+	              		<figcaption>
+	              			A more clear and concise eligibility screen
+	              		</figcaption>
+	            	</figure>
+
+        		</div> <!-- end image row -->
+
+
+			</div> <!-- end container -->
+
+		</section> <!-- end Eligibility screen changes -->  
+
+
+
+<!-- Section break module ___________________________________________________________________________________________________________________________ -->
+
+		<section class="section-break-module">
+
+				<div class="container">
+
+		    		<div class="row col-md-12 center-text">
+					
+			        	<!-- Sub title -->
+			            	<div>
+			            		<p class="light-text no-padding">High quality data</p>
+			            	</div>
+
+
+			        	<!-- Title -->
+			            	<div>
+			            		<h1>Capturing addresses</h1>
+			              	</div>
+
+		            </div> <!-- end row -->
+
+	            </div> <!-- end container -->
+
+            </section> <!-- end Section break module --> 	
+
+
+
+<!-- Capturing addresses  ___________________________________________________________________________________________________________________________ -->
+
+		<section class="generic-module">
+
+			<div class="container">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-top">
+
+					<div>
+						<h2>Why the right address is so important</h2>
+						<div class="horizontal-line-small"></div>
+					</div>
+
+					<div>
+						<p>Patient address data collected at registration was used throughout Babylon's system, checked with 3rd party systems, and also fed back into the NHS system — this was why it was so important to capture a user's correct address — and with an automated process to be implemented the address now needed to be in an automation-ready format.</p>
+					</div>
+
+				</div> <!-- end row -->
+
+
+				<div class="row col-md-12 center padding-btm">	
+
+					<figure>
+	              		<img srcset="img/automation/address-capture-distribution@2x.png 2x"
+	              			src="img/automation/address-capture-distribution@2x.png" class="img-responsive center" alt="The address collected here was used for automation, PDS checking, smart matching, user's profile, checking the GP area, and to create a new NHS record if needed.">
+	              		<figcaption>
+	              			The address supplied by the user would be used in multiple internal and external systems
+	              		</figcaption>
+	            	</figure>
+
+        		</div> <!-- end image row -->
+
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h2>Flow logic</h2>
+							<div class="horizontal-line-small"></div>
+					</div>					
+
+					<div>
+						<p>The current address pattern allowed users to select their address from a dropdown list, or manually enter their address — but even if the address had been selected from the dropdown, it could still be manually edited by the user! Continuing with this pattern meant we could never guarantee the supplied address would be the “high-quality address data” we needed for automation.</p>
+					</div>
+
+				</div> <!-- end row -->	
+
+
+
+        		<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div class="padding-btm">
+						<p class="no-padding-btm">The BluePrism automation team proposed we remove the manual option completely — an approach I disagreed with at once as it was needed as a stress-case fallback option. My proposed solution turned the flow into a linear stepped process:</p>
+
+						<ul>
+							<li>Users were required to view an address list first</li>
+							<li>Entering an address manually could only occur if they couldn’t find their address in the list</li>
+							<li>An address chosen from the list could not be manually edited</li>
+						</ul>
+
+					</div>
+
+					<div>
+						<p class="no-padding-btm">Using this linear flow meant that all submitted registrations could also be assigned as:</p>
+
+						<ul>
+							<li><span class="p-bold">Automation ready:</span> An address has been selected from the address list (considered “high-quality data”); or</li>
+							<li><span class="p-bold">Manual process:</span> An address has been added manually (“low-quality data”).</li>
+						</ul>
+					</div>
+
+				</div> <!-- end row -->	
+
+
+				<div class="row col-md-12 center padding-btm">
+
+					<figure aria-hidden="true">
+	              		<img srcset="img/automation/proposed-flow@2x.png 2x"
+	              			src="img/automation/proposed-flow@1x.png" class="img-responsive center" alt="">
+	              		<figcaption>
+	              			The proposed flow (simplified)
+	              		</figcaption>
+	            	</figure>
+
+        		</div> <!-- end image row -->
+
+
+
+        		<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-top">
+
+					<div>
+						<h2>Probing the solution</h2>
+						<div class="horizontal-line-small"></div>
+					</div>
+
+					<div class="padding-btm">
+						<p class="no-padding-btm">I was aware that moving in this direction was reducing upfront choice for users and could lead to dropout for two reasons:</p>
+
+						<ol>
+							<li>Users who know, from previous online experiences, that their address is unlikely to be shown in an automated list and want to manually enter their address upfront; and</li>
+							<li>Users not finding their address where they expect it to be in a list, and the manual option not being easily discoverable.</li>
+						</ol>
+					</div>
+
+					<div class="padding-btm">
+						<p>One way I proposed to get around this issue was to have a sticky “add address manually” button on the bottom of the address list view, but after discussion with my PM we agreed that having as few users as possible manually entering an address was the primary business need, and due to pressure from stakeholders to meet the automation deadline, we would move forward with my original solution. <span role="img" aria-label="Disappointed face">😞</span></p>
+					</div>
+
+					<div class="padding-btm">
+						<p class="no-padding-btm">This was one of those tradeoffs where a business-need triumphed over my gut UX instinct. These kinds of tradeoffs don’t make you feel great, but I made sure to keep a close eye for any negative impacts by:</p>
+
+						<ul>
+							<li>Setting up address step dropout metrics</li>
+							<li>Monitoring customer service reports</li>
+							<li>Working with research to set up usability sessions after implementation</li>
+						</ul>
+					</div>
+
+				</div> <!-- end row -->
+
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-top">
+
+					<div>
+						<h2>The native picker problem</h2>
+							<div class="horizontal-line-small"></div>
+					</div>					
+
+					<div>
+						<p>Alongside capturing the correct address information for automation, the use of native dropdown/picker components to show addresses also needed to be re-thought.</p>
+
+						<p class="no-padding-btm">Native dropdown/picker components are made to view values in a list, but they’re less useful when trying to show a large dataset of addresses. I needed to find a better way for users to scan:</p>
+
+						<ul class="padding-btm">
+							<li>A long list of addresses</li>
+							<li>Address details (street name, borough, county, postcode, etc)</li>
+							<li>More than one line of information</li>
+						</ul>
+
+						<p class="no-padding-btm">All three platforms were currently using different components to show the list of addresses to users:</p>
+
+						<ul>
+							<li>Android was using a dropdown menu</li>
+							<li>iOS was using a scroll-wheel picker</li>
+							<li>Web was using the browsers native dropdown</li>
+						</ul>
+					</div>
+
+				</div> <!-- end row -->	
+
+
+				<div class="row col-md-12 center padding-btm">	
+
+					<figure aria-hidden="true">
+	              		<img srcset="img/automation/cross-platform-pickers@2x.png 2x"
+	              			src="img/automation/cross-platform-pickers@1x.png" class="img-responsive center" alt="">
+	              		<figcaption>
+	              			The ways that an address list was shown across various platforms 
+	              		</figcaption>
+	            	</figure>
+
+        		</div> <!-- end image row -->
+
+
+        		<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-top">
+
+        		<div>
+        			<p>I saw this as an opportunity to create a more unified and consistent address picker component for use across platforms — the perfect new addition to Babylon’s design system. <span role="img" aria-label="Smiling face with sunglasses">😎</span></p>
+    			</div>
+
+				</div> <!-- end row -->
+
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-top padding-btm">
+
+					<div>
+						<h2>Selling the change</h2>
+							<div class="horizontal-line-small"></div>
+					</div>					
+
+					<div>
+						<p>My idea for a better way to display addresses was simple — use an overlay view. I knew that this would lead to quicker and easier address scanning, but needed to make the case to both my team, and the design-system team, as to why it was the right way to go. I concentrated on three main impact areas, and used this to successfully make my case for the change. <span role="img" aria-label="Flexed biceps">💪</span></p>
+
+						<ul>
+							<li>
+								<span class="p-bold">Development time and effort</span>
+									<ul>
+										<li>Customisation of existing dropdown/picker components would take more effort than just creating a new component for our particular context</li>
+										<li>After auditing Babylon’s digital services I could see multiple places where this component could be re-used</li>
+									</ul>
+							</li>
+
+							<li>
+								<span class="p-bold">Automation goal</span>
+									<ul>
+										<li>The new address selection flow couldn’t be achieved using the current native dropdown/picker solution</li>
+									</ul>
+							</li>
+
+							<li>
+								<span class="p-bold">Improved user experience</span>
+							</li>
+									<ul>
+										<li>Easier scannability of address lists</li>
+										<li>Better use of screen real-estate (especially on mobile)</li>
+										<li>Allows the user to better focus on a self-contained task</li>
+										<li>Still used platform components that were familiar to users</li>
+									</ul>
+							</li>
+						</ul>
+
+					</div>
+
+				</div> <!-- end row -->	
+
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-top">
+
+					<div>
+						<h2>Cross-platform solution</h2>
+							<div class="horizontal-line-small"></div>
+					</div>	
+
+					<div>
+						<h3>Address presentation</h3>
+						<p>Currently the address listings on iOS and web were shown on just one line, Android improved slightly by splitting the address over two lines. This still presented no real hierarchy to users though, so breaking the address down into primary and secondary levels of importance improved the list scannability for users.</p>
+					</div>
+
+				</div> <!-- end row -->	
+
+
+				<div class="row col-md-12 center padding-btm">	
+
+					<figure>
+	              		<img srcset="img/automation/address-ui@2x.png 2x"
+	              			src="img/automation/address-ui@1x.png" class="img-responsive center" alt="Previous versions of the address list were presented differently across all platforms. The new address list now presented consistently on all platforms.">
+	            	</figure>
+
+	            	<figure aria-hidden="true">
+	              		<img srcset="img/automation/address-ui_platforms@2x.png 2x"
+	              			src="img/automation/address-ui_platforms@1x.png" class="img-responsive center" alt="">
+	              		<figcaption>
+	              			A scannable list which was now consistent across all platforms 
+	              		</figcaption>
+	            	</figure>
+
+        		</div> <!-- end image row -->
+
+
+        		<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">	
+
+					<div class="padding-btm">
+						<h3>Modal behaviours</h3>
+						<p>I’d always pictured in my mind that this “overlay” concept would be a modal component; the interesting question was how the modal behaviour would change across different platforms with specific guidelines.</p>
+
+						<p>For the iOS and Android I chose to use a partial sheet modal — partially covering the current screen UI as this still kept the address selection a part of the same registration step, avoiding the user thinking they may have moved forward in the process if a full screen modal had been used. For the web I stuck with the current design system implementation of the web modal component. The behaviour between modals on the three platforms slightly varied due to platform guidelines/constraints.</p>
+					</div>
+
+					<div>
+						<h4 class="padding-btm-xsmall">iOS: Modal view</h4>
+						<p>iOS 13 and later uses the "card" modal view, but I wanted to keep a similar "card" style for those using pre-iOS 13 devices. I did this by having the fullscreen modal stop just below the status bar.</p>
+					</div>
+
+				</div> <!-- end row -->
+
+
+				<div class="row col-md-12 center padding-btm">
+
+						<figure aria-hidden="true">
+		              		<img srcset="img/automation/address-behaviour_ios@2x.png 2x"
+		              		src="img/automation/address-behaviour_ios@1x.png" class="img-responsive center padding-btm no-padding-top" alt="">
+	            		</figure>
+
+				</div> <!-- end image row -->	
+
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<h4 class="padding-btm-xsmall">Android: Modal bottom sheet</h4>
+					<p>Android’s modal sheet covered the bottom 50% of the screen for easier reachability, and would move to a full screen view once the user started to scroll the list.</p>
+
+				</div> <!-- end row -->
+
+
+				<div class="row col-md-12 center padding-btm">
+
+						<figure aria-hidden="true">
+		              		<img srcset="img/automation/address-behaviour_android@2x.png 2x"
+		              		src="img/automation/address-behaviour_android@1x.png" class="img-responsive center padding-btm no-padding-top" alt="">
+	            		</figure>
+
+				</div> <!-- end image row -->
+
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<h4 class="padding-btm-xsmall">Web: Current modal behaviour kept</h4>
+					<p>Desktop users would see a scrollable modal window, and mobile users would see a full screen modal (these were both current design system components).</p>
+
+				</div> <!-- end row -->
+
+
+			</div> <!-- end container -->
+
+		</section> <!-- end Capturing addresses section --> 				
+
+
+
+
+<!-- Final UI - GP@H address picker _____________________________________________________________________________________________________________________  -->
+
+
+		<div class="container grey-module full-width">
+
+        		<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h2 class="no-padding-top">Final UI</h2>
+							<div class="horizontal-line-small"></div>
+					</div>
+
+				</div> <!-- end row -->
+
+				<div class="row center no-padding">
+
+					<figure class="col-md-8 center">
+						<img srcset="img/automation/hi-gpath-address-picker@2x.png 2x" 
+							src="img/automation/hi-gpath-address-picker@1x.png" class="img-responsive center" alt="The GP at Hand address picker on iPhone, Android, and Web. The main address line is now on the first line, and the city and postcode sit on the second line for all platforms.">
+					</figure>	
+
+            	</div> <!-- end image row --> 							
+
+			</div> <!-- end container -->
+
+		</section> <!-- end UI section --> 	
+
+
+
+<!-- Another use-case emerges _____________________________________________________________________________________________________________________  -->
+
+
+		<section class="generic-module">
+
+			<div class="container no-padding-btm">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-top">
+
+					<div>
+						<h2>Another use-case emerges <span role="img" aria-label="Anxious face with sweat">😰</span></h2>
+							<div class="horizontal-line-small"></div>
+					</div>	
+
+					<div>
+						<p>Towards the end of this project I discovered that this new address picker would also need to be used in our apps User profile section. I had to come up with a solution that scaled the use of our GP at Hand address picker component to be used in another context — without creating too much extra work for our developers.</p>
+					</div>
+
+					<div class="no-padding-btm">
+						<p class="no-padding-btm">For the user profile the address picker component needed to allow for:</p>
+
+						<ul class="padding-btm">
+							<li>Postcode entry and editing</li>
+							<li>Address list changing based on this “in the moment” postcode editing</li>
+							<li>Additional error states and flows that were now needed</li>
+						</ul>
+
+						<p>The user profile area was like the wild west of the Babylon app — it had no dedicated team,  pre-dated Babylon’s design system, and any team wanting to touch it would have extra work on their hands. Even with all of this though, as a team, we knew that this change needed to happen, and we would just need to take the additional scope on the chin.</p>
+					</div>
+
+				</div> <!-- end row -->	
+
+			</div> <!-- end container -->
+
+		</section> <!-- end Another use-case emerges -->  	
+
+
+				<div class="row col-md-12 center padding-btm">	
+
+	            	<figure class="col-md-8 center">
+						<img srcset="img/automation/flow_profiles_ios@2x.png 2x" 
+							src="img/automation/flow_profiles_ios@1x.png" class="img-responsive center" alt="A new modal screen state was introduced before the address list. This state allowed users to input a postcode first (and validation to occur), and then view the associated address list next.">
+						<figcaption>
+							The address picker interaction flow within the user profile 
+						</figcaption>
+					</figure>
+
+        		</div> <!-- end image row -->
+
+
+        		<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">	
+
+					<div class="padding-btm">
+						<p>As a designer I prefer to work with as many of the use-cases in mind to be able to design the best solution. In this case though, I was having to work from the GP at Hand solution up to the more complicated use case. I would have preferred to have worked backwards from the complicated problem first, but sometimes the work you do isn’t lined up the way you’d like. <span role="img" aria-label="person shrugging">🤷</span></p>
+					</div>
+
+				</div> <!-- end row -->
+
+
+
+			</div> <!-- end container -->
+
+
+
+
+<!-- Final UI - Full address picker _____________________________________________________________________________________________________________________  -->
+
+
+		<div class="container grey-module full-width">
+
+        		<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h2 class="no-padding-top">Final UI</h2>
+							<div class="horizontal-line-small"></div>
+					</div>
+
+				</div> <!-- end row -->
+
+				<div class="row center no-padding">
+
+					<figure class="col-md-8 center">
+						<img srcset="img/automation/hi-full-address-picker@2x.png 2x" 
+							src="img/automation/hi-full-address-picker@1x.png" class="img-responsive center" alt="The User profile address picker on iPhone, Android, and Web. This updated address picker component now allowed postcode searching and address viewing within the same modal.">
+					</figure>	
+
+            	</div> <!-- end image row --> 							
+
+			</div> <!-- end container -->
+
+		</section> <!-- end Another use-case emerges section --> 		
+
+
+
+
+<!-- Section break module ___________________________________________________________________________________________________________________________ -->
+
+		<section class="section-break-module">
+
+				<div class="container">
+
+		    		<div class="row col-md-12 center-text">
+					
+			        	<!-- Sub title -->
+			            	<div>
+			            		<p class="light-text no-padding">That extra mile</p>
+			            	</div>
+
+
+			        	<!-- Title -->
+			            	<div>
+			            		<h1>Better question interaction</h1>
+			              	</div>
+
+		            </div> <!-- end row -->
+
+	            </div> <!-- end container -->
+
+            </section> <!-- end Section break module --> 
+
+
+
+<!-- Better question interaction  ___________________________________________________________________________________________________________________________ -->
+
+		<section class="generic-module">
+
+			<div class="container no-padding-btm">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<p>By prioritising a better question/answer interaction we felt we could greatly reduce clinical risk and customer service workload.</p>
+
+						<p>The old question/answer interaction led to some users accidentally mis-answering questions with the default setting of “No”, meaning a user's medical, health, and administrative experience could be jeopardised. For instance a current NHS patient could accidentally mis-answer the question: “Have you ever used the NHS?” with a default “No”, and a <span class="p-bold">new</span> NHS record is created (in addition to their existing one) — now a patient clinical risk has emerged as they have <span class="p-bold">two</span> NHS records with incomplete medical histories. </p>
+					</div>
+
+				</div> <!-- end row -->
+
+				<div class="row col-md-12 center padding-btm">	
+
+	            	<figure>
+	              		<img srcset="img/automation/switches_before@2x.png 2x"
+	              			src="img/automation/switches_before@1x.png" class="img-responsive center no-padding-top" alt="A question such as 'Are you returning from the armed forces?' has an on\off toggle component next to it. This could be easily missed and impact the patient later on.">
+	              		<figcaption>
+	              			iOS and Android switch toggles next to medical related personal questions
+	              		</figcaption>
+	            	</figure>
+
+        		</div> <!-- end image row -->
+
+
+        		<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h2>Default is not the answer</h2>
+						<div class="horizontal-line-small"></div>
+					</div>
+
+					<div class="padding-btm">
+						<p>By using a switch component to answer questions, we literally only had two answer states for the user: Yes and No (or On and Off). Using a default answer increased the possibility of users accidentally skipping questions as it had already been answered with a default.</p>
+
+						<p>Default options are usually used to reduce cognitive load and guide with a suggestion, but in this case we wanted users to stop, and intentionally select Yes or No to each question — these questions were too important to be left to a default value. An additional state that specified “No answer selected yet” was needed.</p>
+					</div>
+
+					<div>
+						<h2>Auditing the current component library</h2>
+						<div class="horizontal-line-small"></div>
+					</div>
+
+					<div class="padding-btm">
+						<p>I undertook an audit of our existing component libraries and discovered that we used radio buttons on the web, but we did not explicitly use them anywhere on the native iOS and Android platforms. With the need to “move fast” in Babylon’s history, anywhere a radio button or checkbox should have been used, a switch component had been considered acceptable instead.</p>				
+
+						<p class="no-padding-btm">For this particular use case I felt a bespoke radio button was the best way forward. There were a number of reasons to justify this decision:</p>
+
+						<ul>
+							<li>A “not answered yet” state would be clear to the user</li>
+							<li>Radio button behaviour was familiar and recognisable</li>
+							<li>A consistent radio button component could be integrated into the design system for for use across all platforms</li>
+						</ul>
+					</div>
+
+					<div>
+						<p>I started to visually explore this new interaction using existing design system components, and then took the proposed designs and justifications to our weekly design system critique — and subsequently given the okay for implementation. <span role="img" aria-label="Party popper">🎉</span></p>
+					</div>
+
+
+					<figure class="padding-btm">
+	              		<img srcset="img/automation/toggle-exploration@2x.png 2x"
+	              			src="img/automation/toggle-exploration@1x.png" class="img-responsive center no-padding-top" alt="Four options were explored to replace the switch, including segmented controls and radio buttons.">
+	              		<figcaption>
+	              			Initial switch replacement explorations   
+	              		</figcaption>
+	            	</figure>
+
+            	</div> <!-- end row -->
+
+
+            	<div class="row col-md-12 center padding-btm">	
+
+					<figure class="padding-btm">
+	              		<img srcset="img/automation/proposed-component@2x.png 2x"
+	              			src="img/automation/proposed-component@1x.png" class="img-responsive center" alt="iPhone, Android, and Web used a radio button behaviour, with the default state being a 'no answer selected yet'.">
+	              		<figcaption>
+	              			The proposed radio button component which was given the thumbs up by the design system team
+	              		</figcaption>
+	            	</figure>
+
+
+	            	<figure>
+	              		<img srcset="img/automation/scaling-solution-explorations@2x.png 2x"
+	              			src="img/automation/scaling-solution-explorations@1x.png" class="img-responsive center" alt="Options explored for a three or more answers use-case included a horizontal radio button sliding interaction, and a full view-width radio button that was then stacked on top of each other.">
+	              		<figcaption>
+	              			Explorations of how the toggle component may scale beyond just a yes/no option
+	              		</figcaption>
+	            	</figure>
+
+	            </div> <!-- end image row -->
+
+
+			</div> <!-- end container -->
+
+		</section> <!-- end Eligibility screen changes --> 
+
+
+
+<!-- Final UI - toggles _____________________________________________________________________________________________________________________  -->
+
+
+		<div class="container grey-module full-width">
+
+        		<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h2 class="no-padding-top">Final UI</h2>
+							<div class="horizontal-line-small"></div>
+					</div>
+
+				</div> <!-- end row -->
+
+				<div class="row center no-padding">
+
+					<figure class="col-md-8 center">
+						<img srcset="img/automation/hi-toggle-switches@2x.png 2x"
+							src="img/automation/hi-toggle-switches@1x.png" class="img-responsive center" alt="The new yes/no radio button interaction across iPhone, Android, and Web. The radio buttons have a large and coloured touch area around them, and are placed next to each other on screen.">
+					</figure>	
+
+            	</div> <!-- end image row --> 							
+
+			</div> <!-- end container -->
+
+		</section> <!-- end UI section --> 	
+
+
+
+
+<!-- Section break module ___________________________________________________________________________________________________________________________ -->
+
+		<section class="section-break-module-alternative">
+
+				<div class="container">
+
+		    		<div class="row col-md-12 center-text">
+					
+			        	<!-- Sub title -->
+			            	<div>
+			            		<p class="light-text no-padding"></p>
+			            	</div>
+
+
+			        	<!-- Title -->
+			            	<div>
+			            		<h1>Reflections</h1>
+			              	</div>
+
+		            </div> <!-- end row -->
+
+	            </div> <!-- end container -->
+
+            </section> <!-- end Section break module --> 				
+
+
+
+
+<!-- Reflections (generic module) _______________________________________________________________________________________________________________ -->
+
+		<section>
+
+			<div class="container">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center no-padding-btm">
+
+
+					<div>
+						<h3 class="padding-btm-xsmall">Positive reframing</h3>
+						<p>The most gratifying part of this project was my team making the concerted effort to prioritise work that positively impacted both end-users and customer support. Taking the time to collaborate with customer service, and reframing the problem from “how do we get better data for automation?” (a very machine and business centered problem) to “how do we help people register faster to use our service?” made this project so much bigger (and more human?) than just being about automation.</p>
+					</div>
+
+
+					<div class="padding-btm">
+						<h3 class="padding-btm-xsmall">Moving fast drawbacks</h3>
+						<p class="padding-btm">One of the values at Babylon Health was “move fast”, and I saw first hand how this value led to rushed solutions and an expectation that fast was good enough. I sadly wasn’t immune to this cultural trait either, and there are two parts of my solution that would have benefited with better long-term thinking.</p>
+
+						<h4 class="padding-btm-xsmall">1. Understanding different use-cases</h4>
+						<p class="padding-btm">My fixation with getting GP at Hand ready for automation within a tight deadline stopped me from clearly seeing how the solution would translate to the User profiles section. Looking back this was a mistake, a clearer picture would have emerged of the different address picker scenarios with a proper investigation. This would have cut down on the extra design and development time needed to re-examine and redo the underlying structure of the GP at Hand address component later.</p>
+
+						<h4 class="padding-btm-xsmall">2. Familiarity vs linearity</h4>
+						<p class="padding-btm">Was changing the address pattern to follow a more linear flow the right way to go? Should I have pushed back stronger against this direction once I had doubts about it? I believe there were better options to explore — that met both the needs of users and automation — rather than influencing user behaviour based solely on the needs of automation. A linear approach can work, but this was a time where a user’s familiarity with choice was needed I believe.</p>
+
+						<p class="no-padding-btm">This is the dilemma of “moving fast” — the breadth to explore ideas, and negative impacts, can be pushed aside. I’ve come to appreciate that to move fast, the right way, you need to have a solid design process that has:</p>
+
+						<ul>
+							<li>Accessibility and inclusive thinking from the start;</li>
+							<li>Strong design principles;</li>
+							<li>Early sharing of work and early user-testing; and</li>
+							<li>Outside perspectives gathered to avoid bias.</li>
+						</ul>
+					</div>
+
+
+				</div> <!-- end row -->
+
+			</div> <!-- end container -->
+
+		</section> <!-- end Reflections --> 				          								             		            	                     		
+
+
+
+
+<!-- Social media module __________________________________________________________________________________________________________________________________________ -->
+
+		<section class="social-media-module">
+			
+			<div class="social-media-grid container padding-btm">
+
+				<div class="row social-media-title col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h2 class="center-text">Find me on these</h2>
+					</div>
+
+				</div>
+
+
+				<!-- Social media platforms --------------------------------------------------- -->
+
+				<!-- LinkedIn icon -->
+				<div class="social-media-platform-1">
+					<a href="https://www.linkedin.com/in/dspagnolo/" target="_self" aria-label="LinkedIn profile">
+						
+						<svg xmlns="https://www.w3.org/2000/svg" width="80" height="80" viewBox="300 0 80 80">
+							<path class="social-icon linkedin-icon" d="M340 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zm-9.8 56.6h-8.1V30.5h8.1v26.1zm-4.1-29.3c-2.6 0-4.2-1.8-4.2-4.1s1.7-4 4.3-4 4.2 1.8 4.3 4c0 2.3-1.7 4.1-4.4 4.1zm33.7 29.3h-8.1V42.1c0-3.4-1.2-5.6-4.1-5.6-2.2 0-3.6 1.5-4.2 3-.2.5-.3 1.3-.3 2v15H335V38.8c0-3.3-.1-6-.2-8.3h7l.4 3.6h.2c1.1-1.7 3.7-4.2 8-4.2 5.3 0 9.3 3.6 9.3 11.2v15.5z"/>
+						</svg>
+
+						<h5 class="icon-label">LinkedIn</h5>
+
+					</a>
+				</div>
+
+
+				<!-- Twitter icon -->
+				<div class="social-media-platform-2">
+					<a href="https://twitter.com/daniel_spagnolo" target="_self" aria-label="Twitter profile">
+						
+						<svg xmlns="https://www.w3.org/2000/svg" width="80" height="80" viewBox="200 0 80 80">
+							<path class="social-icon twitter-icon" d="M240 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zm16.3 32.8v1c0 10.4-7.9 22.4-22.4 22.4-4.5 0-8.6-1.3-12.1-3.5.6.1 1.2.1 1.9.1 3.7 0 7.1-1.3 9.8-3.4-3.4-.1-6.4-2.3-7.4-5.5.5.1 1 .1 1.5.1.7 0 1.4-.1 2.1-.3-3.6-.7-6.3-3.9-6.3-7.7 1.1.6 2.3.9 3.6 1-2.1-1.4-3.5-3.8-3.5-6.6 0-1.4.4-2.8 1.1-4 3.9 4.8 9.7 7.9 16.2 8.2-.1-.6-.2-1.2-.2-1.8 0-4.3 3.5-7.9 7.9-7.9 2.3 0 4.3 1 5.8 2.5 1.8-.4 3.5-1 5-1.9-.6 1.8-1.8 3.4-3.5 4.4 1.6-.2 3.1-.6 4.5-1.2-1.2 1.6-2.5 3-4 4.1z"/>
+						</svg>
+
+						<h5 class="icon-label">Twitter</h5>
+
+					</a>
+				</div>
+
+
+				<!-- Medium icon -->
+				<div class="social-media-platform-3">
+					<a href="https://medium.com/@daniel_spagnolo" target="_self" aria-label="Medium articles">
+						
+						<svg xmlns="https://www.w3.org/2000/svg" x="0px" y="0px" width="80px" height="80px" viewBox="100 0 80 80">
+							<path class="social-icon medium-icon" d="M140 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zM125.3 30.8c0-.5-.1-.9-.5-1.2l-3.4-4.3v-.6h10.4l8.1 18.6 7.1-18.6h9.9v.6l-2.9 2.9c-.2.2-.4.5-.3.8v21.3c0 .3.1.6.3.8l3 2.9v.6h-14.1V54l2.9-3c.3-.3.3-.4.3-.8V33L138 54.6h-1.1L127.5 33v14.4c-.1.6.1 1.2.5 1.7l3.8 4.8v.6h-10.7V54l3.8-4.8c.4-.4.6-1.1.5-1.7V30.8z"/>
+						</svg>
+
+						<h5 class="icon-label">Medium</h5>
+
+					</a>
+				</div>
+									
+			</div> <!-- end container -->
+
+		</section> <!-- end Social media module -->  
+
+
+</main>	
+
+
+<!-- Footer module ________________________________________________________________________________________________________________________________________________ -->
+
+<footer>
+
+	<div class="center-text">
+		<a href="index.html#top-module" class="logo no-padding" aria-label="Return to top of page">
+			<!-- <a href="#"><img src="img/logo2016.gif" width="60px" height="85px" alt="Portfolio logo"></a> --> 
+
+			<!-- Logo svg -->
+	    	<svg class="logo-default" xmlns="https://www.w3.org/2000/svg" width="65" height="90" viewBox="90.1 -1.6 65 90">
+			  <path fill="#00A1FF" d="M105.1 68.8l19-2-9-30"/>
+			  <path fill="#008BDB" d="M123.1 38.9l1 27.9-9-29.9"/>
+			  <path fill="#00A1FF" d="M124.1 66.8l19-23-20-5M119.1 20.8l-2-13.9 11 15.9M91.1 31.9l21-4 5-21-25.9 25"/>
+			  <path fill="#4ABCFF" d="M127.1 12.9l-10-6 11 15.9M112.1 27.8l-7 41 10-31.9M117.1 6.9l2 13.9-7 7"/>
+			  <path fill="#EB3886" d="M154.1 38.6l-23-39.8 7 27-15 13.1 20 5"/>
+			  <path fill="#006FB0" d="M127.1 12.9l4-14.1-14 8.1"/>
+			  <path fill="#29AFFF" d="M131.1-1.2l-4 14 11 13"/>
+			  <g fill="#00A1FF">
+			    <path d="M128.1 22.8l2 10-3-19.9M138.1 25.8l-11-13 3 20"/>
+			  </g>
+			  <path fill="#006FB0" d="M91.1 31.9l11 54.9 10-58.9"/>
+			  <path fill="#FFF" d="M124.1 39.4l-9.5-2.6-2.5-9.4 6.9-7 9.5 2.6 2.5 9.4"/>
+			</svg>
+		</a>
+	</div>
+
+
+
+	<div class="row">
+		<nav>
+			<ul class="center-text clearfix">
+				<li class="alternative"><a href="index.html#work-module" aria-label="Back to Work">Work</a></li>
+				<li class="alternative"><a href="index.html#about-me-module" aria-label="Back to About me">About</a></li>
+			</ul>
+		</nav>
+	</div>
+
+		<div class="row col-md-12 center-text">
+			<small>Made with <span role="img" aria-label="Love" class="heart"></span> in London | &copy; whatever year this is</small>
+		</div>
+
+
+</footer> <!-- end Footer module --> 
+
+
+
+<!-- JS scripts/files (placed at end of file so pages will load faster) _____________________________________________________________________________________ -->
+
+	    <!-- link to jquery library to get the nav shrinking to work below -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+			<script>
+			$(function(){
+			 var shrinkHeader = 150;
+			  $(window).scroll(function() {
+			    var scroll = getCurrentScroll();
+			      if ( scroll >= shrinkHeader ) {
+			           $('header').addClass('shrink'),
+			           $('header.logo-size').addClass('shrink'),
+			           $('header nav ul').addClass('shrink'),
+			           $('header nav ul li').addClass('shrink'),
+			           $('header nav li a').addClass('shrink'),
+			           $('header p').addClass('shrink'),
+			           $('header svg').addClass('shrink'),
+			           $('header a.logo').addClass('shrink'),
+			           $('header nav .alternative a:hover').addClass('shrink'),
+			           $('header nav').addClass('shrink'),
+			           $('header .logo-job-title').addClass('shrink');
+			        }
+			        else {
+			            $('header').removeClass('shrink'),
+			            $('header.logo-size').removeClass('shrink'),
+			            $('header nav ul').removeClass('shrink'),
+			            $('header nav ul li').removeClass('shrink'),
+			            $('header nav li a').removeClass('shrink'),
+			            $('header p').removeClass('shrink'),
+			            $('header svg').removeClass('shrink'),
+			            $('header a.logo').removeClass('shrink'),
+			            $('header nav .alternative a:hover').removeClass('shrink'),
+			            $('header nav').removeClass('shrink'),
+			            $('header .logo-job-title').removeClass('shrink');
+			        }
+			  });
+			function getCurrentScroll() {
+			    return window.pageYOffset || document.documentElement.scrollTop;
+			    }
+			});
+			</script>	
+
+	<!-- Light/dark theme toggle (Guide I used for dark/light mode:- https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web) -->
+    	<script>
+	    	
+	    	// Select the button
+			const btn = document.querySelector(".button-toggle"); // The "button-toggle" class (on colour theme toggle/btn) will change the "body" colour theme when clicked
+			// Check for dark mode preference at the OS level
+			const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+			 
+			// Get the user's theme preference from local storage, if it's available
+			const currentTheme = localStorage.getItem("theme");
+			// If the user's preference in localStorage is dark...
+			if (currentTheme == "dark") {
+			  // ...let's toggle the .dark-theme class on the body
+			  document.body.classList.toggle("dark-theme");
+			// Otherwise, if the user's preference in localStorage is light...
+			} else if (currentTheme == "light") {
+			  // ...let's toggle the .light-theme class on the body
+			  document.body.classList.toggle("light-theme");
+			}
+			 
+			// Listen for a click on the button 
+			btn.addEventListener("click", function() {
+			  // If the user's OS setting is dark and matches our .dark-theme class...
+			  if (prefersDarkScheme.matches) {
+			    // ...then toggle the light theme class
+			    document.body.classList.toggle("light-theme");
+			    // ...but use .dark-theme if the .light-theme class is already on the body,
+			    var theme = document.body.classList.contains("light-theme") ? "light" : "dark";
+			  } else {
+			    // Otherwise, let's do the same thing, but for .dark-theme
+			    document.body.classList.toggle("dark-theme");
+			    var theme = document.body.classList.contains("dark-theme") ? "dark" : "light";
+			  }
+			  // Finally, let's save the current preference to localStorage to keep using it
+			  localStorage.setItem("theme", theme);
+			});
+
+    	</script>				
+
+
+
+
+</body>
+</html>
