@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="144px" height="144px" viewBox="0 0 144 144" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-return</title>
+    <desc>Created with Sketch.</desc>
+    <g id="LATEST-UPDATE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.0.0_x-device_success" transform="translate(-88.000000, -261.000000)">
+            <g id="Group" transform="translate(24.000000, 116.000000)">
+                <g id="tips-module">
+                    <g id="icon-return" transform="translate(64.000000, 145.000000)">
+                        <g id="icons/return-to-computer">
+                            <g id="return-to-computer-large">
+                                <circle id="circle-BG" fill="#E9ECF0" cx="72" cy="72" r="72"></circle>
+                                <g id="cross-device-large-icon" transform="translate(10.000000, 10.000000)">
+                                    <g id="icons/mobile/large">
+                                        <g id="mobile-small">
+                                            <rect id="Rectangle-5" stroke="#1E1E24" stroke-width="4" fill="#FFFFFF" x="2" y="2" width="44" height="76" rx="8"></rect>
+                                            <circle id="Oval" stroke="#1E1E24" stroke-width="2" fill="#FFFFFF" cx="24" cy="69" r="4"></circle>
+                                            <rect id="Rectangle-4-Copy-2" fill="#1E1E24" x="15" y="8" width="18" height="2" rx="1"></rect>
+                                        </g>
+                                    </g>
+                                    <g id="icons/complete-tick/small" transform="translate(8.000000, 23.000000)">
+                                        <g id="complete-tick-small" transform="translate(4.000000, 4.000000)">
+                                            <circle id="Oval" fill="#353FF4" cx="12" cy="12" r="12"></circle>
+                                            <path d="M16.1670887,7.51711209 L10.299503,13.743607 L8.83291133,12.1869833 C8.18475016,11.5017304 7.13387568,11.5017304 6.48612088,12.1869833 C5.83795971,12.8764661 5.83795971,13.9931744 6.48612088,14.6784272 L9.12631094,17.4828879 C9.77447211,18.1723707 10.8249402,18.1723707 11.4731014,17.4828879 L18.5138791,10.008556 C19.1620403,9.31907326 19.1620403,8.20236493 18.5138791,7.51711209 C17.8657179,6.8276293 16.8152498,6.8276293 16.1670887,7.51711209 Z" id="checkmark" fill="#FFFFFF"></path>
+                                        </g>
+                                    </g>
+                                    <g id="icons/desktop/large" transform="translate(32.000000, 38.000000)">
+                                        <g id="desktop-large">
+                                            <rect id="screen-fill" fill="#FFFFFF" x="0" y="0" width="96" height="64" rx="8"></rect>
+                                            <path d="M8,4 C5.790861,4 4,5.790861 4,8 L4,56 C4,58.209139 5.790861,60 8,60 L88,60 C90.209139,60 92,58.209139 92,56 L92,8 C92,5.790861 90.209139,4 88,4 L8,4 Z M8,0 L88,0 C92.418278,-8.11624501e-16 96,3.581722 96,8 L96,56 C96,60.418278 92.418278,64 88,64 L8,64 C3.581722,64 5.41083001e-16,60.418278 0,56 L0,8 C-5.41083001e-16,3.581722 3.581722,8.11624501e-16 8,0 Z" id="screen-outline" fill="#1E1E24" fill-rule="nonzero"></path>
+                                            <rect id="Rectangle" fill="#1E1E24" x="24" y="72" width="48" height="4" rx="2"></rect>
+                                            <path d="M25,54 L71,54 C71.5522847,54 72,54.4477153 72,55 L72,55 C72,55.5522847 71.5522847,56 71,56 L25,56 C24.4477153,56 24,55.5522847 24,55 L24,55 C24,54.4477153 24.4477153,54 25,54 Z" id="Rectangle-Copy" fill="#1E1E24"></path>
+                                            <rect id="Rectangle-2" fill="#1E1E24" x="48" y="60" width="2" height="16" rx="1"></rect>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g id="Group-193" transform="translate(65.299038, 48.750000) scale(-1, 1) rotate(-60.000000) translate(-65.299038, -48.750000) translate(48.299038, 39.750000)" stroke="#1E1E24" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+                                    <path d="M2.88737273,5.80245 C9.82800909,-0.93405 21.0804636,-0.93405 28.0211,5.80245 C31.4921909,9.17145 33.2277364,13.58595 33.2277364,18.00045" id="Stroke-183"></path>
+                                    <polyline id="Stroke-191" points="0.82299129 2.18782217 0.82299129 8.18782217 6.82299129 8.18782217"></polyline>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

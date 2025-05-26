@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="595px" height="359px" viewBox="0 0 595 359" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>realtime-selfie-flow@2x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="realtime-selfie-flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#C7D1D9" stroke-width="4" fill="#FFFFFF" transform="translate(277.500000, 78.479185) rotate(-315.000000) translate(-277.500000, -78.479185) " x="219.5" y="20.4791847" width="116" height="116" rx="16"></rect>
+        <text id="Using-iOS-or-Safari?" font-family="TeXGyreAdventor-Bold, TeX Gyre Adventor" font-size="20" font-weight="bold" line-spacing="28" letter-spacing="0.3999999" fill="#222526">
+            <tspan x="232.4" y="74">Using iOS </tspan>
+            <tspan x="232" y="102">or Safari?</tspan>
+        </text>
+        <text id="Video-Liveness-flow" font-family="TeXGyreAdventor-Bold, TeX Gyre Adventor" font-size="20" font-weight="bold" line-spacing="28" letter-spacing="0.3999999" fill="#222526">
+            <tspan x="10.4999998" y="131">Video </tspan>
+            <tspan x="-1" y="159">Liveness</tspan>
+            <tspan x="20.2999997" y="187">flow</tspan>
+        </text>
+        <path d="M85,76 L175.923077,76" id="Line-Copy-2" stroke="#A8B5BF" stroke-width="4" stroke-linecap="square"></path>
+        <text id="Continue-Liveness-fl" font-family="TeXGyreAdventor-Bold, TeX Gyre Adventor" font-size="20" font-weight="bold" line-spacing="28" letter-spacing="0.3999999" fill="#222526">
+            <tspan x="498" y="131">Continue </tspan>
+            <tspan x="502.3" y="159">Liveness </tspan>
+            <tspan x="523.6" y="187">flow</tspan>
+        </text>
+        <text id="no" font-family="TeXGyreAdventor-Bold, TeX Gyre Adventor" font-size="20" font-weight="bold" line-spacing="28" letter-spacing="0.3999999" fill="#222526">
+            <tspan x="371" y="84">no</tspan>
+        </text>
+        <text id="yes" font-family="TeXGyreAdventor-Bold, TeX Gyre Adventor" font-size="20" font-weight="bold" line-spacing="28" letter-spacing="0.3999999" fill="#222526">
+            <tspan x="260" y="187">yes</tspan>
+        </text>
+        <path d="M411,76 L493.923077,76" id="Line-Copy" stroke="#A8B5BF" stroke-width="4" stroke-linecap="square"></path>
+        <polyline id="Line-Copy-3" stroke="#A8B5BF" stroke-width="4" stroke-linecap="square" transform="translate(387.500000, 236.461538) rotate(-270.000000) translate(-387.500000, -236.461538) " points="353.038462 346.961538 421.961538 346.961538 421.961538 125.961538"></polyline>
+        <circle id="Oval-Copy" stroke="#EB3886" stroke-width="5" fill="#FFFFFF" cx="41" cy="76" r="12"></circle>
+        <circle id="Oval-Copy-2" fill="#EB3886" cx="547" cy="76" r="12"></circle>
+        <text id="Real-time-selfie-flo" font-family="TeXGyreAdventor-Bold, TeX Gyre Adventor" font-size="20" font-weight="bold" line-spacing="28" letter-spacing="0.3999999" fill="#222526">
+            <tspan x="495.4" y="324">Real-time </tspan>
+            <tspan x="495" y="352">selfie flow</tspan>
+        </text>
+        <circle id="Oval-Copy-3" fill="#00A2FF" cx="547" cy="269" r="12"></circle>
+    </g>
+</svg>

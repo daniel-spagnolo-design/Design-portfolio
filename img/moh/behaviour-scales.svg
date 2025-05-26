@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1201px" height="762px" viewBox="0 0 1201 762" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>behaviour-scales</title>
+    <desc>Created with Sketch.</desc>
+    <g id="behaviour-scales" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-10" transform="translate(200.000000, 35.000000)">
+            <text id="Classic" font-family="TeXGyreAdventor-Bold, TeX Gyre Adventor" font-size="20" font-weight="bold" line-spacing="28" letter-spacing="0.3999999" fill="#222526">
+                <tspan x="0" y="25">Classic</tspan>
+            </text>
+            <path d="M89,16 L689.923077,16" id="Line-Copy-2" stroke="#A8B5BF" stroke-width="2" stroke-linecap="square"></path>
+            <text id="Trendy" font-family="TeXGyreAdventor-Bold, TeX Gyre Adventor" font-size="20" font-weight="bold" line-spacing="28" letter-spacing="0.3999999" fill="#222526">
+                <tspan x="708" y="25">Trendy</tspan>
+            </text>
+            <circle id="Oval-Copy-2" fill="#008CFF" cx="129" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-3" fill="#002D40" cx="313" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-4" fill="#66D4FF" cx="361" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-5" fill="#EB3886" cx="409" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-6" fill="#FF91C1" cx="457" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-7" fill="#6E7789" cx="649" cy="15" r="8"></circle>
+        </g>
+        <g id="Group-9" transform="translate(169.000000, 109.000000)">
+            <path d="M120,15 L720.923077,15" id="Line-Copy-3" stroke="#A8B5BF" stroke-width="2" stroke-linecap="square"></path>
+            <text id="Pragmatic" font-family="TeXGyreAdventor-Bold, TeX Gyre Adventor" font-size="20" font-weight="bold" line-spacing="28" letter-spacing="0.3999999" fill="#222526">
+                <tspan x="0" y="25">Pragmatic</tspan>
+            </text>
+            <text id="Emotional" font-family="TeXGyreAdventor-Bold, TeX Gyre Adventor" font-size="20" font-weight="bold" line-spacing="28" letter-spacing="0.3999999" fill="#222526">
+                <tspan x="739" y="25">Emotional</tspan>
+            </text>
+            <circle id="Oval-Copy-9" fill="#002D40" cx="256" cy="14" r="8"></circle>
+            <circle id="Oval-Copy-20" fill="#008CFF" cx="160" cy="14" r="8"></circle>
+            <circle id="Oval-Copy-10" fill="#6E7789" cx="392" cy="14" r="8"></circle>
+            <circle id="Oval-Copy-11" fill="#EB3886" cx="464" cy="14" r="8"></circle>
+            <circle id="Oval-Copy-12" fill="#66D4FF" cx="528" cy="14" r="8"></circle>
+            <circle id="Oval-Copy-13" fill="#FF91C1" cx="656" cy="14" r="8"></circle>
+        </g>
+        <g id="Group-8" transform="translate(82.000000, 183.000000)">
+            <path d="M207,15 L807.923077,15" id="Line-Copy-4" stroke="#A8B5BF" stroke-width="2" stroke-linecap="square"></path>
+            <text id="Doesn’t-trust-online" font-family="TeXGyreAdventor-Bold, TeX Gyre Adventor" font-size="20" font-weight="bold" line-spacing="28" letter-spacing="0.3999999" fill="#222526">
+                <tspan x="0" y="25">Doesn’t trust online</tspan>
+            </text>
+            <text id="Always-trusts-online" font-family="TeXGyreAdventor-Bold, TeX Gyre Adventor" font-size="20" font-weight="bold" line-spacing="28" letter-spacing="0.3999999" fill="#222526">
+                <tspan x="826" y="25">Always trusts online</tspan>
+            </text>
+            <circle id="Oval-Copy-14" fill="#002D40" cx="551" cy="14" r="8"></circle>
+            <circle id="Oval-Copy-15" fill="#66D4FF" cx="615" cy="14" r="8"></circle>
+            <circle id="Oval-Copy-16" fill="#FF91C1" cx="655" cy="14" r="8"></circle>
+            <circle id="Oval-Copy-17" fill="#EB3886" cx="695" cy="14" r="8"></circle>
+            <circle id="Oval-Copy-18" fill="#6E7789" cx="735" cy="14" r="8"></circle>
+            <circle id="Oval-Copy-19" fill="#008CFF" cx="607" cy="14" r="8"></circle>
+        </g>
+        <g id="Group-7" transform="translate(98.000000, 256.000000)">
+            <path d="M191,15 L791.923077,15" id="Line-Copy-5" stroke="#A8B5BF" stroke-width="2" stroke-linecap="square"></path>
+            <text id="Not-cost-sensitive" font-family="TeXGyreAdventor-Bold, TeX Gyre Adventor" font-size="20" font-weight="bold" line-spacing="28" letter-spacing="0.3999999" fill="#222526">
+                <tspan x="0" y="25">Not cost sensitive</tspan>
+            </text>
+            <text id="Very-cost-sensitive" font-family="TeXGyreAdventor-Bold, TeX Gyre Adventor" font-size="20" font-weight="bold" line-spacing="28" letter-spacing="0.3999999" fill="#222526">
+                <tspan x="810" y="25">Very cost sensitive</tspan>
+            </text>
+            <circle id="Oval-Copy-21" fill="#6E7789" cx="311" cy="14" r="8"></circle>
+            <circle id="Oval-Copy-23" fill="#FF91C1" cx="471" cy="14" r="8"></circle>
+            <circle id="Oval-Copy-24" fill="#66D4FF" cx="519" cy="14" r="8"></circle>
+            <circle id="Oval-Copy-25" fill="#EB3886" cx="567" cy="14" r="8"></circle>
+            <circle id="Oval-Copy-26" fill="#008CFF" cx="695" cy="14" r="8"></circle>
+            <circle id="Oval-Copy-27" fill="#002D40" cx="751" cy="14" r="8"></circle>
+        </g>
+        <g id="Group-6" transform="translate(36.000000, 330.000000)">
+            <path d="M253,16 L853.923077,16" id="Line-Copy-6" stroke="#A8B5BF" stroke-width="2" stroke-linecap="square"></path>
+            <text id="Low-frequency-shoppe" font-family="TeXGyreAdventor-Bold, TeX Gyre Adventor" font-size="20" font-weight="bold" line-spacing="28" letter-spacing="0.3999999" fill="#222526">
+                <tspan x="0" y="25">Low frequency shopper</tspan>
+            </text>
+            <text id="High-frequency" font-family="TeXGyreAdventor-Bold, TeX Gyre Adventor" font-size="20" font-weight="bold" line-spacing="28" letter-spacing="0.3999999" fill="#222526">
+                <tspan x="872" y="25">High frequency</tspan>
+            </text>
+            <circle id="Oval-Copy-28" fill="#008CFF" cx="325" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-29" fill="#002D40" cx="534" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-30" fill="#EB3886" cx="590" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-31" fill="#FF91C1" cx="631" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-32" fill="#66D4FF" cx="663" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-33" fill="#6E7789" cx="815" cy="15" r="8"></circle>
+        </g>
+        <g id="Group-5" transform="translate(78.000000, 404.000000)">
+            <path d="M211,16 L811.923077,16" id="Line-Copy-7" stroke="#A8B5BF" stroke-width="2" stroke-linecap="square"></path>
+            <text id="Never-spontaneous" font-family="TeXGyreAdventor-Bold, TeX Gyre Adventor" font-size="20" font-weight="bold" line-spacing="28" letter-spacing="0.3999999" fill="#222526">
+                <tspan x="0" y="25">Never spontaneous</tspan>
+            </text>
+            <text id="Always-spontaneous" font-family="TeXGyreAdventor-Bold, TeX Gyre Adventor" font-size="20" font-weight="bold" line-spacing="28" letter-spacing="0.3999999" fill="#222526">
+                <tspan x="830" y="25">Always spontaneous</tspan>
+            </text>
+            <circle id="Oval-Copy-34" fill="#008CFF" cx="307" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-35" fill="#002D40" cx="483" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-36" fill="#6E7789" cx="531" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-37" fill="#EB3886" cx="579" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-38" fill="#66D4FF" cx="627" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-39" fill="#FF91C1" cx="651" cy="15" r="8"></circle>
+        </g>
+        <g id="Group-4" transform="translate(90.000000, 478.000000)">
+            <path d="M199,16 L799.923077,16" id="Line-Copy-8" stroke="#A8B5BF" stroke-width="2" stroke-linecap="square"></path>
+            <text id="Internal-validation" font-family="TeXGyreAdventor-Bold, TeX Gyre Adventor" font-size="20" font-weight="bold" line-spacing="28" letter-spacing="0.3999999" fill="#222526">
+                <tspan x="0" y="25">Internal validation</tspan>
+            </text>
+            <text id="External-validation" font-family="TeXGyreAdventor-Bold, TeX Gyre Adventor" font-size="20" font-weight="bold" line-spacing="28" letter-spacing="0.3999999" fill="#222526">
+                <tspan x="818" y="25">External validation</tspan>
+            </text>
+            <circle id="Oval-Copy-40" fill="#008CFF" cx="287" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-41" fill="#002D40" cx="463" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-42" fill="#66D4FF" cx="559" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-43" fill="#EB3886" cx="703" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-44" fill="#FF91C1" cx="759" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-45" fill="#6E7789" cx="783" cy="15" r="8"></circle>
+        </g>
+        <g id="Group-3" transform="translate(150.000000, 551.000000)">
+            <path d="M139,16 L739.923077,16" id="Line-Copy-9" stroke="#A8B5BF" stroke-width="2" stroke-linecap="square"></path>
+            <text id="No-research" font-family="TeXGyreAdventor-Bold, TeX Gyre Adventor" font-size="20" font-weight="bold" line-spacing="28" letter-spacing="0.3999999" fill="#222526">
+                <tspan x="0" y="25">No research</tspan>
+            </text>
+            <text id="Lots-of-research" font-family="TeXGyreAdventor-Bold, TeX Gyre Adventor" font-size="20" font-weight="bold" line-spacing="28" letter-spacing="0.3999999" fill="#222526">
+                <tspan x="758" y="25">Lots of research</tspan>
+            </text>
+            <circle id="Oval-Copy-46" fill="#FF91C1" cx="155" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-47" fill="#EB3886" cx="451" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-48" fill="#002D40" cx="595" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-49" fill="#008CFF" cx="661" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-50" fill="#66D4FF" cx="677" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-51" fill="#6E7789" cx="725" cy="15" r="8"></circle>
+        </g>
+        <g id="Group-2" transform="translate(122.000000, 625.000000)">
+            <path d="M167,16 L767.923077,16" id="Line-Copy-10" stroke="#A8B5BF" stroke-width="2" stroke-linecap="square"></path>
+            <text id="Not-tech-savvy" font-family="TeXGyreAdventor-Bold, TeX Gyre Adventor" font-size="20" font-weight="bold" line-spacing="28" letter-spacing="0.3999999" fill="#222526">
+                <tspan x="0" y="25">Not tech savvy</tspan>
+            </text>
+            <text id="Very-tech-savvy" font-family="TeXGyreAdventor-Bold, TeX Gyre Adventor" font-size="20" font-weight="bold" line-spacing="28" letter-spacing="0.3999999" fill="#222526">
+                <tspan x="786" y="25">Very tech savvy</tspan>
+            </text>
+            <circle id="Oval-Copy-52" fill="#FF91C1" cx="183" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-53" fill="#008CFF" cx="503" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-54" fill="#EB3886" cx="599" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-55" fill="#002D40" cx="671" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-56" fill="#6E7789" cx="711" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-57" fill="#66D4FF" cx="727" cy="15" r="8"></circle>
+        </g>
+        <g id="Group" transform="translate(26.000000, 699.000000)">
+            <path d="M263,16 L863.923077,16" id="Line-Copy-11" stroke="#A8B5BF" stroke-width="2" stroke-linecap="square"></path>
+            <text id="Low-media-consumptio" font-family="TeXGyreAdventor-Bold, TeX Gyre Adventor" font-size="20" font-weight="bold" line-spacing="28" letter-spacing="0.3999999" fill="#222526">
+                <tspan x="0" y="25">Low media consumption</tspan>
+            </text>
+            <text id="High-media-consumpti" font-family="TeXGyreAdventor-Bold, TeX Gyre Adventor" font-size="20" font-weight="bold" line-spacing="28" letter-spacing="0.3999999" fill="#222526">
+                <tspan x="882" y="25">High media consumption</tspan>
+            </text>
+            <circle id="Oval-Copy-58" fill="#6E7789" cx="279" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-59" fill="#002D40" cx="312" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-60" fill="#008CFF" cx="577" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-61" fill="#EB3886" cx="714" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-62" fill="#66D4FF" cx="818" cy="15" r="8"></circle>
+            <circle id="Oval-Copy-63" fill="#FF91C1" cx="842" cy="15" r="8"></circle>
+        </g>
+        <ellipse id="Oval" stroke="#DE214A" stroke-width="4" cx="587.5" cy="49.5" rx="123.5" ry="24.5"></ellipse>
+        <ellipse id="Oval-Copy-8" stroke="#DE214A" stroke-width="4" cx="617.5" cy="269.5" rx="95.5" ry="24.5"></ellipse>
+        <ellipse id="Oval-Copy-70" stroke="#DE214A" stroke-width="4" cx="627.5" cy="122.5" rx="95.5" ry="24.5"></ellipse>
+        <ellipse id="Oval-Copy-22" stroke="#DE214A" stroke-width="4" cx="633" cy="344.5" rx="111" ry="24.5"></ellipse>
+        <ellipse id="Oval-Copy-64" stroke="#DE214A" stroke-width="4" cx="644" cy="419.5" rx="123" ry="24.5"></ellipse>
+        <ellipse id="Oval-Copy-65" stroke="#DE214A" stroke-width="4" cx="828" cy="493.5" rx="67" ry="24.5"></ellipse>
+        <ellipse id="Oval-Copy-66" stroke="#DE214A" stroke-width="4" cx="807" cy="565.5" rx="91" ry="24.5"></ellipse>
+        <ellipse id="Oval-Copy-67" stroke="#DE214A" stroke-width="4" cx="784" cy="639.5" rx="99" ry="24.5"></ellipse>
+        <ellipse id="Oval-Copy-68" stroke="#DE214A" stroke-width="4" cx="854" cy="714.5" rx="47" ry="24.5"></ellipse>
+        <ellipse id="Oval-Copy-69" stroke="#DE214A" stroke-width="4" cx="323" cy="714.5" rx="39" ry="24.5"></ellipse>
+        <ellipse id="Oval-Copy" stroke="#DE214A" stroke-width="4" cx="722.5" cy="196.5" rx="133.5" ry="24.5"></ellipse>
+    </g>
+</svg>

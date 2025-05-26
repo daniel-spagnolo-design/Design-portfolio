@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="144px" height="144px" viewBox="0 0 144 144" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-pp-large</title>
+    <desc>Created with Sketch.</desc>
+    <g id="LATEST-UPDATE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.1.1_document-upload_passport_alt" transform="translate(-88.000000, -160.000000)">
+            <g id="icon-pp-large" transform="translate(88.000000, 160.000000)">
+                <circle id="circle-BG" fill="#E9ECF0" cx="72" cy="72" r="72"></circle>
+                <g id="passport" transform="translate(40.000000, 19.000000)">
+                    <path d="M2,15.528471 L2,60.4224521 L52,47.6013845 L52,6.43624583 C52,6.13024432 51.9592891,5.82560284 51.8789387,5.530339 C51.3786202,3.69181683 49.4826152,2.60698844 47.644093,3.10730697 L2,15.528471 Z" id="back-page" stroke="#1E1E24" stroke-width="4" fill="#FFFFFF"></path>
+                    <path d="M2,16 L2,94.2857143 L55.8249997,94.2857143 C59.2353582,94.2857143 62,91.5210725 62,88.110714 L62,22.1750003 C62,18.7646418 59.2353582,16 55.8249997,16 L2,16 Z" id="cover" stroke="#1E1E24" stroke-width="4" fill="#FFFFFF"></path>
+                    <rect id="line-bottom" fill="#1E1E24" x="16" y="77" width="32" height="2" rx="1"></rect>
+                    <g id="globe" transform="translate(16.000000, 34.000000)">
+                        <path d="M16,30 C23.7319865,30 30,23.7319865 30,16 C30,8.2680135 23.7319865,2 16,2 C8.2680135,2 2,8.2680135 2,16 C2,23.7319865 8.2680135,30 16,30 Z" id="outer-circle" stroke="#1E1E24" stroke-width="4" fill="#FFFFFF"></path>
+                        <rect id="horizontal-stroke-top" fill="#1E1E24" x="3.70833333" y="9.97142857" width="25" height="4"></rect>
+                        <rect id="horizontal-stroke-bottom" fill="#1E1E24" x="3.70833333" y="18.9428571" width="24" height="4"></rect>
+                        <rect id="vertical-stroke" fill="#1E1E24" x="14" y="2" width="4" height="28"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

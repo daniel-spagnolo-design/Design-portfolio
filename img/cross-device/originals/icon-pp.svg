@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="selection-card/title-only/2-lines/pill" transform="translate(-16.000000, -18.000000)">
+            <g id="selection-card">
+                <g id="icon" transform="translate(16.000000, 18.000000)">
+                    <circle id="circle-BG" fill="#E9ECF0" cx="24" cy="24" r="24"></circle>
+                    <g id="icons/selection/passport">
+                        <g id="passport" transform="translate(12.000000, 5.000000)">
+                            <path d="M1,5.76151922 L1,21.7122341 L19,17.111189 L19,2.10987625 C19,2.02003035 18.9878918,1.93059424 18.9640024,1.84398258 C18.8171533,1.31157877 18.2665101,0.999024867 17.7341063,1.14587389 L1,5.76151922 Z" id="back-page" stroke="#2C3E4F" stroke-width="2" fill="#FFFFFF"></path>
+                            <path d="M1,6 L1,34 L21,34 C22.1045695,34 23,33.1045695 23,32 L23,8 C23,6.8954305 22.1045695,6 21,6 L1,6 Z" id="cover" stroke="#2C3E4F" stroke-width="2" fill="#FFFFFF"></path>
+                            <rect id="line-bottom" fill="#2C3E4F" x="6" y="28" width="12" height="2" rx="1"></rect>
+                            <g id="globe" transform="translate(5.000000, 11.000000)">
+                                <path d="M7,13 C10.3137085,13 13,10.3137085 13,7 C13,3.6862915 10.3137085,1 7,1 C3.6862915,1 1,3.6862915 1,7 C1,10.3137085 3.6862915,13 7,13 Z" id="outer-circle" stroke="#2C3E4F" stroke-width="2" fill="#FFFFFF"></path>
+                                <rect id="horizontal-stroke-top" fill="#2C3E4F" x="1" y="4" width="12" height="2"></rect>
+                                <rect id="horizontal-stroke-bottom" fill="#2C3E4F" x="1" y="8" width="12" height="2"></rect>
+                                <rect id="vertical-stroke" fill="#2C3E4F" x="6" y="1" width="2" height="12"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,306 @@
+[
+	{
+		"objectId": "8D76086F-D020-4EA7-B319-2459E964949E",
+		"kind": "artboard",
+		"name": "spinner",
+		"originalName": "spinner",
+		"maskFrame": null,
+		"layerFrame": {
+			"x": 8,
+			"y": 102,
+			"width": 304,
+			"height": 248
+		},
+		"visible": true,
+		"metadata": {},
+		"backgroundColor": "rgba(255, 255, 255, 1)",
+		"children": [
+			{
+				"objectId": "945A0020-71CF-4EAE-9016-B1F1A051CD00",
+				"kind": "text",
+				"name": "saved",
+				"originalName": "saved",
+				"maskFrame": null,
+				"layerFrame": {
+					"x": 134,
+					"y": 182,
+					"width": 36,
+					"height": 11
+				},
+				"visible": true,
+				"metadata": {
+					"opacity": 1,
+					"string": "Saved",
+					"css": [
+						"/* Saved: */",
+						"font-family: OpenSans;",
+						"font-size: 13px;",
+						"color: #2C3E4F;",
+						"line-height: 12px;"
+					]
+				},
+				"image": {
+					"path": "images/Layer-saved-otq1qtaw.png",
+					"frame": {
+						"x": 134,
+						"y": 182,
+						"width": 36,
+						"height": 11
+					}
+				},
+				"children": []
+			},
+			{
+				"objectId": "65BA90A6-BF30-49F9-AFFB-98987DED0695",
+				"kind": "group",
+				"name": "tick",
+				"originalName": "tick",
+				"maskFrame": null,
+				"layerFrame": {
+					"x": 140,
+					"y": 122,
+					"width": 26,
+					"height": 22
+				},
+				"visible": true,
+				"metadata": {
+					"opacity": 1
+				},
+				"image": {
+					"path": "images/Layer-tick-njvcqtkw.png",
+					"frame": {
+						"x": 140,
+						"y": 122,
+						"width": 26,
+						"height": 22
+					}
+				},
+				"children": []
+			},
+			{
+				"objectId": "530C9333-BFF8-4D16-9510-76081CB393C2",
+				"kind": "group",
+				"name": "circle_success",
+				"originalName": "circle-success",
+				"maskFrame": null,
+				"layerFrame": {
+					"x": 116,
+					"y": 96,
+					"width": 72,
+					"height": 72
+				},
+				"visible": true,
+				"metadata": {
+					"opacity": 1
+				},
+				"image": {
+					"path": "images/Layer-circle_success-ntmwqzkz.png",
+					"frame": {
+						"x": 116,
+						"y": 96,
+						"width": 72,
+						"height": 72
+					}
+				},
+				"children": []
+			},
+			{
+				"objectId": "8A254875-EFF6-4026-AF64-4EE49D08A534",
+				"kind": "group",
+				"name": "saving_doc_circle",
+				"originalName": "saving-doc-circle",
+				"maskFrame": null,
+				"layerFrame": {
+					"x": 0,
+					"y": 0,
+					"width": 304,
+					"height": 248
+				},
+				"visible": true,
+				"metadata": {
+					"opacity": 1
+				},
+				"children": [
+					{
+						"objectId": "63092A22-2F88-4966-8752-96977B527807",
+						"kind": "text",
+						"name": "saving",
+						"originalName": "saving",
+						"maskFrame": null,
+						"layerFrame": {
+							"x": 128,
+							"y": 182,
+							"width": 48,
+							"height": 14
+						},
+						"visible": true,
+						"metadata": {
+							"opacity": 1,
+							"string": "Saving…",
+							"css": [
+								"/* Saving…: */",
+								"font-family: OpenSans;",
+								"font-size: 13px;",
+								"color: #2C3E4F;",
+								"line-height: 12px;"
+							]
+						},
+						"image": {
+							"path": "images/Layer-saving-njmwotjb.png",
+							"frame": {
+								"x": 128,
+								"y": 182,
+								"width": 48,
+								"height": 14
+							}
+						},
+						"children": []
+					},
+					{
+						"objectId": "DF12AAF7-602D-43EE-A851-F5075D432878",
+						"kind": "group",
+						"name": "circle_partial_green",
+						"originalName": "circle-partial-green",
+						"maskFrame": null,
+						"layerFrame": {
+							"x": 116,
+							"y": 96,
+							"width": 72,
+							"height": 72
+						},
+						"visible": true,
+						"metadata": {
+							"opacity": 1
+						},
+						"image": {
+							"path": "images/Layer-circle_partial_green-reyxmkfb.png",
+							"frame": {
+								"x": 116,
+								"y": 96,
+								"width": 72,
+								"height": 72
+							}
+						},
+						"children": []
+					},
+					{
+						"objectId": "6A05C546-4889-449B-BA05-E44B29A03DC7",
+						"kind": "group",
+						"name": "circle_white",
+						"originalName": "circle-white",
+						"maskFrame": null,
+						"layerFrame": {
+							"x": 116,
+							"y": 96,
+							"width": 72,
+							"height": 72
+						},
+						"visible": true,
+						"metadata": {
+							"opacity": 1
+						},
+						"image": {
+							"path": "images/Layer-circle_white-nkewnum1.png",
+							"frame": {
+								"x": 116,
+								"y": 96,
+								"width": 72,
+								"height": 72
+							}
+						},
+						"children": []
+					},
+					{
+						"objectId": "A01B0C12-8343-43DA-BD57-C21481D9AF54",
+						"kind": "text",
+						"name": "birthCertificate",
+						"originalName": "birthCertificate",
+						"maskFrame": null,
+						"layerFrame": {
+							"x": 78,
+							"y": 51,
+							"width": 148,
+							"height": 14
+						},
+						"visible": true,
+						"metadata": {
+							"opacity": 1,
+							"string": "UK Birth Certificate",
+							"css": [
+								"/* UK Birth Certificate Copy: */",
+								"font-family: OpenSans-Semibold;",
+								"font-size: 16px;",
+								"color: #2C3E4F;",
+								"line-height: 20px;"
+							]
+						},
+						"image": {
+							"path": "images/Layer-birthCertificate-qtaxqjbd.png",
+							"frame": {
+								"x": 78,
+								"y": 51,
+								"width": 148,
+								"height": 14
+							}
+						},
+						"children": []
+					},
+					{
+						"objectId": "81BEB657-7AE5-4F63-893E-D2262AD5CAD1",
+						"kind": "group",
+						"name": "bg_grey",
+						"originalName": "bg-grey",
+						"maskFrame": null,
+						"layerFrame": {
+							"x": 0,
+							"y": 0,
+							"width": 304,
+							"height": 248
+						},
+						"visible": true,
+						"metadata": {
+							"opacity": 1
+						},
+						"image": {
+							"path": "images/Layer-bg_grey-odfcrui2.png",
+							"frame": {
+								"x": 0,
+								"y": 0,
+								"width": 304,
+								"height": 248
+							}
+						},
+						"children": []
+					}
+				]
+			},
+			{
+				"objectId": "B2A85B58-D623-4D9F-880C-0F2FF06A6FE8",
+				"kind": "group",
+				"name": "ui_small_DocCard_complete",
+				"originalName": "ui/small-DocCard-complete*",
+				"maskFrame": null,
+				"layerFrame": {
+					"x": -4,
+					"y": 0,
+					"width": 312,
+					"height": 262
+				},
+				"visible": true,
+				"metadata": {
+					"opacity": 1
+				},
+				"image": {
+					"path": "images/Layer-ui_small_DocCard_complete-qjjbodvc.png",
+					"frame": {
+						"x": -4,
+						"y": 0,
+						"width": 312,
+						"height": 262
+					}
+				},
+				"children": []
+			}
+		]
+	}
+]

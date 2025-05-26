@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mobile-module" transform="translate(-14.000000, -12.000000)">
+            <g id="icon" transform="translate(14.000000, 12.000000)">
+                <g id="icons/mobile-use">
+                    <circle id="circle-BG" fill="#E9ECF0" cx="36" cy="36" r="36"></circle>
+                    <g id="icons/cross-device" stroke-width="1" transform="translate(10.000000, 13.000000)">
+                        <g id="icons/mobile_card">
+                            <g id="mobile" transform="translate(12.000000, 0.000000)">
+                                <rect id="Rectangle-5" stroke="#2C3E4F" stroke-width="2" fill="#FFFFFF" x="1" y="1" width="26" height="46" rx="4.8"></rect>
+                                <circle id="Oval" stroke="#283E4F" fill="#FFFFFF" cx="14" cy="43" r="1.5"></circle>
+                                <rect id="Rectangle-4-Copy-2" fill="#2C3E4F" x="9" y="4" width="10" height="1" rx="0.5"></rect>
+                            </g>
+                            <g id="id-card" transform="translate(0.000000, 11.000000)">
+                                <g transform="translate(15.503856, 11.685480) rotate(-15.000000) translate(-15.503856, -11.685480) translate(1.703856, 3.285480)" id="icons/id-card">
+                                    <g transform="translate(0.400000, 0.000000)">
+                                        <g id="id-card">
+                                            <path d="M1.30909091,0.654545455 C0.947595436,0.654545455 0.654545455,0.947595436 0.654545455,1.30909091 L0.654545455,15.4909091 C0.654545455,15.8524046 0.947595436,16.1454545 1.30909091,16.1454545 L25.0909091,16.1454545 C25.4524046,16.1454545 25.7454545,15.8524046 25.7454545,15.4909091 L25.7454545,1.30909091 C25.7454545,0.947595436 25.4524046,0.654545455 25.0909091,0.654545455 L1.30909091,0.654545455 Z" id="container" stroke="#283E4F" stroke-width="1.30909091" fill="#FFFFFF"></path>
+                                            <g id="inset" transform="translate(12.000000, 4.800000)" fill="#283E4F">
+                                                <rect id="Rectangle-Copy-2" x="1.42108547e-14" y="0" width="10.8" height="1.2" rx="0.6"></rect>
+                                                <rect id="Rectangle-Copy-3" x="1.42108547e-14" y="2.4" width="8.1" height="1.2" rx="0.6"></rect>
+                                            </g>
+                                            <path d="M6,11.4 C7.41542522,11.4 9,9.00813631 9,7.1 C9,5.50221584 7.66057799,4.2 6,4.2 C4.33942201,4.2 3,5.50221584 3,7.1 C3,9.00813631 4.58457478,11.4 6,11.4 Z" id="face" stroke="#2C3E4F" stroke-width="1.2"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                                <rect id="mobile-left-frame" fill="#283E4F" x="12" y="1" width="2" height="24"></rect>
+                                <rect id="overlay" fill-opacity="0.670000017" fill="#FFFFFF" x="14" y="0" width="19" height="21"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
