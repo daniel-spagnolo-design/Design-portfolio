@@ -1,1 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="apple-mobile-web-app-capable" content="yes">
+    	<meta name="color-scheme" content="dark light">
+    	<meta name="description" content="Registration redesign casestudy">
+    	<meta name="author" content="Daniel Spagnolo">
+		<title>Daniel Spagnolo / AI Coach casestudy</title>
 
+		<!--displays favicon in browser/mobile tabs. https://www.favicon-generator.org/-->
+		<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">		
+
+		<!-- Bootstrap core CSS -->
+	    <link href="css/bootstrap-grid.css" rel="stylesheet"> 
+
+	    <!-- Styling CSS -->
+	    <link rel="preload stylesheet" type="text/css" href="css/styles-2022-mini.css"> 
+
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52715158-2"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-52715158-2');
+		</script>
+
+	</head>
+
+	<body>	
+
+
+	<!-- Navigation module _______________________________________________________________________________________________________________________ -->
+
+
+
+	    <header>
+
+			<div class="header-grid center">
+
+			  	<div class="logo-job-title no-padding">
+			  		<a href="index.html#top-module" class="logo no-padding" aria-label="Home">
+			        	<!-- <a href="#"><img src="img/logo2016.gif" width="60px" height="85px" alt="Daniel Spagnolo's portfolio"></a> -->
+			        	
+			        	<!-- Logo svg -->
+			        	<svg class="logo-default" xmlns="https://www.w3.org/2000/svg" viewBox="90.1 -1.6 65 90">
+						  <path fill="#00A1FF" d="M105.1 68.8l19-2-9-30"/>
+						  <path fill="#008BDB" d="M123.1 38.9l1 27.9-9-29.9"/>
+						  <path fill="#00A1FF" d="M124.1 66.8l19-23-20-5M119.1 20.8l-2-13.9 11 15.9M91.1 31.9l21-4 5-21-25.9 25"/>
+						  <path fill="#4ABCFF" d="M127.1 12.9l-10-6 11 15.9M112.1 27.8l-7 41 10-31.9M117.1 6.9l2 13.9-7 7"/>
+						  <path fill="#EB3886" d="M154.1 38.6l-23-39.8 7 27-15 13.1 20 5"/>
+						  <path fill="#006FB0" d="M127.1 12.9l4-14.1-14 8.1"/>
+						  <path fill="#29AFFF" d="M131.1-1.2l-4 14 11 13"/>
+						  <g fill="#00A1FF">
+						    <path d="M128.1 22.8l2 10-3-19.9M138.1 25.8l-11-13 3 20"/>
+						  </g>
+						  <path fill="#006FB0" d="M91.1 31.9l11 54.9 10-58.9"/>
+						  <path fill="#FFF" d="M124.1 39.4l-9.5-2.6-2.5-9.4 6.9-7 9.5 2.6 2.5 9.4"/>
+						</svg>
+
+			        </a> <!-- end logo -->
+
+			        <div>
+			        	<p class="name">Daniel Spagnolo <span class="muted job-title">(He/Him) | Product Designer</span></p>
+			        </div> <!-- end by-line -->
+
+			  	</div> <!-- end logo-job-title -->
+
+
+				
+			  	<!-- <div class="nav_theme-switch"> -->
+
+			  		<nav class="clearfix center-text no-padding">  
+			        	<ul>
+			            	<li class="alternative"><a href="index.html#work-module" aria-label="Work">Work</a></li>
+			            	<li class="alternative"><a href="index.html#about-me-module" aria-label="About me">About</a></li>
+			          	</ul>
+			      	</nav>
+
+			      	<!-- Added a fieldset, ARIA roles, and heading (can be outer or within a legend if you prefer. Thanks to Steve Faulkner and Heydon Pickering https://twitter.com/stevefaulkner/status/1021327778334019585 & https://twitter.com/heydonworks/status/1021329851066830848 -->
+
+					<fieldset aria-label="Light or dark visual theme switcher" role="radiogroup">
+
+						<div class="button-toggle">
+
+							<span class="button-toggle-container">
+								
+								<input type="radio" name="theme" id="light" aria-label="light theme" checked="">
+								<input type="radio" name="theme" id="dark" aria-label="dark theme">
+
+									<span aria-hidden="true" class="button-toggle__background"></span> <!-- end button-toggle__background -->
+										
+										<span>
+										<!-- sun icon -->
+											<svg class="icon-sun" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+										        <g transform="translate(-1327.000000, -53.000000)">
+									            <g transform="translate(1316.000000, 42.000000)">
+								                <g transform="translate(11.000000, 11.000000)">
+							                    <circle cx="11" cy="11" r="4"></circle> <!-- orb -->
+							                    <g> <!-- rays -->
+							                        <rect x="10" y="0" width="1" height="4" rx="0.5"></rect>
+							                        <rect x="0" y="10" width="4" height="1" rx="0.5"></rect>
+							                        <rect transform="translate(5.000000, 4.500000) rotate(-315.000000) translate(-5.000000, -4.500000) " x="3" y="4" width="4" height="1" rx="0.5"></rect>
+							                        <rect x="18" y="10" width="4" height="1" rx="0.5"></rect>
+							                        <rect transform="translate(17.000000, 4.500000) rotate(-45.000000) translate(-17.000000, -4.500000) " x="15" y="4" width="4" height="1" rx="0.5"></rect>
+							                        <rect transform="translate(10.500000, 20.000000) scale(1, -1) translate(-10.500000, -20.000000) " x="10" y="18" width="1" height="4" rx="0.5"></rect>
+							                        <rect transform="translate(5.000000, 16.500000) scale(1, -1) rotate(-315.000000) translate(-5.000000, -16.500000) " x="3" y="16" width="4" height="1" rx="0.5"></rect>
+							                        <rect transform="translate(17.000000, 16.500000) scale(1, -1) rotate(-45.000000) translate(-17.000000, -16.500000) " x="15" y="16" width="4" height="1" rx="0.5"></rect>
+							                    </g>
+								                </g>
+									            </g>
+										        </g>
+											</svg>
+
+											<!-- moon icon -->
+											<svg class="icon-moon" viewBox="0 0 17 18" xmlns="http://www.w3.org/2000/svg">
+										        <g transform="translate(-1370.000000, -55.000000)">
+									            <g transform="translate(1316.000000, 42.000000)">
+								                <g transform="translate(54.000000, 13.000000)"> 
+								                    <path d="M5.625,4.5 C5.625,9.47056275 9.65443725,13.5 14.625,13.5 C15.434709,13.5 16.2194437,13.3930721 16.9658537,13.1925665 C15.4583806,16.0511593 12.4567783,18 9,18 C4.02943725,18 0,13.9705627 0,9 C0,4.83950856 2.82307582,1.3383818 6.65814446,0.307702722 C5.99834193,1.56121389 5.625,2.9870076 5.625,4.5 Z"></path>
+								                </g>
+									            </g>
+										        </g>
+											    </g>
+											</svg>
+
+										</span>
+									
+										<span aria-hidden="true" class="button-toggle__switcher"></span> <!-- end button-toggle-switcher -->
+							
+							</span> <!-- end button-toggle-container -->
+
+						</div> <!-- end button-toggle -->
+
+					</fieldset>		
+
+			  	
+				<!-- </div>  end nav_theme-switch -->
+
+			</div> <!-- end header container -->
+
+		</header>
+
+
+
+<main>
+
+
+	<!-- Hero module ______________________________________________________________________________________________________________________________ -->
+
+
+		<section class="hero-module hero-margin-top">
+
+				<div class="container">
+
+					<div class="row">
+					
+			        	<!-- Sub title -->
+			            	<div class="col-md-6 center-text center">
+			            		<span class="header-caption">AI Coaching platform</span>
+			            	</div>
+
+
+			        	<!-- Title -->
+			            	<div class="col-md-8 center-text center">
+			            		<h1>Helping create better performing workplace leaders and managers</h1>
+			              	</div>
+
+
+			        	<!-- large horizontal line -->
+			            	<div class="horizontal-line-large center">
+			            	</div>
+
+
+			        	<!-- Reading time -->
+			            	<div class="center-text">
+			            		<p class="no-padding-btm">TBC minute read</p>
+			            	</div>
+		            
+		            </div> <!-- end row -->   
+
+	          	</div> <!-- end container -->
+
+
+	          	<!-- Angled top | found at https://css-tricks.com/creating-non-rectangular-headers/-->
+	          	<svg class="angle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+					<polygon points="0,0 140,0 0,100"/>
+				</svg>
+
+
+
+				<!-- Hero image-->
+		        	<div class="row col-xs-12 col-sm-12 col-md-10 col-lg-8 center">
+		            	<figure>
+		              		<img srcset="img/adoption/adoption-unmind-hero@2x.png 2x"
+		              			src="img/adoption/adoption-unmind-hero@1x.png" loading="eager" class="img-responsive center" alt="A mobile device sits in front of a desktop device. Desktop shows the opening screen of the new registration flow. Title says 'Take a moment for yourself', followed by copy 'Unmind helps you lead a more balanced and fulfilling life by nourishing your mind'. An illustration shows a bearded man meditating while floating cross-legged. The mobile shows the final screen of the flow. Title says 'Welcome to Unmind Koda', with a button entitled 'Get started'. An illustration shows a plant growing to symbolise mental wellbeing growth.">
+		            	</figure>
+		          	</div>
+				
+
+    	</section> <!-- end Hero module -->
+
+
+	<!-- Details module ___________________________________________________________________________________________________________________________ -->
+
+		<section class="details-module clearfix">
+
+			<div class="container no-padding-top">
+				
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+	        		<!-- company, role, timeframe, skills -->
+	            	<div class="col-md-12 padding-btm">
+                        <img src="img/logo/unmind@2x.png" loading="eager" class="company-logo" alt="unmind logo">
+                        <p><a class="link" href="https://www.unmind.com/" target="_self" aria-label="Go to Unmind.com">Culture Amp</a> (Melbourne, AUS)</p>
+                        
+                        <img src="img/icons/icon-clock.svg" class="company-logo" alt=" ">
+                        <p>3 months (from design to development start)</p>
+                    </div>
+                    
+	            	<div class="col-md-12">
+                        <h5>Coach team</h5>
+                        <p class="no-padding-btm">Product manager: ???</p>
+                        <p class="no-padding-btm">Team engineering lead: ???</p>
+                        <p class="no-padding-btm">ML engineers: ???</p>
+                        <p class="no-padding-btm">AI/data scientist: ???</p>
+                        <p>Product designer: Me</p>
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <h5>Support roles</h5>
+                        <p class="no-padding-btm">UX researcher: Lucy ???, Shya ???</p>
+                        <p>Growth marketer: ???</p>
+                    </div>
+                    
+<!--
+	            	<div class="col-md-12">
+	            			<h5>Timeframe</h5>
+	            			<p>Three months</p>
+	        			</div>
+-->
+                    
+	            	<div class="col-md-12">
+                        <h5>My role</h5>
+                        <p>UX and UI design, workshop facilitation, usability testing, research, ???</p>
+                    </div>
+
+	        	</div> <!-- end row -->
+
+            </div>  <!-- end container -->
+
+    	</section> <!-- end Details module -->
+
+
+	<!-- Problem module ___________________________________________________________________________________________________________________________ -->
+
+		<section class="special-module">
+
+			<div class="container">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h2>The problem</h2>
+							<div class="horizontal-line-small">
+							</div>
+					</div>
+
+					<div>
+						<p>Leaders and managers frequently face navigating complex interpersonal dynamics like difficult conversations, providing quality feedback, and communicating effectively. They often struggle to access timely, high-quality coaching when they need it most to enhance their performance and leadership skills. Existing resources are typically expensive or provide generic, broad guidance that isn't tailored to their specific situation or organisational context.</p>
+
+                        <p>This leaves leaders without the information or a confidential space where they can reflect, learn, and determine contextually relevant actions to improve their performance over time. In an increasingly complex workplace, they need granular, action-oriented support on "what do I do now, and how do I do it?". Without it, they lack the clarity and confidence needed to handle challenging situations effectively, impacting their ability to make decisions and hindering their speed to action. Managers sometimes resort to inadequate, generic AI tools which pose data privacy concerns and lack grounding in relevant evidence.</p>
+					</div>
+
+				</div> <!-- end row -->
+
+			</div> <!-- end container -->
+
+		</section> <!-- end Problem module -->
+
+
+	<!-- Solution module ___________________________________________________________________________________________________________________________ -->
+
+		<section class="solution-module">
+
+			<div class="container no-padding-btm">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+
+					<div>
+						<h4 aria-label="Too long, didn't read">TL;DR</h4>
+					</div>
+
+					<div>
+						<h2>The solution</h2>
+							<div class="horizontal-line-small"></div>
+					</div>
+                    
+                    <div>
+                        <p>We created an AI Coach product to help leaders and managers struggling to access timely, high-quality coaching. Coach is an AI-powered, interactive tool designed to provide real-time performance coaching. It addresses the lack of readily available, high-quality guidance by offering immediate, structured support for navigating workplace challenges, particularly difficult conversations, performance reviews, and feedback.</p>
+
+                        <p>By leveraging insights from Culture Amp’s expert People Science and Organisational Psychology knowledge and interacting through a conversational interface, Coach helps leaders and managers to:</p>
+                    </div>                      
+                    
+                </div> <!-- End row -->
+                
+                    <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm-xsmall">
+                                                
+						<h3 class="padding-btm-xsmall">Gain clarity</h3>
+						<p>Organising thoughts, gain insights, and get structured recommendations</p>
+                                            
+                </div> <!-- end row --> 
+                                    
+                    <div class="row col-md-12 center padding-btm">
+
+                        <figure>
+                            <img srcset="img/adoption/solution_privacy_desktop@2x.png 2x" 
+                                src="img/adoption/solution_privacy_desktop@1x.png" loading="eager" class="img-responsive center no-padding-top padding-btm" alt="Privacy step as seen on a desktop. Title: We take your privacy seriously. Point 1: Unmind is 100% confidential. We'll never share your personal information with your employer. Point 2: Employers only see anonymised data. They can see overall company wellbeing – but not how you use Unmind personally. There is an illustration of a person sitting in a padlock shaped house, using their phone, while looking relaxed and at ease.">
+                        </figure>
+
+            	   </div> <!-- end image row --> 
+                                
+			</div> <!-- end container -->
+
+		</section> <!-- end Solution module -->
+    
+    
+    <!-- Outcome (generic module) __________________________________________________________________________________________________________________ -->
+
+		<section class="generic-module">
+
+			<div class="container no-padding-btm no-padding-top">
+
+				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-top">
+
+
+					<div>
+						<h2>Outcomes</h2>
+							<div class="horizontal-line-small"></div>
+					</div>            		
+
+            		<div class="outcome-metrics center-text padding-btm">
+	            		<div>
+	            			<h1>???</h1>
+            			</div>
+
+            			<div>
+	            			<p>???</p>
+	            		</div>
+            		</div>
+
+            		<div class="outcome-metrics center-text padding-btm">
+	            		<div>
+	            			<h1>???</h1>
+            			</div>
+
+            			<div>
+	            			<p>???</p>
+	            		</div>
+            		</div>         		           		            		
+
+				</div> <!-- end row --> 
+
+			</div> <!-- end container -->
+
+		</section> <!-- end outcome --> 
+
+	<!-- Casestudy begins ___________________________________________________________________________________________________________________________ -->
+		
+		<section class="padding-btm">
+			
+			<div class="container padding-btm">
+
+				<div class="row">
+
+	            	<div class="horizontal-line-small center"></div>
+
+            	</div> <!-- end row -->
+
+
+				<div class="row col-xs-10 col-sm-10 col-md-7 col-lg-6 center">		
+						
+					<div>
+			    		<h6 class="center-text">Read the full casestudy below<span class="no-italic" role="img" aria-label="nerd face"> 🤓 </span></h6>
+			    	</div> 
+
+		    	</div> <!-- end row -->
+
+		    	<div class="row padding-btm">	
+
+					<figure aria-hidden="true" class="center-text arrow-bubble">
+	              		<!-- <img src="img/arrow-down-bubble.svg" alt=""> -->
+
+	              		<svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+        				<circle cx="24" cy="24" r="24"/>
+	        				<g class="inner-arrow" transform="matrix(0 1 -1 0 35 12)">
+								<g transform="matrix(-.69465837 -.7193398 .7193398 -.69465837 11.116257 22.62397)">
+	        						<rect height="4" rx="2" width="16" y="12"/>
+	        						<rect height="16" rx="2" width="4"/>
+	    						</g><path d="m0 11c0-1.1045695.89821238-2 1.99079514-2h16.01840976c1.0994858 0 1.9907951.88772964 1.9907951 2 0 1.1045695-.8982124 2-1.9907951 2h-16.01840976c-1.0994858 0-1.99079514-.8877296-1.99079514-2z"/></g>
+	        				</g>
+	            	</svg>
+
+	            	</figure>
+
+	            	
+
+        		</div> <!-- end image row -->
+
+			    					
+			</div> <!-- end container -->
+
+		</section> <!-- end section -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Social media module __________________________________________________________________________________________________________________________________________ -->
+
+		<section class="social-media-module">
+			
+			<div class="social-media-grid container padding-btm">
+
+				<div class="row social-media-title col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+
+					<div>
+						<h2 class="center-text">Find me on these</h2>
+					</div>
+
+				</div>
+
+
+				<!-- Social media platforms --------------------------------------------------- -->
+
+				<!-- LinkedIn icon -->
+				<div class="social-media-platform-1">
+					<a href="https://www.linkedin.com/in/dspagnolo/" target="_self" aria-label="LinkedIn profile">
+						
+						<svg xmlns="https://www.w3.org/2000/svg" width="80" height="80" viewBox="300 0 80 80">
+							<path class="social-icon linkedin-icon" d="M340 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zm-9.8 56.6h-8.1V30.5h8.1v26.1zm-4.1-29.3c-2.6 0-4.2-1.8-4.2-4.1s1.7-4 4.3-4 4.2 1.8 4.3 4c0 2.3-1.7 4.1-4.4 4.1zm33.7 29.3h-8.1V42.1c0-3.4-1.2-5.6-4.1-5.6-2.2 0-3.6 1.5-4.2 3-.2.5-.3 1.3-.3 2v15H335V38.8c0-3.3-.1-6-.2-8.3h7l.4 3.6h.2c1.1-1.7 3.7-4.2 8-4.2 5.3 0 9.3 3.6 9.3 11.2v15.5z"/>
+						</svg>
+
+						<h5 class="icon-label">LinkedIn</h5>
+
+					</a>
+				</div>
+
+
+				<!-- Twitter icon -->
+				<div class="social-media-platform-2">
+					<a href="https://twitter.com/daniel_spagnolo" target="_self" aria-label="Twitter profile">
+						
+						<svg xmlns="https://www.w3.org/2000/svg" width="80" height="80" viewBox="200 0 80 80">
+							<path class="social-icon twitter-icon" d="M240 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zm16.3 32.8v1c0 10.4-7.9 22.4-22.4 22.4-4.5 0-8.6-1.3-12.1-3.5.6.1 1.2.1 1.9.1 3.7 0 7.1-1.3 9.8-3.4-3.4-.1-6.4-2.3-7.4-5.5.5.1 1 .1 1.5.1.7 0 1.4-.1 2.1-.3-3.6-.7-6.3-3.9-6.3-7.7 1.1.6 2.3.9 3.6 1-2.1-1.4-3.5-3.8-3.5-6.6 0-1.4.4-2.8 1.1-4 3.9 4.8 9.7 7.9 16.2 8.2-.1-.6-.2-1.2-.2-1.8 0-4.3 3.5-7.9 7.9-7.9 2.3 0 4.3 1 5.8 2.5 1.8-.4 3.5-1 5-1.9-.6 1.8-1.8 3.4-3.5 4.4 1.6-.2 3.1-.6 4.5-1.2-1.2 1.6-2.5 3-4 4.1z"/>
+						</svg>
+
+						<h5 class="icon-label">Twitter</h5>
+
+					</a>
+				</div>
+
+
+				<!-- Medium icon -->
+				<div class="social-media-platform-3">
+					<a href="https://medium.com/@daniel_spagnolo" target="_self" aria-label="Medium articles">
+						
+						<svg xmlns="https://www.w3.org/2000/svg" x="0px" y="0px" width="80px" height="80px" viewBox="100 0 80 80">
+							<path class="social-icon medium-icon" d="M140 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zM125.3 30.8c0-.5-.1-.9-.5-1.2l-3.4-4.3v-.6h10.4l8.1 18.6 7.1-18.6h9.9v.6l-2.9 2.9c-.2.2-.4.5-.3.8v21.3c0 .3.1.6.3.8l3 2.9v.6h-14.1V54l2.9-3c.3-.3.3-.4.3-.8V33L138 54.6h-1.1L127.5 33v14.4c-.1.6.1 1.2.5 1.7l3.8 4.8v.6h-10.7V54l3.8-4.8c.4-.4.6-1.1.5-1.7V30.8z"/>
+						</svg>
+
+						<h5 class="icon-label">Medium</h5>
+
+					</a>
+				</div>
+									
+			</div> <!-- end container -->
+
+		</section> <!-- end Social media module -->  
+    
+
+
+</main>	<!-- End main content -->
+
+
+<!-- Footer module ___________________________________________________________________________________________________________________________________ -->
+
+<footer>
+
+	<div class="center-text">
+		<a href="index.html#top-module" class="logo no-padding" aria-label="Return to top of page">
+			<!-- <a href="#"><img src="img/logo2016.gif" width="60px" height="85px" alt="Portfolio logo"></a> --> 
+
+			<!-- Logo svg -->
+	    	<svg class="logo-default" xmlns="https://www.w3.org/2000/svg" width="65" height="90" viewBox="90.1 -1.6 65 90">
+			  <path fill="#00A1FF" d="M105.1 68.8l19-2-9-30"/>
+			  <path fill="#008BDB" d="M123.1 38.9l1 27.9-9-29.9"/>
+			  <path fill="#00A1FF" d="M124.1 66.8l19-23-20-5M119.1 20.8l-2-13.9 11 15.9M91.1 31.9l21-4 5-21-25.9 25"/>
+			  <path fill="#4ABCFF" d="M127.1 12.9l-10-6 11 15.9M112.1 27.8l-7 41 10-31.9M117.1 6.9l2 13.9-7 7"/>
+			  <path fill="#EB3886" d="M154.1 38.6l-23-39.8 7 27-15 13.1 20 5"/>
+			  <path fill="#006FB0" d="M127.1 12.9l4-14.1-14 8.1"/>
+			  <path fill="#29AFFF" d="M131.1-1.2l-4 14 11 13"/>
+			  <g fill="#00A1FF">
+			    <path d="M128.1 22.8l2 10-3-19.9M138.1 25.8l-11-13 3 20"/>
+			  </g>
+			  <path fill="#006FB0" d="M91.1 31.9l11 54.9 10-58.9"/>
+			  <path fill="#FFF" d="M124.1 39.4l-9.5-2.6-2.5-9.4 6.9-7 9.5 2.6 2.5 9.4"/>
+			</svg>
+		</a>
+	</div>
+
+
+
+	<div class="row">
+		<nav>
+			<ul class="center-text clearfix">
+				<li class="alternative"><a href="index.html#work-module" aria-label="Back to Work">Work</a></li>
+				<li class="alternative"><a href="index.html#about-me-module" aria-label="Back to About me">About</a></li>
+			</ul>
+		</nav>
+	</div>
+
+		<div class="row col-md-12 center-text">
+			<small>Made with <span role="img" aria-label="Love" class="heart"></span> in London & Melbourne | &copy; whatever year this is</small>
+		</div>
+
+
+</footer> <!-- end Footer module -->
+
+
+
+
+
+<!-- JS scripts/files (placed at end of file so pages will load faster) _______________________________________________________________________________ -->
+
+	    <!-- link to jquery library to get the nav shrinking to work below -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+			<script>
+			$(function(){
+			 var shrinkHeader = 150;
+			  $(window).scroll(function() {
+			    var scroll = getCurrentScroll();
+			      if ( scroll >= shrinkHeader ) {
+			           $('header').addClass('shrink'),
+			           $('header.logo-size').addClass('shrink'),
+			           $('header nav ul').addClass('shrink'),
+			           $('header nav ul li').addClass('shrink'),
+			           $('header nav li a').addClass('shrink'),
+			           $('header p').addClass('shrink'),
+			           $('header svg').addClass('shrink'),
+			           $('header a.logo').addClass('shrink'),
+			           $('header nav .alternative a:hover').addClass('shrink'),
+			           $('header nav').addClass('shrink'),
+			           $('header .logo-job-title').addClass('shrink');
+			        }
+			        else {
+			            $('header').removeClass('shrink'),
+			            $('header.logo-size').removeClass('shrink'),
+			            $('header nav ul').removeClass('shrink'),
+			            $('header nav ul li').removeClass('shrink'),
+			            $('header nav li a').removeClass('shrink'),
+			            $('header p').removeClass('shrink'),
+			            $('header svg').removeClass('shrink'),
+			            $('header a.logo').removeClass('shrink'),
+			            $('header nav .alternative a:hover').removeClass('shrink'),
+			            $('header nav').removeClass('shrink'),
+			            $('header .logo-job-title').removeClass('shrink');
+			        }
+			  });
+			function getCurrentScroll() {
+			    return window.pageYOffset || document.documentElement.scrollTop;
+			    }
+			});			
+			</script>	
+
+	<!-- JS scripts/files (placed at end of file so pages will load faster) ____________________________________________________________________________ -->
+    
+	<!-- Light/dark theme toggle (Guide I used for dark/light mode:- https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web) -->
+    	<script>
+	    	
+	    	// Select the button
+			const btn = document.querySelector(".button-toggle"); // The "button-toggle" class (on colour theme toggle/btn) will change the "body" colour theme when clicked
+			// Check for dark mode preference at the OS level
+			const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+			 
+			// Get the user's theme preference from local storage, if it's available
+			const currentTheme = localStorage.getItem("theme");
+			// If the user's preference in localStorage is dark...
+			if (currentTheme == "dark") {
+			  // ...let's toggle the .dark-theme class on the body
+			  document.body.classList.toggle("dark-theme");
+			// Otherwise, if the user's preference in localStorage is light...
+			} else if (currentTheme == "light") {
+			  // ...let's toggle the .light-theme class on the body
+			  document.body.classList.toggle("light-theme");
+			}
+			 
+			// Listen for a click on the button 
+			btn.addEventListener("click", function() {
+			  // If the user's OS setting is dark and matches our .dark-theme class...
+			  if (prefersDarkScheme.matches) {
+			    // ...then toggle the light theme class
+			    document.body.classList.toggle("light-theme");
+			    // ...but use .dark-theme if the .light-theme class is already on the body,
+			    var theme = document.body.classList.contains("light-theme") ? "light" : "dark";
+			  } else {
+			    // Otherwise, let's do the same thing, but for .dark-theme
+			    document.body.classList.toggle("dark-theme");
+			    var theme = document.body.classList.contains("dark-theme") ? "dark" : "light";
+			  }
+			  // Finally, let's save the current preference to localStorage to keep using it
+			  localStorage.setItem("theme", theme);
+			});
+
+    	</script>	
+
+
+
+
+
+</body>
+
+</html>		
