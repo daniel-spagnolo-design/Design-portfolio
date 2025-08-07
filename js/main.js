@@ -1,3 +1,5 @@
+// JS for: 1. Smooth scrolling to links, 2. animation of nav bar on scrolling, 3. wavy line animation on scroll  
+
   // Smooth scroll to nav link modules (for index page only) //  
   $(document).ready(function(){
     // Add smooth scrolling to all links
@@ -64,6 +66,56 @@
   });
 
 });
+
+
+
+// Wavy line animation on down-scroll
+document.addEventListener('DOMContentLoaded', function() {
+    const statusIndicator = document.getElementById('status');
+    const wavySections = document.querySelectorAll('.wavy-line-section');
+    let animationsTriggered = 0;
+    
+    // Create intersection observer
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              // Find the wavy line within this section
+                const wavyLine = entry.target.querySelector('.wavy-line-animation');
+                
+                if (wavyLine) {
+                  // Add animate class to start the animation
+                    wavyLine.classList.add('animate');
+                    animationsTriggered++;
+                    
+                    // Get section name from data attribute
+                    const sectionName = entry.target.dataset.section || `Section ${animationsTriggered}`;
+                    
+                    // Update status indicator
+                    statusIndicator.textContent = `${sectionName} animation triggered! (${animationsTriggered}/${wavySections.length})`;
+                    statusIndicator.classList.add('triggered');
+                    
+                    // Stop observing this section after animation triggers
+                    observer.unobserve(entry.target);
+                    
+                    // Hide status after all animations or after delay
+                    if (animationsTriggered >= wavySections.length) {
+                        setTimeout(() => {
+                            statusIndicator.textContent = 'All animations complete!';
+                            setTimeout(() => statusIndicator.style.opacity = '0', 2000);
+                        }, 1000);
+                    }
+                }
+            }
+        });
+    }, {
+        threshold: 0.9, // Trigger when 90% of the section is visible
+        rootMargin: '0px 0px -50px 0px' // Slight offset to fine-tune trigger point
+    });
+    
+    // Observe all wavy sections
+    wavySections.forEach(section => observer.observe(section));
+});
+
 
 
 

@@ -1817,7 +1817,30 @@ body.dark-theme .icon-moon {
 }
 
 
-/* Solution module ----------------------------------------------------------------------------------------------------------------------------------- */
+/*Animates wavy line with css keyframe*/
+.wavy-line-animation {
+   /*Pure CSS wavy line animation with clip-path*/
+    clip-path: inset(0 0 100% 0);
+    animation: clip-path-reveal 0.5s ease-out forwards;
+    animation-play-state: paused; /* Start paused */
+}
+
+.wavy-line-animation.animate {
+    animation-play-state: running; /* Play when the class is added */
+}
+
+	@keyframes clip-path-reveal {
+	    to {
+	    	clip-path: inset(0 0 0 0);
+	    }
+	  }
+
+
+
+
+
+
+/* Solution module ----------------------------------------------------------------------------------------------------------------------------------- 
 
 .solution-module h4 {
 	color: var(--colour-primary);
