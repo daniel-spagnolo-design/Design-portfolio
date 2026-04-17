@@ -10,45 +10,35 @@
     	<meta name="author" content="Daniel Spagnolo">
 		<title>Daniel Spagnolo / Video Liveness casestudy</title>
 
-		<!--displays favicon in browser/mobile tabs. https://www.favicon-generator.org/-->
-		<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+				<!--displays favicon in browser/mobile tabs. https://www.favicon-generator.org/-->
 		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-		<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
 		<link rel="manifest" href="/manifest.json">
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">		
 
-		<!-- Bootstrap core CSS -->
-	    <link href="css/bootstrap-grid.css" rel="stylesheet"> 
+		<!-- Bootstrap core CSS --> 
 
 	    <!-- Styling CSS -->
-	    <link rel="preload stylesheet" type="text/css" href="css/styles-2025-mini.css">
+	    <link rel="preload stylesheet" type="text/css" href="css/styles-2026-mini.css">
 
 	    <!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52715158-2"></script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-QKTF3G7D47"></script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
 
-		  gtag('config', 'UA-52715158-2');
+		  gtag('config', 'G-QKTF3G7D47');
 		</script>
 
 	</head>
 
-	<body>	
+	<body>
 
+	<a class="skip-link" href="#main-content">Skip to main content</a>
 
 	<!-- Navigation module ___________________________________________________________________________________________________________________________ -->
 
@@ -60,10 +50,10 @@
 
 			  	<div class="logo-job-title no-padding">
 			  		<a href="index.html#top-module" class="logo no-padding" aria-label="Home">
-			        	<!-- <a href="#"><img src="img/logo2016.gif" width="60px" height="85px" alt="Daniel Spagnolo's portfolio"></a> -->
+			        	<!-- <a href="#"><img loading="lazy" src="img/logo2016.gif" width="60px" height="85px" alt="Daniel Spagnolo's portfolio"></a> -->
 			        	
 			        	<!-- Logo svg -->
-			        	<svg class="logo-default" xmlns="https://www.w3.org/2000/svg" viewBox="90.1 -1.6 65 90">
+			        	<svg aria-hidden="true" class="logo-default" xmlns="https://www.w3.org/2000/svg" viewBox="90.1 -1.6 65 90">
 						  <path fill="#00A1FF" d="M105.1 68.8l19-2-9-30"/>
 						  <path fill="#008BDB" d="M123.1 38.9l1 27.9-9-29.9"/>
 						  <path fill="#00A1FF" d="M124.1 66.8l19-23-20-5M119.1 20.8l-2-13.9 11 15.9M91.1 31.9l21-4 5-21-25.9 25"/>
@@ -106,13 +96,15 @@
 							<span class="button-toggle-container">
 								
 								<input type="radio" name="theme" id="light" checked="">
+								<label for="light" class="sr-only">Light theme</label>
 								<input type="radio" name="theme" id="dark">
+								<label for="dark" class="sr-only">Dark theme</label>
 
 									<span aria-hidden="true" class="button-toggle__background"></span> <!-- end button-toggle__background -->
 										
 										<span>
 										<!-- sun icon -->
-											<svg class="icon-sun" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+											<svg aria-hidden="true" class="icon-sun" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
 										        <g transform="translate(-1327.000000, -53.000000)">
 									            <g transform="translate(1316.000000, 42.000000)">
 								                <g transform="translate(11.000000, 11.000000)">
@@ -133,7 +125,7 @@
 											</svg>
 
 											<!-- moon icon -->
-											<svg class="icon-moon" viewBox="0 0 17 18" xmlns="http://www.w3.org/2000/svg">
+											<svg aria-hidden="true" class="icon-moon" viewBox="0 0 17 18" xmlns="http://www.w3.org/2000/svg">
 										        <g transform="translate(-1370.000000, -55.000000)">
 									            <g transform="translate(1316.000000, 42.000000)">
 								                <g transform="translate(54.000000, 13.000000)"> 
@@ -176,14 +168,14 @@
 					<div class="row">
 					
 			        	<!-- Sub title -->
-			            	<div class="col-md-6 center-text center">
+			            	<div class="col-content center-text center">
 			            		<span class="header-caption">Detecting Liveness on the web</span>
 			            	</div>
 
 
 			        	<!-- Title -->
-			            	<div class="col-md-8 center-text center">
-			            		<h1>Reducing identity fraud</h1>
+			            	<div class="col-content center-text center">
+			            		<h1 id="main-content" tabindex="-1">Reducing identity fraud</h1>
 			              	</div>
 
 
@@ -203,17 +195,17 @@
 
 
 	          	<!-- Angled top | found at https://css-tricks.com/creating-non-rectangular-headers/-->
-	          	<svg class="angle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+	          	<svg aria-hidden="true" class="angle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
 					<polygon points="0,0 140,0 0,100"/>
 				</svg>
 
 
 
 				<!-- Hero image-->
-		        	<div class="row col-xs-12 col-sm-12 col-md-10 col-lg-8 center">
+		        	<div class="row col-hero center">
 		            	<figure aria-hidden="true">
-		              		<img srcset="img/liveness/liveness-hero@2x.png 2x"
-		              			src="img/liveness/liveness-hero@1x.png" class="img-responsive center" alt="">
+		              		<img srcset="img/liveness/webp/liveness-hero@2x.webp 2x"
+		              			src="img/liveness/webp/liveness-hero@1x.webp" fetchpriority="high" class="img-responsive center" alt="">
 		            	</figure>
 		          	</div>
 				
@@ -228,22 +220,22 @@
 
 			<div class="container no-padding-top">
 				
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
 
 	        		<!-- company, role, timeframe, skills -->
-	            	<div class="col-md-12">
+	            	<div class="">
 	            			<h5>Company:</h5>
 	            			<p><a class="link" href="https://onfido.com/" target="_self" aria-label="Go to Onfido.com">Onfido</a> &mdash; London</p>
 	            		</div>
-	            	<div class="col-md-12">
+	            	<div class="">
 	            			<h5>My role:</h5>
 	            			<p>Product Designer</p>
 	        			</div>
-	            	<div class="col-md-12">
+	            	<div class="">
 	            			<h5>Timeframe:</h5>
 	            			<p>Three months</p>
 	        			</div>
-	            	<div class="col-md-12">
+	            	<div class="">
 	        				<h5>Skills:</h5>
 	        				<p>UX/UI design, prototyping, product planning, usability testing</p>
 	        			</div>
@@ -262,10 +254,10 @@
 
 			<div class="container">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
 
 					<div>
-						<h2>The problem</h2>
+						<h2 class="avoid-orphans">The problem</h2>
 							<div class="horizontal-line-small">
 							</div>
 					</div>
@@ -289,14 +281,14 @@
 
 			<div class="container no-padding-btm">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
 
 					<div>
 						<h4 aria-label="Too long, didn't read">TL;DR</h4>
 					</div>
 
 					<div>
-						<h2>The solution</h2>
+						<h2 class="avoid-orphans">The solution</h2>
 							<div class="horizontal-line-small"></div>
 					</div>
 
@@ -322,11 +314,11 @@
 
 				</div> <!-- end row -->
 
-				<div class="row col-md-6 center">
+				<div class="row col-content center">
 
 					<figure>
-						<img srcset="img/liveness/twitter-outcome@2x.jpg 2x" 
-							src="img/liveness/twitter-outcome@1x.jpg" class="img-responsive center" alt="Onfido tweet: Onfido's liveness feature is 'More than a selfie, this is liveness to record the face and verbalisation . . . I think it's the most valuable selfie I've ever taken!' Seen onstage at #SalesforceWorldTour">
+						<img loading="lazy" srcset="img/liveness/webp/twitter-outcome@2x.webp 2x" 
+							src="img/liveness/webp/twitter-outcome@1x.webp" class="img-responsive center" alt="Onfido tweet: Onfido's liveness feature is 'More than a selfie, this is liveness to record the face and verbalisation . . . I think it's the most valuable selfie I've ever taken!' Seen onstage at #SalesforceWorldTour">
 					</figure>
 
             	</div> <!-- end image row --> 
@@ -349,7 +341,7 @@
             	</div> <!-- end row -->
 
 
-				<div class="row col-xs-10 col-sm-10 col-md-7 col-lg-6 center">		
+				<div class="row col-content-narrow center">		
 						
 					<div>
 			    		<h6 class="center-text">Read the in-depth casestudy below<span class="no-italic" role="img" aria-label="nerd face"> 🤓</span></h6>
@@ -360,7 +352,7 @@
 		    	<div class="row padding-btm">	
 
 					<figure aria-hidden="true" class="center-text arrow-bubble">
-	              		<!-- <img src="img/arrow-down-bubble.svg" alt=""> -->
+	              		<!-- <img loading="lazy" src="img/arrow-down-bubble.svg" alt=""> -->
 
 	              		<svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
         				<circle cx="24" cy="24" r="24"/>
@@ -392,7 +384,7 @@
 
 				<div class="container">
 
-		    		<div class="row col-md-12 center-text">
+		    		<div class="row center-text">
 					
 			        	<!-- Sub title -->
 			            	<div>
@@ -419,7 +411,7 @@
 
 			<div class="container padding-btm">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+				<div class="row col-content center padding-btm">
 
 					<div>
 						<p>When someone rents a car or opens a bank account online, chances are their identity will be checked by Onfido. By providing ID documentation such as a passport or driving licence and combining it with facial recognition technology, Onfido checks identities for companies ranging from Square to Zipcar to Revolut.</p>
@@ -430,10 +422,10 @@
 				</div> <!-- end row -->
 
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
 
 					<div>
-						<h2>Native video liveness experience</h2>
+						<h2 class="avoid-orphans">Native video liveness experience</h2>
 							<div class="horizontal-line-small"></div>
 					</div>					
 
@@ -445,11 +437,11 @@
 
 				</div> <!-- end row -->
 
-				<div class="row col-md-12 center padding-btm">	
+				<div class="row center padding-btm">	
 
 					<figure>
-	              		<img srcset="img/liveness/native-sdk-flow@2x.jpg 2x"
-	              			src="img/liveness/native-sdk-flow@1x.jpg" class="img-responsive center" alt="The five step native flow: 1. Introduction, 2. Face capture, 3. Look over shoulder challenge, 4. Speak digits challenge, 5. Confirmation">
+	              		<img loading="lazy" srcset="img/liveness/webp/native-sdk-flow@2x.webp 2x"
+	              			src="img/liveness/webp/native-sdk-flow@1x.webp" class="img-responsive center" alt="The five step native flow: 1. Introduction, 2. Face capture, 3. Look over shoulder challenge, 4. Speak digits challenge, 5. Confirmation">
 	              		<figcaption>
 	              			The native Video Liveness experience — we wanted to bring this to the web SDK as well.
 	              		</figcaption>
@@ -471,7 +463,7 @@
 
 				<div class="container">
 
-		    		<div class="row col-md-12 center-text">
+		    		<div class="row center-text">
 
 					
 		        		<!-- Sub title -->
@@ -499,7 +491,7 @@
 
 			<div class="container">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+				<div class="row col-content center padding-btm">
 
 					<div>
 						<p>WebRTC (real-time communications) is an open source initiative started by Google, which provides web-browsers the ability to stream and record video. Google’s Chrome browser, Android phones, and Mozilla's Firefox browsers supported WebRTC, but Apple’s Safari and iPhones did not. Without Apple support, we were reluctant to create two different experiences across Google and Apple products.</p>
@@ -510,10 +502,10 @@
 
 				</div> <!-- end row -->
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
 
 					<div>
-						<h2>Real-time selfie capture</h2>
+						<h2 class="avoid-orphans">Real-time selfie capture</h2>
 							<div class="horizontal-line-small"></div>
 					</div>					
 
@@ -524,11 +516,11 @@
 				</div> <!-- end row -->
 
 
-				<div class="row col-md-12 center padding-btm">	
+				<div class="row center padding-btm">	
 
 					<figure>
-	              		<img srcset="img/liveness/realtime-flow@2x.jpg 2x"
-	              			src="img/liveness/realtime-flow@1x.jpg" class="img-responsive center" alt="Real-time selfie capture flow: 1. Allow camera access 2. Take a selfie 3. Check that selfie is good and continue">
+	              		<img loading="lazy" srcset="img/liveness/webp/realtime-flow@2x.webp 2x"
+	              			src="img/liveness/webp/realtime-flow@1x.webp" class="img-responsive center" alt="Real-time selfie capture flow: 1. Allow camera access 2. Take a selfie 3. Check that selfie is good and continue">
 	              		<figcaption>
 	              			Real-time selfie capture flow
 	              		</figcaption>
@@ -537,7 +529,7 @@
         		</div> <!-- end image row -->
 
 
-        		<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+        		<div class="row col-content center padding-btm">
 
         			<div>
 						<p class="no-padding-btm">We were now able to:</p>
@@ -553,10 +545,10 @@
 				</div> <!-- end row -->
 
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
 
 					<div>
-						<h2>Video assumptions</h2>
+						<h2 class="avoid-orphans">Video assumptions</h2>
 							<div class="horizontal-line-small"></div>
 					</div>					
 
@@ -580,7 +572,7 @@
 
 				<div class="container">
 
-		    		<div class="row col-md-12 center center-text">
+		    		<div class="row center center-text">
 					
 		        		<!-- Sub title -->
 		            	<div>
@@ -607,7 +599,7 @@
 
 			<div class="container">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-top">
+				<div class="row col-content center padding-top">
 
 					<div>
 						<p>In our technical discovery we discovered the bombshell &mdash; <span class="p-bold">Apple Safari and iOS did not yet support video-recording.</span><span role="img" aria-label="Loudly crying face"> 😭</span></p>
@@ -616,11 +608,11 @@
 
 				</div> <!-- end row -->
 
-				<div class="row col-md-10 center padding-btm">
+				<div class="row col-hero center padding-btm">
 
 					<figure>
-						<img srcset="img/liveness/github-comment@2x.jpg 2x" 
-						src="img/liveness/github-comment@2x.jpg" class="img-responsive center" alt="Github member quote: 'Basically Safari does not have MediaRecorder support yet, see link to caniuse.com. When that becomes available we can look at this again, but till then it's audio only.'">
+						<img loading="lazy" srcset="img/liveness/webp/github-comment@2x.webp 2x" 
+						src="img/liveness/webp/github-comment@2x.webp" class="img-responsive center" alt="Github member quote: 'Basically Safari does not have MediaRecorder support yet, see link to caniuse.com. When that becomes available we can look at this again, but till then it's audio only.'">
 						<figcaption>
 							Github members chatting about WebRTC support from Apple
 						</figcaption>
@@ -628,10 +620,10 @@
 
             	</div> <!-- end image row --> 
 
-            	<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+            	<div class="row col-content center">
 
 					<div>
-						<h2>Alternative options</h2>
+						<h2 class="avoid-orphans">Alternative options</h2>
 							<div class="horizontal-line-small"></div>
 					</div>					
 
@@ -661,7 +653,7 @@
 
 				<div class="container">
 
-		    		<div class="row col-md-12 center center-text">
+		    		<div class="row center center-text">
 					
 		        		<!-- Sub title -->
 		            	<div>
@@ -688,7 +680,7 @@
 
 			<div class="container no-padding-btm">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-top padding-btm">	
+				<div class="row col-content center padding-top padding-btm">	
 
 					<div>
 
@@ -700,7 +692,7 @@
 						<p>Show both challenges first, switch to the native camera, and then people video-record themselves performing actions</p>
 
 						<figure aria-hidden="true" class="padding-btm">
-							<img src="img/liveness/upfront-challenge-flow@2x.svg" class="img-responsive center" alt="Flow of the challenges upfront option">
+							<img loading="lazy" src="img/liveness/upfront-challenge-flow@2x.svg" class="img-responsive center" alt="Flow of the challenges upfront option">
 							<figcaption>Both challenges would be shown at the start only</figcaption>
 						</figure>
 
@@ -708,7 +700,7 @@
 						<p>Show first challenge, switch to the native camera, video-record action, and repeat for second challenge</p>
 
 						<figure aria-hidden="true">
-							<img src="img/liveness/interspersed-challenge-flow@2x.svg" class="img-responsive center" alt="Flow of the interspersed challenges option">
+							<img loading="lazy" src="img/liveness/interspersed-challenge-flow@2x.svg" class="img-responsive center" alt="Flow of the interspersed challenges option">
 							<figcaption>Challenges would be split</figcaption>
 						</figure>
 
@@ -716,10 +708,10 @@
 
             	</div> <!-- end row --> 
 
-            	<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+            	<div class="row col-content center padding-btm">
 
 					<div>
-						<h2>Challenging the speed impulse</h2>
+						<h2 class="avoid-orphans">Challenging the speed impulse</h2>
 							<div class="horizontal-line-small"></div>
 					</div>					
 
@@ -742,10 +734,10 @@
 
 
 
-            	<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+            	<div class="row col-content center padding-btm">
 
 					<div>
-						<h2>Another setback</h2>
+						<h2 class="avoid-orphans">Another setback</h2>
 							<div class="horizontal-line-small"></div>
 					</div>					
 
@@ -780,7 +772,7 @@
 
 				<div class="container">
 
-		    		<div class="row col-md-12 center center-text">
+		    		<div class="row center center-text">
 					
 		        		<!-- Sub title -->
 		            	<div>
@@ -808,7 +800,7 @@
 
 			<div class="container no-padding-btm">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-top">
+				<div class="row col-content center padding-top">
 
 					<div>
 						<p>The Real-time selfie fallback meant we could still build the Video Liveness feature <span class="italic">and</span> still provide a level of fraud prevention to clients whose customers were using Safari and iOS.</p>
@@ -817,20 +809,20 @@
             	</div> <!-- end row --> 
 
 
-				<div class="row col-md-7 center padding-btm">
+				<div class="row col-content center padding-btm">
 
 					<figure>
-						<img src="img/liveness/realtime-selfie-flow@2x.svg" class="img-responsive center no-padding-top" alt="Fallback flow: If user is in the video liveness flow and it is detected they are using iOS or Safari they will be forked to the Real-time selfie flow instead.">
+						<img loading="lazy" src="img/liveness/realtime-selfie-flow@2x.svg" class="img-responsive center no-padding-top" alt="Fallback flow: If user is in the video liveness flow and it is detected they are using iOS or Safari they will be forked to the Real-time selfie flow instead.">
 					</figure>
 					<figcaption></figcaption>
 
             	</div> <!-- end row --> 
 
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
 
 					<div>
-						<h2>What about desktop users?</h2>
+						<h2 class="avoid-orphans">What about desktop users?</h2>
 						<div class="horizontal-line-small"></div>
 					</div>
 
@@ -856,10 +848,10 @@
 
 					</div> <!-- end row -->
 
-					<div class="row col-md-8 center">
+					<div class="row col-content-wide center">
 
 						<figure aria-hidden="true" class="padding-btm">
-							<img src="img/liveness/desktop-flow.svg" class="img-responsive center" alt="Desktop flow: Desktop user switches to mobile if they don't have browser or device support, and have no webcam.">
+							<img loading="lazy" src="img/liveness/desktop-flow.svg" class="img-responsive center" alt="Desktop flow: Desktop user switches to mobile if they don't have browser or device support, and have no webcam.">
 							<figcaption>
 								Desktop users could continue verification on their mobile
 							</figcaption>
@@ -868,10 +860,10 @@
 				</div> <!-- End image row -->
 
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+				<div class="row col-content center padding-btm">
 
 					<div>
-						<h2 class="no-padding-top">Cross-device confusion</h2>
+						<h2 class="no-padding-top avoid-orphans">Cross-device confusion</h2>
 						<div class="horizontal-line-small"></div>
 					</div>
 
@@ -884,10 +876,10 @@
             	</div> <!-- end row --> 
 
 							          	
-            	<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+            	<div class="row col-content center padding-btm">
 
 					<div>
-						<h2 class="no-padding-top">Including the many</h2>
+						<h2 class="no-padding-top avoid-orphans">Including the many</h2>
 						<div class="horizontal-line-small"></div>
 					</div>
 
@@ -910,7 +902,7 @@
 
 				<div class="container">
 
-		    		<div class="row col-md-12 center center-text">
+		    		<div class="row center center-text">
 					
 		        		<!-- Sub title -->
 		            	<div>
@@ -939,7 +931,7 @@
 
 			<div class="container">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
 
 					<div>
 						<p>All users would start at the Video Liveness level, if their device / browser didn’t support this they would then drop to the next level, and so on. There were four levels of fallback.</p>
@@ -947,10 +939,10 @@
 
 				</div> <!-- end row -->
 
-					<div class="row col-md-3 center">
+					<div class="row col-quarter center">
 
 					<figure aria-hidden="true">
-						<img src="img/liveness/fallback-stack@2x.svg" class="img-responsive center" alt="Fallback flow: 1. Video Liveness 2. Real-time selfie capture 3. Native camera selfie capture 4. Manual upload of selfie">
+						<img loading="lazy" src="img/liveness/fallback-stack@2x.svg" class="img-responsive center" alt="Fallback flow: 1. Video Liveness 2. Real-time selfie capture 3. Native camera selfie capture 4. Manual upload of selfie">
 						<figcaption class="padding-btm">
 							The last level was removed in a later iteration
 						</figcaption>
@@ -958,7 +950,7 @@
 
             	</div> <!-- end image row --> 
 
-            	<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+            	<div class="row col-content center">
 
 					<div>
 						<p>The creation of the fallback stack meant regardless of people’s device or browser type we could still serve them the best fraud prevention level available. It also meant that a client would not see drop-off numbers due to browser / device incompatibility.</p>
@@ -967,11 +959,11 @@
             	</div> <!-- end row --> 
 
 
-            	<div class="row col-md-12 center">
+            	<div class="row center">
 
 					<figure aria-hidden="true">
-						<img srcset="img/liveness/mvp-flow-final@2x.jpg 2x" 
-							src="img/liveness/mvp-flow-final@1x.jpg" class="img-responsive center" alt="Flowchart of all the fallback usecases.">
+						<img loading="lazy" srcset="img/liveness/webp/mvp-flow-final@2x.webp 2x" 
+							src="img/liveness/webp/mvp-flow-final@1x.webp" class="img-responsive center" alt="Flowchart of all the fallback usecases.">
 						<figcaption class="padding-btm">
 							The fallback flow document that I continually updated for the team
 						</figcaption>
@@ -980,10 +972,10 @@
             	</div> <!-- end row --> 
 
 
-            	<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+            	<div class="row col-content center">
 
 					<div>
-						<h2>Ending dead-ends</h2>
+						<h2 class="avoid-orphans">Ending dead-ends</h2>
 							<div class="horizontal-line-small"></div>
 					</div>
 
@@ -1003,17 +995,17 @@
 				</div> <!-- end row -->
 
 
-				<div class="row col-md-6 center">
+				<div class="row col-half center">
 
 					<figure aria-hidden="true" class="padding-btm">
-						<img srcset="img/liveness/camera-not-working@2x.jpg 2x" 
-							src="img/liveness/camera-not-working@1x.jpg" class="img-responsive center no-padding-top" alt="Desktop alert message reads 'Your camera isn't working. It may be disconnected or not functioning.' User action available is 'Use your mobile to continue face verification.'">
+						<img loading="lazy" srcset="img/liveness/webp/camera-not-working@2x.webp 2x" 
+							src="img/liveness/webp/camera-not-working@1x.webp" class="img-responsive center no-padding-top" alt="Desktop alert message reads 'Your camera isn't working. It may be disconnected or not functioning.' User action available is 'Use your mobile to continue face verification.'">
 					</figure>
 
 				</div> <!-- end image row -->
 
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
 
 					<div>		
 						<h5>2. Video recording file too large</h5>
@@ -1025,17 +1017,17 @@
 				</div> <!-- end row -->
 
 
-				<div class="row col-md-6 center">
+				<div class="row col-half center">
 
 					<figure aria-hidden="true" class="padding-btm">
-						<img srcset="img/liveness/file-too-large@2x.jpg 2x" 
-							src="img/liveness/file-too-large@1x.jpg" class="img-responsive center no-padding-top" alt="Desktop alert message reads 'Sorry, video file is too large. Try recording the video options more quickly if possible.' User action available is 'Redo video actions'">
+						<img loading="lazy" srcset="img/liveness/webp/file-too-large@2x.webp 2x" 
+							src="img/liveness/webp/file-too-large@1x.webp" class="img-responsive center no-padding-top" alt="Desktop alert message reads 'Sorry, video file is too large. Try recording the video options more quickly if possible.' User action available is 'Redo video actions'">
 					</figure>
 
 				</div> <!-- end image row -->
 
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
 
 					<div>
 						<h5>3. Timeout A: User does not start using browser webcam after 12 seconds</h5>
@@ -1048,17 +1040,17 @@
 				</div> <!-- end row -->
 
 
-				<div class="row col-md-6 center">
+				<div class="row col-half center">
 
 					<figure aria-hidden="true" class="padding-btm">
-						<img srcset="img/liveness/camera-probs@2x.jpg 2x" 
-							src="img/liveness/camera-probs@1x.jpg" class="img-responsive center no-padding-top" alt="Desktop alert message reads 'Having camera problems? Use your mobile to continue face verification instead.' Two options available for user are 'Dismiss' or 'Use my mobile phone'">
+						<img loading="lazy" srcset="img/liveness/webp/camera-probs@2x.webp 2x" 
+							src="img/liveness/webp/camera-probs@1x.webp" class="img-responsive center no-padding-top" alt="Desktop alert message reads 'Having camera problems? Use your mobile to continue face verification instead.' Two options available for user are 'Dismiss' or 'Use my mobile phone'">
 					</figure>
 
 				</div> <!-- end image row -->
 
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
 
 					<div>
 						<h5>4. Timeout B: User takes longer than 20 second limit to record video actions</h5>
@@ -1070,21 +1062,21 @@
 				</div> <!-- end row -->
 
 
-				<div class="row col-md-6 center">
+				<div class="row col-half center">
 
 					<figure aria-hidden="true" class="padding-btm">
-						<img srcset="img/liveness/took-too-long@2x.jpg 2x" 
-							src="img/liveness/took-too-long@1x.jpg" class="img-responsive center no-padding-top" alt="Desktop alert message reads 'Looks like you took too long. Remember to press stop when you're done.' User action available is 'Redo video actions'">
+						<img loading="lazy" srcset="img/liveness/webp/took-too-long@2x.webp 2x" 
+							src="img/liveness/webp/took-too-long@1x.webp" class="img-responsive center no-padding-top" alt="Desktop alert message reads 'Looks like you took too long. Remember to press stop when you're done.' User action available is 'Redo video actions'">
 					</figure>
 
 				</div> <!-- end image row -->
 
 
-				<div class="row col-md-12 center">
+				<div class="row center">
 
 					<figure aria-hidden="true">
-						<img srcset="img/liveness/alert-usecase-flow@2x.jpg 2x" 
-							src="img/liveness/alert-usecase-flow@1x.jpg" class="img-responsive center" alt="Flowchart of all the alert usecases.">
+						<img loading="lazy" srcset="img/liveness/webp/alert-usecase-flow@2x.webp 2x" 
+							src="img/liveness/webp/alert-usecase-flow@1x.webp" class="img-responsive center" alt="Flowchart of all the alert usecases.">
 						<figcaption class="padding-btm">
 							The alert flow document that I continually updated for the team
 						</figcaption>
@@ -1105,7 +1097,7 @@
 
 				<div class="container">
 
-		    		<div class="row col-md-12 center center-text">
+		    		<div class="row center center-text">
 					
 		        		<!-- Sub title -->
 		            	<div>
@@ -1131,10 +1123,10 @@
 
 			<div class="container">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
 
 					<div>
-						<h2>Layout constraints</h2>
+						<h2 class="avoid-orphans">Layout constraints</h2>
 							<div class="horizontal-line-small"></div>
 					</div>
 
@@ -1150,11 +1142,11 @@
 
 				</div> <!-- end row -->
 
-				<div class="row col-md-10 center">
+				<div class="row col-hero center">
 
 					<figure aria-hidden="true">
-						<img srcset="img/liveness/screen-sizes@2x.jpg 2x" 
-							src="img/liveness/screen-sizes@1x.jpg" class="img-responsive center" alt="Screen size differences across iPhoneX, iPhone 8, Android, and iPhone SE">
+						<img loading="lazy" srcset="img/liveness/webp/screen-sizes@2x.webp 2x" 
+							src="img/liveness/webp/screen-sizes@1x.webp" class="img-responsive center" alt="Screen size differences across iPhoneX, iPhone 8, Android, and iPhone SE">
 						<figcaption class="padding-btm">
 							Tradeoffs need to happen as screen real-estate gets tighter 
 						</figcaption>
@@ -1164,10 +1156,10 @@
 
 
 
-        	<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+        	<div class="row col-content center">
 
 				<div>
-					<h2>Alert messages</h2>
+					<h2 class="avoid-orphans">Alert messages</h2>
 						<div class="horizontal-line-small"></div>
 				</div>
 
@@ -1177,11 +1169,11 @@
 
 			</div> <!-- end row -->
 
-			<div class="row col-md-8 center">
+			<div class="row col-content-wide center">
 
 					<figure aria-hidden="true">
-						<img srcset="img/liveness/alerts-new@2x.jpg 2x" 
-							src="img/liveness/alerts-new@1x.jpg" class="img-responsive center" alt="Desktop and mobile with an alert on screen">
+						<img loading="lazy" srcset="img/liveness/webp/alerts-new@2x.webp 2x" 
+							src="img/liveness/webp/alerts-new@1x.webp" class="img-responsive center" alt="Desktop and mobile with an alert on screen">
 						<figcaption class="padding-btm">
 							Examples of the new alerts in action 
 						</figcaption>
@@ -1199,10 +1191,10 @@
 
 		<div aria-hidden="true" class="container grey-module full-width">
 
-        		<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+        		<div class="row col-content center">
 
 					<div>
-						<h2 class="no-padding-top">Final UI</h2>
+						<h2 class="no-padding-top avoid-orphans">Final UI</h2>
 							<div class="horizontal-line-small"></div>
 					</div>
 
@@ -1210,41 +1202,41 @@
 
 				<div class="row center no-padding">
 
-					<figure class="col-md-8 center">
-						<img srcset="img/liveness/01-intro@2x.jpg 2x" 
-							src="img/liveness/01-intro@1x.jpg" class="img-responsive center" alt="Desktop and mobile versions of introduction screen. Advises people that they will need to speak out loud, move their head, and finish within 25 seconds.">
+					<figure class="col-content-wide center">
+						<img loading="lazy" srcset="img/liveness/webp/01-intro@2x.webp 2x" 
+							src="img/liveness/webp/01-intro@1x.webp" class="img-responsive center" alt="Desktop and mobile versions of introduction screen. Advises people that they will need to speak out loud, move their head, and finish within 25 seconds.">
 						<figcaption>
 							Video Liveness introduction screen
 						</figcaption>
 					</figure>	
 
-					<figure class="col-md-8 center">
-						<img srcset="img/liveness/02-place-face@2x.jpg 2x" 
-							src="img/liveness/02-place-face@2x.jpg" class="img-responsive center" alt="Desktop and mobile versions of start recording screen. Advises people to position their face in the oval shape and follow the instructions on screen.">
+					<figure class="col-content-wide center">
+						<img loading="lazy" srcset="img/liveness/webp/02-place-face@2x.webp 2x" 
+							src="img/liveness/webp/02-place-face@2x.webp" class="img-responsive center" alt="Desktop and mobile versions of start recording screen. Advises people to position their face in the oval shape and follow the instructions on screen.">
 						<figcaption>
 							Start recording screen
 						</figcaption>
 					</figure>
 
-					<figure class="col-md-8 center">
-						<img srcset="img/liveness/03-say-digits@2x.jpg 2x" 
-							src="img/liveness/03-say-digits@1x.jpg" class="img-responsive center" alt="Desktop and mobile versions of speak numbers challenge screen. Advises people to speak each digit shown out loud.">
+					<figure class="col-content-wide center">
+						<img loading="lazy" srcset="img/liveness/webp/03-say-digits@2x.webp 2x" 
+							src="img/liveness/webp/03-say-digits@1x.webp" class="img-responsive center" alt="Desktop and mobile versions of speak numbers challenge screen. Advises people to speak each digit shown out loud.">
 						<figcaption>
 							Speak numbers challenge screen
 						</figcaption>
 					</figure>
 
-					<figure class="col-md-8 center">
-						<img srcset="img/liveness/04-turn-head@2x.jpg 2x" 
-							src="img/liveness/04-turn-head@2x.jpg" class="img-responsive center" alt="Desktop and mobile versions of turn head challenge screen. Advises people to look over left shoulder.">
+					<figure class="col-content-wide center">
+						<img loading="lazy" srcset="img/liveness/webp/04-turn-head@2x.webp 2x" 
+							src="img/liveness/webp/04-turn-head@2x.webp" class="img-responsive center" alt="Desktop and mobile versions of turn head challenge screen. Advises people to look over left shoulder.">
 						<figcaption>
 							Turn head challenge screen
 						</figcaption>
 					</figure>
 
-					<figure class="col-md-8 center">
-						<img srcset="img/liveness/05-confirmation@2x.jpg 2x" 
-							src="img/liveness/05-confirmation@1x.jpg" class="img-responsive center" alt="Desktop and mobile versions of video playback confirmation screen. Let's people view the video before submitting it.">
+					<figure class="col-content-wide center">
+						<img loading="lazy" srcset="img/liveness/webp/05-confirmation@2x.webp 2x" 
+							src="img/liveness/webp/05-confirmation@1x.webp" class="img-responsive center" alt="Desktop and mobile versions of video playback confirmation screen. Let's people view the video before submitting it.">
 						<figcaption>
 							Video playback confirmation screen
 						</figcaption>
@@ -1265,7 +1257,7 @@
 
 			<div class="container">
 
-	    		<div class="row col-md-12 center center-text">
+	    		<div class="row center center-text">
 	
 	        		<!-- Sub title -->
 	            	<div>
@@ -1292,7 +1284,7 @@
 
 			<div class="container no-padding-btm">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-top">
+				<div class="row col-content center padding-top">
 
 
             		<div class="outcome-metrics center-text">
@@ -1343,10 +1335,10 @@
 
 			<div class="container">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center no-padding-btm">
+				<div class="row col-content center no-padding-btm">
 
 					<div>
-						<h2 class="no-padding-top">Reflections</h2>
+						<h2 class="no-padding-top avoid-orphans">Reflections</h2>
 						<div class="horizontal-line-small-pink"></div>
 					</div>
 
@@ -1384,10 +1376,10 @@
 			
 			<div class="social-media-grid container padding-btm">
 
-				<div class="row social-media-title col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row social-media-title col-content center">
 
 					<div>
-						<h2 class="center-text">Find me on these</h2>
+						<h2 class="center-text avoid-orphans">Find me on these</h2>
 					</div>
 
 				</div>
@@ -1395,46 +1387,29 @@
 
 				<!-- Social media platforms --------------------------------------------------- -->
 
-				<!-- LinkedIn icon -->
-				<div class="social-media-platform-1">
-					<a href="https://www.linkedin.com/in/dspagnolo/" target="_self" aria-label="LinkedIn profile">
-						
-						<svg xmlns="https://www.w3.org/2000/svg" width="80" height="80" viewBox="300 0 80 80">
-							<path class="social-icon linkedin-icon" d="M340 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zm-9.8 56.6h-8.1V30.5h8.1v26.1zm-4.1-29.3c-2.6 0-4.2-1.8-4.2-4.1s1.7-4 4.3-4 4.2 1.8 4.3 4c0 2.3-1.7 4.1-4.4 4.1zm33.7 29.3h-8.1V42.1c0-3.4-1.2-5.6-4.1-5.6-2.2 0-3.6 1.5-4.2 3-.2.5-.3 1.3-.3 2v15H335V38.8c0-3.3-.1-6-.2-8.3h7l.4 3.6h.2c1.1-1.7 3.7-4.2 8-4.2 5.3 0 9.3 3.6 9.3 11.2v15.5z"/>
-						</svg>
+				<div class="social-media-icons">
 
-						<h5 class="icon-label">LinkedIn</h5>
+					<!-- LinkedIn icon -->
+					<div class="social-media-platform">
+						<a href="https://www.linkedin.com/in/dspagnolo/" target="_self" aria-label="LinkedIn profile">
+							<svg aria-hidden="true" xmlns="https://www.w3.org/2000/svg" width="80" height="80" viewBox="300 0 80 80">
+								<path class="social-icon linkedin-icon" d="M340 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zm-9.8 56.6h-8.1V30.5h8.1v26.1zm-4.1-29.3c-2.6 0-4.2-1.8-4.2-4.1s1.7-4 4.3-4 4.2 1.8 4.3 4c0 2.3-1.7 4.1-4.4 4.1zm33.7 29.3h-8.1V42.1c0-3.4-1.2-5.6-4.1-5.6-2.2 0-3.6 1.5-4.2 3-.2.5-.3 1.3-.3 2v15H335V38.8c0-3.3-.1-6-.2-8.3h7l.4 3.6h.2c1.1-1.7 3.7-4.2 8-4.2 5.3 0 9.3 3.6 9.3 11.2v15.5z"/>
+							</svg>
+							<h5 class="icon-label">LinkedIn</h5>
+						</a>
+					</div>
 
-					</a>
-				</div>
+					<!-- Medium icon -->
+					<div class="social-media-platform">
+						<a href="https://medium.com/@daniel_spagnolo" target="_self" aria-label="Medium articles">
+							<svg aria-hidden="true" xmlns="https://www.w3.org/2000/svg" x="0px" y="0px" width="80px" height="80px" viewBox="100 0 80 80">
+								<path class="social-icon medium-icon" d="M140 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zM125.3 30.8c0-.5-.1-.9-.5-1.2l-3.4-4.3v-.6h10.4l8.1 18.6 7.1-18.6h9.9v.6l-2.9 2.9c-.2.2-.4.5-.3.8v21.3c0 .3.1.6.3.8l3 2.9v.6h-14.1V54l2.9-3c.3-.3.3-.4.3-.8V33L138 54.6h-1.1L127.5 33v14.4c-.1.6.1 1.2.5 1.7l3.8 4.8v.6h-10.7V54l3.8-4.8c.4-.4.6-1.1.5-1.7V30.8z"/>
+							</svg>
+							<h5 class="icon-label">Medium</h5>
+						</a>
+					</div>
 
-
-				<!-- Twitter icon -->
-				<div class="social-media-platform-2">
-					<a href="https://twitter.com/daniel_spagnolo" target="_self" aria-label="Twitter profile">
-						
-						<svg xmlns="https://www.w3.org/2000/svg" width="80" height="80" viewBox="200 0 80 80">
-							<path class="social-icon twitter-icon" d="M240 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zm16.3 32.8v1c0 10.4-7.9 22.4-22.4 22.4-4.5 0-8.6-1.3-12.1-3.5.6.1 1.2.1 1.9.1 3.7 0 7.1-1.3 9.8-3.4-3.4-.1-6.4-2.3-7.4-5.5.5.1 1 .1 1.5.1.7 0 1.4-.1 2.1-.3-3.6-.7-6.3-3.9-6.3-7.7 1.1.6 2.3.9 3.6 1-2.1-1.4-3.5-3.8-3.5-6.6 0-1.4.4-2.8 1.1-4 3.9 4.8 9.7 7.9 16.2 8.2-.1-.6-.2-1.2-.2-1.8 0-4.3 3.5-7.9 7.9-7.9 2.3 0 4.3 1 5.8 2.5 1.8-.4 3.5-1 5-1.9-.6 1.8-1.8 3.4-3.5 4.4 1.6-.2 3.1-.6 4.5-1.2-1.2 1.6-2.5 3-4 4.1z"/>
-						</svg>
-
-						<h5 class="icon-label">Twitter</h5>
-
-					</a>
-				</div>
-
-
-				<!-- Medium icon -->
-				<div class="social-media-platform-3">
-					<a href="https://medium.com/@daniel_spagnolo" target="_self" aria-label="Medium articles">
-						
-						<svg xmlns="https://www.w3.org/2000/svg" x="0px" y="0px" width="80px" height="80px" viewBox="100 0 80 80">
-							<path class="social-icon medium-icon" d="M140 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zM125.3 30.8c0-.5-.1-.9-.5-1.2l-3.4-4.3v-.6h10.4l8.1 18.6 7.1-18.6h9.9v.6l-2.9 2.9c-.2.2-.4.5-.3.8v21.3c0 .3.1.6.3.8l3 2.9v.6h-14.1V54l2.9-3c.3-.3.3-.4.3-.8V33L138 54.6h-1.1L127.5 33v14.4c-.1.6.1 1.2.5 1.7l3.8 4.8v.6h-10.7V54l3.8-4.8c.4-.4.6-1.1.5-1.7V30.8z"/>
-						</svg>
-
-						<h5 class="icon-label">Medium</h5>
-
-					</a>
-				</div>
+				</div> <!-- end social-media-icons -->
 									
 			</div> <!-- end container -->
 
@@ -1450,10 +1425,10 @@
 
 	<div class="center-text">
 		<a href="index.html#top-module" class="logo no-padding" aria-label="Return to top of page">
-			<!-- <a href="#"><img src="img/logo2016.gif" width="60px" height="85px" alt="Portfolio logo"></a> --> 
+			<!-- <a href="#"><img loading="lazy" src="img/logo2016.gif" width="60px" height="85px" alt="Portfolio logo"></a> --> 
 
 			<!-- Logo svg -->
-	    	<svg class="logo-default" xmlns="https://www.w3.org/2000/svg" width="65" height="90" viewBox="90.1 -1.6 65 90">
+	    	<svg aria-hidden="true" class="logo-default" xmlns="https://www.w3.org/2000/svg" width="65" height="90" viewBox="90.1 -1.6 65 90">
 			  <path fill="#00A1FF" d="M105.1 68.8l19-2-9-30"/>
 			  <path fill="#008BDB" d="M123.1 38.9l1 27.9-9-29.9"/>
 			  <path fill="#00A1FF" d="M124.1 66.8l19-23-20-5M119.1 20.8l-2-13.9 11 15.9M91.1 31.9l21-4 5-21-25.9 25"/>
@@ -1481,7 +1456,7 @@
 		</nav>
 	</div>
 
-		<div class="row col-md-12 center-text">
+		<div class="row center-text">
 			<small>Made with <span role="img" aria-label="Love" class="heart"></span> in London | &copy; whatever year this is</small>
 		</div>
 
@@ -1492,87 +1467,70 @@
 
 <!-- JS scripts/files (placed at end of file so pages will load faster) _____________________________________________________________________________________ -->
 
-	    <!-- link to jquery library to get the nav shrinking to work below -->
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-			<script>
-			$(function(){
-			 var shrinkHeader = 150;
-			  $(window).scroll(function() {
-			    var scroll = getCurrentScroll();
-			      if ( scroll >= shrinkHeader ) {
-			           $('header').addClass('shrink'),
-			           $('header.logo-size').addClass('shrink'),
-			           $('header nav ul').addClass('shrink'),
-			           $('header nav ul li').addClass('shrink'),
-			           $('header nav li a').addClass('shrink'),
-			           $('header p').addClass('shrink'),
-			           $('header svg').addClass('shrink'),
-			           $('header a.logo').addClass('shrink'),
-			           $('header nav .alternative a:hover').addClass('shrink'),
-			           $('header nav').addClass('shrink'),
-			           $('header .logo-job-title').addClass('shrink');
-			        }
-			        else {
-			            $('header').removeClass('shrink'),
-			            $('header.logo-size').removeClass('shrink'),
-			            $('header nav ul').removeClass('shrink'),
-			            $('header nav ul li').removeClass('shrink'),
-			            $('header nav li a').removeClass('shrink'),
-			            $('header p').removeClass('shrink'),
-			            $('header svg').removeClass('shrink'),
-			            $('header a.logo').removeClass('shrink'),
-			            $('header nav .alternative a:hover').removeClass('shrink'),
-			            $('header nav').removeClass('shrink'),
-			            $('header .logo-job-title').removeClass('shrink');
-			        }
-			  });
-			function getCurrentScroll() {
-			    return window.pageYOffset || document.documentElement.scrollTop;
-			    }
-			});			
-			</script>	
+	    <script src="js/main.js" defer></script>	
 
 	<!-- JS scripts/files (placed at end of file so pages will load faster) _____________________________________________________________________________________ -->
     
 	<!-- Light/dark theme toggle (Guide I used for dark/light mode:- https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web) -->
     	<script>
-	    	
-	    	// Select the button
-			const btn = document.querySelector(".button-toggle"); // The "button-toggle" class (on colour theme toggle/btn) will change the "body" colour theme when clicked
-			// Check for dark mode preference at the OS level
+
+			const btn = document.querySelector(".button-toggle");
 			const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-			 
-			// Get the user's theme preference from local storage, if it's available
 			const currentTheme = localStorage.getItem("theme");
-			// If the user's preference in localStorage is dark...
-			if (currentTheme == "dark") {
-			  // ...let's toggle the .dark-theme class on the body
-			  document.body.classList.toggle("dark-theme");
-			// Otherwise, if the user's preference in localStorage is light...
-			} else if (currentTheme == "light") {
-			  // ...let's toggle the .light-theme class on the body
-			  document.body.classList.toggle("light-theme");
+
+			// Determine the currently active theme from body classes or OS preference
+			function getCurrentTheme() {
+			  if (document.body.classList.contains("dark-theme")) return "dark";
+			  if (document.body.classList.contains("light-theme")) return "light";
+			  return prefersDarkScheme.matches ? "dark" : "light";
 			}
-			 
-			// Listen for a click on the button 
-			btn.addEventListener("click", function() {
-			  // If the user's OS setting is dark and matches our .dark-theme class...
-			  if (prefersDarkScheme.matches) {
-			    // ...then toggle the light theme class
-			    document.body.classList.toggle("light-theme");
-			    // ...but use .dark-theme if the .light-theme class is already on the body,
-			    var theme = document.body.classList.contains("light-theme") ? "light" : "dark";
+
+			// Set a specific theme and sync the radio button checked state
+			function applyTheme(theme) {
+			  if (theme === "dark") {
+			    document.body.classList.add("dark-theme");
+			    document.body.classList.remove("light-theme");
+			    document.getElementById("dark").checked = true;
 			  } else {
-			    // Otherwise, let's do the same thing, but for .dark-theme
-			    document.body.classList.toggle("dark-theme");
-			    var theme = document.body.classList.contains("dark-theme") ? "dark" : "light";
+			    document.body.classList.remove("dark-theme");
+			    document.body.classList.add("light-theme");
+			    document.getElementById("light").checked = true;
 			  }
-			  // Finally, let's save the current preference to localStorage to keep using it
 			  localStorage.setItem("theme", theme);
+			}
+
+			// Apply saved theme on load and sync radio checked state
+			if (currentTheme === "dark") {
+			  document.body.classList.add("dark-theme");
+			  document.getElementById("dark").checked = true;
+			} else if (currentTheme === "light") {
+			  document.body.classList.add("light-theme");
+			  document.getElementById("light").checked = true;
+			} else if (prefersDarkScheme.matches) {
+			  document.getElementById("dark").checked = true;
+			}
+
+			// 1. Click anywhere on the toggle — toggle current theme
+			btn.addEventListener("click", function() {
+			  applyTheme(getCurrentTheme() === "dark" ? "light" : "dark");
 			});
 
-    	</script>			
+			// 2. Space or Enter when toggle is keyboard-focused — toggle current theme.
+			//    e.preventDefault() stops the radio's own change event from also firing.
+			document.querySelector('fieldset[aria-label="theme switcher"]').addEventListener("keydown", function(e) {
+			  if (e.key === " ") {
+			    e.preventDefault();
+			    applyTheme(getCurrentTheme() === "dark" ? "light" : "dark");
+			  }
+			});
+
+			// 3. Arrow-key navigation between radios — sync theme to whichever radio lands checked
+			document.querySelectorAll('.button-toggle input[type="radio"]').forEach(function(radio) {
+			  radio.addEventListener("change", function() {
+			    applyTheme(this.id);
+			  });
+			});
+		</script>			
 
 
 

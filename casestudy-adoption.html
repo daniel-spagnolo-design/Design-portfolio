@@ -10,45 +10,35 @@
     	<meta name="author" content="Daniel Spagnolo">
 		<title>Daniel Spagnolo / Registration redesign casestudy</title>
 
-		<!--displays favicon in browser/mobile tabs. https://www.favicon-generator.org/-->
-		<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+				<!--displays favicon in browser/mobile tabs. https://www.favicon-generator.org/-->
 		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-		<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
 		<link rel="manifest" href="/manifest.json">
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">		
 
-		<!-- Bootstrap core CSS -->
-	    <link href="css/bootstrap-grid.css" rel="stylesheet"> 
+		<!-- Bootstrap core CSS --> 
 
 	    <!-- Styling CSS -->
-	    <link rel="preload stylesheet" type="text/css" href="css/styles-2025-mini.css"> 
+	    <link rel="preload stylesheet" type="text/css" href="css/styles-2026-mini.css"> 
 
 	    <!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52715158-2"></script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-QKTF3G7D47"></script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
 
-		  gtag('config', 'UA-52715158-2');
+		  gtag('config', 'G-QKTF3G7D47');
 		</script>
 
 	</head>
 
-	<body>	
+	<body>
 
+	<a class="skip-link" href="#main-content">Skip to main content</a>
 
 	<!-- Navigation module _______________________________________________________________________________________________________________________ -->
 
@@ -60,10 +50,10 @@
 
 			  	<div class="logo-job-title no-padding">
 			  		<a href="index.html#top-module" class="logo no-padding" aria-label="Home">
-			        	<!-- <a href="#"><img src="img/logo2016.gif" width="60px" height="85px" alt="Daniel Spagnolo's portfolio"></a> -->
+			        	<!-- <a href="#"><img loading="lazy" src="img/logo2016.gif" width="60px" height="85px" alt="Daniel Spagnolo's portfolio"></a> -->
 			        	
 			        	<!-- Logo svg -->
-			        	<svg class="logo-default" xmlns="https://www.w3.org/2000/svg" viewBox="90.1 -1.6 65 90">
+			        	<svg aria-hidden="true" class="logo-default" xmlns="https://www.w3.org/2000/svg" viewBox="90.1 -1.6 65 90">
 						  <path fill="#00A1FF" d="M105.1 68.8l19-2-9-30"/>
 						  <path fill="#008BDB" d="M123.1 38.9l1 27.9-9-29.9"/>
 						  <path fill="#00A1FF" d="M124.1 66.8l19-23-20-5M119.1 20.8l-2-13.9 11 15.9M91.1 31.9l21-4 5-21-25.9 25"/>
@@ -99,7 +89,7 @@
 
 			      	<!-- Added a fieldset, ARIA roles, and heading (can be outer or within a legend if you prefer. Thanks to Steve Faulkner and Heydon Pickering https://twitter.com/stevefaulkner/status/1021327778334019585 & https://twitter.com/heydonworks/status/1021329851066830848 -->
 
-					<fieldset aria-label="Light or dark visual theme switcher" role="radiogroup">
+					<fieldset aria-label="theme switcher" role="radiogroup">
 
 						<div class="button-toggle">
 
@@ -112,7 +102,7 @@
 										
 										<span>
 										<!-- sun icon -->
-											<svg class="icon-sun" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+											<svg aria-hidden="true" class="icon-sun" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
 										        <g transform="translate(-1327.000000, -53.000000)">
 									            <g transform="translate(1316.000000, 42.000000)">
 								                <g transform="translate(11.000000, 11.000000)">
@@ -133,7 +123,7 @@
 											</svg>
 
 											<!-- moon icon -->
-											<svg class="icon-moon" viewBox="0 0 17 18" xmlns="http://www.w3.org/2000/svg">
+											<svg aria-hidden="true" class="icon-moon" viewBox="0 0 17 18" xmlns="http://www.w3.org/2000/svg">
 										        <g transform="translate(-1370.000000, -55.000000)">
 									            <g transform="translate(1316.000000, 42.000000)">
 								                <g transform="translate(54.000000, 13.000000)"> 
@@ -176,14 +166,14 @@
 					<div class="row">
 					
 			        	<!-- Sub title -->
-			            	<div class="col-md-6 center-text center">
+			            	<div class="col-content center-text center">
 			            		<span class="header-caption">Mental wellbeing platform sign-up</span>
 			            	</div>
 
 
 			        	<!-- Title -->
-			            	<div class="col-md-8 center-text center">
-			            		<h1>Building trust & confidence</h1>
+			            	<div class="col-content center-text center">
+			            		<h1 id="main-content" tabindex="-1">Building trust & confidence</h1>
 			              	</div>
 
 
@@ -203,17 +193,17 @@
 
 
 	          	<!-- Angled top | found at https://css-tricks.com/creating-non-rectangular-headers/-->
-	          	<svg class="angle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+	          	<svg aria-hidden="true" class="angle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
 					<polygon points="0,0 140,0 0,100"/>
 				</svg>
 
 
 
 				<!-- Hero image-->
-		        	<div class="row col-xs-12 col-sm-12 col-md-10 col-lg-8 center">
+		        	<div class="row col-hero center">
 		            	<figure>
-		              		<img srcset="img/adoption/adoption-unmind-hero@2x.png 2x"
-		              			src="img/adoption/adoption-unmind-hero@1x.png" loading="eager" class="img-responsive center" alt="A mobile device sits in front of a desktop device. Desktop shows the opening screen of the new registration flow. Title says 'Take a moment for yourself', followed by copy 'Unmind helps you lead a more balanced and fulfilling life by nourishing your mind'. An illustration shows a bearded man meditating while floating cross-legged. The mobile shows the final screen of the flow. Title says 'Welcome to Unmind Koda', with a button entitled 'Get started'. An illustration shows a plant growing to symbolise mental wellbeing growth.">
+		              		<img srcset="img/adoption/webp/adoption-unmind-hero@2x.webp 2x"
+		              			src="img/adoption/webp/adoption-unmind-hero@1x.webp" fetchpriority="high" class="img-responsive center" alt="A mobile device sits in front of a desktop device. Desktop shows the opening screen of the new registration flow. Title says 'Take a moment for yourself', followed by copy 'Unmind helps you lead a more balanced and fulfilling life by nourishing your mind'. An illustration shows a bearded man meditating while floating cross-legged. The mobile shows the final screen of the flow. Title says 'Welcome to Unmind Koda', with a button entitled 'Get started'. An illustration shows a plant growing to symbolise mental wellbeing growth.">
 		            	</figure>
 		          	</div>
 				
@@ -228,18 +218,18 @@
 
 			<div class="container no-padding-top">
 				
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
 
 	        		<!-- company, role, timeframe, skills -->
-	            	<div class="col-md-12 padding-btm">
-                        <img src="img/logo/unmind@2x.png" loading="eager" class="company-logo" alt="unmind logo">
+	            	<div class="padding-btm">
+                        <img loading="lazy" src="img/logo/unmind@2x.png" class="company-logo" alt="unmind logo">
                         <p><a class="link" href="https://www.unmind.com/" target="_self" aria-label="Go to Unmind.com">Unmind</a> (London, UK)</p>
                         
-                        <img src="img/icons/icon-clock.svg" class="company-logo" alt=" ">
+                        <img loading="lazy" src="img/icons/icon-clock.svg" class="company-logo" alt=" ">
                         <p>3 months (from design to development start)</p>
                     </div>
                     
-	            	<div class="col-md-12">
+	            	<div class="">
                         <h5>Adoption team</h5>
                         <p class="no-padding-btm">Product manager: Esther Bretschneider</p>
                         <p class="no-padding-btm">Team engineering lead: Wing-Hou Chan</p>
@@ -248,7 +238,7 @@
                         <p>Product designer: Me</p>
                     </div>
                     
-                    <div class="col-md-12">
+                    <div class="">
                         <h5>Support roles</h5>
                         <p class="no-padding-btm">UX researcher: Cait Griffin</p>
                         <p class="no-padding-btm">Data scientist: Ziedo Solomon</p>
@@ -256,13 +246,13 @@
                     </div>
                     
 <!--
-	            	<div class="col-md-12">
+	            	<div class="">
 	            			<h5>Timeframe</h5>
 	            			<p>Three months</p>
 	        			</div>
 -->
                     
-	            	<div class="col-md-12">
+	            	<div class="">
                         <h5>My role</h5>
                         <p>UX and UI design (Web / iOS / Android), workshop facilitation, usability testing, research, art direction</p>
                     </div>
@@ -281,10 +271,10 @@
 
 			<div class="container">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
 
 					<div>
-						<h2>The problem</h2>
+						<h2 class="avoid-orphans">The problem</h2>
 							<div class="horizontal-line-small">
 							</div>
 					</div>
@@ -308,14 +298,14 @@
 
 			<div class="container no-padding-btm">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+				<div class="row col-content center padding-btm">
 
 					<div>
 						<h4 aria-label="Too long, didn't read">TL;DR</h4>
 					</div>
 
 					<div>
-						<h2>The solution</h2>
+						<h2 class="avoid-orphans">The solution</h2>
 							<div class="horizontal-line-small"></div>
 					</div>
                     
@@ -325,52 +315,52 @@
                     
                 </div> <!-- End row -->
                 
-                    <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm-xsmall">
+                    <div class="row col-content center padding-btm-xsmall">
                                                 
-						<h3 class="padding-btm-xsmall">Answered privacy concerns</h3>
+						<h3 class="padding-btm-xsmall avoid-orphans">Answered privacy concerns</h3>
 						<p>After further exploring user privacy concerns we discovered two main overarching issues — what data did Unmind share, and what data did the employer see? Answering these issues earlier in the flow alleviated many of the concerns employees had.</p>
                                             
                 </div> <!-- end row --> 
                                     
-                    <div class="row col-md-12 center padding-btm">
+                    <div class="row center padding-btm">
 
                         <figure>
-                            <img srcset="img/adoption/solution_privacy_desktop@2x.png 2x" 
-                                src="img/adoption/solution_privacy_desktop@1x.png" loading="eager" class="img-responsive center no-padding-top padding-btm" alt="Privacy step as seen on a desktop. Title: We take your privacy seriously. Point 1: Unmind is 100% confidential. We'll never share your personal information with your employer. Point 2: Employers only see anonymised data. They can see overall company wellbeing – but not how you use Unmind personally. There is an illustration of a person sitting in a padlock shaped house, using their phone, while looking relaxed and at ease.">
+                            <img loading="lazy" srcset="img/adoption/webp/solution_privacy_desktop@2x.webp 2x" 
+                                src="img/adoption/webp/solution_privacy_desktop@1x.webp" class="img-responsive center no-padding-top padding-btm" alt="Privacy step as seen on a desktop. Title: We take your privacy seriously. Point 1: Unmind is 100% confidential. We'll never share your personal information with your employer. Point 2: Employers only see anonymised data. They can see overall company wellbeing – but not how you use Unmind personally. There is an illustration of a person sitting in a padlock shaped house, using their phone, while looking relaxed and at ease.">
                         </figure>
 
             	   </div> <!-- end image row --> 
                 
                 
-                    <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm-xsmall">
+                    <div class="row col-content center padding-btm-xsmall">
 
-						<h3 class="padding-btm-xsmall">Made registration feel like a breeze</h3>
+						<h3 class="padding-btm-xsmall avoid-orphans">Made registration feel like a breeze</h3>
 						<p>Chunking the registration into understandable steps made for a more stress-free flow. Less things to do on the screen meant people were less overwhelmed, and led to a better sense of progression.</p>
                         
                     </div>
                     
-                    <div class="row col-md-12 center padding-btm">
+                    <div class="row center padding-btm">
 
                         <figure>
-                            <img srcset="img/adoption/solution_steps_desktop@2x.png 2x" 
-                                src="img/adoption/solution_steps_desktop@1x.png" class="img-responsive center no-padding-top padding-btm" alt="Registration task broken into six simple steps. 1. What's your company name? 2. What's your work email? 3. What's your name? 4. About your work 5. Create a password 6. Check your inbox (for a verification email).">
+                            <img loading="lazy" srcset="img/adoption/webp/solution_steps_desktop@2x.webp 2x" 
+                                src="img/adoption/webp/solution_steps_desktop@1x.webp" class="img-responsive center no-padding-top padding-btm" alt="Registration task broken into six simple steps. 1. What's your company name? 2. What's your work email? 3. What's your name? 4. About your work 5. Create a password 6. Check your inbox (for a verification email).">
                         </figure>
 
                    </div> <!-- end image row -->
                 
                 
-                    <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm-xsmall">
+                    <div class="row col-content center padding-btm-xsmall">
                     
-						<h3 class="padding-btm-xsmall">Made it easier for users to find their company</h3>
+						<h3 class="padding-btm-xsmall avoid-orphans">Made it easier for users to find their company</h3>
 						<p>No more having to recall “special” company codes — employees could now use the everyday familiar company names they knew to easily find their company. Improving this recognition over recall moment removed an early blocker to registration entry.</p>
                         
                     </div> <!-- end row --> 
                     
-                    <div class="row col-md-12 center padding-btm">
+                    <div class="row center padding-btm">
 
                         <figure>
-                            <img srcset="img/adoption/solution_find-company_desktop@2x.png 2x" 
-                                src="img/adoption/solution_find-company_desktop@1x.png" class="img-responsive center no-padding-top" alt="New 'What's your company name?' screen showing the old unique-way to enter a company name ('marksandspencer'), vs the improved new ways ('marks and spencer, or 'M&S' as examples).">
+                            <img loading="lazy" srcset="img/adoption/webp/solution_find-company_desktop@2x.webp 2x" 
+                                src="img/adoption/webp/solution_find-company_desktop@1x.webp" class="img-responsive center no-padding-top" alt="New 'What's your company name?' screen showing the old unique-way to enter a company name ('marksandspencer'), vs the improved new ways ('marks and spencer, or 'M&S' as examples).">
                             <figcaption>
                                 Employees could now enter what they knew, not an easy-to-forget company "code"
                             </figcaption>
@@ -380,34 +370,34 @@
                    </div> <!-- end image row -->
                     
                     
-                    <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm-xsmall">
+                    <div class="row col-content center padding-btm-xsmall">
                         
-                        <h3 class="padding-btm-xsmall">Created a more friendly look &amp; feel</h3>
+                        <h3 class="padding-btm-xsmall avoid-orphans">Created a more friendly look &amp; feel</h3>
 						<p>Creating a story-arc of the employee registration journey allowed us to design for moments of interest and “warmth” using our brand, and add a foundational consistency with a UI framework. This in-turn created a more attractive, professional, and cohesive flow, acting as a first indicator of trust for people. </p>
                         
                     </div>
                     
-                    <div class="row col-md-12 center padding-btm">
+                    <div class="row center padding-btm">
 
                         <figure>
-                            <img srcset="img/adoption/solution_friendly-exp_desktop@2x.png 2x" 
-                                src="img/adoption/solution_friendly-exp_desktop@1x.png" class="img-responsive center no-padding-top padding-btm" alt="A montage of new screens that show the use of a soft and warm pastel coloured palette, large playful illustrations, and lots of white space to evoke feelings of warmth and trust.">
+                            <img loading="lazy" srcset="img/adoption/webp/solution_friendly-exp_desktop@2x.webp 2x" 
+                                src="img/adoption/webp/solution_friendly-exp_desktop@1x.webp" class="img-responsive center no-padding-top padding-btm" alt="A montage of new screens that show the use of a soft and warm pastel coloured palette, large playful illustrations, and lots of white space to evoke feelings of warmth and trust.">
                         </figure>
 
             	   </div> <!-- end image row -->
                     
-                    <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm-xsmall">
+                    <div class="row col-content center padding-btm-xsmall">
                         
-                        <h3 class="padding-btm-xsmall">Built with a “usable means accessible” mindset</h3>
+                        <h3 class="padding-btm-xsmall avoid-orphans">Built with a “usable means accessible” mindset</h3>
 						<p>Accessibility-first thinking was foundational in making the registration task more usable for all. This approach meant more people, no matter their access needs, increased their trust in Unmind as there were less barriers to easily register.</p>
 							
 					</div>
                     
-                    <div class="row col-md-12 center padding-btm">
+                    <div class="row center padding-btm">
 
                         <figure>
-                            <img srcset="img/adoption/solution_a11y_desktop@2x.png 2x" 
-                                src="img/adoption/solution_a11y_desktop@1x.png" class="img-responsive center no-padding-top" alt="A montage of four accessibility improvements. 1. 'Create password' field now shows each password rule, and marks them as completed when done — this is done both visually and for access devices. 2. Landscape orientation is available for all platforms and devices. 3. Illustrations have alt-text that describe what is happening and and emotional context as visuals try to convey. 4. Swiping through a native devices introduction carousels can now be done in a variety of ways for people of differing abilities and access needs.">
+                            <img loading="lazy" srcset="img/adoption/webp/solution_a11y_desktop@2x.webp 2x" 
+                                src="img/adoption/webp/solution_a11y_desktop@1x.webp" class="img-responsive center no-padding-top" alt="A montage of four accessibility improvements. 1. 'Create password' field now shows each password rule, and marks them as completed when done — this is done both visually and for access devices. 2. Landscape orientation is available for all platforms and devices. 3. Illustrations have alt-text that describe what is happening and and emotional context as visuals try to convey. 4. Swiping through a native devices introduction carousels can now be done in a variety of ways for people of differing abilities and access needs.">
                             <figcaption>
                                 Looking through an accessible-first lens made every interaction better for everybody.
                             </figcaption>
@@ -426,11 +416,11 @@
 
 			<div class="container no-padding-btm no-padding-top">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-top">
+				<div class="row col-content center padding-top">
 
 
 					<div>
-						<h2>Outcomes</h2>
+						<h2 class="avoid-orphans">Outcomes</h2>
 							<div class="horizontal-line-small"></div>
 					</div>            		
 
@@ -474,7 +464,7 @@
             	</div> <!-- end row -->
 
 
-				<div class="row col-xs-10 col-sm-10 col-md-7 col-lg-6 center">		
+				<div class="row col-content-narrow center">		
 						
 					<div>
 			    		<h6 class="center-text">Read the full casestudy below<span class="no-italic" role="img" aria-label="nerd face"> 🤓 </span></h6>
@@ -485,7 +475,7 @@
 		    	<div class="row padding-btm">	
 
 					<figure aria-hidden="true" class="center-text arrow-bubble">
-	              		<!-- <img src="img/arrow-down-bubble.svg" alt=""> -->
+	              		<!-- <img loading="lazy" src="img/arrow-down-bubble.svg" alt=""> -->
 
 	              		<svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
         				<circle cx="24" cy="24" r="24"/>
@@ -515,7 +505,7 @@
 
 				<div class="container">
 
-		    		<div class="row col-md-12 center-text">
+		    		<div class="row center-text">
 					
 			        	<!-- Sub title -->
 			            	<div>
@@ -541,10 +531,10 @@
 
 			<div class="container padding-btm">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+				<div class="row col-content center padding-btm">
                     
                     <div>
-						<h2>Who is Unmind?</h2>
+						<h2 class="avoid-orphans">Who is Unmind?</h2>
 							<div class="horizontal-line-small"></div>
 					</div>	
 
@@ -557,10 +547,10 @@
 				</div> <!-- end row -->
                 
                 
-                <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+                <div class="row col-content center">
 
 					<div>
-						<h2>Getting to know the flow</h2>
+						<h2 class="avoid-orphans">Getting to know the flow</h2>
 							<div class="horizontal-line-small"></div>
 					</div>					
 
@@ -579,11 +569,11 @@
                 </div> <!-- end row -->
                 
 
-				<div class="row col-md-12 center padding-btm">	
+				<div class="row center padding-btm">	
 
 					<figure>
-	              		<img srcset="img/adoption/flow_old@2x.png 2x"
-	              			src="img/adoption/flow_old@1x.png" class="img-responsive center" alt="A very visually dull registration flow comprised of three steps. Step 1: 'Find your company'. Step 2: 'Sign-in'  Employees could also go to a 'create an account' screen from here. Step 3: 'Check your inbox'.">
+	              		<img loading="lazy" srcset="img/adoption/webp/flow_old@2x.webp 2x"
+	              			src="img/adoption/webp/flow_old@1x.webp" class="img-responsive center" alt="A very visually dull registration flow comprised of three steps. Step 1: 'Find your company'. Step 2: 'Sign-in'  Employees could also go to a 'create an account' screen from here. Step 3: 'Check your inbox'.">
 	              		<figcaption>
 	              			The old flow was functional, but didn't inspire an "I trust this site" feeling
 	              		</figcaption>
@@ -593,10 +583,10 @@
                 
                 
                 
-                <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+                <div class="row col-content center padding-btm">
 
 					<div>
-						<h2>Driving user adoption</h2>
+						<h2 class="avoid-orphans">Driving user adoption</h2>
 							<div class="horizontal-line-small"></div>
 					</div>					
 
@@ -626,7 +616,7 @@
 
 				<div class="container">
 
-		    		<div class="row col-md-12 center-text">
+		    		<div class="row center-text">
 					
 			        	<!-- Sub title -->
 			            	<div>
@@ -652,10 +642,10 @@
 
 			<div class="container padding-btm">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
                     
                     <div>
-						<h2>Understanding known problems</h2>
+						<h2 class="avoid-orphans">Understanding known problems</h2>
 							<div class="horizontal-line-small"></div>
 					</div>	
 
@@ -666,11 +656,11 @@
 				</div> <!-- end row -->
                 
 
-				<div class="row col-md-12 center padding-btm">	
+				<div class="row center padding-btm">	
 
 					<figure>
-	              		<img srcset="img/adoption/journey-map@2x.png 2x"
-	              			src="img/adoption/journey-map@1x.png" class="img-responsive center" alt="Journey map of an employee as they start from an awareness of Unmind, moving into the consideration stage, and finally signing up to Unmind. The employee starts in a positive frame of mind, but as they progress through the journey they become more frustrated.">
+	              		<img loading="lazy" srcset="img/adoption/webp/journey-map@2x.webp 2x"
+	              			src="img/adoption/webp/journey-map@1x.webp" class="img-responsive center" alt="Journey map of an employee as they start from an awareness of Unmind, moving into the consideration stage, and finally signing up to Unmind. The employee starts in a positive frame of mind, but as they progress through the journey they become more frustrated.">
 	              		<figcaption>
 	              			During these sessions we created a journey map of the adoption and onboarding journey (employee awareness, consideration, and account creation) and gathered quantitative data regarding registration funnel drop off.
 	              		</figcaption>
@@ -679,10 +669,10 @@
             	</div> <!-- end image row -->
 
 
-            	<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+            	<div class="row col-content center padding-btm">
 
 					<div>
-						<h3>Key learnings</h3>
+						<h3 class="avoid-orphans">Key learnings</h3>
 
 						<ul>
                             <li><span class="p-bold">Only about 49%</span> of users had successfully created an Unmind account in the past year</li>
@@ -709,7 +699,7 @@
 
 				<div class="container">
 
-		    		<div class="row col-md-12 center-text">
+		    		<div class="row center-text">
 					
 			        	<!-- Sub title -->
 			            	<div>
@@ -735,7 +725,7 @@
 
 			<div class="container padding-btm">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+				<div class="row col-content center padding-btm">
 
 					<div>
 						<p>Our research not only focused on the registration journey, but also on the awareness and consideration stages before. We wanted to know how people discovered Unmind, what did they think Unmind offered, and what pain-points did they bring into the registration flow?</p>
@@ -744,10 +734,10 @@
 				</div> <!-- end row -->
 
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
 
 					<div>
-						<h2>Unanswered privacy and trust concerns</h2>
+						<h2 class="avoid-orphans">Unanswered privacy and trust concerns</h2>
 							<div class="horizontal-line-small"></div>
 					</div>		
                     
@@ -758,14 +748,14 @@
 
                   <section class="padding-btm">
                       
-                      <div class="row col-xs-11 col-sm-11 col-md-9 col-lg-8 center quote-bubble">
+                      <div class="row col-content-narrow center quote-bubble">
                                 
                             <blockquote>“What if someone is not feeling [mentally] well? Are you going to alert the employer?”</blockquote>
                                 
                                 <div class="quote-author">
                                                                     
                                     <div class="quote-avatar-background">
-                                        <img srcset="img/avatar_concerned-man.svg 2x" 
+                                        <img loading="lazy" srcset="img/avatar_concerned-man.svg 2x" 
                                             src="avatar_concerned-man.svg" class="quote-avatar" alt="">
                                     </div> <!-- end quote-avatar-background--> 
 
@@ -778,7 +768,7 @@
                   </section> <!-- end quote module ___________ -->
                 
                 
-                <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">                
+                <div class="row col-content center padding-btm">                
 
 					<div>
                         <p>Throughout our research people expressed concern around the privacy of their personal data — how was their data used to help them, could they be personally identified, and how did Unmind and their company use this data? We found that trust is essential when it comes to mental wellbeing — especially in the workplace.</p>
@@ -788,10 +778,10 @@
                 
 
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
                     
                     <div>
-						<h2>Low comprehension of Unmind’s value</h2>
+						<h2 class="avoid-orphans">Low comprehension of Unmind’s value</h2>
 							<div class="horizontal-line-small"></div>
 					</div>	
                     
@@ -803,14 +793,14 @@
 
                       <section class="padding-btm">
 
-                          <div class="row col-xs-11 col-sm-11 col-md-9 col-lg-8 center quote-bubble">
+                          <div class="row col-content-narrow center quote-bubble">
 
                                 <blockquote>"It doesn't really tell me like how you do things other than, you know, general stuff to do with your mental health?”</blockquote>
 
                                     <div class="quote-author">
 
                                         <div class="quote-avatar-background">
-                                            <img srcset="img/avatar_concerned-man.svg 2x" 
+                                            <img loading="lazy" srcset="img/avatar_concerned-man.svg 2x" 
                                                 src="avatar_concerned-man.svg" class="quote-avatar" alt="">
                                         </div> <!-- end quote-avatar-background--> 
 
@@ -824,7 +814,7 @@
                 
                 
                 
-                <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+                <div class="row col-content center padding-btm">
 
 					<div>
                         <p>The value of Unmind, and what we actually offered employees, was not made clear on Unmind’s website. Employees were coming into the registration flow still unsure of what Unmind would do to help them with their mental wellbeing.</p>
@@ -833,11 +823,11 @@
                 </div> <!-- end row -->
                                                 
                 
-                <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+                <div class="row col-content center">
                     
                     
                     <div>
-						<h2>Lack of registration clarity</h2>
+						<h2 class="avoid-orphans">Lack of registration clarity</h2>
 							<div class="horizontal-line-small"></div>
 					</div>	
                     
@@ -848,14 +838,14 @@
 
                       <section class="padding-btm">
 
-                          <div class="row col-xs-11 col-sm-11 col-md-9 col-lg-8 center quote-bubble">
+                          <div class="row col-content-narrow center quote-bubble">
 
                                 <blockquote>“I’d probably give up now.”</blockquote>
 
                                     <div class="quote-author">
 
                                         <div class="quote-avatar-background">
-                                            <img srcset="img/avatar_annoyed-woman.svg 2x" 
+                                            <img loading="lazy" srcset="img/avatar_annoyed-woman.svg 2x" 
                                                 src="avatar_concerned-man.svg" class="quote-avatar" alt="">
                                         </div> <!-- end quote-avatar-background--> 
 
@@ -869,7 +859,7 @@
                 
                 
                 
-                <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+                <div class="row col-content center padding-btm">
                 
 					<div>
                         <p>The registration process was found to be confusing right from the start. There was no clear direction of where an employee should navigate to, where they were, or where to go next. We ended up placing too much onus on the employee to recall special company codes and “just know” why things weren’t working.</p>
@@ -890,7 +880,7 @@
 
 				<div class="container">
 
-		    		<div class="row col-md-12 center-text">
+		    		<div class="row center-text">
 					
 			        	<!-- Sub title -->
 			            	<div>
@@ -916,10 +906,10 @@
 
 			<div class="container padding-btm">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+				<div class="row col-content center padding-btm">
 
 					<div>
-						<h2>Moving towards trust</h2>
+						<h2 class="avoid-orphans">Moving towards trust</h2>
 							<div class="horizontal-line-small"></div>
 					</div>	
                     
@@ -929,7 +919,7 @@
                         
                         <p>For the employees entering Unmind’s registration flow there was a motivation (or at least a curiosity), but trust and ease of use were severely lacking. These three overarching needs, combined with our research insights, become my northstar design guidelines.</p>
                         
-                        <h3>Design guidelines</h3>
+                        <h3 class="avoid-orphans">Design guidelines</h3>
                         
                         <ul>
                             <li>Provide confidence right from the start (improve user trust / motivation)</li>
@@ -955,7 +945,7 @@
 
 				<div class="container">
 
-		    		<div class="row col-md-12 center-text">
+		    		<div class="row center-text">
 					
 			        	<!-- Sub title -->
 			            	<div>
@@ -981,10 +971,10 @@
 
 			<div class="container padding-btm">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+				<div class="row col-content center padding-btm">
 
 					<div>
-						<h2>Bringing new knowledge to ideation</h2>
+						<h2 class="avoid-orphans">Bringing new knowledge to ideation</h2>
 							<div class="horizontal-line-small"></div>
 					</div>					
 
@@ -995,14 +985,14 @@
                 </div> <!-- end row -->
                 
                 
-                <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+                <div class="row col-content center padding-btm">
                     
                     <div>
 						<h4 class="padding-btm-xsmall colour-primary">HOW MIGHT WE...</h4>
 					</div>
 
 					<div class="padding-btm">
-                        <h2>improve the sign-up experience, so that customers stay <span class="colour-primary">motivated, excited & curious</span> about Unmind?</h2>
+                        <h2 class="avoid-orphans">improve the sign-up experience, so that customers stay <span class="colour-primary">motivated, excited & curious</span> about Unmind?</h2>
 							<div class="horizontal-line-small"></div>
 					</div>
                     
@@ -1011,18 +1001,18 @@
 					</div>
 
 					<div>
-                        <h2>provide privacy &amp; data re-assurance to concerned employees, so that they feel <span class="colour-primary">confident &amp; safe</span> using Unmind?</h2>
+                        <h2 class="avoid-orphans">provide privacy &amp; data re-assurance to concerned employees, so that they feel <span class="colour-primary">confident &amp; safe</span> using Unmind?</h2>
 							<div class="horizontal-line-small"></div>
 					</div>
                     
                 </div> <!-- end row -->
                 
                 
-                <div class="row col-md-12 center padding-btm">	
+                <div class="row center padding-btm">	
 
 					<figure>
-	              		<img srcset="img/adoption/hmw-sessions@2x.png 2x"
-	              			src="img/adoption/hmw-sessions@1x.png" class="img-responsive center" alt="A montage of sketches done throughout the 'how might we' workshops.">
+	              		<img loading="lazy" srcset="img/adoption/webp/hmw-sessions@2x.webp 2x"
+	              			src="img/adoption/webp/hmw-sessions@1x.webp" class="img-responsive center" alt="A montage of sketches done throughout the 'how might we' workshops.">
 	              		<figcaption>
 	              			These remote ideation sessions were the first time something like this had been run before on a project. It was great to get such positive feedback from all participants and to be a part of proving to the wider business how design facilitation and collaboration leads to better cross-discipline alignment.
 	              		</figcaption>
@@ -1031,10 +1021,10 @@
             	</div> <!-- end image row -->
                 
                 
-                <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+                <div class="row col-content center">
 
 					<div>
-						<h2>A focus on impact and a tight feedback loop</h2>
+						<h2 class="avoid-orphans">A focus on impact and a tight feedback loop</h2>
 							<div class="horizontal-line-small"></div>
 					</div>					
 
@@ -1045,11 +1035,11 @@
                 </div> <!-- end row -->
                 
                 
-                <div class="row col-md-12 center padding-btm">	
+                <div class="row center padding-btm">	
 
 					<figure>
-	              		<img srcset="img/adoption/prioritisation@2x.png 2x"
-	              			src="img/adoption/prioritisation@1x.png" class="img-responsive center" alt="A chart that shows 'uncertainity and risk' on the vertical axis, and 'impact on goal' on the horizontal axis, with various ideas placed according to their considered risk versus impact.">
+	              		<img loading="lazy" srcset="img/adoption/webp/prioritisation@2x.webp 2x"
+	              			src="img/adoption/webp/prioritisation@1x.webp" class="img-responsive center" alt="A chart that shows 'uncertainity and risk' on the vertical axis, and 'impact on goal' on the horizontal axis, with various ideas placed according to their considered risk versus impact.">
 	              		<figcaption>
 	              			The higher risk ideas we decided to explore were evaluated through a user experience, tech feasibility, and business impact lens.
 	              		</figcaption>
@@ -1058,7 +1048,7 @@
             	</div> <!-- end image row -->
                 
                 
-                <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">				
+                <div class="row col-content center">				
 
 					<div>
 						<p>With continual feedback from Rob and Esther I would explore user flows, and once we all aligned, I would create lo-fi prototypes which we would user test. In parallel with this Rob was also developing throw-away coded prototypes to explore technical feasibility issues with the rest of the engineering organisation.</p>
@@ -1069,11 +1059,11 @@
                 </div> <!-- end row -->
                 
                 
-                <div class="row col-md-12 center padding-btm">	
+                <div class="row center padding-btm">	
 
 					<figure>
-	              		<img srcset="img/adoption/user-flows@2x.png 2x"
-	              			src="img/adoption/user-flows@1x.png" class="img-responsive center" alt="Map of the first release user flow. Showing the major parts of 'Find your company', 'Can't find company', and 'email verification' and the flows that happened between these.">
+	              		<img loading="lazy" srcset="img/adoption/webp/user-flows@2x.webp 2x"
+	              			src="img/adoption/webp/user-flows@1x.webp" class="img-responsive center" alt="Map of the first release user flow. Showing the major parts of 'Find your company', 'Can't find company', and 'email verification' and the flows that happened between these.">
 	              		<figcaption>
 	              			I mapped out the all the various user flows before jumping into wireframes
 	              		</figcaption>
@@ -1094,7 +1084,7 @@
 
 				<div class="container">
 
-		    		<div class="row col-md-12 center-text">
+		    		<div class="row center-text">
 					
 			        	<!-- Sub title -->
 			            	<div>
@@ -1123,10 +1113,10 @@
 
 			<div class="container padding-btm">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+				<div class="row col-content center padding-btm">
 
 					<div>
-						<h2>Make the path clear</h2>
+						<h2 class="avoid-orphans">Make the path clear</h2>
 							<div class="horizontal-line-small"></div>
 					</div>					
 
@@ -1137,10 +1127,10 @@
                 </div> <!-- end row -->
                 
                 
-                <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+                <div class="row col-content center">
 
 					<div>
-						<h3>1. Entry from website</h3>
+						<h3 class="avoid-orphans">1. Entry from website</h3>
 					</div>					
 
 					<div>
@@ -1150,11 +1140,11 @@
                 </div> <!-- end row -->
                 
                 
-                <div class="row col-md-12 center padding-btm">	
+                <div class="row center padding-btm">	
 
 					<figure>
-	              		<img srcset="img/adoption/solution_website-entry@2x.png 2x"
-	              			src="img/adoption/solution_website-entry@1x.png" class="img-responsive center" alt="The previous website banner had a 'Sign in' button. The new website banner replaced this copy with a 'Create an account / Sign in' button.">
+	              		<img loading="lazy" srcset="img/adoption/webp/solution_website-entry@2x.webp 2x"
+	              			src="img/adoption/webp/solution_website-entry@1x.webp" class="img-responsive center" alt="The previous website banner had a 'Sign in' button. The new website banner replaced this copy with a 'Create an account / Sign in' button.">
 	              		<figcaption>
 	              			This new button copy was much less confusing for users 
 	              		</figcaption>
@@ -1163,10 +1153,10 @@
             	</div> <!-- end image row -->
                 
                 
-                <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+                <div class="row col-content center">
 
 					<div>
-						<h3>2. Registration start</h3>
+						<h3 class="avoid-orphans">2. Registration start</h3>
 					</div>					
 
 					<div>
@@ -1176,11 +1166,11 @@
                 </div> <!-- end row -->
                 
                 
-                <div class="row col-md-12 center padding-btm">	
+                <div class="row center padding-btm">	
 
 					<figure>
-	              		<img srcset="img/adoption/solution_registration-start_web@2x.png 2x"
-	              			src="img/adoption/solution_registration-start_web@2x.png" class="img-responsive center" alt="A 'before' screenshot shows an email and password field, followed by a 'sign in' button. The 'create account' button sits underneath this inline with a 'learn more' button. An 'after' screenshot shows a headline of 'Take a moment for yourself, and smaller copy of 'Unmind helps you lead a more balanced and fulfilling life by nourishing your mind'. Two buttons underneath this say 'Create an account' and 'Sign in'.">
+	              		<img loading="lazy" srcset="img/adoption/webp/solution_registration-start_web@2x.webp 2x"
+	              			src="img/adoption/webp/solution_registration-start_web@2x.webp" class="img-responsive center" alt="A 'before' screenshot shows an email and password field, followed by a 'sign in' button. The 'create account' button sits underneath this inline with a 'learn more' button. An 'after' screenshot shows a headline of 'Take a moment for yourself, and smaller copy of 'Unmind helps you lead a more balanced and fulfilling life by nourishing your mind'. Two buttons underneath this say 'Create an account' and 'Sign in'.">
 	              		<figcaption>
 	              			Previously users were unlikely to locate the "Create account" button, leading to confusion
 	              		</figcaption>
@@ -1189,10 +1179,10 @@
             	</div> <!-- end image row -->
                 
                 
-                <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+                <div class="row col-content center">
 
 					<div>
-						<h3>3. Support access at your fingertips</h3>
+						<h3 class="avoid-orphans">3. Support access at your fingertips</h3>
 					</div>					
 
 					<div>
@@ -1202,11 +1192,11 @@
                 </div> <!-- end row -->
                 
                 
-                <div class="row col-md-12 center padding-btm">	
+                <div class="row center padding-btm">	
 
 					<figure>
-	              		<img srcset="img/adoption/solution_support@2x.png 2x"
-	              			src="img/adoption/solution_support@1x.png" class="img-responsive center" alt="'What's your company name?' screen with a link at the screens bottom that reads 'Visit our FAQ's'.">
+	              		<img loading="lazy" srcset="img/adoption/webp/solution_support@2x.webp 2x"
+	              			src="img/adoption/webp/solution_support@1x.webp" class="img-responsive center" alt="'What's your company name?' screen with a link at the screens bottom that reads 'Visit our FAQ's'.">
 	              		<figcaption>
 	              			FAQ's were now accessible from every screen to help employees
 
@@ -1216,7 +1206,7 @@
             	</div> <!-- end image row -->
                 
                 
-                <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">				
+                <div class="row col-content center padding-btm">				
 
 					<div>
 						<p>When testing these changes we saw absolutely no confusion, roadblocks, or friction occurring anymore for users wanting to sign-in or create an account. Even though these were basic design changes, our users' trust and confidence in Unmind was now not undermined from the very start.</p>
@@ -1237,10 +1227,10 @@
 
 			<div class="container">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
 
 					<div>
-						<h2>Restate Unmind’s value and benefits</h2>
+						<h2 class="avoid-orphans">Restate Unmind’s value and benefits</h2>
 							<div class="horizontal-line-small">
 							</div>
 					</div>
@@ -1258,14 +1248,14 @@
 
                   <section class="padding-btm">
                       
-                      <div class="row col-xs-11 col-sm-11 col-md-9 col-lg-8 center quote-bubble">
+                      <div class="row col-content-narrow center quote-bubble">
                                 
                             <blockquote>“Why should I sign up if I don’t know how it’ll help me?”</blockquote>
                                 
                                 <div class="quote-author">
                                                                     
                                     <div class="quote-avatar-background">
-                                        <img srcset="img/avatar_concerned-man.svg 2x" 
+                                        <img loading="lazy" srcset="img/avatar_concerned-man.svg 2x" 
                                             src="avatar_concerned-man.svg" class="quote-avatar" alt="">
                                     </div> <!-- end quote-avatar-background--> 
 
@@ -1279,7 +1269,7 @@
                         
                                             
                     
-                <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">   
+                <div class="row col-content center">   
                         
                     <div>                        
                         <p>At this stage the marketing team, who owned the website, were in the midst of a redesign of  Unmind’s website content, so we made sure to share our research insights with them to add into this future update. Even though this meant the value piece would be missing from the website for the time being, we still wanted to address the unclear value proposition in our registration journey.</p>
@@ -1290,19 +1280,19 @@
 				</div> <!-- end row -->
                 
                 
-                <div class="row col-md-12 center padding-btm">	
+                <div class="row center padding-btm">	
 
 					<figure>
-	              		<img srcset="img/adoption/solution_value_web@2x.png 2x"
-	              			src="img/adoption/solution_value_web@1x.png" class="img-responsive center" alt="A screen is split into two halves. On the lefthand side is a title of 'Take a moment for yourself', with smaller copy of 'Unmind helps you lead a more balanced and fulfilling life by nourishing your mind', and below this is a primary button which reads 'Create an account', followed by a secondary button which reads 'Sign in'. On the righthand side is a cross-legged yoga master levitating in the air with four bullet points below — they read 'Measure and improve your mental health', 'Get personalised tips based on science', 'Learn and develop with bite-sized tools', and 'One hundred percent confidential. Your mind is your own'.">
+	              		<img loading="lazy" srcset="img/adoption/webp/solution_value_web@2x.webp 2x"
+	              			src="img/adoption/webp/solution_value_web@1x.webp" class="img-responsive center" alt="A screen is split into two halves. On the lefthand side is a title of 'Take a moment for yourself', with smaller copy of 'Unmind helps you lead a more balanced and fulfilling life by nourishing your mind', and below this is a primary button which reads 'Create an account', followed by a secondary button which reads 'Sign in'. On the righthand side is a cross-legged yoga master levitating in the air with four bullet points below — they read 'Measure and improve your mental health', 'Get personalised tips based on science', 'Learn and develop with bite-sized tools', and 'One hundred percent confidential. Your mind is your own'.">
 	              		<figcaption>
 	              			(web version) This new messaging resonated with majority of users in usability sessions
 	              		</figcaption>
 	            	</figure>
                     
                     <figure>
-	              		<img srcset="img/adoption/solution_value_native@2x.png 2x"
-	              			src="img/adoption/solution_value_native@1x.png" class="img-responsive center" alt="Four app screens all have 'Create an account' and 'Sign in' buttons. First screen reads 'Measure and improve your mental health', second reads 'Personalised insights and scientific assessments', third reads 'Bite-sized tools developed by experts, and the forth reads 'One hundred percent confidential for your personal privacy'.">
+	              		<img loading="lazy" srcset="img/adoption/webp/solution_value_native@2x.webp 2x"
+	              			src="img/adoption/webp/solution_value_native@1x.webp" class="img-responsive center" alt="Four app screens all have 'Create an account' and 'Sign in' buttons. First screen reads 'Measure and improve your mental health', second reads 'Personalised insights and scientific assessments', third reads 'Bite-sized tools developed by experts, and the forth reads 'One hundred percent confidential for your personal privacy'.">
 	              		<figcaption>
 	              			(app version) The messaging was split across carousel screens for the apps
 	              		</figcaption>
@@ -1323,10 +1313,10 @@
 
 			<div class="container">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
 
 					<div>
-						<h2>One thing at a time</h2>
+						<h2 class="avoid-orphans">One thing at a time</h2>
 							<div class="horizontal-line-small">
 							</div>
 					</div>
@@ -1350,11 +1340,11 @@
 				</div> <!-- end row -->
                 
                 
-                <div class="row col-md-12 center padding-btm">	
+                <div class="row center padding-btm">	
 
 					<figure>
-	              		<img srcset="img/adoption/solution_steps_native@2x.png 2x"
-	              			src="imgadoption/solution_steps_native@1x.png/" class="img-responsive center" alt="A 'before' section shows a single 'Create an account' mobile screen with an email field, first name field, last name field, location dropdown field, department dropdown field, password field, and a 'create account' button all in onw long column. An 'after' section shows five mobile screens, each having a step counter at the top, the employee's company name, screen content, and a 'continue' button at the bottom. First screen reads 'What's your email? We just need to verify your work email.' with a work email field, second reads 'What's your name?' with a first and last name field, third reads 'About your work. This data is totally anonymous — it's used for overall company wellbeing insights.' with a work location dropdown field, forth reads 'Create a password' with a password field, and fifth reads 'Check your inbox. You'll get an email from us any moment now. We've sent it to (employee work email address).">
+	              		<img loading="lazy" srcset="img/adoption/webp/solution_steps_native@2x.webp 2x"
+	              			src="img/adoption/webp/solution_steps_native@1x.webp" class="img-responsive center" alt="A 'before' section shows a single 'Create an account' mobile screen with an email field, first name field, last name field, location dropdown field, department dropdown field, password field, and a 'create account' button all in onw long column. An 'after' section shows five mobile screens, each having a step counter at the top, the employee's company name, screen content, and a 'continue' button at the bottom. First screen reads 'What's your email? We just need to verify your work email.' with a work email field, second reads 'What's your name?' with a first and last name field, third reads 'About your work. This data is totally anonymous — it's used for overall company wellbeing insights.' with a work location dropdown field, forth reads 'Create a password' with a password field, and fifth reads 'Check your inbox. You'll get an email from us any moment now. We've sent it to (employee work email address).">
 	              		<figcaption>
 	              			(app screens) Breaking the form into steps reduced cognitive load 
 	              		</figcaption>
@@ -1367,14 +1357,14 @@
 
                   <section class="padding-btm">
                       
-                      <div class="row col-xs-11 col-sm-11 col-md-9 col-lg-8 center quote-bubble">
+                      <div class="row col-content-narrow center quote-bubble">
                                 
                             <blockquote>“I liked how everything was 'step-by-step' easy.”</blockquote>
                                 
                                 <div class="quote-author">
                                                                     
                                     <div class="quote-avatar-background">
-                                        <img srcset="img/avatar_happy-woman.svg" class="quote-avatar" alt="">
+                                        <img loading="lazy" srcset="img/avatar_happy-woman.svg" class="quote-avatar" alt="">
                                     </div> <!-- end quote-avatar-background--> 
 
                                     <figcaption>Usability participants reaction</figcaption>
@@ -1398,10 +1388,10 @@
 
 			<div class="container">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center no-padding-btm">
+				<div class="row col-content center no-padding-btm">
 
 					<div>
-						<h2>Let employees use common variations of company names</h2>
+						<h2 class="avoid-orphans">Let employees use common variations of company names</h2>
 							<div class="horizontal-line-small">
 							</div>
 					</div>
@@ -1430,11 +1420,11 @@
 				</div> <!-- end row -->
                 
                 
-                <div class="row col-md-12 center padding-btm">	
+                <div class="row center padding-btm">	
 
 					<figure>
-	              		<img srcset="img/adoption/solution_old_no-variations@2x.png 2x"
-	              			src="img/adoption/solution_old_no-variations@1x.png" class="img-responsive center" alt="A table split into 3 columns. First column has the company name 'Marks and Spencer', followed by the special code that is needed 'marksandspencer' (no spaces and only lower case), and the common names used are 'Marks and Spencer', 'M & S' (with spaces), and 'm&s' (no spaces) — all of these common names would not work. Second column has company name 'John Lewis and Partners', followed by the special code of 'jlp', and the common names used 'John Lewis', and 'Waitrose' — both of these would not work. The final column company name is 'Disney', the special code is 'disney', and the common names used are 'Disney' (a capital 'd' used, which would not work) and 'disney' (a lower case 'd' used, and it would work).">
+	              		<img loading="lazy" srcset="img/adoption/webp/solution_old_no-variations@2x.webp 2x"
+	              			src="img/adoption/webp/solution_old_no-variations@1x.webp" class="img-responsive center" alt="A table split into 3 columns. First column has the company name 'Marks and Spencer', followed by the special code that is needed 'marksandspencer' (no spaces and only lower case), and the common names used are 'Marks and Spencer', 'M & S' (with spaces), and 'm&s' (no spaces) — all of these common names would not work. Second column has company name 'John Lewis and Partners', followed by the special code of 'jlp', and the common names used 'John Lewis', and 'Waitrose' — both of these would not work. The final column company name is 'Disney', the special code is 'disney', and the common names used are 'Disney' (a capital 'd' used, which would not work) and 'disney' (a lower case 'd' used, and it would work).">
 	              		<figcaption>
 	              			A lot of common ways that a company is known as wouldn't work — a frustrating experience for users
 	              		</figcaption>
@@ -1445,14 +1435,14 @@
                 
                 <section class="padding-btm">
                       
-                      <div class="row col-xs-11 col-sm-11 col-md-9 col-lg-8 center quote-bubble">
+                      <div class="row col-content-narrow center quote-bubble">
                                 
                             <blockquote>“Is it broken?...I'm putting in the right name right?”</blockquote>
                                 
                                 <div class="quote-author">
                                                                     
                                     <div class="quote-avatar-background">
-                                        <img srcset="img/avatar_unsure-woman.svg 2x" 
+                                        <img loading="lazy" srcset="img/avatar_unsure-woman.svg 2x" 
                                             src="avatar_concerned-man.svg" class="quote-avatar" alt="">
                                     </div> <!-- end quote-avatar-background--> 
 
@@ -1465,7 +1455,7 @@
                   </section> <!-- end quote module ___________ -->
                 
                 
-                <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+                <div class="row col-content center padding-btm">
 
 					<div>
                         
@@ -1477,10 +1467,10 @@
                 
                    
                 
-                <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+                <div class="row col-content center">
 
 					<div>
-						<h2>Balancing business needs with user needs</h2>
+						<h2 class="avoid-orphans">Balancing business needs with user needs</h2>
 							<div class="horizontal-line-small">
 							</div>
 					</div>
@@ -1495,11 +1485,11 @@
 				</div> <!-- end row -->
                 
                 
-                <div class="row col-md-12 center padding-btm">	
+                <div class="row center padding-btm">	
 
 					<figure>
-	              		<img srcset="img/adoption/solution_alias-search@2x.png 2x"
-	              			src="img/adoption/solution_alias-search@1x.png" class="img-responsive center" alt="New screen reads 'What's your company name? We'll connect you to your Unmind space.', with a company name field and a 'connect' button. Another speech bubble, which points to the company name field, shows the old unique-way to enter a company name ('marksandspencer'), vs two improved new ways ('marks and spencer, or 'M&S') as examples.">
+	              		<img loading="lazy" srcset="img/adoption/webp/solution_alias-search@2x.webp 2x"
+	              			src="img/adoption/webp/solution_alias-search@1x.webp" class="img-responsive center" alt="New screen reads 'What's your company name? We'll connect you to your Unmind space.', with a company name field and a 'connect' button. Another speech bubble, which points to the company name field, shows the old unique-way to enter a company name ('marksandspencer'), vs two improved new ways ('marks and spencer, or 'M&S') as examples.">
 	              		<figcaption>
 	              			Employees had less frustrations finding their company with the new "alias search" change
 	              		</figcaption>
@@ -1510,10 +1500,10 @@
                 
                 
                 <!-- SUB-SECTION -->
-                <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+                <div class="row col-content center">
 
 					<div>
-						<h2>The improvement that wasn’t to be</h2>
+						<h2 class="avoid-orphans">The improvement that wasn’t to be</h2>
                             <div class="horizontal-line-small"></div>
 					</div>
 
@@ -1530,11 +1520,11 @@
 				</div> <!-- end row -->
                 
                 
-                <div class="row col-md-12 center padding-btm">	
+                <div class="row center padding-btm">	
 
 					<figure>
-	              		<img srcset="img/adoption/solution_company-name-extraction@2x.png 2x"
-	              			src="img/adoption/solution_company-name-extraction@1x.png" class="img-responsive center" alt="Flow shows the 'What's your work email?' screen with the email 'm.harris@marksandspencer.co.uk'. The email domain 'marksandspencer'is then converted to the system matched company name of 'Marks and Spencer'.">
+	              		<img loading="lazy" srcset="img/adoption/webp/solution_company-name-extraction@2x.webp 2x"
+	              			src="img/adoption/webp/solution_company-name-extraction@1x.webp" class="img-responsive center" alt="Flow shows the 'What's your work email?' screen with the email 'm.harris@marksandspencer.co.uk'. The email domain 'marksandspencer'is then converted to the system matched company name of 'Marks and Spencer'.">
 	              		<figcaption>
 	              			This seemed like a great user experience improvement
 	              		</figcaption>
@@ -1543,7 +1533,7 @@
             	</div> <!-- end image row -->
                 
                 
-                <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+                <div class="row col-content center padding-btm">
 
 					<div>
                         
@@ -1569,10 +1559,10 @@
 
 			<div class="container">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
 
 					<div>
-						<h2>Ensure privacy runs through everything</h2>
+						<h2 class="avoid-orphans">Ensure privacy runs through everything</h2>
 							<div class="horizontal-line-small">
 							</div>
 					</div>
@@ -1593,11 +1583,11 @@
 				</div> <!-- end row -->
                 
                 
-                <div class="row col-md-12 center padding-btm">	
+                <div class="row center padding-btm">	
 
 					<figure>
-	              		<img srcset="img/adoption/solution_privacy@2x.png 2x"
-	              			src="img/adoption/solution_privacy@1x.png" class="img-responsive center" alt="A desktop and mobile screen side by side. The desktop screen is split into two halves. The left-hand side reads 'We take your privacy seriously. Unmind is 100% confidential. We'll never share your personal information with your employee. Employers only see anonymised data. They can see overall wellbeing — but not how you use Unmind personally. A button reads 'Continue' and underneath is a link to 'Read our privacy policy. The right-hand side is an illustration of a person sitting on a comfy chair using their mobile phone, inside a padlock shaped house. The mobile screen has the same as the desktop, but has no illustration.">
+	              		<img loading="lazy" srcset="img/adoption/webp/solution_privacy@2x.webp 2x"
+	              			src="img/adoption/webp/solution_privacy@1x.webp" class="img-responsive center" alt="A desktop and mobile screen side by side. The desktop screen is split into two halves. The left-hand side reads 'We take your privacy seriously. Unmind is 100% confidential. We'll never share your personal information with your employee. Employers only see anonymised data. They can see overall wellbeing — but not how you use Unmind personally. A button reads 'Continue' and underneath is a link to 'Read our privacy policy. The right-hand side is an illustration of a person sitting on a comfy chair using their mobile phone, inside a padlock shaped house. The mobile screen has the same as the desktop, but has no illustration.">
 	              		<figcaption>
 	              			
 	              		</figcaption>
@@ -1607,10 +1597,10 @@
                 
                 
                 
-                <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center no-padding-btm">
+                <div class="row col-content center no-padding-btm">
 
 					<div>
-						<h2>Going against best practice to ensure another layer of privacy</h2>
+						<h2 class="avoid-orphans">Going against best practice to ensure another layer of privacy</h2>
                         <div class="horizontal-line-small"></div>
 					</div>
 
@@ -1628,11 +1618,11 @@
 				</div> <!-- end row -->
                 
                 
-                <div class="row col-md-12 center padding-btm">	
+                <div class="row center padding-btm">	
 
 					<figure>
-	              		<img srcset="img/adoption/solution_privacy_avoid-bad-actor-verification@2x.png 2x"
-	              			src="img/adoption/solution_privacy_avoid-bad-actor-verification@1x.png" class="img-responsive center" alt="A flow shows that after entering an Unmind account holder email there are two user flows. One flow shows a bad actor reaching a deadend. The second flow shows an actual account holder going through the registration and  receiving an alternative email to the regular email verification. This alternative email reads 'Trying to sign in? We noticed you’re trying to create an Unmind account, but you already have an account with this email address. You can safely sign in to Unmind with a magic link (no password needed for this) — just tap the button'. There is a button which reads 'Sign in to Unmind'. There is additional smaller text that reads 'You received this email because you want to create an Unmind account with this address. If this wasn’t you then you can safely ignore this email'.">
+	              		<img loading="lazy" srcset="img/adoption/webp/solution_privacy_avoid-bad-actor-verification@2x.webp 2x"
+	              			src="img/adoption/webp/solution_privacy_avoid-bad-actor-verification@1x.webp" class="img-responsive center" alt="A flow shows that after entering an Unmind account holder email there are two user flows. One flow shows a bad actor reaching a deadend. The second flow shows an actual account holder going through the registration and  receiving an alternative email to the regular email verification. This alternative email reads 'Trying to sign in? We noticed you’re trying to create an Unmind account, but you already have an account with this email address. You can safely sign in to Unmind with a magic link (no password needed for this) — just tap the button'. There is a button which reads 'Sign in to Unmind'. There is additional smaller text that reads 'You received this email because you want to create an Unmind account with this address. If this wasn’t you then you can safely ignore this email'.">
 	              		<figcaption>
                             We were quite happy to live with this added user friction to preserve the privacy of all Unmind users.
 	              		</figcaption>
@@ -1654,17 +1644,17 @@
 
 			<div class="container">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center no-padding-btm">
+				<div class="row col-content center no-padding-btm">
 
 					<div class="padding-btm-xsmall">
-						<h2>Creating a more friendly look &amp; feel</h2>
+						<h2 class="avoid-orphans">Creating a more friendly look &amp; feel</h2>
 							<div class="horizontal-line-small">
 							</div>
 					</div>
 
 					<div>
                         
-                        <h3 class="padding-btm-xsmall">Story as the backbone</h3>
+                        <h3 class="padding-btm-xsmall avoid-orphans">Story as the backbone</h3>
                         
                         <p>People make quick decisions on what is trustworthy, and a first indicator is how something looks and feels to them. Creating the new registrations look and feel started with the employee’s story as the foundation.</p>
 					</div>
@@ -1672,11 +1662,11 @@
 				</div> <!-- end row -->
                 
                 
-                <div class="row col-md-12 center padding-btm">	
+                <div class="row center padding-btm">	
 
 					<figure>
-	              		<img srcset="img/adoption/solution_storyarc@2x.png 2x"
-	              			src="img/adoption/solution_storyarc@1x.png" class="img-responsive center" alt="The story arc is split into three phases. The 'introduction' phase starts with an  illustration of an arc slowly bending upwards, there is another illustration of a worried face that conveys a 'Do I trust registering with a mental health app?'. Beneath this are the introductory screens that will show Unmind's value and re-assurance regarding data privacy, and underneath this there are the brand objectives to 'dial up interest, use bright colours and movement, and create an honest feeling in the user'. As the story arc rises we see a hurdle illustration, and the second phase of the story starts — the 'task orientation' phase. This contains the screens where an employee is actually inputting their registration data. The brand objectives here are to 'remove distractions, and tone down the colours'. At this point the story arc illustration reaches it's upper peak, with an illustration of a happy face that seems to convey a 'Wow, that was really easy and answered my concerns!'. At the final 'peak-end' phase the screen flow ends with the welcome screen, and the brand objective is to be 'welcoming, use bright colours and movement, and dial up the excitement'. As the story arc illustration bends down to the starting level there is an illustration of a beaming face that conveys a 'I can't wait to see what is to come!'">
+	              		<img loading="lazy" srcset="img/adoption/webp/solution_storyarc@2x.webp 2x"
+	              			src="img/adoption/webp/solution_storyarc@1x.webp" class="img-responsive center" alt="The story arc is split into three phases. The 'introduction' phase starts with an  illustration of an arc slowly bending upwards, there is another illustration of a worried face that conveys a 'Do I trust registering with a mental health app?'. Beneath this are the introductory screens that will show Unmind's value and re-assurance regarding data privacy, and underneath this there are the brand objectives to 'dial up interest, use bright colours and movement, and create an honest feeling in the user'. As the story arc rises we see a hurdle illustration, and the second phase of the story starts — the 'task orientation' phase. This contains the screens where an employee is actually inputting their registration data. The brand objectives here are to 'remove distractions, and tone down the colours'. At this point the story arc illustration reaches it's upper peak, with an illustration of a happy face that seems to convey a 'Wow, that was really easy and answered my concerns!'. At the final 'peak-end' phase the screen flow ends with the welcome screen, and the brand objective is to be 'welcoming, use bright colours and movement, and dial up the excitement'. As the story arc illustration bends down to the starting level there is an illustration of a beaming face that conveys a 'I can't wait to see what is to come!'">
 	              		<figcaption>
                             Mapping out the story of an employee’s registration progress, and how we could help them overcome obstacles, was a great way to visualise, and share with others, how our hero, the employee, would experience this improved registration flow.
 	              		</figcaption>
@@ -1685,7 +1675,7 @@
             	</div> <!-- end image row -->
                 
                 
-                <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+                <div class="row col-content center padding-btm">
 
 					<div>
                         
@@ -1705,10 +1695,10 @@
                 
                 
                 
-                <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+                <div class="row col-content center">
 
 					<div class="padding-btm-xsmall">
-						<h3>Bring the story to life (with brand)</h3>
+						<h3 class="avoid-orphans">Bring the story to life (with brand)</h3>
 					</div>
 
 					<div>
@@ -1718,11 +1708,11 @@
                 </div> <!-- end row -->
                 
                 
-                <div class="row col-md-12 center padding-btm">	
+                <div class="row center padding-btm">	
 
 					<figure>
-	              		<img srcset="img/adoption/solution_brand-flow_old@2x.png 2x"
-	              			src="img/adoption/solution_brand-flow_old@1x.png" class="img-responsive center" alt="The Unmind wesite is full of colour and fun illstrations, but when a user enters the registration flow it becomes almost like another site — greyscale and box-like.">
+	              		<img loading="lazy" srcset="img/adoption/webp/solution_brand-flow_old@2x.webp 2x"
+	              			src="img/adoption/webp/solution_brand-flow_old@1x.webp" class="img-responsive center" alt="The Unmind wesite is full of colour and fun illstrations, but when a user enters the registration flow it becomes almost like another site — greyscale and box-like.">
 	              		<figcaption>
 	              			There was no real visual continuation or connection between the website and the registration
 	              		</figcaption>
@@ -1735,14 +1725,14 @@
 
                   <section class="padding-btm">
                       
-                      <div class="row col-xs-11 col-sm-11 col-md-9 col-lg-8 center quote-bubble">
+                      <div class="row col-content-narrow center quote-bubble">
                                 
                             <blockquote>“Um, this is...different”</blockquote>
                                 
                                 <div class="quote-author">
                                                                     
                                     <div class="quote-avatar-background">
-                                        <img srcset="img/avatar_concerned-woman.svg" class="quote-avatar" alt="">
+                                        <img loading="lazy" srcset="img/avatar_concerned-woman.svg" class="quote-avatar" alt="">
                                     </div> <!-- end quote-avatar-background--> 
 
                                     <figcaption>Confused usability participant entering the previous registration flow</figcaption>
@@ -1756,7 +1746,7 @@
                 
                 
                 
-                <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+                <div class="row col-content center">
                     
                     <div>                      
                         <p>Collaborating with brand designers Josh (illustrations) and Eve (animations), we worked on how to use the Unmind brand to bring to life “story moments”, and create a much needed continuity between the website and the platform, with a warmth and friendliness that the employee story needed.</p>
@@ -1765,11 +1755,11 @@
 				</div> <!-- end row -->
                 
                 
-                <div class="row col-md-12 center padding-btm">	
+                <div class="row center padding-btm">	
 
 					<figure>
-	              		<img srcset="img/adoption/solution_brand-flow_new-web@2x.png 2x"
-	              			src="img/adoption/solution_brand-flow_new-web@1x.png" class="img-responsive center" alt="Three desktop screens are shown. The first screen shows an illustration of a yoga master who is levitating in a cross-legged postion, looking serene. The screen headline reads 'Take a moment for yourself. The second screen shows an illustration of a person sitting in a comfy chair using their mobile phone, they are inside a padlocked shaped house with their pet dog sleeping peacefully at their feet. The screen headline reads 'We take your privacy seriously. The third screen show an illustration of three people waving and welcoming the viewer. The screen headline reads 'Welcome to Unmind, Koda'.">
+	              		<img loading="lazy" srcset="img/adoption/webp/solution_brand-flow_new-web@2x.webp 2x"
+	              			src="img/adoption/webp/solution_brand-flow_new-web@1x.webp" class="img-responsive center" alt="Three desktop screens are shown. The first screen shows an illustration of a yoga master who is levitating in a cross-legged postion, looking serene. The screen headline reads 'Take a moment for yourself. The second screen shows an illustration of a person sitting in a comfy chair using their mobile phone, they are inside a padlocked shaped house with their pet dog sleeping peacefully at their feet. The screen headline reads 'We take your privacy seriously. The third screen show an illustration of three people waving and welcoming the viewer. The screen headline reads 'Welcome to Unmind, Koda'.">
 	              		<figcaption>
 	              			(web screens) A connection was now made with the website people had just come from
 	              		</figcaption>
@@ -1777,8 +1767,8 @@
                     
                     
                     <figure>
-	              		<img srcset="img/adoption/solution_brand-flow_new_native@2x.png 2x"
-	              			src="img/adoption/solution_brand-flow_new_native@1x.png" class="img-responsive center" alt="Five mobile screens are shown. The first screen reads 'Measure and improve your mental health', with an illustration of a circle, square, and triangle shapes sitting on a measuring tool. The second screen reads 'Personalised insights and scientific assessments', with an illustration of a magnifying glass with the circle, square, and triangle shapes being magnified. The third screen reads 'Bite-sized tools developed by experts', with an illustration of chopsticks holding a slice of sushi with the circle, square, and triangle shapes inside the sushi. The fourth screen reads '100% confidential for your personal privacy, with an illustration of a padlock with an eye (the eye is made out of the circle, square, and triangle shapes). The final screen reads ' Welcome to Unmind Koda, with an illustration of a plant that is growing surrounded by the circle, square, and triangle shapes.">
+	              		<img loading="lazy" srcset="img/adoption/webp/solution_brand-flow_new_native@2x.webp 2x"
+	              			src="img/adoption/webp/solution_brand-flow_new_native@1x.webp" class="img-responsive center" alt="Five mobile screens are shown. The first screen reads 'Measure and improve your mental health', with an illustration of a circle, square, and triangle shapes sitting on a measuring tool. The second screen reads 'Personalised insights and scientific assessments', with an illustration of a magnifying glass with the circle, square, and triangle shapes being magnified. The third screen reads 'Bite-sized tools developed by experts', with an illustration of chopsticks holding a slice of sushi with the circle, square, and triangle shapes inside the sushi. The fourth screen reads '100% confidential for your personal privacy, with an illustration of a padlock with an eye (the eye is made out of the circle, square, and triangle shapes). The final screen reads ' Welcome to Unmind Koda, with an illustration of a plant that is growing surrounded by the circle, square, and triangle shapes.">
 	              		<figcaption>
 	              			(app screens) The introduction and welcome screens were based on the web experience, but used a different visual styling for smaller screens
 	              		</figcaption>
@@ -1787,7 +1777,7 @@
             	</div> <!-- end image row -->
                 
                 
-                <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+                <div class="row col-content center">
 
 					<div>
                         
@@ -1798,11 +1788,11 @@
 				</div> <!-- end row -->
                 
                 
-                <div class="row col-md-12 center padding-btm">	
+                <div class="row center padding-btm">	
 
 					<figure>
-	              		<img srcset="img/adoption/solution_emails@2x.png 2x"
-	              			src="img/adoption/solution_emails@1x.png" class="img-responsive center" alt="The old email style shown has a large Unmind logo at the top, lot's of similar sized text to read through, and one small button. The new email style shows a consistently sized headline, a visual relating to the email message, text that is sized by it's importance, and a large primary button.">
+	              		<img loading="lazy" srcset="img/adoption/webp/solution_emails@2x.webp 2x"
+	              			src="img/adoption/webp/solution_emails@1x.webp" class="img-responsive center" alt="The old email style shown has a large Unmind logo at the top, lot's of similar sized text to read through, and one small button. The new email style shows a consistently sized headline, a visual relating to the email message, text that is sized by it's importance, and a large primary button.">
 	              		<figcaption>
 	              			The new email designs were more professional and consistent
 	              		</figcaption>
@@ -1811,10 +1801,10 @@
             	</div> <!-- end image row -->
                 
                 
-                <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+                <div class="row col-content center">
 
 					<div class="padding-btm-xsmall">                        
-                        <h3>A cohesive UI framework</h3>
+                        <h3 class="avoid-orphans">A cohesive UI framework</h3>
                     </div>
                     
                     <div>
@@ -1828,19 +1818,19 @@
 				</div> <!-- end row -->
                 
                 
-                <div class="row col-md-12 center padding-btm">	
+                <div class="row center padding-btm">	
 
 					<figure>
-	              		<img srcset="img/adoption/solution_cohesive-ui_web@2x.png 2x"
-	              			src="img/adoption/solution_cohesive-ui_web@1x.png" class="img-responsive center" alt="Part of a Figma file showing web screen layouts for a 'generic view', 'progress bar view', and 'split-screen view'. A magnified screenshot of a 'generic view' shows how the annotations have been written for each screen components attributes — an example is of the 'title component', which reads 'container is 7 columns wide, and margin bottom is 1 rem'.">
+	              		<img loading="lazy" srcset="img/adoption/webp/solution_cohesive-ui_web@2x.webp 2x"
+	              			src="img/adoption/webp/solution_cohesive-ui_web@1x.webp" class="img-responsive center" alt="Part of a Figma file showing web screen layouts for a 'generic view', 'progress bar view', and 'split-screen view'. A magnified screenshot of a 'generic view' shows how the annotations have been written for each screen components attributes — an example is of the 'title component', which reads 'container is 7 columns wide, and margin bottom is 1 rem'.">
 	              		<figcaption>
 	              			(web screens) Annotating breakpoint templates helped engineers build out re-usable components easily 
 	              		</figcaption>
 	            	</figure>
                     
                     <figure>
-	              		<img srcset="img/adoption/solution_cohesive-ui_native@2x.png 2x"
-	              			src="img/adoption/solution_cohesive-ui_native@1x.png" class="img-responsive center" alt="Part of a Figma file showing app screen layouts for a 'carousel view', 'generic view', and 'progress bar view'. A magnified screenshot of a tablet 'generic view' shows how the annotations have been written for each screen components attributes — an example is of the 'hero image component', which reads 'sits on the bottom center of main content container. Margin bottom is 3 rems, and container is 6 columns wide'.">
+	              		<img loading="lazy" srcset="img/adoption/webp/solution_cohesive-ui_native@2x.webp 2x"
+	              			src="img/adoption/webp/solution_cohesive-ui_native@1x.webp" class="img-responsive center" alt="Part of a Figma file showing app screen layouts for a 'carousel view', 'generic view', and 'progress bar view'. A magnified screenshot of a tablet 'generic view' shows how the annotations have been written for each screen components attributes — an example is of the 'hero image component', which reads 'sits on the bottom center of main content container. Margin bottom is 3 rems, and container is 6 columns wide'.">
 	              		<figcaption>
 	              			(app screens) Annotating screensizes helped engineers understand how components needed to react based on screen size and orientation 
 	              		</figcaption>
@@ -1862,10 +1852,10 @@
 
 			<div class="container">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
 
 					<div>
-						<h2>Improving accessibility for everyone</h2>
+						<h2 class="avoid-orphans">Improving accessibility for everyone</h2>
 							<div class="horizontal-line-small"></div>
 					</div>
 
@@ -1876,10 +1866,10 @@
                     
                 </div> <!-- end row -->
                 
-                <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center no-padding-btm">
+                <div class="row col-content center no-padding-btm">
                                 
 					<div>
-						<h3 class="padding-btm-xsmall">Accessibility improvements</h3>
+						<h3 class="padding-btm-xsmall avoid-orphans">Accessibility improvements</h3>
 					</div>
 
 					<div class="padding-btm-small">
@@ -1894,11 +1884,11 @@
 				</div> <!-- end row -->
                 
                 
-                <div class="row col-md-12 center padding-btm">	
+                <div class="row center padding-btm">	
 
 					<figure>
-	              		<img srcset="img/adoption/solution_a11y_usability-sessions@2x.png 2x"
-	              			src="img/adoption/solution_a11y_usability-sessions@1x.png" class="img-responsive center no-padding-top" alt="A remote usability session showing the screen the usability participant is currently looking at, and a smaller inset image of the usability participant.">
+	              		<img loading="lazy" srcset="img/adoption/webp/solution_a11y_usability-sessions@2x.webp 2x"
+	              			src="img/adoption/webp/solution_a11y_usability-sessions@1x.webp" class="img-responsive center no-padding-top" alt="A remote usability session showing the screen the usability participant is currently looking at, and a smaller inset image of the usability participant.">
 	              		<figcaption>
 	              			We used Fable as our remote tool for accessibility / usability sessions 
 	              		</figcaption>
@@ -1907,7 +1897,7 @@
             	</div> <!-- end image row -->
                 
                 
-                <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+                <div class="row col-content center">
 
                         
 					<div>
@@ -1923,11 +1913,11 @@
 				</div> <!-- end row -->
                 
                 
-                <div class="row col-md-12 center padding-btm">	
+                <div class="row center padding-btm">	
 
 					<figure>
-	              		<img srcset="img/adoption/solution_a11y_password-reader@2x.png 2x"
-	              			src="imgadoption/solution_a11y_password-reader@1x.png/" class="img-responsive center no-padding-top" alt="The 'create a password' component is shown with a password that doesn't match all the password rules. The password rules sit below the password field and the rules that have been validated are ticked off. A speech bubble points to the password field, and reads 'screen reader announcement (onblur). Password needs to have 8 to 24 characters and a special character'.">
+	              		<img loading="lazy" srcset="img/adoption/webp/solution_a11y_password-reader@2x.webp 2x"
+	              			src="img/adoption/webp/solution_a11y_password-reader@1x.webp" class="img-responsive center no-padding-top" alt="The 'create a password' component is shown with a password that doesn't match all the password rules. The password rules sit below the password field and the rules that have been validated are ticked off. A speech bubble points to the password field, and reads 'screen reader announcement (onblur). Password needs to have 8 to 24 characters and a special character'.">
 	              		<figcaption>
 	              			The password validation announcement only happened when the focus left the password field now
 	              		</figcaption>
@@ -1936,7 +1926,7 @@
             	</div> <!-- end image row -->
                 
                 
-                <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+                <div class="row col-content center padding-btm">
 
                         
 					<div>
@@ -1952,7 +1942,7 @@
                 
                 
                 
-                <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+                <div class="row col-content center">
                         
 					<div>
 						<h4 class="padding-btm-xsmall">Using clear alt-text for imagery</h4>
@@ -1965,11 +1955,11 @@
 				</div> <!-- end row -->
                 
                 
-                <div class="row col-md-12 center padding-btm">	
+                <div class="row center padding-btm">	
 
 					<figure>
-	              		<img srcset="img/adoption/solution_a11y_alt-text@2x.png 2x"
-	              			src="img/adoption/solution_a11y_alt-text@1x.png" class="img-responsive center no-padding-top" alt="An illustration used to convey a 'privacy story moment'. The speech bubble pointing to it reads 'ALT TEXT: A person looking relaxed and at ease while using their phone. They sit on a comfy chair, inside a house shaped like a padlock, with their dog sleeping peacefully at their feet.">
+	              		<img loading="lazy" srcset="img/adoption/webp/solution_a11y_alt-text@2x.webp 2x"
+	              			src="img/adoption/webp/solution_a11y_alt-text@1x.webp" class="img-responsive center no-padding-top" alt="An illustration used to convey a 'privacy story moment'. The speech bubble pointing to it reads 'ALT TEXT: A person looking relaxed and at ease while using their phone. They sit on a comfy chair, inside a house shaped like a padlock, with their dog sleeping peacefully at their feet.">
 	              		<figcaption>
 	              			
 	              		</figcaption>
@@ -1978,10 +1968,10 @@
             	</div> <!-- end image row -->
                 
                 
-                <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+                <div class="row col-content center">
                         
 					<div class="padding-btm-xsmall">
-						<h2 class="padding-btm-xsmall">Driving company change</h2>
+						<h2 class="padding-btm-xsmall avoid-orphans">Driving company change</h2>
                         <div class="horizontal-line-small"></div>
                     </div>
                     
@@ -2004,7 +1994,7 @@
 
 				<div class="container">
 
-		    		<div class="row col-md-12 center-text">
+		    		<div class="row center-text">
 					
 			        	<!-- Sub title -->
 			            	<div>
@@ -2030,10 +2020,10 @@
 
 			<div class="container">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+				<div class="row col-content center padding-btm">
 
 					<div>
-						<h2>Some trust issues are outside our sphere of influence</h2>
+						<h2 class="avoid-orphans">Some trust issues are outside our sphere of influence</h2>
 							<div class="horizontal-line-small"></div>
 					</div>
 
@@ -2046,10 +2036,10 @@
                 </div> <!-- end row -->
                 
                 
-                <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+                <div class="row col-content center padding-btm">
                     
                     <div>
-						<h2>Influencing a more inclusive product direction</h2>
+						<h2 class="avoid-orphans">Influencing a more inclusive product direction</h2>
 							<div class="horizontal-line-small"></div>
 					</div>
 
@@ -2060,10 +2050,10 @@
                 </div> <!-- end row -->
                 
                 
-                <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+                <div class="row col-content center padding-btm">
                     
                     <div>
-						<h2>Building trust with storytelling</h2>
+						<h2 class="avoid-orphans">Building trust with storytelling</h2>
 							<div class="horizontal-line-small"></div>
 					</div>
 
@@ -2087,10 +2077,10 @@
 			
 			<div class="social-media-grid container padding-btm">
 
-				<div class="row social-media-title col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row social-media-title col-content center">
 
 					<div>
-						<h2 class="center-text">Find me on these</h2>
+						<h2 class="center-text avoid-orphans">Find me on these</h2>
 					</div>
 
 				</div>
@@ -2098,46 +2088,29 @@
 
 				<!-- Social media platforms --------------------------------------------------- -->
 
-				<!-- LinkedIn icon -->
-				<div class="social-media-platform-1">
-					<a href="https://www.linkedin.com/in/dspagnolo/" target="_self" aria-label="LinkedIn profile">
-						
-						<svg xmlns="https://www.w3.org/2000/svg" width="80" height="80" viewBox="300 0 80 80">
-							<path class="social-icon linkedin-icon" d="M340 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zm-9.8 56.6h-8.1V30.5h8.1v26.1zm-4.1-29.3c-2.6 0-4.2-1.8-4.2-4.1s1.7-4 4.3-4 4.2 1.8 4.3 4c0 2.3-1.7 4.1-4.4 4.1zm33.7 29.3h-8.1V42.1c0-3.4-1.2-5.6-4.1-5.6-2.2 0-3.6 1.5-4.2 3-.2.5-.3 1.3-.3 2v15H335V38.8c0-3.3-.1-6-.2-8.3h7l.4 3.6h.2c1.1-1.7 3.7-4.2 8-4.2 5.3 0 9.3 3.6 9.3 11.2v15.5z"/>
-						</svg>
+				<div class="social-media-icons">
 
-						<h5 class="icon-label">LinkedIn</h5>
+					<!-- LinkedIn icon -->
+					<div class="social-media-platform">
+						<a href="https://www.linkedin.com/in/dspagnolo/" target="_self" aria-label="LinkedIn profile">
+							<svg aria-hidden="true" xmlns="https://www.w3.org/2000/svg" width="80" height="80" viewBox="300 0 80 80">
+								<path class="social-icon linkedin-icon" d="M340 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zm-9.8 56.6h-8.1V30.5h8.1v26.1zm-4.1-29.3c-2.6 0-4.2-1.8-4.2-4.1s1.7-4 4.3-4 4.2 1.8 4.3 4c0 2.3-1.7 4.1-4.4 4.1zm33.7 29.3h-8.1V42.1c0-3.4-1.2-5.6-4.1-5.6-2.2 0-3.6 1.5-4.2 3-.2.5-.3 1.3-.3 2v15H335V38.8c0-3.3-.1-6-.2-8.3h7l.4 3.6h.2c1.1-1.7 3.7-4.2 8-4.2 5.3 0 9.3 3.6 9.3 11.2v15.5z"/>
+							</svg>
+							<h5 class="icon-label">LinkedIn</h5>
+						</a>
+					</div>
 
-					</a>
-				</div>
+					<!-- Medium icon -->
+					<div class="social-media-platform">
+						<a href="https://medium.com/@daniel_spagnolo" target="_self" aria-label="Medium articles">
+							<svg aria-hidden="true" xmlns="https://www.w3.org/2000/svg" x="0px" y="0px" width="80px" height="80px" viewBox="100 0 80 80">
+								<path class="social-icon medium-icon" d="M140 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zM125.3 30.8c0-.5-.1-.9-.5-1.2l-3.4-4.3v-.6h10.4l8.1 18.6 7.1-18.6h9.9v.6l-2.9 2.9c-.2.2-.4.5-.3.8v21.3c0 .3.1.6.3.8l3 2.9v.6h-14.1V54l2.9-3c.3-.3.3-.4.3-.8V33L138 54.6h-1.1L127.5 33v14.4c-.1.6.1 1.2.5 1.7l3.8 4.8v.6h-10.7V54l3.8-4.8c.4-.4.6-1.1.5-1.7V30.8z"/>
+							</svg>
+							<h5 class="icon-label">Medium</h5>
+						</a>
+					</div>
 
-
-				<!-- Twitter icon -->
-				<div class="social-media-platform-2">
-					<a href="https://twitter.com/daniel_spagnolo" target="_self" aria-label="Twitter profile">
-						
-						<svg xmlns="https://www.w3.org/2000/svg" width="80" height="80" viewBox="200 0 80 80">
-							<path class="social-icon twitter-icon" d="M240 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zm16.3 32.8v1c0 10.4-7.9 22.4-22.4 22.4-4.5 0-8.6-1.3-12.1-3.5.6.1 1.2.1 1.9.1 3.7 0 7.1-1.3 9.8-3.4-3.4-.1-6.4-2.3-7.4-5.5.5.1 1 .1 1.5.1.7 0 1.4-.1 2.1-.3-3.6-.7-6.3-3.9-6.3-7.7 1.1.6 2.3.9 3.6 1-2.1-1.4-3.5-3.8-3.5-6.6 0-1.4.4-2.8 1.1-4 3.9 4.8 9.7 7.9 16.2 8.2-.1-.6-.2-1.2-.2-1.8 0-4.3 3.5-7.9 7.9-7.9 2.3 0 4.3 1 5.8 2.5 1.8-.4 3.5-1 5-1.9-.6 1.8-1.8 3.4-3.5 4.4 1.6-.2 3.1-.6 4.5-1.2-1.2 1.6-2.5 3-4 4.1z"/>
-						</svg>
-
-						<h5 class="icon-label">Twitter</h5>
-
-					</a>
-				</div>
-
-
-				<!-- Medium icon -->
-				<div class="social-media-platform-3">
-					<a href="https://medium.com/@daniel_spagnolo" target="_self" aria-label="Medium articles">
-						
-						<svg xmlns="https://www.w3.org/2000/svg" x="0px" y="0px" width="80px" height="80px" viewBox="100 0 80 80">
-							<path class="social-icon medium-icon" d="M140 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zM125.3 30.8c0-.5-.1-.9-.5-1.2l-3.4-4.3v-.6h10.4l8.1 18.6 7.1-18.6h9.9v.6l-2.9 2.9c-.2.2-.4.5-.3.8v21.3c0 .3.1.6.3.8l3 2.9v.6h-14.1V54l2.9-3c.3-.3.3-.4.3-.8V33L138 54.6h-1.1L127.5 33v14.4c-.1.6.1 1.2.5 1.7l3.8 4.8v.6h-10.7V54l3.8-4.8c.4-.4.6-1.1.5-1.7V30.8z"/>
-						</svg>
-
-						<h5 class="icon-label">Medium</h5>
-
-					</a>
-				</div>
+				</div> <!-- end social-media-icons -->
 									
 			</div> <!-- end container -->
 
@@ -2154,10 +2127,10 @@
 
 	<div class="center-text">
 		<a href="index.html#top-module" class="logo no-padding" aria-label="Return to top of page">
-			<!-- <a href="#"><img src="img/logo2016.gif" width="60px" height="85px" alt="Portfolio logo"></a> --> 
+			<!-- <a href="#"><img loading="lazy" src="img/logo2016.gif" width="60px" height="85px" alt="Portfolio logo"></a> --> 
 
 			<!-- Logo svg -->
-	    	<svg class="logo-default" xmlns="https://www.w3.org/2000/svg" width="65" height="90" viewBox="90.1 -1.6 65 90">
+	    	<svg aria-hidden="true" class="logo-default" xmlns="https://www.w3.org/2000/svg" width="65" height="90" viewBox="90.1 -1.6 65 90">
 			  <path fill="#00A1FF" d="M105.1 68.8l19-2-9-30"/>
 			  <path fill="#008BDB" d="M123.1 38.9l1 27.9-9-29.9"/>
 			  <path fill="#00A1FF" d="M124.1 66.8l19-23-20-5M119.1 20.8l-2-13.9 11 15.9M91.1 31.9l21-4 5-21-25.9 25"/>
@@ -2185,7 +2158,7 @@
 		</nav>
 	</div>
 
-		<div class="row col-md-12 center-text">
+		<div class="row center-text">
 			<small>Made with <span role="img" aria-label="Love" class="heart"></span> in London & Melbourne | &copy; whatever year this is</small>
 		</div>
 
@@ -2198,87 +2171,70 @@
 
 <!-- JS scripts/files (placed at end of file so pages will load faster) _______________________________________________________________________________ -->
 
-	    <!-- link to jquery library to get the nav shrinking to work below -->
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-			<script>
-			$(function(){
-			 var shrinkHeader = 150;
-			  $(window).scroll(function() {
-			    var scroll = getCurrentScroll();
-			      if ( scroll >= shrinkHeader ) {
-			           $('header').addClass('shrink'),
-			           $('header.logo-size').addClass('shrink'),
-			           $('header nav ul').addClass('shrink'),
-			           $('header nav ul li').addClass('shrink'),
-			           $('header nav li a').addClass('shrink'),
-			           $('header p').addClass('shrink'),
-			           $('header svg').addClass('shrink'),
-			           $('header a.logo').addClass('shrink'),
-			           $('header nav .alternative a:hover').addClass('shrink'),
-			           $('header nav').addClass('shrink'),
-			           $('header .logo-job-title').addClass('shrink');
-			        }
-			        else {
-			            $('header').removeClass('shrink'),
-			            $('header.logo-size').removeClass('shrink'),
-			            $('header nav ul').removeClass('shrink'),
-			            $('header nav ul li').removeClass('shrink'),
-			            $('header nav li a').removeClass('shrink'),
-			            $('header p').removeClass('shrink'),
-			            $('header svg').removeClass('shrink'),
-			            $('header a.logo').removeClass('shrink'),
-			            $('header nav .alternative a:hover').removeClass('shrink'),
-			            $('header nav').removeClass('shrink'),
-			            $('header .logo-job-title').removeClass('shrink');
-			        }
-			  });
-			function getCurrentScroll() {
-			    return window.pageYOffset || document.documentElement.scrollTop;
-			    }
-			});			
-			</script>	
+	    <script src="js/main.js" defer></script>	
 
 	<!-- JS scripts/files (placed at end of file so pages will load faster) ____________________________________________________________________________ -->
     
 	<!-- Light/dark theme toggle (Guide I used for dark/light mode:- https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web) -->
     	<script>
-	    	
-	    	// Select the button
-			const btn = document.querySelector(".button-toggle"); // The "button-toggle" class (on colour theme toggle/btn) will change the "body" colour theme when clicked
-			// Check for dark mode preference at the OS level
+
+			const btn = document.querySelector(".button-toggle");
 			const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-			 
-			// Get the user's theme preference from local storage, if it's available
 			const currentTheme = localStorage.getItem("theme");
-			// If the user's preference in localStorage is dark...
-			if (currentTheme == "dark") {
-			  // ...let's toggle the .dark-theme class on the body
-			  document.body.classList.toggle("dark-theme");
-			// Otherwise, if the user's preference in localStorage is light...
-			} else if (currentTheme == "light") {
-			  // ...let's toggle the .light-theme class on the body
-			  document.body.classList.toggle("light-theme");
+
+			// Determine the currently active theme from body classes or OS preference
+			function getCurrentTheme() {
+			  if (document.body.classList.contains("dark-theme")) return "dark";
+			  if (document.body.classList.contains("light-theme")) return "light";
+			  return prefersDarkScheme.matches ? "dark" : "light";
 			}
-			 
-			// Listen for a click on the button 
-			btn.addEventListener("click", function() {
-			  // If the user's OS setting is dark and matches our .dark-theme class...
-			  if (prefersDarkScheme.matches) {
-			    // ...then toggle the light theme class
-			    document.body.classList.toggle("light-theme");
-			    // ...but use .dark-theme if the .light-theme class is already on the body,
-			    var theme = document.body.classList.contains("light-theme") ? "light" : "dark";
+
+			// Set a specific theme and sync the radio button checked state
+			function applyTheme(theme) {
+			  if (theme === "dark") {
+			    document.body.classList.add("dark-theme");
+			    document.body.classList.remove("light-theme");
+			    document.getElementById("dark").checked = true;
 			  } else {
-			    // Otherwise, let's do the same thing, but for .dark-theme
-			    document.body.classList.toggle("dark-theme");
-			    var theme = document.body.classList.contains("dark-theme") ? "dark" : "light";
+			    document.body.classList.remove("dark-theme");
+			    document.body.classList.add("light-theme");
+			    document.getElementById("light").checked = true;
 			  }
-			  // Finally, let's save the current preference to localStorage to keep using it
 			  localStorage.setItem("theme", theme);
+			}
+
+			// Apply saved theme on load and sync radio checked state
+			if (currentTheme === "dark") {
+			  document.body.classList.add("dark-theme");
+			  document.getElementById("dark").checked = true;
+			} else if (currentTheme === "light") {
+			  document.body.classList.add("light-theme");
+			  document.getElementById("light").checked = true;
+			} else if (prefersDarkScheme.matches) {
+			  document.getElementById("dark").checked = true;
+			}
+
+			// 1. Click anywhere on the toggle — toggle current theme
+			btn.addEventListener("click", function() {
+			  applyTheme(getCurrentTheme() === "dark" ? "light" : "dark");
 			});
 
-    	</script>	
+			// 2. Space or Enter when toggle is keyboard-focused — toggle current theme.
+			//    e.preventDefault() stops the radio's own change event from also firing.
+			document.querySelector('fieldset[aria-label="theme switcher"]').addEventListener("keydown", function(e) {
+			  if (e.key === " ") {
+			    e.preventDefault();
+			    applyTheme(getCurrentTheme() === "dark" ? "light" : "dark");
+			  }
+			});
+
+			// 3. Arrow-key navigation between radios — sync theme to whichever radio lands checked
+			document.querySelectorAll('.button-toggle input[type="radio"]').forEach(function(radio) {
+			  radio.addEventListener("change", function() {
+			    applyTheme(this.id);
+			  });
+			});
+		</script>	
 
 
 
