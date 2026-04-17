@@ -10,45 +10,35 @@
     	<meta name="author" content="Daniel Spagnolo">
 		<title>Daniel Spagnolo / Cross-device experience casestudy</title>
 
-		<!--displays favicon in browser/mobile tabs. https://www.favicon-generator.org/-->
-		<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+				<!--displays favicon in browser/mobile tabs. https://www.favicon-generator.org/-->
 		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-		<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
 		<link rel="manifest" href="/manifest.json">
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">		
 
-		<!-- Bootstrap core CSS -->
-	    <link href="css/bootstrap-grid.css" rel="stylesheet"> 
+		<!-- Bootstrap core CSS --> 
 
 	    <!-- Styling CSS -->
-	    <link rel="preload stylesheet" type="text/css" href="css/styles-2025-mini.css">
+	    <link rel="preload stylesheet" type="text/css" href="css/styles-2025.css">
 
 	    <!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52715158-2"></script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-QKTF3G7D47"></script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
 
-		  gtag('config', 'UA-52715158-2');
+		  gtag('config', 'G-QKTF3G7D47');
 		</script>
 
 	</head>
 
-	<body>	
+	<body>
 
+	<a class="skip-link" href="#main-content">Skip to main content</a>
 
 	<!-- Navigation module ___________________________________________________________________________________________________________________________ -->
 
@@ -60,10 +50,10 @@
 
 			  	<div class="logo-job-title no-padding">
 			  		<a href="index.html#top-module" class="logo no-padding" aria-label="Home">
-			        	<!-- <a href="#"><img src="img/logo2016.gif" width="60px" height="85px" alt="Daniel Spagnolo's portfolio"></a> -->
+			        	<!-- <a href="#"><img loading="lazy" src="img/logo2016.gif" width="60px" height="85px" alt="Daniel Spagnolo's portfolio"></a> -->
 			        	
 			        	<!-- Logo svg -->
-			        	<svg class="logo-default" xmlns="https://www.w3.org/2000/svg" viewBox="90.1 -1.6 65 90">
+			        	<svg aria-hidden="true" class="logo-default" xmlns="https://www.w3.org/2000/svg" viewBox="90.1 -1.6 65 90">
 						  <path fill="#00A1FF" d="M105.1 68.8l19-2-9-30"/>
 						  <path fill="#008BDB" d="M123.1 38.9l1 27.9-9-29.9"/>
 						  <path fill="#00A1FF" d="M124.1 66.8l19-23-20-5M119.1 20.8l-2-13.9 11 15.9M91.1 31.9l21-4 5-21-25.9 25"/>
@@ -106,13 +96,15 @@
 							<span class="button-toggle-container">
 								
 								<input type="radio" name="theme" id="light" checked="">
+								<label for="light" class="sr-only">Light theme</label>
 								<input type="radio" name="theme" id="dark">
+								<label for="dark" class="sr-only">Dark theme</label>
 
 									<span aria-hidden="true" class="button-toggle__background"></span> <!-- end button-toggle__background -->
 										
 										<span>
 										<!-- sun icon -->
-											<svg class="icon-sun" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+											<svg aria-hidden="true" class="icon-sun" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
 										        <g transform="translate(-1327.000000, -53.000000)">
 									            <g transform="translate(1316.000000, 42.000000)">
 								                <g transform="translate(11.000000, 11.000000)">
@@ -133,7 +125,7 @@
 											</svg>
 
 											<!-- moon icon -->
-											<svg class="icon-moon" viewBox="0 0 17 18" xmlns="http://www.w3.org/2000/svg">
+											<svg aria-hidden="true" class="icon-moon" viewBox="0 0 17 18" xmlns="http://www.w3.org/2000/svg">
 										        <g transform="translate(-1370.000000, -55.000000)">
 									            <g transform="translate(1316.000000, 42.000000)">
 								                <g transform="translate(54.000000, 13.000000)"> 
@@ -176,14 +168,14 @@
 					<div class="row">
 					
 			        	<!-- Sub title -->
-			            	<div class="col-md-6 center-text center">
+			            	<div class="col-content center-text center">
 			            		<span class="header-caption">Two devices &mdash; one task</span>
 			            	</div>
 
 
 			        	<!-- Title -->
-			            	<div class="col-md-8 center-text center">
-			            		<h1>Cross-device </br>experience</h1>
+			            	<div class="col-content center-text center">
+			            		<h1 id="main-content" tabindex="-1">Cross-device </br>experience</h1>
 			              	</div>
 
 
@@ -203,17 +195,17 @@
 
 
 	          	<!-- Angled top | found at https://css-tricks.com/creating-non-rectangular-headers/-->
-	          	<svg class="angle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+	          	<svg aria-hidden="true" class="angle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
 					<polygon points="0,0 140,0 0,100"/>
 				</svg>
 
 
 
 				<!-- Hero image-->
-		        	<div class="row col-xs-12 col-sm-12 col-md-10 col-lg-8 center">
+		        	<div class="row col-hero center">
 		            	<figure aria-hidden="true">
-		              		<img srcset="img/cross-device/cross-device-hero@2x.png 2x"
-		              			src="img/cross-device/cross-device-hero@1x.png" class="img-responsive center" alt="Two Apple phones with Mad on Heels screens">
+		              		<img srcset="img/cross-device/webp/cross-device-hero@2x.webp 2x"
+		              			src="img/cross-device/webp/cross-device-hero@1x.webp" fetchpriority="high" class="img-responsive center" alt="Two Apple phones with Mad on Heels screens">
 		            	</figure>
 		          	</div>
 				
@@ -228,22 +220,22 @@
 
 			<div class="container no-padding-top">
 				
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
 
 	        		<!-- company, role, timeframe, skills -->
-	            	<div class="col-md-12">
+	            	<div class="">
 	            			<h5>Company:</h5>
 	            			<p><a class="link" href="https://onfido.com/" target="_self" aria-label="Go to Onfido.com">Onfido</a> &mdash; London</p>
 	            		</div>
-	            	<div class="col-md-12">
+	            	<div class="">
 	            			<h5>My role:</h5>
 	            			<p>Product Designer</p>
 	        			</div>
-	            	<div class="col-md-12">
+	            	<div class="">
 	            			<h5>Timeframe:</h5>
 	            			<p>Three months</p>
 	        			</div>
-	            	<div class="col-md-12">
+	            	<div class="">
 	        				<h5>Skills:</h5>
 	        				<p>Research analysis, UX/UI design, workshopping, usability testing</p>
 	        			</div>
@@ -262,10 +254,10 @@
 
 			<div class="container">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
 
 					<div>
-						<h2>The problem</h2>
+						<h2 class="avoid-orphans">The problem</h2>
 							<div class="horizontal-line-small">
 							</div>
 					</div>
@@ -289,14 +281,14 @@
 
 			<div class="container no-padding-btm">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
 
 					<div>
 						<h4 aria-label="Too long, didn't read">TL;DR</h4>
 					</div>
 
 					<div>
-						<h2>The solution</h2>
+						<h2 class="avoid-orphans">The solution</h2>
 							<div class="horizontal-line-small"></div>
 					</div>
 
@@ -333,7 +325,7 @@
 
 
 
-				<div class="row col-xs-10 col-sm-10 col-md-7 col-lg-6 center">		
+				<div class="row col-content-narrow center">		
 						<div>
 				    		<blockquote>“Azimo and RBS were totally blown away by this. They got the benefits straight away.”</blockquote>
 				    		<figcaption>Feedback from Sales after demoing to new clients.</figcaption>
@@ -356,7 +348,7 @@
 			<div class="container padding-btm">
 
 
-				<div class="row col-xs-10 col-sm-10 col-md-7 col-lg-6 center">		
+				<div class="row col-content-narrow center">		
 						
 					<div>
 			    		<h6 class="center-text">Read the in-depth casestudy below<span class="no-italic" role="img" aria-label="nerd face"> 🤓</span></h6>
@@ -367,7 +359,7 @@
 		    	<div class="row padding-btm">	
 
 					<figure aria-hidden="true" class="center-text arrow-bubble">
-	              		<!-- <img src="img/arrow-down-bubble.svg" alt=""> -->
+	              		<!-- <img loading="lazy" src="img/arrow-down-bubble.svg" alt=""> -->
 
 	              		<svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
         				<circle cx="24" cy="24" r="24"/>
@@ -396,7 +388,7 @@
 
 				<div class="container">
 
-		    		<div class="row col-md-12 center-text">
+		    		<div class="row center-text">
 					
 			        	<!-- Sub title -->
 			            	<div>
@@ -423,7 +415,7 @@
 
 			<div class="container padding-btm">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+				<div class="row col-content center padding-btm">
 
 					<div>
 						<p>Clients (such as Revolut and Blockchain.com ) integrate Onfido’s SDK into their own applications so people can quickly verify their identity, create trust in their platforms, and meet KYC (Know Your Customer) government regulations.</p>
@@ -433,10 +425,10 @@
 
 				</div> <!-- end row -->
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+				<div class="row col-content center padding-btm">
 
 					<div>
-						<h2>SDK sidenote</h2>
+						<h2 class="avoid-orphans">SDK sidenote</h2>
 							<div class="horizontal-line-small"></div>
 					</div>					
 
@@ -446,10 +438,10 @@
 
 				</div> <!-- end row -->
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
 
 					<div>
-						<h2>How the Web SDK worked</h2>
+						<h2 class="avoid-orphans">How the Web SDK worked</h2>
 							<div class="horizontal-line-small"></div>
 					</div>					
 
@@ -459,11 +451,11 @@
 
 				</div> <!-- end row -->	
 
-				<div class="row col-md-10 center">	
+				<div class="row col-hero center">	
 
 					<figure>
-	              		<img srcset="img/cross-device/previous-flow@2x.jpg 2x"
-	              		src="img/cross-device/previous-flow@1x.jpg" class="img-responsive center" alt="Steps a desktop user would take: 1. Choose an ID document 2. Upload a file of the document (this is where users who didn't have a saved file would have to take a photo with their mobile and upload back somehow) 3. Confirm the upload 4. Upload a selfie (again user would have to move to mobile) 5. Confirm selfie upload">
+	              		<img loading="lazy" srcset="img/cross-device/webp/previous-flow@2x.webp 2x"
+	              		src="img/cross-device/webp/previous-flow@1x.webp" class="img-responsive center" alt="Steps a desktop user would take: 1. Choose an ID document 2. Upload a file of the document (this is where users who didn't have a saved file would have to take a photo with their mobile and upload back somehow) 3. Confirm the upload 4. Upload a selfie (again user would have to move to mobile) 5. Confirm selfie upload">
 	              		<figcaption>
 	              			Desktop users without a saved ID or selfie image would need to use their mobile to take these photos.
 	              		</figcaption>
@@ -483,7 +475,7 @@
 
 				<div class="container">
 
-		    		<div class="row col-md-12 center-text">
+		    		<div class="row center-text">
 
 					
 		        		<!-- Sub title -->
@@ -511,10 +503,10 @@
 
 			<div class="container">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+				<div class="row col-content center padding-btm">
 
 					<div>
-						<h2>Meeting assumptions head on</h2>
+						<h2 class="avoid-orphans">Meeting assumptions head on</h2>
 							<div class="horizontal-line-small"></div>
 					</div>
 
@@ -540,10 +532,10 @@
 
 				</div> <!-- end row -->
 
-			<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+			<div class="row col-content center">
 
 					<div>
-						<h2>The trouble with desktop</h2>
+						<h2 class="avoid-orphans">The trouble with desktop</h2>
 							<div class="horizontal-line-small"></div>
 					</div>					
 
@@ -564,10 +556,10 @@
 
 				</div> <!-- end row -->	
 
-			<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+			<div class="row col-content center">
 
 					<div>
-						<h2>Validating the client need</h2>
+						<h2 class="avoid-orphans">Validating the client need</h2>
 							<div class="horizontal-line-small"></div>
 					</div>					
 
@@ -596,7 +588,7 @@
 
 				<div class="container">
 
-		    		<div class="row col-md-12 center center-text">
+		    		<div class="row center center-text">
 					
 		        		<!-- Sub title -->
 		            	<div>
@@ -623,7 +615,7 @@
 
 			<div class="container">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-top">
+				<div class="row col-content center padding-top">
 
 					<div>
 						<p>Not every project needs a storyboard, but I felt it was needed here to help the SDK team, internal stakeholders, and clients visualise the desktop users problems and how our concept could help them. This shared artifact lead to excited discussions about what we wanted to achieve as a business, how users could interact with it, and how this benefited clients.</p>
@@ -631,10 +623,10 @@
 
 				</div> <!-- end row -->
 
-				<div class="row col-md-12 center">
+				<div class="row center">
 
 					<figure>
-						<img srcset="img/cross-device/storyboard@2x.gif 2x" 
+						<img loading="lazy" srcset="img/cross-device/storyboard@2x.gif 2x" 
 						src="img/cross-device/storyboard@1x.gif" class="img-responsive center" alt="Storyboard story: Andrew sits at his desktop and has almost completed his project on Kickstarter. He now needs to verify himself and he thinks it's going to take forever, until he is amazed that he can just put in his mobile number to continue the flow on his mobile. He then proceeds to continue the verification flow using his mobile to take a picture of his ID and a selfie. Once he is finished he's directed back to his desktop where his Kickstarter project can be finished.">
 						<figcaption>Storyboarding helps clear up understanding of the concept</figcaption>
 					</figure>
@@ -653,7 +645,7 @@
 
 				<div class="container">
 
-		    		<div class="row col-md-12 center center-text">
+		    		<div class="row center center-text">
 					
 		        		<!-- Sub title -->
 		            	<div>
@@ -680,10 +672,10 @@
 
 			<div class="container no-padding-btm">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-top">
+				<div class="row col-content center padding-top">
 
 					<div>
-						<h2>Competitor research</h2>
+						<h2 class="avoid-orphans">Competitor research</h2>
 							<div class="horizontal-line-small"></div>
 					</div>	
 
@@ -696,18 +688,18 @@
 
 				</div> <!-- end row -->
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-top">
+				<div class="row col-content center padding-top">
 
 					<div>
-						<h3 class="inline-block">Coinbase</h3>
+						<h3 class="inline-block avoid-orphans">Coinbase</h3>
 						<p>The Coinbase solution was being mentioned quite a bit in client conversations and we were also hearing from people within Onfido to “just do it like Coinbase” as the quick solution.</p>
 					</div>
 
-					<div class="row col-md-12 center">
+					<div class="row center">
 
 						<figure aria-hidden="true">
-							<img srcset="img/cross-device/coinbase@2x.jpg 2x" 
-							src="img/cross-device/coinbase@1x.jpg" class="img-responsive center" alt="Some desktop and mobile screens from the Coinbase flow: showing choosing an upload method and an SMS sent to user.">
+							<img loading="lazy" srcset="img/cross-device/webp/coinbase@2x.webp 2x" 
+							src="img/cross-device/webp/coinbase@1x.webp" class="img-responsive center" alt="Some desktop and mobile screens from the Coinbase flow: showing choosing an upload method and an SMS sent to user.">
 							<figcaption>Some screens from the Coinbase flow</figcaption>
 						</figure>
 
@@ -715,7 +707,7 @@
 
             	</div> <!-- end row --> 
 
-            	<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-top">
+            	<div class="row col-content center padding-top">
 
             		<h5>Positives</h5>
             		<ul>
@@ -737,18 +729,18 @@
 
 
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
 
 					<div>
-						<h3 class="inline-block">Airbnb</h3>
+						<h3 class="inline-block avoid-orphans">Airbnb</h3>
 						<p>It was fortuitous that at the same time Airbnb released a similar feature and after reviewing it I realised that this was the baseline standard of user expectation.</p>
 					</div>
 
-					<div class="row col-md-12 center">
+					<div class="row center">
 
 						<figure aria-hidden="true">
-							<img srcset="img/cross-device/airbnb@2x.jpg 2x" 
-							src="img/cross-device/airbnb@1x.jpg" class="img-responsive center" alt="Some desktop and mobile screens from the Airbnb flow showing - their use of illustrations to bring a little delight to the flow.">
+							<img loading="lazy" srcset="img/cross-device/webp/airbnb@2x.webp 2x" 
+							src="img/cross-device/webp/airbnb@1x.webp" class="img-responsive center" alt="Some desktop and mobile screens from the Airbnb flow showing - their use of illustrations to bring a little delight to the flow.">
 							<figcaption>Some screens from the Airbnb flow</figcaption>
 						</figure>
 
@@ -756,7 +748,7 @@
 
             	</div> <!-- end row --> 
 
-            	<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+            	<div class="row col-content center">
 
             		<h5>Positives</h5>
             		<ul>
@@ -789,14 +781,14 @@
 
 			<div class="container">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
 
 					<div>
 						<h4 class="pink-accent padding-btm-xsmall">THE BIG QUESTION</h4>
 					</div>
 
 					<div>
-						<h2>What can push my design a step further to help people?</h2>
+						<h2 class="avoid-orphans">What can push my design a step further to help people?</h2>
 							<div class="horizontal-line-small-pink"></div>
 					</div>
 
@@ -819,7 +811,7 @@
 
 				<div class="container">
 
-		    		<div class="row col-md-12 center center-text">
+		    		<div class="row center center-text">
 					
 		        		<!-- Sub title -->
 		            	<div>
@@ -847,10 +839,10 @@
 
 			<div class="container no-padding-btm">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
 
 					<div>
-						<h2 class="no-padding-top">High level exploration</h2>
+						<h2 class="no-padding-top avoid-orphans">High level exploration</h2>
 						<div class="horizontal-line-small"></div>
 					</div>
 
@@ -868,10 +860,10 @@
 
 
 
-				<div class="row col-md-8 center">
+				<div class="row center">
 
 					<figure aria-hidden="true">
-						<img srcset="img/cross-device/high-level-view.svg 2x" 
+						<img loading="lazy" srcset="img/cross-device/high-level-view.svg 2x" 
 							src="high-level-view.svg" class="img-responsive center" alt="Showing the theoretical space between a desktop and mobile.">
 						<figcaption class="padding-btm">
 							What can happen to a user while moving between devices?
@@ -894,7 +886,7 @@
 	            	<div class="horizontal-line-small center"></div>
             	</div>
 
-				<div class="row col-xs-10 col-sm-10 col-md-7 col-lg-6 center">		
+				<div class="row col-content-narrow center">		
 						<div>
 				    		<blockquote>“The future of UX is the user who continues across many devices and completes their task with little recognition of, or interest in the complexity involved. We need think at a higher level than screens or sites or devices.”</blockquote>
 				    		<figcaption>Eva Willis | UX Consultant</figcaption>
@@ -916,10 +908,10 @@
 
 			<div class="container no-padding-btm">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
 
 					<div>
-						<h2 class="no-padding-top">User stress-cases</h2>
+						<h2 class="no-padding-top avoid-orphans">User stress-cases</h2>
 						<div class="horizontal-line-small"></div>
 					</div>
 
@@ -929,7 +921,7 @@
 
 				</div> <!-- End row -->
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+				<div class="row col-content center padding-btm">
 
 					<h4>Distracted by external factors</h4>
 							<ul>
@@ -941,7 +933,7 @@
 
         		</div> <!-- end row --> 
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+				<div class="row col-content center padding-btm">
 
 					<h4>Emotional factors</h4>
 							<ul>
@@ -951,7 +943,7 @@
 
 				</div> <!-- end row --> 
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+				<div class="row col-content center padding-btm">
 
 					<h4>Switching tasks</h4>
 							<ul class="padding-btm">
@@ -965,11 +957,11 @@
 
 
 
-				<div class="row col-md-12 center">
+				<div class="row center">
 
 					<figure aria-hidden="true">
-						<img srcset="img/cross-device/high-level-view_stress-cases@2x.jpg 2x" 
-							src="img/cross-device/high-level-view_stress-cases@1x.jpg" class="img-responsive center" alt="Each step of the users journey and what could possibly happen at each stage.">
+						<img loading="lazy" srcset="img/cross-device/webp/high-level-view_stress-cases@2x.webp 2x" 
+							src="img/cross-device/webp/high-level-view_stress-cases@1x.webp" class="img-responsive center" alt="Each step of the users journey and what could possibly happen at each stage.">
 						<figcaption class="padding-btm">
 							Team brainstorm outcome of things that could happen moving between desktop and mobile
 						</figcaption>
@@ -979,7 +971,7 @@
 
 
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
 
 					<div>
 						<p>Sketching out what I now had in my head and getting the team to critique it uncovered technical and conceptual questions that needed to be explored more as a team.</p>
@@ -989,11 +981,11 @@
 
 
 
-				<div class="row col-md-10 center">
+				<div class="row col-hero center">
 
 					<figure aria-hidden="true">
-						<img srcset="img/cross-device/sketching-board_01@2x.jpg 2x" 
-							src="img/cross-device/sketching-board_01@1x.jpg" class="img-responsive center" alt="Sketches stuck to a wall with notes from the team stuck to each sketch.">
+						<img loading="lazy" srcset="img/cross-device/webp/sketching-board_01@2x.webp 2x" 
+							src="img/cross-device/webp/sketching-board_01@1x.webp" class="img-responsive center" alt="Sketches stuck to a wall with notes from the team stuck to each sketch.">
 						<figcaption class="padding-btm">
 							My sketched concept was critiqued by the team before I moved to wireframing
 						</figcaption>
@@ -1014,10 +1006,10 @@
 
 			<div class="container no-padding-btm">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
 
 					<div>
-						<h2 class="no-padding-top">Testing the concept</h2>
+						<h2 class="no-padding-top avoid-orphans">Testing the concept</h2>
 						<div class="horizontal-line-small"></div>
 					</div>
 
@@ -1035,11 +1027,11 @@
 
 
 
-				<div class="row col-md-12 center">
+				<div class="row center">
 
 					<figure>
-						<img srcset="img/cross-device/wireframe-concept-flow@2x.jpg 2x" 
-							src="img/cross-device/wireframe-concept-flow@1x.jpg" class="img-responsive center" alt="">
+						<img loading="lazy" srcset="img/cross-device/webp/wireframe-concept-flow@2x.webp 2x" 
+							src="img/cross-device/webp/wireframe-concept-flow@1x.webp" class="img-responsive center" alt="">
 						<figcaption class="padding-btm">
 							I tested two different ways to use the cross-device feature: Using an SMS message or using an email address. I wanted to see how users felt about using these options.
 						</figcaption>
@@ -1048,9 +1040,9 @@
             	</div> <!-- end row --> 
 
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
 					
-					<h3>User insights</h3>
+					<h3 class="avoid-orphans">User insights</h3>
 						<ul>
 							<li>A clearer explanation of the cross-device feature was needed</li>
 							<li>Most preferred the cross-device option to be part of the current upload screen</li>
@@ -1075,7 +1067,7 @@
 	            	<div class="horizontal-line-small center"></div>
             	</div>
 
-				<div class="row col-xs-10 col-sm-10 col-md-7 col-lg-6 center">		
+				<div class="row col-content-narrow center">		
 						<div>
 				    		<blockquote>“You’re making me do half the work!”</blockquote>
 				    		<figcaption>A users reaction to the non-sms options</figcaption>
@@ -1096,9 +1088,9 @@
 
 			<div class="container no-padding-btm">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
 					
-					<h3>Client insights</h3>
+					<h3 class="avoid-orphans">Client insights</h3>
 						<ul>
 							<li>How long would the URL link last for?</li>
 							<li>Could email be used like Slack’s “magic email link”?</li>
@@ -1122,7 +1114,7 @@
 	            	<div class="horizontal-line-small center"></div>
             	</div>
 
-				<div class="row col-xs-10 col-sm-10 col-md-7 col-lg-6 center">		
+				<div class="row col-content-narrow center">		
 						<div>
 				    		<blockquote>“This could be a real differentiator. It shows you are really thinking about the problem, and tackling it.”</blockquote>
 				    		<figcaption>Product manager @ World Remit</figcaption>
@@ -1145,7 +1137,7 @@
 
 				<div class="container">
 
-		    		<div class="row col-md-12 center center-text">
+		    		<div class="row center center-text">
 					
 		        		<!-- Sub title -->
 		            	<div>
@@ -1171,10 +1163,10 @@
 
 			<div class="container">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+				<div class="row col-content center padding-btm">
 
 					<div>
-						<h2>Switching users from desktop to mobile</h2>
+						<h2 class="avoid-orphans">Switching users from desktop to mobile</h2>
 							<div class="horizontal-line-small"></div>
 					</div>
 
@@ -1195,11 +1187,11 @@
 
 				</div> <!-- end row -->
 
-				<div class="row col-md-8 center">
+				<div class="row center">
 
 					<figure aria-hidden="true">
-						<img srcset="img/cross-device/options_whiteboard_02-web_ready@2x.jpg 2x" 
-							src="img/cross-device/options_whiteboard_02-web_ready@1x.jpg" class="img-responsive center" alt="Whiteboard with options placed on a value/return versus time/cost axis.">
+						<img loading="lazy" srcset="img/cross-device/webp/options_whiteboard_02-web_ready@2x.webp 2x" 
+							src="img/cross-device/webp/options_whiteboard_02-web_ready@1x.webp" class="img-responsive center" alt="Whiteboard with options placed on a value/return versus time/cost axis.">
 						<figcaption class="padding-btm">
 							"Cost/time" vs "value" team exercise to evaluate options 
 						</figcaption>
@@ -1209,10 +1201,10 @@
 
 
 
-        	<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+        	<div class="row col-content center padding-btm">
 
 				<div>
-					<h2>Make America great again</h2>
+					<h2 class="avoid-orphans">Make America great again</h2>
 						<div class="horizontal-line-small"></div>
 				</div>
 
@@ -1226,17 +1218,17 @@
 
 
 
-			<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center no-padding-btm">
+			<div class="row col-content center no-padding-btm">
 
 				<div>
-					<h2>Clear user understanding of what will happen</h2>
+					<h2 class="avoid-orphans">Clear user understanding of what will happen</h2>
 						<div class="horizontal-line-small"></div>
 				</div>
 
 				<div>
 					<p>Making the cross-device flow crystal clear to users was of utmost importance to prevent user confusion. From the user testing I saw that people were often unsure of what was going to happen next when choosing the cross-device option. I went through many rewrites and pairing with our content writer (hi Niamh!) to make the concept clearer to users.</p>
 
-					<h3>First contact</h3>
+					<h3 class="avoid-orphans">First contact</h3>
 					<p> The first introduction to the cross-device feature was a selection card on the upload screen. Most users in testing were unclear what would happen if they chose this so we needed some microcopy that would explain the <span class="italic">what and why</span> at a glance (without it sounding like some cliched marketing copy).</p>
 				</div>	
 
@@ -1244,11 +1236,11 @@
 
 
 
-			<div class="row col-md-7 center">
+			<div class="row col-content center">
 
 					<figure>
-						<img srcset="img/cross-device/cross-device_intro-card@2x.jpg 2x" 
-							src="img/cross-device/cross-device_intro-card@1x.jpg" class="img-responsive center" alt="Four iterations of the intro card were needed, until a final design was agreed upon.">
+						<img loading="lazy" srcset="img/cross-device/webp/cross-device_intro-card@2x.webp 2x" 
+							src="img/cross-device/webp/cross-device_intro-card@1x.webp" class="img-responsive center" alt="Four iterations of the intro card were needed, until a final design was agreed upon.">
 						<figcaption class="padding-btm">
 							The cross-device selection card changed from trying to explain what would happen to just asking a question of the users next step.
 						</figcaption>
@@ -1258,10 +1250,10 @@
 
 
 
-            <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center no-padding-btm">
+            <div class="row col-content center no-padding-btm">
 
 				<div>
-					<h3>How it worked</h3>
+					<h3 class="avoid-orphans">How it worked</h3>
 					<p>After the user had chosen the cross-device option I needed a screen explaining how the experience would work in three simple steps. This helped clarify exactly what was going to happen so the user knew what to expect.</p>
 				</div>	
 
@@ -1269,11 +1261,11 @@
 
 
 
-			<div class="row col-md-10 center">
+			<div class="row col-hero center">
 
 					<figure>
-						<img srcset="img/cross-device/how-it-works@2x.jpg 2x" 
-							src="img/cross-device/how-it-works@1x.jpg" class="img-responsive center" alt="The iteration of the screen content was found to be much better for users to understand 'what this was' and 'what they needed to do'.">
+						<img loading="lazy" srcset="img/cross-device/webp/how-it-works@2x.webp 2x" 
+							src="img/cross-device/webp/how-it-works@1x.webp" class="img-responsive center" alt="The iteration of the screen content was found to be much better for users to understand 'what this was' and 'what they needed to do'.">
 						<figcaption class="padding-btm">
 							The MVP version (left) and a later iteration of the screen (right)
 						</figcaption>
@@ -1283,7 +1275,7 @@
 
 
 
-           <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center no-padding-btm">
+           <div class="row col-content center no-padding-btm">
 
 				<div>
 					<p>Some designers say that if you need to explain something to the user then you haven't done your job properly as a designer, but I’ve always felt that this is a very simplistic argument. If a user is being introduced to a concept that is new or innovative, then it needs to be clearly explained in a way that matches their mental model so they understand the benefits.</p>
@@ -1293,11 +1285,11 @@
 
 
 
-			<div class="row col-md-12 center">
+			<div class="row center">
 
 					<figure>
-						<img srcset="img/cross-device/cross-device_intro-flow@2x.jpg 2x" 
-							src="img/cross-device/cross-device_intro-flow@1x.jpg" class="img-responsive center" alt="The three screen flow: 1. Upload step with cross-device intro card 2. 'How it works' and 3. SMS mobile number.">
+						<img loading="lazy" srcset="img/cross-device/webp/cross-device_intro-flow@2x.webp 2x" 
+							src="img/cross-device/webp/cross-device_intro-flow@1x.webp" class="img-responsive center" alt="The three screen flow: 1. Upload step with cross-device intro card 2. 'How it works' and 3. SMS mobile number.">
 						<figcaption class="padding-btm">
 							This three screen "intro" flow gives much more clarification of the cross-device journey to the user.
 						</figcaption>
@@ -1307,10 +1299,10 @@
 
 
 
-			<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+			<div class="row col-content center">
 
 				<div>
-					<h2>Device connection feedback</h2>
+					<h2 class="avoid-orphans">Device connection feedback</h2>
 						<div class="horizontal-line-small"></div>
 				</div>
 
@@ -1322,11 +1314,11 @@
 
 
 
-			<div class="row col-md-12 center">
+			<div class="row center">
 
 					<figure>
-						<img srcset="img/cross-device/device-connection-flow@2x.jpg 2x" 
-							src="img/cross-device/device-connection-flow@1x.jpg" class="img-responsive center" alt="The user starts the flow on desktop by providing their mobile number and receives an SMS message, where they continue with ID and selfie flow on their mobile. While they are on the mobile flow the desktop screen changes to let them know they are still connected, and then changes to a submit screen once the mobile flow is completed.">
+						<img loading="lazy" srcset="img/cross-device/webp/device-connection-flow@2x.webp 2x" 
+							src="img/cross-device/webp/device-connection-flow@1x.webp" class="img-responsive center" alt="The user starts the flow on desktop by providing their mobile number and receives an SMS message, where they continue with ID and selfie flow on their mobile. While they are on the mobile flow the desktop screen changes to let them know they are still connected, and then changes to a submit screen once the mobile flow is completed.">
 						<figcaption class="padding-btm">
 							The desktop, mobile, and user flows shown in parallel. Note how the desktop screen always let's users know they are connected.
 						</figcaption>
@@ -1336,7 +1328,7 @@
 
 
 
-            <div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+            <div class="row col-content center padding-btm">
 
 				<div>
 					<p>In usability sessions users expressed that they felt safer and more trusting of the cross-device seeing this visual connection between the desktop and mobile.</p>
@@ -1346,10 +1338,10 @@
 
 
 
-			<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+			<div class="row col-content center">
 
 				<div>
-					<h2>Feed-forward information</h2>
+					<h2 class="avoid-orphans">Feed-forward information</h2>
 						<div class="horizontal-line-small"></div>
 				</div>
 
@@ -1361,11 +1353,11 @@
 
 
 
-			<div class="row col-md-12 center">
+			<div class="row center">
 
 					<figure aria-hidden="true">
-						<img srcset="img/cross-device/feed-forward@2x.jpg 2x" 
-							src="img/cross-device/feed-forward@1x.jpg" class="img-responsive center" alt="Screenshots of tips and reminders within the flow">
+						<img loading="lazy" srcset="img/cross-device/webp/feed-forward@2x.webp 2x" 
+							src="img/cross-device/webp/feed-forward@1x.webp" class="img-responsive center" alt="Screenshots of tips and reminders within the flow">
 						<figcaption class="padding-btm">
 							Tips and reminders were placed at particular points in the flow to help the user.
 						</figcaption>
@@ -1386,7 +1378,7 @@
 
 				<div class="container">
 
-		    		<div class="row col-md-12 center center-text">
+		    		<div class="row center center-text">
 					
 		        		<!-- Sub title -->
 		            	<div>
@@ -1413,10 +1405,10 @@
 
 			<div class="container">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row col-content center">
 
 					<div>
-						<h2>SDK simplification</h2>
+						<h2 class="avoid-orphans">SDK simplification</h2>
 							<div class="horizontal-line-small"></div>
 					</div>
 
@@ -1427,10 +1419,10 @@
 
 				</div> <!-- end row -->
 
-				<div class="row col-md-8 center">
+				<div class="row center">
 
 					<figure>
-						<img srcset="img/cross-device/illustrations.svg 2x" 
+						<img loading="lazy" srcset="img/cross-device/illustrations.svg 2x" 
 							src="img/cross-device/illustrations.svg" class="img-responsive center" alt="Various two-toned illustrations of drivers licence, ID card, passport, mobile receiving an SMS, and mobile/desktop syncing.">
 						<figcaption class="padding-btm">
 							illustrations needed to be "generic" to be able to fit into different client flows.
@@ -1441,10 +1433,10 @@
 
 
 
-        	<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+        	<div class="row col-content center padding-btm">
 
 				<div>
-					<h2>Cross-device card</h2>
+					<h2 class="avoid-orphans">Cross-device card</h2>
 						<div class="horizontal-line-small"></div>
 				</div>
 
@@ -1456,11 +1448,11 @@
 
 
 
-			<div class="row col-md-10 center">
+			<div class="row col-hero center">
 
 					<figure>
-						<img srcset="img/cross-device/card-placement@2x.jpg 2x" 
-							src="img/cross-device/card-placement@1x.jpg" class="img-responsive center" alt="The cross device selection card was placed in the narrow space between the screen title and the upload module.">
+						<img loading="lazy" srcset="img/cross-device/webp/card-placement@2x.webp 2x" 
+							src="img/cross-device/webp/card-placement@1x.webp" class="img-responsive center" alt="The cross device selection card was placed in the narrow space between the screen title and the upload module.">
 						<figcaption class="padding-btm">
 							The layout needed to change slightly to allow for the new cross-device selection card.
 						</figcaption>
@@ -1478,10 +1470,10 @@
 
 		<div class="container grey-module full-width" aria-hidden="true">
 
-        		<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+        		<div class="row col-content center">
 
 					<div>
-						<h2 class="no-padding-top">Final UI</h2>
+						<h2 class="no-padding-top avoid-orphans">Final UI</h2>
 							<div class="horizontal-line-small"></div>
 					</div>
 
@@ -1489,17 +1481,17 @@
 
 				<div class="row center no-padding">
 
-					<figure class="col-md-8 center">
-						<img srcset="img/cross-device/full-flow-ui@2x.png 2x" 
-							src="img/cross-device/full-flow-ui@1x.png" class="img-responsive center" alt="Screen flow of the cross device showing desktop and mobile user interface experience">
+					<figure class="center">
+						<img loading="lazy" srcset="img/cross-device/webp/full-flow-ui@2x.webp 2x" 
+							src="img/cross-device/webp/full-flow-ui@1x.webp" class="img-responsive center" alt="Screen flow of the cross device showing desktop and mobile user interface experience">
 						<figcaption>
 							Final UI of the screen flow
 						</figcaption>
 					</figure>	
 
-					<figure class="col-md-8 center">
-						<img srcset="img/cross-device/cross-device-ui_01@2x.png 2x" 
-							src="img/cross-device/scross-device-ui_01@1x.png" class="img-responsive center" alt="A desktop with the 'How it works' screen UI and a mobile with the 'Take a selfie' UI screen.">
+					<figure class="center">
+						<img loading="lazy" srcset="img/cross-device/webp/cross-device-ui_01@2x.webp 2x" 
+							src="img/cross-device/webp/scross-device-ui_01@1x.webp" class="img-responsive center" alt="A desktop with the 'How it works' screen UI and a mobile with the 'Take a selfie' UI screen.">
 						<figcaption>
 							Desktop: How the cross-device experience works UI. </br>Mobile: Taking a selfie introduction UI.
 						</figcaption>
@@ -1519,7 +1511,7 @@
 
 			<div class="container">
 
-	    		<div class="row col-md-12 center center-text">
+	    		<div class="row center center-text">
 	
 	        		<!-- Sub title -->
 	            	<div>
@@ -1546,7 +1538,7 @@
 
 			<div class="container no-padding-btm">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-top">
+				<div class="row col-content center padding-top">
 
 					<div>
 	            		<p>On the release of the cross-device feature it was great to see the excitement from the growth and sales team to show the Web SDK to clients again and to get new clients signed partly because of this excitement.</p>
@@ -1597,7 +1589,7 @@
 	            	<div class="horizontal-line-small center"></div>
             	</div>
 
-				<div class="row col-xs-10 col-sm-10 col-md-7 col-lg-6 center">		
+				<div class="row col-content-narrow center">		
 						<div>
 				    		<blockquote>“The cross-device is being very very well received by potential and existing clients.”</blockquote>
 				    		<figcaption>Feedback from sales after release</figcaption>
@@ -1620,10 +1612,10 @@
 
 			<div class="container">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center no-padding-btm">
+				<div class="row col-content center no-padding-btm">
 
 					<div>
-						<h2 class="no-padding-top">Reflections</h2>
+						<h2 class="no-padding-top avoid-orphans">Reflections</h2>
 						<div class="horizontal-line-small-pink"></div>
 					</div>
 
@@ -1650,10 +1642,10 @@
 			
 			<div class="social-media-grid container padding-btm">
 
-				<div class="row social-media-title col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row social-media-title col-content center">
 
 					<div>
-						<h2 class="center-text">Find me on these</h2>
+						<h2 class="center-text avoid-orphans">Find me on these</h2>
 					</div>
 
 				</div>
@@ -1661,46 +1653,29 @@
 
 				<!-- Social media platforms --------------------------------------------------- -->
 
-				<!-- LinkedIn icon -->
-				<div class="social-media-platform-1">
-					<a href="https://www.linkedin.com/in/dspagnolo/" target="_self" aria-label="LinkedIn profile">
-						
-						<svg xmlns="https://www.w3.org/2000/svg" width="80" height="80" viewBox="300 0 80 80">
-							<path class="social-icon linkedin-icon" d="M340 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zm-9.8 56.6h-8.1V30.5h8.1v26.1zm-4.1-29.3c-2.6 0-4.2-1.8-4.2-4.1s1.7-4 4.3-4 4.2 1.8 4.3 4c0 2.3-1.7 4.1-4.4 4.1zm33.7 29.3h-8.1V42.1c0-3.4-1.2-5.6-4.1-5.6-2.2 0-3.6 1.5-4.2 3-.2.5-.3 1.3-.3 2v15H335V38.8c0-3.3-.1-6-.2-8.3h7l.4 3.6h.2c1.1-1.7 3.7-4.2 8-4.2 5.3 0 9.3 3.6 9.3 11.2v15.5z"/>
-						</svg>
+				<div class="social-media-icons">
 
-						<h5 class="icon-label">LinkedIn</h5>
+					<!-- LinkedIn icon -->
+					<div class="social-media-platform">
+						<a href="https://www.linkedin.com/in/dspagnolo/" target="_self" aria-label="LinkedIn profile">
+							<svg aria-hidden="true" xmlns="https://www.w3.org/2000/svg" width="80" height="80" viewBox="300 0 80 80">
+								<path class="social-icon linkedin-icon" d="M340 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zm-9.8 56.6h-8.1V30.5h8.1v26.1zm-4.1-29.3c-2.6 0-4.2-1.8-4.2-4.1s1.7-4 4.3-4 4.2 1.8 4.3 4c0 2.3-1.7 4.1-4.4 4.1zm33.7 29.3h-8.1V42.1c0-3.4-1.2-5.6-4.1-5.6-2.2 0-3.6 1.5-4.2 3-.2.5-.3 1.3-.3 2v15H335V38.8c0-3.3-.1-6-.2-8.3h7l.4 3.6h.2c1.1-1.7 3.7-4.2 8-4.2 5.3 0 9.3 3.6 9.3 11.2v15.5z"/>
+							</svg>
+							<h5 class="icon-label">LinkedIn</h5>
+						</a>
+					</div>
 
-					</a>
-				</div>
+					<!-- Medium icon -->
+					<div class="social-media-platform">
+						<a href="https://medium.com/@daniel_spagnolo" target="_self" aria-label="Medium articles">
+							<svg aria-hidden="true" xmlns="https://www.w3.org/2000/svg" x="0px" y="0px" width="80px" height="80px" viewBox="100 0 80 80">
+								<path class="social-icon medium-icon" d="M140 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zM125.3 30.8c0-.5-.1-.9-.5-1.2l-3.4-4.3v-.6h10.4l8.1 18.6 7.1-18.6h9.9v.6l-2.9 2.9c-.2.2-.4.5-.3.8v21.3c0 .3.1.6.3.8l3 2.9v.6h-14.1V54l2.9-3c.3-.3.3-.4.3-.8V33L138 54.6h-1.1L127.5 33v14.4c-.1.6.1 1.2.5 1.7l3.8 4.8v.6h-10.7V54l3.8-4.8c.4-.4.6-1.1.5-1.7V30.8z"/>
+							</svg>
+							<h5 class="icon-label">Medium</h5>
+						</a>
+					</div>
 
-
-				<!-- Twitter icon -->
-				<div class="social-media-platform-2">
-					<a href="https://twitter.com/daniel_spagnolo" target="_self" aria-label="Twitter profile">
-						
-						<svg xmlns="https://www.w3.org/2000/svg" width="80" height="80" viewBox="200 0 80 80">
-							<path class="social-icon twitter-icon" d="M240 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zm16.3 32.8v1c0 10.4-7.9 22.4-22.4 22.4-4.5 0-8.6-1.3-12.1-3.5.6.1 1.2.1 1.9.1 3.7 0 7.1-1.3 9.8-3.4-3.4-.1-6.4-2.3-7.4-5.5.5.1 1 .1 1.5.1.7 0 1.4-.1 2.1-.3-3.6-.7-6.3-3.9-6.3-7.7 1.1.6 2.3.9 3.6 1-2.1-1.4-3.5-3.8-3.5-6.6 0-1.4.4-2.8 1.1-4 3.9 4.8 9.7 7.9 16.2 8.2-.1-.6-.2-1.2-.2-1.8 0-4.3 3.5-7.9 7.9-7.9 2.3 0 4.3 1 5.8 2.5 1.8-.4 3.5-1 5-1.9-.6 1.8-1.8 3.4-3.5 4.4 1.6-.2 3.1-.6 4.5-1.2-1.2 1.6-2.5 3-4 4.1z"/>
-						</svg>
-
-						<h5 class="icon-label">Twitter</h5>
-
-					</a>
-				</div>
-
-
-				<!-- Medium icon -->
-				<div class="social-media-platform-3">
-					<a href="https://medium.com/@daniel_spagnolo" target="_self" aria-label="Medium articles">
-						
-						<svg xmlns="https://www.w3.org/2000/svg" x="0px" y="0px" width="80px" height="80px" viewBox="100 0 80 80">
-							<path class="social-icon medium-icon" d="M140 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zM125.3 30.8c0-.5-.1-.9-.5-1.2l-3.4-4.3v-.6h10.4l8.1 18.6 7.1-18.6h9.9v.6l-2.9 2.9c-.2.2-.4.5-.3.8v21.3c0 .3.1.6.3.8l3 2.9v.6h-14.1V54l2.9-3c.3-.3.3-.4.3-.8V33L138 54.6h-1.1L127.5 33v14.4c-.1.6.1 1.2.5 1.7l3.8 4.8v.6h-10.7V54l3.8-4.8c.4-.4.6-1.1.5-1.7V30.8z"/>
-						</svg>
-
-						<h5 class="icon-label">Medium</h5>
-
-					</a>
-				</div>
+				</div> <!-- end social-media-icons -->
 									
 			</div> <!-- end container -->
 
@@ -1716,10 +1691,10 @@
 
 	<div class="center-text">
 		<a href="index.html#top-module" class="logo no-padding" aria-label="Return to top of page">
-			<!-- <a href="#"><img src="img/logo2016.gif" width="60px" height="85px" alt="Portfolio logo"></a> --> 
+			<!-- <a href="#"><img loading="lazy" src="img/logo2016.gif" width="60px" height="85px" alt="Portfolio logo"></a> --> 
 
 			<!-- Logo svg -->
-	    	<svg class="logo-default" xmlns="https://www.w3.org/2000/svg" width="65" height="90" viewBox="90.1 -1.6 65 90">
+	    	<svg aria-hidden="true" class="logo-default" xmlns="https://www.w3.org/2000/svg" width="65" height="90" viewBox="90.1 -1.6 65 90">
 			  <path fill="#00A1FF" d="M105.1 68.8l19-2-9-30"/>
 			  <path fill="#008BDB" d="M123.1 38.9l1 27.9-9-29.9"/>
 			  <path fill="#00A1FF" d="M124.1 66.8l19-23-20-5M119.1 20.8l-2-13.9 11 15.9M91.1 31.9l21-4 5-21-25.9 25"/>
@@ -1747,7 +1722,7 @@
 		</nav>
 	</div>
 
-		<div class="row col-md-12 center-text">
+		<div class="row center-text">
 			<small>Made with <span role="img" aria-label="Love" class="heart"></span> in London | &copy; whatever year this is</small>
 		</div>
 
@@ -1758,85 +1733,68 @@
 
 <!-- JS scripts/files (placed at end of file so pages will load faster) _____________________________________________________________________________________ -->
 
-	    <!-- link to jquery library to get the nav shrinking to work below -->
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-			<script>
-			$(function(){
-			 var shrinkHeader = 150;
-			  $(window).scroll(function() {
-			    var scroll = getCurrentScroll();
-			      if ( scroll >= shrinkHeader ) {
-			           $('header').addClass('shrink'),
-			           $('header.logo-size').addClass('shrink'),
-			           $('header nav ul').addClass('shrink'),
-			           $('header nav ul li').addClass('shrink'),
-			           $('header nav li a').addClass('shrink'),
-			           $('header p').addClass('shrink'),
-			           $('header svg').addClass('shrink'),
-			           $('header a.logo').addClass('shrink'),
-			           $('header nav .alternative a:hover').addClass('shrink'),
-			           $('header nav').addClass('shrink'),
-			           $('header .logo-job-title').addClass('shrink');
-			        }
-			        else {
-			            $('header').removeClass('shrink'),
-			            $('header.logo-size').removeClass('shrink'),
-			            $('header nav ul').removeClass('shrink'),
-			            $('header nav ul li').removeClass('shrink'),
-			            $('header nav li a').removeClass('shrink'),
-			            $('header p').removeClass('shrink'),
-			            $('header svg').removeClass('shrink'),
-			            $('header a.logo').removeClass('shrink'),
-			            $('header nav .alternative a:hover').removeClass('shrink'),
-			            $('header nav').removeClass('shrink'),
-			            $('header .logo-job-title').removeClass('shrink');
-			        }
-			  });
-			function getCurrentScroll() {
-			    return window.pageYOffset || document.documentElement.scrollTop;
-			    }
-			});
-			</script>	
+	    <script src="js/main.js" defer></script>	
 
 	<!-- Light/dark theme toggle (Guide I used for dark/light mode:- https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web) -->
     	<script>
-	    	
-	    	// Select the button
-			const btn = document.querySelector(".button-toggle"); // The "button-toggle" class (on colour theme toggle/btn) will change the "body" colour theme when clicked
-			// Check for dark mode preference at the OS level
+
+			const btn = document.querySelector(".button-toggle");
 			const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-			 
-			// Get the user's theme preference from local storage, if it's available
 			const currentTheme = localStorage.getItem("theme");
-			// If the user's preference in localStorage is dark...
-			if (currentTheme == "dark") {
-			  // ...let's toggle the .dark-theme class on the body
-			  document.body.classList.toggle("dark-theme");
-			// Otherwise, if the user's preference in localStorage is light...
-			} else if (currentTheme == "light") {
-			  // ...let's toggle the .light-theme class on the body
-			  document.body.classList.toggle("light-theme");
+
+			// Determine the currently active theme from body classes or OS preference
+			function getCurrentTheme() {
+			  if (document.body.classList.contains("dark-theme")) return "dark";
+			  if (document.body.classList.contains("light-theme")) return "light";
+			  return prefersDarkScheme.matches ? "dark" : "light";
 			}
-			 
-			// Listen for a click on the button 
-			btn.addEventListener("click", function() {
-			  // If the user's OS setting is dark and matches our .dark-theme class...
-			  if (prefersDarkScheme.matches) {
-			    // ...then toggle the light theme class
-			    document.body.classList.toggle("light-theme");
-			    // ...but use .dark-theme if the .light-theme class is already on the body,
-			    var theme = document.body.classList.contains("light-theme") ? "light" : "dark";
+
+			// Set a specific theme and sync the radio button checked state
+			function applyTheme(theme) {
+			  if (theme === "dark") {
+			    document.body.classList.add("dark-theme");
+			    document.body.classList.remove("light-theme");
+			    document.getElementById("dark").checked = true;
 			  } else {
-			    // Otherwise, let's do the same thing, but for .dark-theme
-			    document.body.classList.toggle("dark-theme");
-			    var theme = document.body.classList.contains("dark-theme") ? "dark" : "light";
+			    document.body.classList.remove("dark-theme");
+			    document.body.classList.add("light-theme");
+			    document.getElementById("light").checked = true;
 			  }
-			  // Finally, let's save the current preference to localStorage to keep using it
 			  localStorage.setItem("theme", theme);
+			}
+
+			// Apply saved theme on load and sync radio checked state
+			if (currentTheme === "dark") {
+			  document.body.classList.add("dark-theme");
+			  document.getElementById("dark").checked = true;
+			} else if (currentTheme === "light") {
+			  document.body.classList.add("light-theme");
+			  document.getElementById("light").checked = true;
+			} else if (prefersDarkScheme.matches) {
+			  document.getElementById("dark").checked = true;
+			}
+
+			// 1. Click anywhere on the toggle — toggle current theme
+			btn.addEventListener("click", function() {
+			  applyTheme(getCurrentTheme() === "dark" ? "light" : "dark");
 			});
 
-    	</script>				
+			// 2. Space or Enter when toggle is keyboard-focused — toggle current theme.
+			//    e.preventDefault() stops the radio's own change event from also firing.
+			document.querySelector('fieldset[aria-label="theme switcher"]').addEventListener("keydown", function(e) {
+			  if (e.key === " ") {
+			    e.preventDefault();
+			    applyTheme(getCurrentTheme() === "dark" ? "light" : "dark");
+			  }
+			});
+
+			// 3. Arrow-key navigation between radios — sync theme to whichever radio lands checked
+			document.querySelectorAll('.button-toggle input[type="radio"]').forEach(function(radio) {
+			  radio.addEventListener("change", function() {
+			    applyTheme(this.id);
+			  });
+			});
+		</script>				
 
 
 

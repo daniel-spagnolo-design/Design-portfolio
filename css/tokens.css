@@ -1,0 +1,83 @@
+/* =============================================================
+   DESIGN TOKENS — tokens.css
+   Primitive values. Do not use these directly in components.
+   Reference them via the semantic variables in styles-2025.css.
+   ============================================================= */
+
+:root {
+
+  /* -----------------------------------------------------------
+     COLOUR PRIMITIVES
+     ----------------------------------------------------------- */
+
+  /* Blue */
+  --primitive-blue-600:    hsla(215, 100%, 50%, 1);   /* Sky blue — light theme primary */
+  --primitive-blue-400:    hsla(205, 100%, 57%, 1);   /* Light blue — dark theme primary */
+
+  /* Pink */
+  --primitive-pink-600:    hsla(334, 82%, 57%, 1);    /* Pink — light theme accent */
+  --primitive-pink-400:    hsla(322, 83%, 69%, 1);    /* Light pink — dark theme accent */
+
+  /* Neutrals */
+  --primitive-ink:         hsla(198, 100%, 5%, 1);    /* Near-black */
+  --primitive-grey-900:    hsla(195, 6%, 14%, 1);     /* Dark grey — text */
+  --primitive-grey-800:    hsla(204, 10%, 20%, 1);    /* Dark blue-grey — surfaces, toggle bg */
+  --primitive-grey-600:    hsla(221, 10%, 36%, 1);    /* Mid grey — body text */
+  --primitive-grey-100:    hsla(0, 0%, 96%, 1);       /* Light grey — surfaces */
+  --primitive-white:       hsla(0, 0%, 100%, 1);      /* White */
+  --primitive-dark-base:   hsla(195, 6%, 13%, 1);     /* Dark background */
+
+  /* Alpha */
+  --primitive-white-91:       hsla(0, 0%, 100%, 0.91);  /* White 91% — constant light text */
+  --primitive-white-90:       hsla(0, 0%, 100%, 0.90);  /* White 90% — bg transparent light */
+  --primitive-white-70:       hsla(0, 0%, 100%, 0.70);  /* White 70% — mid text dark theme */
+  --primitive-grey-900-91:    hsla(195, 6%, 14%, 0.91); /* Dark grey 91% — constant dark grey */
+  --primitive-dark-base-90:   hsla(195, 6%, 13%, 0.90); /* Dark base 90% — bg transparent dark */
+
+  /* Shadow */
+  --primitive-shadow:      rgba(50, 50, 93, 0.11);
+
+
+  /* -----------------------------------------------------------
+     SPACING SCALE
+     Based on a 16px (1rem) base
+     ----------------------------------------------------------- */
+
+  --space-1:     1rem;    /* 16px */
+  --space-1-5:   1.5rem;  /* 24px */
+  --space-2:     2rem;    /* 32px */
+  --space-3:     3rem;    /* 48px */
+  --space-4:     4rem;    /* 64px */
+  --space-5:     5rem;    /* 80px */
+  --space-8:     8rem;    /* 128px */
+
+
+  /* -----------------------------------------------------------
+     TYPOGRAPHY — FONT SIZES
+     ----------------------------------------------------------- */
+
+  --text-xs:    0.875rem;   /* 14px — figcaption mobile */
+  --text-sm:    1rem;       /* 16px — small, muted, figcaption */
+  --text-md:    1.0625rem;  /* 17px — body/h5/h6 mobile */
+  --text-base:  1.25rem;    /* 20px — body, h5 */
+  --text-lg:    1.55rem;    /* 25px — h4, h6, header-caption */
+  --text-xl:    2rem;       /* 32px — blockquote */
+  --text-2xl:   2.3125rem;  /* 37px — h3 */
+  --text-3xl:   4rem;       /* 64px — h2 */
+  --text-4xl:   5.75rem;    /* 92px — h1 */
+
+
+  /* -----------------------------------------------------------
+     BORDER RADIUS
+     ----------------------------------------------------------- */
+
+  --radius-pill: 28px;
+
+
+  /* -----------------------------------------------------------
+     TRANSITIONS
+     ----------------------------------------------------------- */
+
+  --transition-default: all 0.2s ease;
+
+}

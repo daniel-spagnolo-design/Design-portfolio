@@ -10,45 +10,35 @@
     	<meta name="author" content="Daniel Spagnolo">
 		<title>Daniel Spagnolo / CV </title>
 
-		<!--displays favicon in browser/mobile tabs. https://www.favicon-generator.org/-->
-		<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+				<!--displays favicon in browser/mobile tabs. https://www.favicon-generator.org/-->
 		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-		<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
 		<link rel="manifest" href="/manifest.json">
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">		
 
-		<!-- Bootstrap core CSS -->
-	    <link href="css/bootstrap-grid.css" rel="stylesheet"> 
+		<!-- Bootstrap core CSS --> 
 
 	    <!-- Styling CSS -->
-	    <link rel="preload stylesheet" type="text/css" href="css/styles-2025-mini.css">
+	    <link rel="preload stylesheet" type="text/css" href="css/styles-2025.css">
 
 	    <!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52715158-2"></script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-QKTF3G7D47"></script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
 
-		  gtag('config', 'UA-52715158-2');
+		  gtag('config', 'G-QKTF3G7D47');
 		</script>
 
 	</head>
 
-	<body>	
+	<body>
 
+	<a class="skip-link" href="#main-content">Skip to main content</a>
 
 	<!-- Navigation module ___________________________________________________________________________________________________________________________ -->
 
@@ -60,10 +50,10 @@
 
 			  	<div class="logo-job-title no-padding">
 			  		<a href="index.html#top-module" class="logo no-padding" aria-label="Home">
-			        	<!-- <a href="#"><img src="img/logo2016.gif" width="60px" height="85px" alt="Daniel Spagnolo's portfolio"></a> -->
+			        	<!-- <a href="#"><img loading="lazy" src="img/logo2016.gif" width="60px" height="85px" alt="Daniel Spagnolo's portfolio"></a> -->
 			        	
 			        	<!-- Logo svg -->
-			        	<svg class="logo-default" xmlns="https://www.w3.org/2000/svg" viewBox="90.1 -1.6 65 90">
+			        	<svg aria-hidden="true" class="logo-default" xmlns="https://www.w3.org/2000/svg" viewBox="90.1 -1.6 65 90">
 						  <path fill="#00A1FF" d="M105.1 68.8l19-2-9-30"/>
 						  <path fill="#008BDB" d="M123.1 38.9l1 27.9-9-29.9"/>
 						  <path fill="#00A1FF" d="M124.1 66.8l19-23-20-5M119.1 20.8l-2-13.9 11 15.9M91.1 31.9l21-4 5-21-25.9 25"/>
@@ -106,13 +96,15 @@
 							<span class="button-toggle-container">
 								
 								<input type="radio" name="theme" id="light" checked="">
+								<label for="light" class="sr-only">Light theme</label>
 								<input type="radio" name="theme" id="dark">
+								<label for="dark" class="sr-only">Dark theme</label>
 
 									<span aria-hidden="true" class="button-toggle__background"></span> <!-- end button-toggle__background -->
 										
 										<span>
 										<!-- sun icon -->
-											<svg class="icon-sun" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+											<svg aria-hidden="true" class="icon-sun" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
 										        <g transform="translate(-1327.000000, -53.000000)">
 									            <g transform="translate(1316.000000, 42.000000)">
 								                <g transform="translate(11.000000, 11.000000)">
@@ -133,7 +125,7 @@
 											</svg>
 
 											<!-- moon icon -->
-											<svg class="icon-moon" viewBox="0 0 17 18" xmlns="http://www.w3.org/2000/svg">
+											<svg aria-hidden="true" class="icon-moon" viewBox="0 0 17 18" xmlns="http://www.w3.org/2000/svg">
 										        <g transform="translate(-1370.000000, -55.000000)">
 									            <g transform="translate(1316.000000, 42.000000)">
 								                <g transform="translate(54.000000, 13.000000)"> 
@@ -175,16 +167,16 @@
 
 			<div class="container padding-btm">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">
+				<div class="row col-content center padding-btm">
 
 
             		<div class="padding-btm">
-            			<h1>CV / Resume</h1>
+            			<h1 id="main-content" tabindex="-1">CV / Resume</h1>
 
 						<a class="btn" href="cv/daniel-spagnolo_cv.pdf" target="_self" aria-label="Printable PDF of CV">
 							View PDF
 
-							<svg class="arrow-right" width="22px" height="22px" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+							<svg aria-hidden="true" class="arrow-right" width="22px" height="22px" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
 				                <g transform="translate(11.313708, 11.311985) rotate(226.000000) translate(-11.313708, -11.311985) translate(3.313708, 3.311985)">
 				                    <rect x="0" y="12" width="16" height="4" rx="2"></rect>
 				                    <rect x="0" y="0" width="4" height="16" rx="2"></rect>
@@ -207,7 +199,7 @@
 
 
 					<div class="padding-btm-xsmall">
-						<h2>EXPERIENCE</h2>
+						<h2 class="avoid-orphans">EXPERIENCE</h2>
 						<div class="horizontal-line-small"></div>
 					</div>
 
@@ -216,11 +208,11 @@
 					<div class="cv-row padding-btm">
 
 						<div class="company-info">
-							<img src="img/logo/culture-amp@2x.png" class="company-logo" alt="">
+							<img loading="lazy" src="img/logo/culture-amp@2x.png" class="company-logo" alt="">
 							<h5>Culture Amp</h5>
 						</div>
 
-						<h3>Senior AI Product Designer</h3>
+						<h3 class="avoid-orphans">Senior AI Product Designer</h3>
 
 						<p class="cv-date-location">Nov 2022 - May 2025  /  Melbourne, Australia</p>
 
@@ -239,11 +231,11 @@
 					<div class="cv-row padding-btm">
 
 						<div class="company-info">
-							<img src="img/logo/unmind@2x.png" class="company-logo" alt="">
+							<img loading="lazy" src="img/logo/unmind@2x.png" class="company-logo" alt="">
 							<h5>Unmind</h5>
 						</div>
 
-						<h3>Senior Product Designer</h3>
+						<h3 class="avoid-orphans">Senior Product Designer</h3>
 
 						<p class="cv-date-location">Jan 2021 - Dec 2021  /  London, UK</p>
 
@@ -261,11 +253,11 @@
 					<div class="cv-row padding-btm">
 
 						<div class="company-info">
-							<img src="img/logo/babylon@2x.png" class="company-logo" alt="">
+							<img loading="lazy" src="img/logo/babylon@2x.png" class="company-logo" alt="">
 							<h5>Babylon Health</h5>
 						</div>
 
-						<h3>Senior Product Designer</h3>
+						<h3 class="avoid-orphans">Senior Product Designer</h3>
 
 						<p class="cv-date-location">Jun 2019 - May 2020  /  London, UK</p>
 
@@ -282,11 +274,11 @@
 					<div class="cv-row padding-btm">
 
 						<div class="company-info">
-							<img src="img/logo/onfido@2x.png" class="company-logo" alt="">
+							<img loading="lazy" src="img/logo/onfido@2x.png" class="company-logo" alt="">
 							<h5>Onfido</h5>
 						</div>
 
-						<h3>Senior Product Designer</h3>
+						<h3 class="avoid-orphans">Senior Product Designer</h3>
 
 						<p class="cv-date-location">Oct 2016 - Dec 2018  /  London, UK</p>
 
@@ -305,11 +297,11 @@
 					<div class="cv-row padding-btm">
 
 						<div class="company-info">
-							<img src="img/logo/reed@2x.png" class="company-logo" alt="">
+							<img loading="lazy" src="img/logo/reed@2x.png" class="company-logo" alt="">
 							<h5>Reed.co.uk</h5>
 						</div>
 
-						<h3>UX/UI Designer</h3>
+						<h3 class="avoid-orphans">UX/UI Designer</h3>
 
 						<p class="cv-date-location">Aug 2014 - Jun 2016  /  London, UK</p>
 
@@ -326,11 +318,11 @@
 					<div class="cv-row padding-btm">
 
 						<div class="company-info">
-							<img src="img/logo/danielspagnolo@2x.png" class="company-logo" alt="">
+							<img loading="lazy" src="img/logo/danielspagnolo@2x.png" class="company-logo" alt="">
 							<h5>Freelance</h5>
 						</div>
 
-						<h3>Freelance Designer</h3>
+						<h3 class="avoid-orphans">Freelance Designer</h3>
 
 						<p class="cv-date-location">Jun 2005 - Apr 2013  /  Brisbane, Australia /  London, UK</p>
 
@@ -356,13 +348,13 @@
 
 			<div class="cv-module container padding-btm">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">			
+				<div class="row col-content center padding-btm">			
 
    					
    					<!-- EDUCATION -->	
 
 					<div class="padding-btm">
-						<h2>EDUCATION</h2>
+						<h2 class="avoid-orphans">EDUCATION</h2>
 						<div class="horizontal-line-small"></div>
 					</div>	
 
@@ -371,19 +363,19 @@
 					<div class="cv-row padding-btm">
 
 						<div class="company-info">
-							<img src="img/logo/interaction-design-org@2x.png" class="company-logo" alt="">
+							<img loading="lazy" src="img/logo/interaction-design-org@2x.png" class="company-logo" alt="">
 							<h5>Interaction Design Foundation</h5>
 						</div>
 
-						<h3>AI for Designers</h3>
+						<h3 class="avoid-orphans">AI for Designers</h3>
 						<p class="cv-date-location">2024  /  Online / Passed with Distinction</p>
 						<div class="padding-btm-xsmall"></div>
 
-						<h3>Accessibility: Design for all</h3>
+						<h3 class="avoid-orphans">Accessibility: Design for all</h3>
 						<p class="cv-date-location">2020  /  Online / Passed with Distinction</p>
 						<div class="padding-btm-xsmall"></div>
 
-						<h3>Emotional design</h3>
+						<h3 class="avoid-orphans">Emotional design</h3>
 						<p class="cv-date-location">2018  /  Online / Passed with Distinction</p>
 
 					</div> <!-- End cv-row -->
@@ -393,11 +385,11 @@
 					<div class="cv-row padding-btm">
 
 						<div class="company-info">
-							<img src="img/logo/ga@2x.png" class="company-logo" alt="">
+							<img loading="lazy" src="img/logo/ga@2x.png" class="company-logo" alt="">
 							<h5>General Assembly</h5>
 						</div>
 
-						<h3>User Experience Design Immersive </h3>
+						<h3 class="avoid-orphans">User Experience Design Immersive </h3>
 
 						<p class="cv-date-location padding-btm">2014  /  London, UK</p>
 
@@ -417,13 +409,13 @@
 
 			<div class="container padding-btm">
 
-				<div class="row col-xs-11 col-sm-10 col-md-8 col-lg-7 center padding-btm">			
+				<div class="row col-content center padding-btm">			
 
    					
    					<!-- SKILLS -->	
 
 					<div class="padding-btm">
-						<h2>SKILLS</h2>
+						<h2 class="avoid-orphans">SKILLS</h2>
 						<div class="horizontal-line-small"></div>
 					</div>	
 
@@ -459,10 +451,10 @@
 			
 			<div class="social-media-grid container padding-btm">
 
-				<div class="row social-media-title col-xs-11 col-sm-10 col-md-8 col-lg-7 center">
+				<div class="row social-media-title col-content center">
 
 					<div>
-						<h2 class="center-text">Find me on these</h2>
+						<h2 class="center-text avoid-orphans">Find me on these</h2>
 					</div>
 
 				</div>
@@ -470,46 +462,29 @@
 
 				<!-- Social media platforms --------------------------------------------------- -->
 
-				<!-- LinkedIn icon -->
-				<div class="social-media-platform-1">
-					<a href="https://www.linkedin.com/in/dspagnolo/" target="_self" aria-label="LinkedIn profile">
-						
-						<svg xmlns="https://www.w3.org/2000/svg" width="80" height="80" viewBox="300 0 80 80">
-							<path class="social-icon linkedin-icon" d="M340 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zm-9.8 56.6h-8.1V30.5h8.1v26.1zm-4.1-29.3c-2.6 0-4.2-1.8-4.2-4.1s1.7-4 4.3-4 4.2 1.8 4.3 4c0 2.3-1.7 4.1-4.4 4.1zm33.7 29.3h-8.1V42.1c0-3.4-1.2-5.6-4.1-5.6-2.2 0-3.6 1.5-4.2 3-.2.5-.3 1.3-.3 2v15H335V38.8c0-3.3-.1-6-.2-8.3h7l.4 3.6h.2c1.1-1.7 3.7-4.2 8-4.2 5.3 0 9.3 3.6 9.3 11.2v15.5z"/>
-						</svg>
+				<div class="social-media-icons">
 
-						<h5 class="icon-label">LinkedIn</h5>
+					<!-- LinkedIn icon -->
+					<div class="social-media-platform">
+						<a href="https://www.linkedin.com/in/dspagnolo/" target="_self" aria-label="LinkedIn profile">
+							<svg aria-hidden="true" xmlns="https://www.w3.org/2000/svg" width="80" height="80" viewBox="300 0 80 80">
+								<path class="social-icon linkedin-icon" d="M340 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zm-9.8 56.6h-8.1V30.5h8.1v26.1zm-4.1-29.3c-2.6 0-4.2-1.8-4.2-4.1s1.7-4 4.3-4 4.2 1.8 4.3 4c0 2.3-1.7 4.1-4.4 4.1zm33.7 29.3h-8.1V42.1c0-3.4-1.2-5.6-4.1-5.6-2.2 0-3.6 1.5-4.2 3-.2.5-.3 1.3-.3 2v15H335V38.8c0-3.3-.1-6-.2-8.3h7l.4 3.6h.2c1.1-1.7 3.7-4.2 8-4.2 5.3 0 9.3 3.6 9.3 11.2v15.5z"/>
+							</svg>
+							<h5 class="icon-label">LinkedIn</h5>
+						</a>
+					</div>
 
-					</a>
-				</div>
+					<!-- Medium icon -->
+					<div class="social-media-platform">
+						<a href="https://medium.com/@daniel_spagnolo" target="_self" aria-label="Medium articles">
+							<svg aria-hidden="true" xmlns="https://www.w3.org/2000/svg" x="0px" y="0px" width="80px" height="80px" viewBox="100 0 80 80">
+								<path class="social-icon medium-icon" d="M140 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zM125.3 30.8c0-.5-.1-.9-.5-1.2l-3.4-4.3v-.6h10.4l8.1 18.6 7.1-18.6h9.9v.6l-2.9 2.9c-.2.2-.4.5-.3.8v21.3c0 .3.1.6.3.8l3 2.9v.6h-14.1V54l2.9-3c.3-.3.3-.4.3-.8V33L138 54.6h-1.1L127.5 33v14.4c-.1.6.1 1.2.5 1.7l3.8 4.8v.6h-10.7V54l3.8-4.8c.4-.4.6-1.1.5-1.7V30.8z"/>
+							</svg>
+							<h5 class="icon-label">Medium</h5>
+						</a>
+					</div>
 
-
-				<!-- Twitter icon -->
-				<div class="social-media-platform-2">
-					<a href="https://twitter.com/daniel_spagnolo" target="_self" aria-label="Twitter profile">
-						
-						<svg xmlns="https://www.w3.org/2000/svg" width="80" height="80" viewBox="200 0 80 80">
-							<path class="social-icon twitter-icon" d="M240 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zm16.3 32.8v1c0 10.4-7.9 22.4-22.4 22.4-4.5 0-8.6-1.3-12.1-3.5.6.1 1.2.1 1.9.1 3.7 0 7.1-1.3 9.8-3.4-3.4-.1-6.4-2.3-7.4-5.5.5.1 1 .1 1.5.1.7 0 1.4-.1 2.1-.3-3.6-.7-6.3-3.9-6.3-7.7 1.1.6 2.3.9 3.6 1-2.1-1.4-3.5-3.8-3.5-6.6 0-1.4.4-2.8 1.1-4 3.9 4.8 9.7 7.9 16.2 8.2-.1-.6-.2-1.2-.2-1.8 0-4.3 3.5-7.9 7.9-7.9 2.3 0 4.3 1 5.8 2.5 1.8-.4 3.5-1 5-1.9-.6 1.8-1.8 3.4-3.5 4.4 1.6-.2 3.1-.6 4.5-1.2-1.2 1.6-2.5 3-4 4.1z"/>
-						</svg>
-
-						<h5 class="icon-label">Twitter</h5>
-
-					</a>
-				</div>
-
-
-				<!-- Medium icon -->
-				<div class="social-media-platform-3">
-					<a href="https://medium.com/@daniel_spagnolo" target="_self" aria-label="Medium articles">
-						
-						<svg xmlns="https://www.w3.org/2000/svg" x="0px" y="0px" width="80px" height="80px" viewBox="100 0 80 80">
-							<path class="social-icon medium-icon" d="M140 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zM125.3 30.8c0-.5-.1-.9-.5-1.2l-3.4-4.3v-.6h10.4l8.1 18.6 7.1-18.6h9.9v.6l-2.9 2.9c-.2.2-.4.5-.3.8v21.3c0 .3.1.6.3.8l3 2.9v.6h-14.1V54l2.9-3c.3-.3.3-.4.3-.8V33L138 54.6h-1.1L127.5 33v14.4c-.1.6.1 1.2.5 1.7l3.8 4.8v.6h-10.7V54l3.8-4.8c.4-.4.6-1.1.5-1.7V30.8z"/>
-						</svg>
-
-						<h5 class="icon-label">Medium</h5>
-
-					</a>
-				</div>
+				</div> <!-- end social-media-icons -->
 									
 			</div> <!-- end container -->
 
@@ -525,10 +500,10 @@
 
 	<div class="center-text">
 		<a href="index.html#top-module" class="logo no-padding" aria-label="Return to top of page">
-			<!-- <a href="#"><img src="img/logo2016.gif" width="60px" height="85px" alt="Portfolio logo"></a> --> 
+			<!-- <a href="#"><img loading="lazy" src="img/logo2016.gif" width="60px" height="85px" alt="Portfolio logo"></a> --> 
 
 			<!-- Logo svg -->
-	    	<svg class="logo-default" xmlns="https://www.w3.org/2000/svg" width="65" height="90" viewBox="90.1 -1.6 65 90">
+	    	<svg aria-hidden="true" class="logo-default" xmlns="https://www.w3.org/2000/svg" width="65" height="90" viewBox="90.1 -1.6 65 90">
 			  <path fill="#00A1FF" d="M105.1 68.8l19-2-9-30"/>
 			  <path fill="#008BDB" d="M123.1 38.9l1 27.9-9-29.9"/>
 			  <path fill="#00A1FF" d="M124.1 66.8l19-23-20-5M119.1 20.8l-2-13.9 11 15.9M91.1 31.9l21-4 5-21-25.9 25"/>
@@ -556,7 +531,7 @@
 		</nav>
 	</div>
 
-		<div class="row col-md-12 center-text">
+		<div class="row center-text">
 			<small>Made with <span role="img" aria-label="Love" class="heart"></span> in London | &copy; whatever year this is</small>
 		</div>
 
@@ -567,86 +542,69 @@
 
 <!-- JS scripts/files (placed at end of file so pages will load faster) _____________________________________________________________________________________ -->
 
-	    <!-- link to jquery library to get the nav shrinking to work below -->
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-			<script>
-			$(function(){
-			 var shrinkHeader = 150;
-			  $(window).scroll(function() {
-			    var scroll = getCurrentScroll();
-			      if ( scroll >= shrinkHeader ) {
-			           $('header').addClass('shrink'),
-			           $('header.logo-size').addClass('shrink'),
-			           $('header nav ul').addClass('shrink'),
-			           $('header nav ul li').addClass('shrink'),
-			           $('header nav li a').addClass('shrink'),
-			           $('header p').addClass('shrink'),
-			           $('header svg').addClass('shrink'),
-			           $('header a.logo').addClass('shrink'),
-			           $('header nav .alternative a:hover').addClass('shrink'),
-			           $('header nav').addClass('shrink'),
-			           $('header .logo-job-title').addClass('shrink');
-			        }
-			        else {
-			            $('header').removeClass('shrink'),
-			            $('header.logo-size').removeClass('shrink'),
-			            $('header nav ul').removeClass('shrink'),
-			            $('header nav ul li').removeClass('shrink'),
-			            $('header nav li a').removeClass('shrink'),
-			            $('header p').removeClass('shrink'),
-			            $('header svg').removeClass('shrink'),
-			            $('header a.logo').removeClass('shrink'),
-			            $('header nav .alternative a:hover').removeClass('shrink'),
-			            $('header nav').removeClass('shrink'),
-			            $('header .logo-job-title').removeClass('shrink');
-			        }
-			  });
-			function getCurrentScroll() {
-			    return window.pageYOffset || document.documentElement.scrollTop;
-			    }
-			});
-			</script>	
+	    <script src="js/main.js" defer></script>	
 
     
 	<!-- Light/dark theme toggle (Guide I used for dark/light mode:- https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web) -->
     	<script>
-	    	
-	    	// Select the button
-			const btn = document.querySelector(".button-toggle"); // The "button-toggle" class (on colour theme toggle/btn) will change the "body" colour theme when clicked
-			// Check for dark mode preference at the OS level
+
+			const btn = document.querySelector(".button-toggle");
 			const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-			 
-			// Get the user's theme preference from local storage, if it's available
 			const currentTheme = localStorage.getItem("theme");
-			// If the user's preference in localStorage is dark...
-			if (currentTheme == "dark") {
-			  // ...let's toggle the .dark-theme class on the body
-			  document.body.classList.toggle("dark-theme");
-			// Otherwise, if the user's preference in localStorage is light...
-			} else if (currentTheme == "light") {
-			  // ...let's toggle the .light-theme class on the body
-			  document.body.classList.toggle("light-theme");
+
+			// Determine the currently active theme from body classes or OS preference
+			function getCurrentTheme() {
+			  if (document.body.classList.contains("dark-theme")) return "dark";
+			  if (document.body.classList.contains("light-theme")) return "light";
+			  return prefersDarkScheme.matches ? "dark" : "light";
 			}
-			 
-			// Listen for a click on the button 
-			btn.addEventListener("click", function() {
-			  // If the user's OS setting is dark and matches our .dark-theme class...
-			  if (prefersDarkScheme.matches) {
-			    // ...then toggle the light theme class
-			    document.body.classList.toggle("light-theme");
-			    // ...but use .dark-theme if the .light-theme class is already on the body,
-			    var theme = document.body.classList.contains("light-theme") ? "light" : "dark";
+
+			// Set a specific theme and sync the radio button checked state
+			function applyTheme(theme) {
+			  if (theme === "dark") {
+			    document.body.classList.add("dark-theme");
+			    document.body.classList.remove("light-theme");
+			    document.getElementById("dark").checked = true;
 			  } else {
-			    // Otherwise, let's do the same thing, but for .dark-theme
-			    document.body.classList.toggle("dark-theme");
-			    var theme = document.body.classList.contains("dark-theme") ? "dark" : "light";
+			    document.body.classList.remove("dark-theme");
+			    document.body.classList.add("light-theme");
+			    document.getElementById("light").checked = true;
 			  }
-			  // Finally, let's save the current preference to localStorage to keep using it
 			  localStorage.setItem("theme", theme);
+			}
+
+			// Apply saved theme on load and sync radio checked state
+			if (currentTheme === "dark") {
+			  document.body.classList.add("dark-theme");
+			  document.getElementById("dark").checked = true;
+			} else if (currentTheme === "light") {
+			  document.body.classList.add("light-theme");
+			  document.getElementById("light").checked = true;
+			} else if (prefersDarkScheme.matches) {
+			  document.getElementById("dark").checked = true;
+			}
+
+			// 1. Click anywhere on the toggle — toggle current theme
+			btn.addEventListener("click", function() {
+			  applyTheme(getCurrentTheme() === "dark" ? "light" : "dark");
 			});
 
-    	</script>			
+			// 2. Space or Enter when toggle is keyboard-focused — toggle current theme.
+			//    e.preventDefault() stops the radio's own change event from also firing.
+			document.querySelector('fieldset[aria-label="theme switcher"]').addEventListener("keydown", function(e) {
+			  if (e.key === " ") {
+			    e.preventDefault();
+			    applyTheme(getCurrentTheme() === "dark" ? "light" : "dark");
+			  }
+			});
+
+			// 3. Arrow-key navigation between radios — sync theme to whichever radio lands checked
+			document.querySelectorAll('.button-toggle input[type="radio"]').forEach(function(radio) {
+			  radio.addEventListener("change", function() {
+			    applyTheme(this.id);
+			  });
+			});
+		</script>			
 
 
 
