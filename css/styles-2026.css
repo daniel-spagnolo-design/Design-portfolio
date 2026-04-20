@@ -15,7 +15,7 @@
 /* New font from Google fonts Jul, 2025 */
 @font-face {
 	font-family: 'reddit-sans';
-	src: url('../fonts/reddit-sans/redditsans-bold.woff2') format('woff2'),
+	src: url('../fonts/reddit-sans/RedditSans-Bold.woff2') format('woff2'),
 		url('../fonts/reddit-sans/RedditSans-Bold.ttf') format('truetype');
 	font-optical-sizing: auto;
 	font-weight: 700;
