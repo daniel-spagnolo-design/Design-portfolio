@@ -2805,6 +2805,26 @@ CLEARFIX */
 
 
 /* ============================================
+   HERO IMAGE ENTRANCE — Case study pages
+   ============================================ */
+
+@keyframes hero-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-module .col-hero img {
+  animation: hero-fade-in 700ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+
+/* ============================================
    REDUCED MOTION — WCAG 2.3.3
    Suppresses all transitions and animations for
    users who have enabled "Reduce Motion" in their
