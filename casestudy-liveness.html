@@ -21,6 +21,9 @@
 
 		<!-- Bootstrap core CSS --> 
 
+	    <!-- Reddit Sans preload -->
+	    <link rel="preload" href="fonts/reddit-sans/RedditSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
 	    <!-- Styling CSS -->
 	    <link rel="preload stylesheet" type="text/css" href="css/styles-2026-mini.css">
 
@@ -71,7 +74,7 @@
 			        </a> <!-- end logo -->
 
 			        <div>
-			        	<p class="name">Daniel Spagnolo <span class="muted job-title">(He/Him) | Product Designer</span></p>
+			        	<p class="section-small name">Daniel Spagnolo <span class="muted job-title">(He/Him) | Product Designer</span></p>
 			        </div> <!-- end by-line -->
 
 			  	</div> <!-- end logo-job-title -->
@@ -169,13 +172,13 @@
 					
 			        	<!-- Sub title -->
 			            	<div class="col-content center-text center">
-			            		<span class="header-caption">Detecting Liveness on the web</span>
+			            		<span class="title-caption">Detecting Liveness on the web</span>
 			            	</div>
 
 
 			        	<!-- Title -->
 			            	<div class="col-content center-text center">
-			            		<h1 id="main-content" tabindex="-1">Reducing identity fraud</h1>
+			            		<h1 id="main-content" tabindex="-1" class="title-main">Reducing identity fraud</h1>
 			              	</div>
 
 
@@ -224,20 +227,20 @@
 
 	        		<!-- company, role, timeframe, skills -->
 	            	<div class="">
-	            			<h5>Company:</h5>
-	            			<p><a class="link" href="https://onfido.com/" target="_self" aria-label="Go to Onfido.com">Onfido</a> &mdash; London</p>
+	            			<h5 class="section-small">Company:</h5>
+	            			<p class="body-regular"><a class="link" href="https://onfido.com/" target="_self" aria-label="Go to Onfido.com">Onfido</a> &mdash; London</p>
 	            		</div>
 	            	<div class="">
-	            			<h5>My role:</h5>
-	            			<p>Product Designer</p>
+	            			<h5 class="section-small">My role:</h5>
+	            			<p class="body-regular">Product Designer</p>
 	        			</div>
 	            	<div class="">
-	            			<h5>Timeframe:</h5>
-	            			<p>Three months</p>
+	            			<h5 class="section-small">Timeframe:</h5>
+	            			<p class="body-regular">Three months</p>
 	        			</div>
 	            	<div class="">
-	        				<h5>Skills:</h5>
-	        				<p>UX/UI design, prototyping, product planning, usability testing</p>
+	        				<h5 class="section-small">Skills:</h5>
+	        				<p class="body-regular">UX/UI design, prototyping, product planning, usability testing</p>
 	        			</div>
 
 	        	</div> <!-- end row -->
@@ -257,15 +260,15 @@
 				<div class="row col-content center">
 
 					<div>
-						<h2 class="avoid-orphans">The problem</h2>
+						<h2 class="title-secondary avoid-orphans">The problem</h2>
 							<div class="horizontal-line-small">
 							</div>
 					</div>
 
 					<div>
-						<p>An ongoing challenge in the identity verification space is to continually evolve to fight new levels of fraud. The industry had moved towards requiring users to submit a selfie with an ID document so a facial comparison could be performed, but fraudsters were starting to find  ways around this. To combat this we implemented Video Liveness in our Android and iOS identity verification <a class="link" href="https://en.wikipedia.org/wiki/Software_development_kit" target="_self" aria-label="Wikipedia explanation of SDK">SDK</a> (software development kit), with users required to video-record themselves performing two facial actions &mdash; moving their head to the side and speaking random numbers shown on the screen. This was to ensure that the people were physically present in-the-moment and which was much harder to spoof by fraudsters.</p>
+						<p class="body-regular">An ongoing challenge in the identity verification space is to continually evolve to fight new levels of fraud. The industry had moved towards requiring users to submit a selfie with an ID document so a facial comparison could be performed, but fraudsters were starting to find  ways around this. To combat this we implemented Video Liveness in our Android and iOS identity verification <a class="link" href="https://en.wikipedia.org/wiki/Software_development_kit" target="_self" aria-label="Wikipedia explanation of SDK">SDK</a> (software development kit), with users required to video-record themselves performing two facial actions &mdash; moving their head to the side and speaking random numbers shown on the screen. This was to ensure that the people were physically present in-the-moment and which was much harder to spoof by fraudsters.</p>
 
-						<p>Clients in high-risk domains were starting to request this fraud deterrence feature to be included within our web SDK, and so my team found itself in the precarious position of having to translate the native experience of Video Liveness to the web SDK &mdash; before we were totally confident it could be done properly.</p>
+						<p class="body-regular">Clients in high-risk domains were starting to request this fraud deterrence feature to be included within our web SDK, and so my team found itself in the precarious position of having to translate the native experience of Video Liveness to the web SDK &mdash; before we were totally confident it could be done properly.</p>
 					</div>
 
 				</div> <!-- end row -->
@@ -284,32 +287,32 @@
 				<div class="row col-content center">
 
 					<div>
-						<h4 aria-label="Too long, didn't read">TL;DR</h4>
+						<h4 class="section-subtitle" aria-label="Too long, didn't read">TL;DR</h4>
 					</div>
 
 					<div>
-						<h2 class="avoid-orphans">The solution</h2>
+						<h2 class="title-secondary avoid-orphans">The solution</h2>
 							<div class="horizontal-line-small"></div>
 					</div>
 
 					<div>
-						<p>Translating the native experience to web was technically no easy feat. I had to design ways around web and hardware limitations, so that people’s identity verification flow was undisrupted.</p>
+						<p class="body-regular">Translating the native experience to web was technically no easy feat. I had to design ways around web and hardware limitations, so that people’s identity verification flow was undisrupted.</p>
 
-						<p>By collaborating closely as a team we were able to provide alternative Video Liveness flows to people regardless of their device and/or browser limitations. We were able to do this by providing fallback solutions based on three user device groups.</p>
+						<p class="body-regular">By collaborating closely as a team we were able to provide alternative Video Liveness flows to people regardless of their device and/or browser limitations. We were able to do this by providing fallback solutions based on three user device groups.</p>
 
-						<h5>1. Device supports video streaming and recording</h5>
-						<p>These people were provided with the full Video Liveness experience</p>
+						<h5 class="section-small">1. Device supports video streaming and recording</h5>
+						<p class="body-regular">These people were provided with the full Video Liveness experience</p>
 
-						<h5>2. Device only supports video streaming</h5>
-						<p>These people could take a selfie from a video streaming feed</p>
+						<h5 class="section-small">2. Device only supports video streaming</h5>
+						<p class="body-regular">These people could take a selfie from a video streaming feed</p>
 
-						<h5>3. Device doesn’t support video streaming or recording</h5>
-						<p>These people could still take a selfie using their mobile phones native camera</p>
+						<h5 class="section-small">3. Device doesn’t support video streaming or recording</h5>
+						<p class="body-regular">These people could still take a selfie using their mobile phones native camera</p>
 							
 					</div>
 
 					<div>
-						<p>Using this cascading fallback method, we provided clients with the most robust fraud detection method available based on an individual customer’s device. This meant more people were onboarded safely, and less fraudsters being able to spoof the system.</p>
+						<p class="body-regular">Using this cascading fallback method, we provided clients with the most robust fraud detection method available based on an individual customer’s device. This meant more people were onboarded safely, and less fraudsters being able to spoof the system.</p>
 					</div>
 
 				</div> <!-- end row -->
@@ -344,7 +347,7 @@
 				<div class="row col-content-narrow center">		
 						
 					<div>
-			    		<h6 class="center-text">Read the in-depth casestudy below<span class="no-italic" role="img" aria-label="nerd face"> 🤓</span></h6>
+			    		<h6 class="title-caption center-text">Read the in-depth casestudy below<span class="no-italic" role="img" aria-label="nerd face"> 🤓</span></h6>
 			    	</div> 
 
 		    	</div> <!-- end row -->
@@ -394,7 +397,7 @@
 
 			        	<!-- Title -->
 			            	<div>
-			            		<h1>Background</h1>
+			            		<h1 class="title-main">Background</h1>
 			              	</div>
 
 		            </div> <!-- end row -->
@@ -414,9 +417,9 @@
 				<div class="row col-content center padding-btm">
 
 					<div>
-						<p>When someone rents a car or opens a bank account online, chances are their identity will be checked by Onfido. By providing ID documentation such as a passport or driving licence and combining it with facial recognition technology, Onfido checks identities for companies ranging from Square to Zipcar to Revolut.</p>
+						<p class="body-regular">When someone rents a car or opens a bank account online, chances are their identity will be checked by Onfido. By providing ID documentation such as a passport or driving licence and combining it with facial recognition technology, Onfido checks identities for companies ranging from Square to Zipcar to Revolut.</p>
 
-						<p>With clients across such a diverse range of industries, our users were also as varied &mdash; our product could be used by people wanting to open a bank account to people wanting to hire a car. Users wanted to get through the verification process quickly and needed to be able to trust us with their personal information, but we also had to keep in mind users from different cultures and socio-economic backgrounds. We also designed with an “anti-persona” in mind &mdash; the fraudster, who made us always think of how our solutions could be worked around.</p>
+						<p class="body-regular">With clients across such a diverse range of industries, our users were also as varied &mdash; our product could be used by people wanting to open a bank account to people wanting to hire a car. Users wanted to get through the verification process quickly and needed to be able to trust us with their personal information, but we also had to keep in mind users from different cultures and socio-economic backgrounds. We also designed with an “anti-persona” in mind &mdash; the fraudster, who made us always think of how our solutions could be worked around.</p>
 					</div>
 
 				</div> <!-- end row -->
@@ -425,14 +428,14 @@
 				<div class="row col-content center">
 
 					<div>
-						<h2 class="avoid-orphans">Native video liveness experience</h2>
+						<h2 class="title-secondary avoid-orphans">Native video liveness experience</h2>
 							<div class="horizontal-line-small"></div>
 					</div>					
 
 					<div>
-						<p>People video-recording themselves performing two facial movements had been part of our identity verification experience on the Android and iOS SDK for twelve months. This was done to reduce the ability of fraudsters to claim to be someone else by submitting a fraudulent ID document and selfie to illegally gain access to services. It’s much harder to spoof an identity verification system with a video-recording of randomised facial movements.</p>
+						<p class="body-regular">People video-recording themselves performing two facial movements had been part of our identity verification experience on the Android and iOS SDK for twelve months. This was done to reduce the ability of fraudsters to claim to be someone else by submitting a fraudulent ID document and selfie to illegally gain access to services. It’s much harder to spoof an identity verification system with a video-recording of randomised facial movements.</p>
 
-						<p>The business desperately wanted this innovation on the web SDK, but until web-browser support caught up with native device video-recording capabilities the web SDK would always lag behind in deterring fraud.</p>
+						<p class="body-regular">The business desperately wanted this innovation on the web SDK, but until web-browser support caught up with native device video-recording capabilities the web SDK would always lag behind in deterring fraud.</p>
 					</div>
 
 				</div> <!-- end row -->
@@ -442,7 +445,7 @@
 					<figure>
 	              		<img loading="lazy" srcset="img/liveness/webp/native-sdk-flow@2x.webp 2x"
 	              			src="img/liveness/webp/native-sdk-flow@1x.webp" class="img-responsive center" alt="The five step native flow: 1. Introduction, 2. Face capture, 3. Look over shoulder challenge, 4. Speak digits challenge, 5. Confirmation">
-	              		<figcaption>
+	              		<figcaption class="caption">
 	              			The native Video Liveness experience — we wanted to bring this to the web SDK as well.
 	              		</figcaption>
 	            	</figure>
@@ -474,7 +477,7 @@
 
 			        	<!-- Title -->
 			            	<div>
-			            		<h1>W<span class="lowercase">eb</span>RTC</h1>
+			            		<h1 class="title-main">W<span class="lowercase">eb</span>RTC</h1>
 			              	</div>
 
 		            </div> <!-- end row -->
@@ -494,9 +497,9 @@
 				<div class="row col-content center padding-btm">
 
 					<div>
-						<p>WebRTC (real-time communications) is an open source initiative started by Google, which provides web-browsers the ability to stream and record video. Google’s Chrome browser, Android phones, and Mozilla's Firefox browsers supported WebRTC, but Apple’s Safari and iPhones did not. Without Apple support, we were reluctant to create two different experiences across Google and Apple products.</p>
+						<p class="body-regular">WebRTC (real-time communications) is an open source initiative started by Google, which provides web-browsers the ability to stream and record video. Google’s Chrome browser, Android phones, and Mozilla's Firefox browsers supported WebRTC, but Apple’s Safari and iPhones did not. Without Apple support, we were reluctant to create two different experiences across Google and Apple products.</p>
 
-						<p>In late 2017 Apple finally released support for WebRTC.<span role="img" aria-label="Party popper"> 🎉</span> We naively assumed this meant they now supported both web-based video-streaming and video-recording &mdash; how wrong we were&#8230;</p>
+						<p class="body-regular">In late 2017 Apple finally released support for WebRTC.<span role="img" aria-label="Party popper"> 🎉</span> We naively assumed this meant they now supported both web-based video-streaming and video-recording &mdash; how wrong we were&#8230;</p>
 
 					</div>
 
@@ -505,12 +508,12 @@
 				<div class="row col-content center">
 
 					<div>
-						<h2 class="avoid-orphans">Real-time selfie capture</h2>
+						<h2 class="title-secondary avoid-orphans">Real-time selfie capture</h2>
 							<div class="horizontal-line-small"></div>
 					</div>					
 
 					<div>
-						<p>Our first use of WebRTC was designing a Real-time selfie capturing feature. We removed the ability to upload a selfie and replaced it with a video stream of a devices camera view &mdash; we could now get people to capture a selfie from the video stream.</p>
+						<p class="body-regular">Our first use of WebRTC was designing a Real-time selfie capturing feature. We removed the ability to upload a selfie and replaced it with a video stream of a devices camera view &mdash; we could now get people to capture a selfie from the video stream.</p>
 					</div>
 
 				</div> <!-- end row -->
@@ -521,7 +524,7 @@
 					<figure>
 	              		<img loading="lazy" srcset="img/liveness/webp/realtime-flow@2x.webp 2x"
 	              			src="img/liveness/webp/realtime-flow@1x.webp" class="img-responsive center" alt="Real-time selfie capture flow: 1. Allow camera access 2. Take a selfie 3. Check that selfie is good and continue">
-	              		<figcaption>
+	              		<figcaption class="caption">
 	              			Real-time selfie capture flow
 	              		</figcaption>
 	            	</figure>
@@ -539,7 +542,7 @@
 							<li><span class="p-bold">Overlay UI elements on the web-camera view</span> for better visual guidance (this can’t be done on a native camera view)</li>
 						</ol>
 
-						<p>This feature was starting to get us closer to the native SDK experience, but we still knew we needed to be able to video record the stream to make fraud attempts harder.</p>
+						<p class="body-regular">This feature was starting to get us closer to the native SDK experience, but we still knew we needed to be able to video record the stream to make fraud attempts harder.</p>
 					</div>
 
 				</div> <!-- end row -->
@@ -548,14 +551,14 @@
 				<div class="row col-content center">
 
 					<div>
-						<h2 class="avoid-orphans">Video assumptions</h2>
+						<h2 class="title-secondary avoid-orphans">Video assumptions</h2>
 							<div class="horizontal-line-small"></div>
 					</div>					
 
 					<div>
-						<p>With our assumption that Apple’s support of WebRTC included video-recording, we added Video Liveness to our web SDK roadmap for further discovery later in the quarter.</p>
+						<p class="body-regular">With our assumption that Apple’s support of WebRTC included video-recording, we added Video Liveness to our web SDK roadmap for further discovery later in the quarter.</p>
 
-						<p>This all changed when a large potential client became aware that Video Liveness was on the roadmap and dangled the promise of signing with Onfido if we had this feature live by the end of the quarter (we were already three weeks in<span role="img" aria-label="Face with open mouth and cold sweat"> 😰</span>). Without consulting with us, the business said that it could be done and we found ourselves having to implement Video Liveness with little preparation.</p>
+						<p class="body-regular">This all changed when a large potential client became aware that Video Liveness was on the roadmap and dangled the promise of signing with Onfido if we had this feature live by the end of the quarter (we were already three weeks in<span role="img" aria-label="Face with open mouth and cold sweat"> 😰</span>). Without consulting with us, the business said that it could be done and we found ourselves having to implement Video Liveness with little preparation.</p>
 					</div>
 
 				</div> <!-- end row -->								
@@ -582,7 +585,7 @@
 
 		        		<!-- Title -->
 		            	<div>
-		            		<h1>The setback</h1>
+		            		<h1 class="title-main">The setback</h1>
 		              	</div>
 
 		            </div> <!-- end row -->	
@@ -602,8 +605,8 @@
 				<div class="row col-content center padding-top">
 
 					<div>
-						<p>In our technical discovery we discovered the bombshell &mdash; <span class="p-bold">Apple Safari and iOS did not yet support video-recording.</span><span role="img" aria-label="Loudly crying face"> 😭</span></p>
-						<p>We were back to square one&#8230; with the addition of a large client and business stakeholders breathing down our backs.</p>
+						<p class="body-regular">In our technical discovery we discovered the bombshell &mdash; <span class="p-bold">Apple Safari and iOS did not yet support video-recording.</span><span role="img" aria-label="Loudly crying face"> 😭</span></p>
+						<p class="body-regular">We were back to square one&#8230; with the addition of a large client and business stakeholders breathing down our backs.</p>
 					</div>
 
 				</div> <!-- end row -->
@@ -613,7 +616,7 @@
 					<figure>
 						<img loading="lazy" srcset="img/liveness/webp/github-comment@2x.webp 2x" 
 						src="img/liveness/webp/github-comment@2x.webp" class="img-responsive center" alt="Github member quote: 'Basically Safari does not have MediaRecorder support yet, see link to caniuse.com. When that becomes available we can look at this again, but till then it's audio only.'">
-						<figcaption>
+						<figcaption class="caption">
 							Github members chatting about WebRTC support from Apple
 						</figcaption>
 					</figure>
@@ -623,7 +626,7 @@
             	<div class="row col-content center">
 
 					<div>
-						<h2 class="avoid-orphans">Alternative options</h2>
+						<h2 class="title-secondary avoid-orphans">Alternative options</h2>
 							<div class="horizontal-line-small"></div>
 					</div>					
 
@@ -636,7 +639,7 @@
 							<li><span class="p-bold">Show each liveness challenge first</span> and then get people to use the native video camera to record the challenge</li>
 						</ol>
 
-						<p>We all agreed to start exploring option three, as we believed this to be the quicker to implement in the limited time we had.</p>
+						<p class="body-regular">We all agreed to start exploring option three, as we believed this to be the quicker to implement in the limited time we had.</p>
 					</div>
 
 				</div> <!-- end row -->						
@@ -663,7 +666,7 @@
 
 		        		<!-- Title -->
 		            	<div>
-		            		<h1>Upfront challenges</h1>
+		            		<h1 class="title-main">Upfront challenges</h1>
 		              	</div>
 
 		            </div> <!-- end row -->	
@@ -684,24 +687,24 @@
 
 					<div>
 
-						<p>The current native Video Liveness flow had one introduction screen and then each of the two challenges that followed had bespoke UI overlayed over the camera-view for guidance.</p>
+						<p class="body-regular">The current native Video Liveness flow had one introduction screen and then each of the two challenges that followed had bespoke UI overlayed over the camera-view for guidance.</p>
 
-						<p>As we could not overlay UI on top of a native camera screen the team discussed two options:</p>
+						<p class="body-regular">As we could not overlay UI on top of a native camera screen the team discussed two options:</p>
 
-						<h5>1. Show challenges upfront</h5>
-						<p>Show both challenges first, switch to the native camera, and then people video-record themselves performing actions</p>
+						<h5 class="section-small">1. Show challenges upfront</h5>
+						<p class="body-regular">Show both challenges first, switch to the native camera, and then people video-record themselves performing actions</p>
 
 						<figure aria-hidden="true" class="padding-btm">
 							<img loading="lazy" src="img/liveness/upfront-challenge-flow@2x.svg" class="img-responsive center" alt="Flow of the challenges upfront option">
-							<figcaption>Both challenges would be shown at the start only</figcaption>
+							<figcaption class="caption">Both challenges would be shown at the start only</figcaption>
 						</figure>
 
-						<h5>2. Intersperse challenges</h5>
-						<p>Show first challenge, switch to the native camera, video-record action, and repeat for second challenge</p>
+						<h5 class="section-small">2. Intersperse challenges</h5>
+						<p class="body-regular">Show first challenge, switch to the native camera, video-record action, and repeat for second challenge</p>
 
 						<figure aria-hidden="true">
 							<img loading="lazy" src="img/liveness/interspersed-challenge-flow@2x.svg" class="img-responsive center" alt="Flow of the interspersed challenges option">
-							<figcaption>Challenges would be split</figcaption>
+							<figcaption class="caption">Challenges would be split</figcaption>
 						</figure>
 
 					</div>
@@ -711,12 +714,12 @@
             	<div class="row col-content center padding-btm">
 
 					<div>
-						<h2 class="avoid-orphans">Challenging the speed impulse</h2>
+						<h2 class="title-secondary avoid-orphans">Challenging the speed impulse</h2>
 							<div class="horizontal-line-small"></div>
 					</div>					
 
 					<div>
-						<p>The team wanted to go with option one as it would be the quickest to technically implement, but I was in complete disagreement with this.</p>
+						<p class="body-regular">The team wanted to go with option one as it would be the quickest to technically implement, but I was in complete disagreement with this.</p>
 
 						<p class="no-padding-btm">I felt this option was the worst of the two experiences as:</p>
 
@@ -727,7 +730,7 @@
 							<li>We could not just pass this off as an “edge case”, as this would be experienced by <span class="p-bold">all</span> Safari and iOS users</li>
 						</ul>
 
-						<p>After another discussion based on my objections, the team agreed to start exploring the second option instead. I still had my reservations about this option as well, but I knew I had to be a little pragmatic with our situation.</p>
+						<p class="body-regular">After another discussion based on my objections, the team agreed to start exploring the second option instead. I still had my reservations about this option as well, but I knew I had to be a little pragmatic with our situation.</p>
 					</div>
 
 				</div> <!-- end row -->	
@@ -737,16 +740,16 @@
             	<div class="row col-content center padding-btm">
 
 					<div>
-						<h2 class="avoid-orphans">Another setback</h2>
+						<h2 class="title-secondary avoid-orphans">Another setback</h2>
 							<div class="horizontal-line-small"></div>
 					</div>					
 
 					<div>
-						<p>While the team was exploring this option, the Product Manager and myself were doing some testing with native video-recording on iPhones and we discovered our next problem &mdash; a video-recording file size could be as high as 18 MB! This was way too large to upload to our servers, so now the native camera option was off the table too. We were back to square one.<span role="img" aria-label="Weary face"> 😩</span></p>
+						<p class="body-regular">While the team was exploring this option, the Product Manager and myself were doing some testing with native video-recording on iPhones and we discovered our next problem &mdash; a video-recording file size could be as high as 18 MB! This was way too large to upload to our servers, so now the native camera option was off the table too. We were back to square one.<span role="img" aria-label="Weary face"> 😩</span></p>
 
-						<p>For the second time in a week the team sat down to brainstorm options. The mood was slightly down, but we knew we had to push through and find a way out of this.</p>
+						<p class="body-regular">For the second time in a week the team sat down to brainstorm options. The mood was slightly down, but we knew we had to push through and find a way out of this.</p>
 
-						<h5>Options from brainstorm session</h5>
+						<h5 class="section-small">Options from brainstorm session</h5>
 
 						<ul>
 							<li>Wait for Apple to fully support video-recording and only build the feature for Android and Chrome</li>
@@ -755,7 +758,7 @@
 							<li>Make our Real-time selfie capture feature the fallback option for Safari and iOS</li>
 						</ul>
 
-						<p>We all thought the Real-time selfie capture fallback was a great tradeoff and so excitedly got to work on our next iteration.</p>
+						<p class="body-regular">We all thought the Real-time selfie capture fallback was a great tradeoff and so excitedly got to work on our next iteration.</p>
 					</div>
 
 				</div> <!-- end row -->	   	
@@ -782,7 +785,7 @@
 
 		        		<!-- Title -->
 		            	<div>
-		            		<h1>Real-time selfie fallback</h1>
+		            		<h1 class="title-main">Real-time selfie fallback</h1>
 		              	</div>
 
 		            </div> <!-- end row -->	
@@ -803,7 +806,7 @@
 				<div class="row col-content center padding-top">
 
 					<div>
-						<p>The Real-time selfie fallback meant we could still build the Video Liveness feature <span class="italic">and</span> still provide a level of fraud prevention to clients whose customers were using Safari and iOS.</p>
+						<p class="body-regular">The Real-time selfie fallback meant we could still build the Video Liveness feature <span class="italic">and</span> still provide a level of fraud prevention to clients whose customers were using Safari and iOS.</p>
 					</div>
 
             	</div> <!-- end row --> 
@@ -814,7 +817,7 @@
 					<figure>
 						<img loading="lazy" src="img/liveness/realtime-selfie-flow@2x.svg" class="img-responsive center no-padding-top" alt="Fallback flow: If user is in the video liveness flow and it is detected they are using iOS or Safari they will be forked to the Real-time selfie flow instead.">
 					</figure>
-					<figcaption></figcaption>
+					<figcaption class="caption"></figcaption>
 
             	</div> <!-- end row --> 
 
@@ -822,22 +825,22 @@
 				<div class="row col-content center">
 
 					<div>
-						<h2 class="avoid-orphans">What about desktop users?</h2>
+						<h2 class="title-secondary avoid-orphans">What about desktop users?</h2>
 						<div class="horizontal-line-small"></div>
 					</div>
 
 					<div>
-						<p>So what would happen to people who started on a desktop? Working with the developers I mapped out a flow for desktop users based on device and browser detection methods.</p>
+						<p class="body-regular">So what would happen to people who started on a desktop? Working with the developers I mapped out a flow for desktop users based on device and browser detection methods.</p>
 					</div>
 
-					<h5>Continue on desktop</h5>
+					<h5 class="section-small">Continue on desktop</h5>
 						<ul class="padding-btm">
 							<li>Users device + browser <span class="p-bold">does allow</span> Liveness video-recording / Real-time selfie capture</li>
 							<li>User <span class="p-bold">has a</span> webcam</li>
 							<li><span class="p-bold">Action:</span> User continues verification on their desktop</li>
 						</ul>
 
-					<h5>Switch to mobile (cross-device)</h5>
+					<h5 class="section-small">Switch to mobile (cross-device)</h5>
 						<ul>
 							<li>Users browser / device <span class="p-bold">does not allow</span> Liveness video-recording / Real-time selfie capture</li>
 							<li>User <span class="p-bold">has no</span> webcam</li>
@@ -852,7 +855,7 @@
 
 						<figure aria-hidden="true" class="padding-btm">
 							<img loading="lazy" src="img/liveness/desktop-flow.svg" class="img-responsive center" alt="Desktop flow: Desktop user switches to mobile if they don't have browser or device support, and have no webcam.">
-							<figcaption>
+							<figcaption class="caption">
 								Desktop users could continue verification on their mobile
 							</figcaption>
 						</figure>
@@ -863,14 +866,14 @@
 				<div class="row col-content center padding-btm">
 
 					<div>
-						<h2 class="no-padding-top avoid-orphans">Cross-device confusion</h2>
+						<h2 class="title-secondary no-padding-top avoid-orphans">Cross-device confusion</h2>
 						<div class="horizontal-line-small"></div>
 					</div>
 
 					<div>
-						<p>There was one particular cross-device use-case where a desktop user with a Safari browser would be told they’d need to take a selfie (the Real-time selfie flow) and then, maybe because their webcam fails, they switch to their Android mobile where they’d now be asked to video-record two challenges (Video Liveness flow). This person would be totally unaware that they have moved from the Real-time selfie capture flow to the Video Liveness flow. This ambiguity could lead to confusion as their expectation of what to do was now wrong &mdash; with no apparent reason as to why.</p>
+						<p class="body-regular">There was one particular cross-device use-case where a desktop user with a Safari browser would be told they’d need to take a selfie (the Real-time selfie flow) and then, maybe because their webcam fails, they switch to their Android mobile where they’d now be asked to video-record two challenges (Video Liveness flow). This person would be totally unaware that they have moved from the Real-time selfie capture flow to the Video Liveness flow. This ambiguity could lead to confusion as their expectation of what to do was now wrong &mdash; with no apparent reason as to why.</p>
 
-						<p>Team discussion around this type of stress-case led us to decide that if a desktop user was on the Real-time selfie capture flow, and they had to switch to an Android mobile, then to avoid any confusion they would just stay in the Real-time selfie capture flow.</p>
+						<p class="body-regular">Team discussion around this type of stress-case led us to decide that if a desktop user was on the Real-time selfie capture flow, and they had to switch to an Android mobile, then to avoid any confusion they would just stay in the Real-time selfie capture flow.</p>
 					</div>
 
             	</div> <!-- end row --> 
@@ -879,14 +882,14 @@
             	<div class="row col-content center padding-btm">
 
 					<div>
-						<h2 class="no-padding-top avoid-orphans">Including the many</h2>
+						<h2 class="title-secondary no-padding-top avoid-orphans">Including the many</h2>
 						<div class="horizontal-line-small"></div>
 					</div>
 
 					<div>
-						<p>This then lead us to an obvious realisation &mdash; not everyone has the latest updated browsers or devices for video-recording to work. For example a person may have an Android phone, but if they had an old model or they hadn’t updated to the latest Chrome browser, they would not be able to do Video Liveness.<span role="img" aria-label="Disappointed face"> 😞</span></p>
+						<p class="body-regular">This then lead us to an obvious realisation &mdash; not everyone has the latest updated browsers or devices for video-recording to work. For example a person may have an Android phone, but if they had an old model or they hadn’t updated to the latest Chrome browser, they would not be able to do Video Liveness.<span role="img" aria-label="Disappointed face"> 😞</span></p>
 
-						<p>We had been concentrating so much on the latest browser technology that we had forgotten about the people without access to this technology. After some brainstorming we arrived at the “fallback stack” solution.</p>
+						<p class="body-regular">We had been concentrating so much on the latest browser technology that we had forgotten about the people without access to this technology. After some brainstorming we arrived at the “fallback stack” solution.</p>
 					</div>
 
             	</div> <!-- end row --> 
@@ -912,7 +915,7 @@
 
 		        		<!-- Title -->
 		            	<div>
-		            		<h1>Fallback stack</h1>
+		            		<h1 class="title-main">Fallback stack</h1>
 		              	</div>
 
 		            </div> <!-- end row -->	
@@ -934,7 +937,7 @@
 				<div class="row col-content center">
 
 					<div>
-						<p>All users would start at the Video Liveness level, if their device / browser didn’t support this they would then drop to the next level, and so on. There were four levels of fallback.</p>
+						<p class="body-regular">All users would start at the Video Liveness level, if their device / browser didn’t support this they would then drop to the next level, and so on. There were four levels of fallback.</p>
 					</div>
 
 				</div> <!-- end row -->
@@ -943,7 +946,7 @@
 
 					<figure aria-hidden="true">
 						<img loading="lazy" src="img/liveness/fallback-stack@2x.svg" class="img-responsive center" alt="Fallback flow: 1. Video Liveness 2. Real-time selfie capture 3. Native camera selfie capture 4. Manual upload of selfie">
-						<figcaption class="padding-btm">
+						<figcaption class="caption padding-btm">
 							The last level was removed in a later iteration
 						</figcaption>
 					</figure>
@@ -953,7 +956,7 @@
             	<div class="row col-content center">
 
 					<div>
-						<p>The creation of the fallback stack meant regardless of people’s device or browser type we could still serve them the best fraud prevention level available. It also meant that a client would not see drop-off numbers due to browser / device incompatibility.</p>
+						<p class="body-regular">The creation of the fallback stack meant regardless of people’s device or browser type we could still serve them the best fraud prevention level available. It also meant that a client would not see drop-off numbers due to browser / device incompatibility.</p>
 					</div>
 
             	</div> <!-- end row --> 
@@ -964,7 +967,7 @@
 					<figure aria-hidden="true">
 						<img loading="lazy" srcset="img/liveness/webp/mvp-flow-final@2x.webp 2x" 
 							src="img/liveness/webp/mvp-flow-final@1x.webp" class="img-responsive center" alt="Flowchart of all the fallback usecases.">
-						<figcaption class="padding-btm">
+						<figcaption class="caption padding-btm">
 							The fallback flow document that I continually updated for the team
 						</figcaption>
 					</figure>
@@ -975,16 +978,16 @@
             	<div class="row col-content center">
 
 					<div>
-						<h2 class="avoid-orphans">Ending dead-ends</h2>
+						<h2 class="title-secondary avoid-orphans">Ending dead-ends</h2>
 							<div class="horizontal-line-small"></div>
 					</div>
 
 					<div>
-						<p>In order for the fallback stack method to work smoothly we needed to make sure that as many technical dead-ends as possible were rectified with proper alert messaging.</p>
+						<p class="body-regular">In order for the fallback stack method to work smoothly we needed to make sure that as many technical dead-ends as possible were rectified with proper alert messaging.</p>
 
-						<p>We had four dead-ends in mind that people needed to be able to recover from:</p>
+						<p class="body-regular">We had four dead-ends in mind that people needed to be able to recover from:</p>
 
-						<h5>1. Browser webcam malfunction</h5>
+						<h5 class="section-small">1. Browser webcam malfunction</h5>
 						<ul>
 							<li><span class="p-bold">Desktop: </span>Continue on mobile with Cross-device option</li>
 							<li><span class="p-bold">Mobile: </span>Continue with use of native camera to take selfie</li>
@@ -1008,7 +1011,7 @@
 				<div class="row col-content center">
 
 					<div>		
-						<h5>2. Video recording file too large</h5>
+						<h5 class="section-small">2. Video recording file too large</h5>
 						<ul>
 							<li>Redo video recording of liveness challenges</li>
 						</ul>
@@ -1030,7 +1033,7 @@
 				<div class="row col-content center">
 
 					<div>
-						<h5>3. Timeout A: User does not start using browser webcam after 12 seconds</h5>
+						<h5 class="section-small">3. Timeout A: User does not start using browser webcam after 12 seconds</h5>
 						<ul>
 							<li><span class="p-bold">Desktop: </span>Continue on mobile with Cross-device experience option (or ignore)</li>
 							<li><span class="p-bold">Mobile: </span>Continue with use of native camera to take selfie (or ignore)</li>
@@ -1053,7 +1056,7 @@
 				<div class="row col-content center">
 
 					<div>
-						<h5>4. Timeout B: User takes longer than 20 second limit to record video actions</h5>
+						<h5 class="section-small">4. Timeout B: User takes longer than 20 second limit to record video actions</h5>
 						<ul>
 							<li>Redo video recording of liveness challenges </li>
 						</ul>
@@ -1077,7 +1080,7 @@
 					<figure aria-hidden="true">
 						<img loading="lazy" srcset="img/liveness/webp/alert-usecase-flow@2x.webp 2x" 
 							src="img/liveness/webp/alert-usecase-flow@1x.webp" class="img-responsive center" alt="Flowchart of all the alert usecases.">
-						<figcaption class="padding-btm">
+						<figcaption class="caption padding-btm">
 							The alert flow document that I continually updated for the team
 						</figcaption>
 					</figure>
@@ -1107,7 +1110,7 @@
 
 		        		<!-- Title -->
 		            	<div>
-		            		<h1>User interface</h1>
+		            		<h1 class="title-main">User interface</h1>
 		              	</div>
 
 		            </div> <!-- end row -->	
@@ -1126,18 +1129,18 @@
 				<div class="row col-content center">
 
 					<div>
-						<h2 class="avoid-orphans">Layout constraints</h2>
+						<h2 class="title-secondary avoid-orphans">Layout constraints</h2>
 							<div class="horizontal-line-small"></div>
 					</div>
 
 					<div>
-						<p>The web SDK interface had been designed to be fully visible on device screens (no scrolling required at the default size) meaning there was a limit to the amount of space for UI elements &mdash; especially on smaller mobile screens. The web SDK camera screen UI had two particular spacing constraints to keep in mind.</p>
+						<p class="body-regular">The web SDK interface had been designed to be fully visible on device screens (no scrolling required at the default size) meaning there was a limit to the amount of space for UI elements &mdash; especially on smaller mobile screens. The web SDK camera screen UI had two particular spacing constraints to keep in mind.</p>
 
-						<h5>Browser chrome</h5>
-						<p>Different browsers have different chrome requirements taking precious screen space. For instance Safari has browser chrome top and bottom which means a very restricted space to work with on iPhone 4 (our minimum screen size to design for).</p>
+						<h5 class="section-small">Browser chrome</h5>
+						<p class="body-regular">Different browsers have different chrome requirements taking precious screen space. For instance Safari has browser chrome top and bottom which means a very restricted space to work with on iPhone 4 (our minimum screen size to design for).</p>
 
-						<h5>Face oval guidance</h5>
-						<p>From past user testing sessions we had found that the smaller the face oval the further away people had to hold their mobile phones to get their face inside it. We now had guidelines that set a minimum face oval-size and so this needed to be followed.</p>
+						<h5 class="section-small">Face oval guidance</h5>
+						<p class="body-regular">From past user testing sessions we had found that the smaller the face oval the further away people had to hold their mobile phones to get their face inside it. We now had guidelines that set a minimum face oval-size and so this needed to be followed.</p>
 					</div>
 
 				</div> <!-- end row -->
@@ -1147,7 +1150,7 @@
 					<figure aria-hidden="true">
 						<img loading="lazy" srcset="img/liveness/webp/screen-sizes@2x.webp 2x" 
 							src="img/liveness/webp/screen-sizes@1x.webp" class="img-responsive center" alt="Screen size differences across iPhoneX, iPhone 8, Android, and iPhone SE">
-						<figcaption class="padding-btm">
+						<figcaption class="caption padding-btm">
 							Tradeoffs need to happen as screen real-estate gets tighter 
 						</figcaption>
 					</figure>
@@ -1159,12 +1162,12 @@
         	<div class="row col-content center">
 
 				<div>
-					<h2 class="avoid-orphans">Alert messages</h2>
+					<h2 class="title-secondary avoid-orphans">Alert messages</h2>
 						<div class="horizontal-line-small"></div>
 				</div>
 
 				<div>
-					<p>As over half of our users used mobile I decided to restyle the alert messages to work better for mobile. Replacing the actionable link-styling for nice big buttons made for easier usability and allowed to place better call to actions for people to view. This also gave me the chance to rewrite the alert messaging so they had clear headings, told people what was happening, and gave them a next option.</p>
+					<p class="body-regular">As over half of our users used mobile I decided to restyle the alert messages to work better for mobile. Replacing the actionable link-styling for nice big buttons made for easier usability and allowed to place better call to actions for people to view. This also gave me the chance to rewrite the alert messaging so they had clear headings, told people what was happening, and gave them a next option.</p>
 				</div>	
 
 			</div> <!-- end row -->
@@ -1174,7 +1177,7 @@
 					<figure aria-hidden="true">
 						<img loading="lazy" srcset="img/liveness/webp/alerts-new@2x.webp 2x" 
 							src="img/liveness/webp/alerts-new@1x.webp" class="img-responsive center" alt="Desktop and mobile with an alert on screen">
-						<figcaption class="padding-btm">
+						<figcaption class="caption padding-btm">
 							Examples of the new alerts in action 
 						</figcaption>
 					</figure>
@@ -1194,7 +1197,7 @@
         		<div class="row col-content center">
 
 					<div>
-						<h2 class="no-padding-top avoid-orphans">Final UI</h2>
+						<h2 class="title-secondary no-padding-top avoid-orphans">Final UI</h2>
 							<div class="horizontal-line-small"></div>
 					</div>
 
@@ -1205,7 +1208,7 @@
 					<figure class="col-content-wide center">
 						<img loading="lazy" srcset="img/liveness/webp/01-intro@2x.webp 2x" 
 							src="img/liveness/webp/01-intro@1x.webp" class="img-responsive center" alt="Desktop and mobile versions of introduction screen. Advises people that they will need to speak out loud, move their head, and finish within 25 seconds.">
-						<figcaption>
+						<figcaption class="caption">
 							Video Liveness introduction screen
 						</figcaption>
 					</figure>	
@@ -1213,7 +1216,7 @@
 					<figure class="col-content-wide center">
 						<img loading="lazy" srcset="img/liveness/webp/02-place-face@2x.webp 2x" 
 							src="img/liveness/webp/02-place-face@2x.webp" class="img-responsive center" alt="Desktop and mobile versions of start recording screen. Advises people to position their face in the oval shape and follow the instructions on screen.">
-						<figcaption>
+						<figcaption class="caption">
 							Start recording screen
 						</figcaption>
 					</figure>
@@ -1221,7 +1224,7 @@
 					<figure class="col-content-wide center">
 						<img loading="lazy" srcset="img/liveness/webp/03-say-digits@2x.webp 2x" 
 							src="img/liveness/webp/03-say-digits@1x.webp" class="img-responsive center" alt="Desktop and mobile versions of speak numbers challenge screen. Advises people to speak each digit shown out loud.">
-						<figcaption>
+						<figcaption class="caption">
 							Speak numbers challenge screen
 						</figcaption>
 					</figure>
@@ -1229,7 +1232,7 @@
 					<figure class="col-content-wide center">
 						<img loading="lazy" srcset="img/liveness/webp/04-turn-head@2x.webp 2x" 
 							src="img/liveness/webp/04-turn-head@2x.webp" class="img-responsive center" alt="Desktop and mobile versions of turn head challenge screen. Advises people to look over left shoulder.">
-						<figcaption>
+						<figcaption class="caption">
 							Turn head challenge screen
 						</figcaption>
 					</figure>
@@ -1237,7 +1240,7 @@
 					<figure class="col-content-wide center">
 						<img loading="lazy" srcset="img/liveness/webp/05-confirmation@2x.webp 2x" 
 							src="img/liveness/webp/05-confirmation@1x.webp" class="img-responsive center" alt="Desktop and mobile versions of video playback confirmation screen. Let's people view the video before submitting it.">
-						<figcaption>
+						<figcaption class="caption">
 							Video playback confirmation screen
 						</figcaption>
 					</figure>
@@ -1267,7 +1270,7 @@
 
 	        		<!-- Title -->
 	            	<div>
-	            		<h1>Outcome</h1>
+	            		<h1 class="title-main">Outcome</h1>
 	              	</div>
 
 	            </div> <!-- end row -->
@@ -1289,36 +1292,36 @@
 
             		<div class="outcome-metrics center-text">
 	            		<div>
-	            			<h1>+10%</h1>
+	            			<h1 class="title-main">+10%</h1>
             			</div>
 
             			<div>
-	            			<p>of all web facial checks use Video Liveness</p>
+	            			<p class="body-regular">of all web facial checks use Video Liveness</p>
 	            		</div>
             		</div>
 
             		<div class="outcome-metrics center-text">
 	            		<div>
-	            			<h1>~1600</h1>
+	            			<h1 class="title-main">~1600</h1>
             			</div>
 
             			<div>
-	            			<p>fraud attempts detected with Video Liveness</p>
+	            			<p class="body-regular">fraud attempts detected with Video Liveness</p>
 	            		</div>
             		</div> 
 
             		<div class="outcome-metrics center-text padding-btm">
 	            		<div>
-	            			<h1>+7</h1>
+	            			<h1 class="title-main">+7</h1>
             			</div>
 
             			<div>
-	            			<p>new clients signed due to Video Liveness</p>
+	            			<p class="body-regular">new clients signed due to Video Liveness</p>
 	            		</div>
             		</div>   
 
             		<!-- <div class="padding-btm">
-	            		<p>In the few months since the release of web Video Liveness client interest in it's value and impact on fraud has been slowly picking up. Clients always mention our much better user experience compared to the competition and combined with the Cross-device experience shows we are at the forefront of the identity verification industry.</p>
+	            		<p class="body-regular">In the few months since the release of web Video Liveness client interest in it's value and impact on fraud has been slowly picking up. Clients always mention our much better user experience compared to the competition and combined with the Cross-device experience shows we are at the forefront of the identity verification industry.</p>
             		</div>  -->        		           		            		
 
 				</div> <!-- end row --> 
@@ -1338,27 +1341,27 @@
 				<div class="row col-content center no-padding-btm">
 
 					<div>
-						<h2 class="no-padding-top avoid-orphans">Reflections</h2>
+						<h2 class="title-secondary no-padding-top avoid-orphans">Reflections</h2>
 						<div class="horizontal-line-small-pink"></div>
 					</div>
 
 					<div class="padding-btm">
-						<h5>Better communication</h5>
+						<h5 class="section-small">Better communication</h5>
 						</br>
-						<p>We knew we needed to improve our communication between our team and stakeholders on the effort it takes to ship features. We also wanted to understand what types of pressures they were dealing with when selling our SDK to clients. We decided to work a lot closer with them by regularly attending client calls and visits, and putting processes into place to enable better push back against decisions before they were made. We hoped this would create better mutual understanding between product and sales and our respective challenges and insights.</p>
+						<p class="body-regular">We knew we needed to improve our communication between our team and stakeholders on the effort it takes to ship features. We also wanted to understand what types of pressures they were dealing with when selling our SDK to clients. We decided to work a lot closer with them by regularly attending client calls and visits, and putting processes into place to enable better push back against decisions before they were made. We hoped this would create better mutual understanding between product and sales and our respective challenges and insights.</p>
 					</div>
 
 
 					<div class="padding-btm">
-						<h5>Products aren’t static</h5>
+						<h5 class="section-small">Products aren’t static</h5>
 						</br>
-						<p>We should always be learning and improving products, but in this case there was no time to iterate on issues we knew of. Previous user testing had shown that people could get confused with how far to turn their head, some held the phone to their mouth to say the numbers, and some would tap the continue button without doing the challenge. It was seen as quicker and easier from a business point of view to just “copy and paste” the current native SDK version. This is a tradeoff we had to make to deliver fast, but it also meant delivering a feature with known user experience issues &mdash; it’s never a good feeling to ship something you know could be a lot better.</p>
+						<p class="body-regular">We should always be learning and improving products, but in this case there was no time to iterate on issues we knew of. Previous user testing had shown that people could get confused with how far to turn their head, some held the phone to their mouth to say the numbers, and some would tap the continue button without doing the challenge. It was seen as quicker and easier from a business point of view to just “copy and paste” the current native SDK version. This is a tradeoff we had to make to deliver fast, but it also meant delivering a feature with known user experience issues &mdash; it’s never a good feeling to ship something you know could be a lot better.</p>
 					</div>
 
 					<div class="padding-btm">
-						<h5>Thinking outside the bubble</h5>
+						<h5 class="section-small">Thinking outside the bubble</h5>
 						</br>
-						<p>Thinking about people without the latest devices or browsers had been forgotten in the beginning &mdash; I’d been so blinded by the new shiny technology that I’d left a large and important group of people out of the design. I really took this as a failure on my part &mdash; it made me all the more determined to address how my designs affect different people and find ways to include them in my design process from now on.</p>
+						<p class="body-regular">Thinking about people without the latest devices or browsers had been forgotten in the beginning &mdash; I’d been so blinded by the new shiny technology that I’d left a large and important group of people out of the design. I really took this as a failure on my part &mdash; it made me all the more determined to address how my designs affect different people and find ways to include them in my design process from now on.</p>
 					</div>
 
 				</div> <!-- end row -->
@@ -1379,7 +1382,7 @@
 				<div class="row social-media-title col-content center">
 
 					<div>
-						<h2 class="center-text avoid-orphans">Find me on these</h2>
+						<h2 class="title-secondary center-text avoid-orphans">Find me on these</h2>
 					</div>
 
 				</div>
@@ -1395,7 +1398,7 @@
 							<svg aria-hidden="true" xmlns="https://www.w3.org/2000/svg" width="80" height="80" viewBox="300 0 80 80">
 								<path class="social-icon linkedin-icon" d="M340 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zm-9.8 56.6h-8.1V30.5h8.1v26.1zm-4.1-29.3c-2.6 0-4.2-1.8-4.2-4.1s1.7-4 4.3-4 4.2 1.8 4.3 4c0 2.3-1.7 4.1-4.4 4.1zm33.7 29.3h-8.1V42.1c0-3.4-1.2-5.6-4.1-5.6-2.2 0-3.6 1.5-4.2 3-.2.5-.3 1.3-.3 2v15H335V38.8c0-3.3-.1-6-.2-8.3h7l.4 3.6h.2c1.1-1.7 3.7-4.2 8-4.2 5.3 0 9.3 3.6 9.3 11.2v15.5z"/>
 							</svg>
-							<h5 class="icon-label">LinkedIn</h5>
+							<h5 class="section-small center-text">LinkedIn</h5>
 						</a>
 					</div>
 
@@ -1405,7 +1408,7 @@
 							<svg aria-hidden="true" xmlns="https://www.w3.org/2000/svg" x="0px" y="0px" width="80px" height="80px" viewBox="100 0 80 80">
 								<path class="social-icon medium-icon" d="M140 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zM125.3 30.8c0-.5-.1-.9-.5-1.2l-3.4-4.3v-.6h10.4l8.1 18.6 7.1-18.6h9.9v.6l-2.9 2.9c-.2.2-.4.5-.3.8v21.3c0 .3.1.6.3.8l3 2.9v.6h-14.1V54l2.9-3c.3-.3.3-.4.3-.8V33L138 54.6h-1.1L127.5 33v14.4c-.1.6.1 1.2.5 1.7l3.8 4.8v.6h-10.7V54l3.8-4.8c.4-.4.6-1.1.5-1.7V30.8z"/>
 							</svg>
-							<h5 class="icon-label">Medium</h5>
+							<h5 class="section-small center-text">Medium</h5>
 						</a>
 					</div>
 
@@ -1457,7 +1460,7 @@
 	</div>
 
 		<div class="row center-text">
-			<small>Made with <span role="img" aria-label="Love" class="heart"></span> in London | &copy; whatever year this is</small>
+			<small class="body-small">Made with <span role="img" aria-label="Love" class="heart"></span> in London | &copy; whatever year this is</small>
 		</div>
 
 
