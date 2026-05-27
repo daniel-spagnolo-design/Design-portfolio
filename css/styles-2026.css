@@ -158,6 +158,8 @@ body {
 }
 
 .container {
+	max-width: 1920px;
+	margin: 0 auto;
 	padding-top: 8rem; /* 128px */
 	padding-bottom: 8rem;
 }
@@ -463,9 +465,9 @@ li {
 .display-hero {
 	font-family: 'reddit-sans', 'Arial', 'Helvetica', sans-serif;
 	text-transform: none;
-    font-size: 20vw; /* 16.6825rem;  266px;  vw: The fontsize is now always 20% of the viewport width */
+    font-size: min(20vw, 360px); /* 20% of viewport width, capped at 360px on wide screens */
 	line-height: 0.9;
-	letter-spacing: -0.6rem;
+	letter-spacing: -0.9rem;
 	margin: 0px;
 }
 
@@ -832,7 +834,7 @@ header {
 
 /* Grid setup */
 header .header-grid {
-	max-width: 1720px;
+	max-width: 1920px;
 	margin: 0 auto;
 
 	display: grid;
@@ -854,7 +856,7 @@ header p {
 
 header svg {
 	position: relative;
-	top: 20px;
+	top: 2px;
 	/*collapsing transition*/
 	-webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
@@ -900,7 +902,7 @@ header .logo-job-title {
 }
 
 .logo {
-	margin-right: 16px;
+	margin-right: 8px;
 	margin-left: 32px;
 	z-index: 2;
 	float: left;
@@ -1010,7 +1012,7 @@ nav .alternative a:focus {
 		width: 45px;
 		height: 64px;
 		position: relative;
-		top: 8px;
+		top: -3px;
 	}
 
 	.logo.shrink {
@@ -1523,7 +1525,7 @@ body.dark-theme .icon-moon {
 
 .display-module {
 	position: relative;
-	height: 1085px;
+	height: 100dvh;
 	/*z-index: 1;*/
 	background: var(--colour-primary);
 	margin-bottom: 8rem; 
@@ -1553,7 +1555,7 @@ body.dark-theme .icon-moon {
 }
 
 .landing-page-title {
-	padding: 25vmin 0 5rem 0; /*This will make the header sit in the middle of the viewport height */
+	padding: 25vmin 0 4rem 0; /*This will make the header sit in the middle of the viewport height */
 }
 
 	@media only screen and (max-width: 1200px) {
@@ -1715,7 +1717,7 @@ body.dark-theme .icon-moon {
 			/* set height to pixels if you want angle to change with screen width
 			https://css-tricks.com/creating-non-rectangular-headers */
 		}
-        
+
         #top-module.hero-module {
             margin-bottom: 6rem; /* homepage only */
         }
@@ -1729,7 +1731,7 @@ body.dark-theme .icon-moon {
 			/* set height to pixels if you want angle to change with screen width
 			https://css-tricks.com/creating-non-rectangular-headers */
 		}
-        
+
         #top-module.hero-module {
             margin-bottom: 6rem; /* homepage only */
         }
@@ -1743,7 +1745,7 @@ body.dark-theme .icon-moon {
 			/* set height to pixels if you want angle to change with screen width
 			https://css-tricks.com/creating-non-rectangular-headers */
 		}
-        
+
         #top-module.hero-module {
             margin-bottom: 3rem; /* homepage only */
         }
@@ -2168,6 +2170,8 @@ body.dark-theme .icon-moon {
 }
 
 .work-module-container {
+	max-width: 1920px;
+	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 2rem [image] 5fr 2rem [content] 3fr 2rem; /* 8 cols: image uses first 5 col and content uses remaining 3 col (with rem padding between them) */
 	grid-template-rows: 4rem auto 4rem;
@@ -2649,6 +2653,7 @@ footer {
 
 footer .logo {
 	float: none;
+	margin-left: -16px;
 }
 
 
@@ -2825,6 +2830,61 @@ CLEARFIX */
 
 
 /* ============================================
+   HOMEPAGE HERO ENTRANCE — Letter-by-letter reveal
+   "Simple." then the support line fade in one glyph
+   at a time, left to right (~3s each). main.js splits
+   the text into .hero-char spans and sets per-glyph
+   --d (delay) and --dur (duration). The .hero-anim
+   class is only added by an inline <head> script when
+   JS is on and motion is allowed, so no-JS and
+   reduced-motion users get plain, instantly-visible
+   text with no flash of un-split content.
+   ============================================ */
+
+@keyframes hero-letter-in {
+  from { opacity: 0; filter: blur(var(--blur, 0px)); }
+  to   { opacity: 1; filter: blur(0); }
+}
+
+/* Hold the targets hidden (layout preserved) until JS
+   has split them, so the un-split text never flashes. */
+.hero-anim .display-hero,
+.hero-anim #top-module .body-regular {
+  visibility: hidden;
+}
+
+.hero-char {
+  opacity: 0;
+  animation: hero-letter-in var(--dur, 1s) cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: var(--d, 0s);
+}
+
+/* Pink full-stop "pop". main.js skips .pink-accent in the per-letter reveal so
+   it animates on its own clock: once the "Simple" letters (~0.9s) and support
+   line (~0.95s) have settled, main.js pops the dot in with a slight bounce via
+   the Web Animations API (reliably replayable; see the run() comment). The pop
+   is tuned by these CSS vars, read by main.js — see js/temp-dot-tuner.js:
+     --dot-delay  when the pop starts (after the text settles)
+     --dot-dur    how long the pop takes
+     --dot-ease   easing curve (back-ease-out gives the overshoot/bounce)
+     --dot-start  scale the dot grows from (0 = full pop)
+   The dot must stay transformable even after the 7s failsafe removes .hero-anim,
+   so display:inline-block + transform-origin live on .display-hero .pink-accent
+   (unconditional). If they were scoped under .hero-anim, the dot would revert to
+   display:inline once .hero-anim is gone and transform:scale() would be silently
+   ignored — making any Replay after 7s just fade in with no bounce. Scoped to
+   .display-hero so the case-study .pink-accent eyebrows/spans keep block flow.
+   The .hero-anim rule then only holds it hidden until JS pops it in. */
+.display-hero .pink-accent {
+  display: inline-block;
+  transform-origin: center bottom;
+}
+.hero-anim .display-hero .pink-accent {
+  opacity: 0;
+}
+
+
+/* ============================================
    REDUCED MOTION — WCAG 2.3.3
    Suppresses all transitions and animations for
    users who have enabled "Reduce Motion" in their
@@ -2838,4 +2898,8 @@ CLEARFIX */
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+
+  /* Belt-and-braces: should the .hero-anim guard ever be bypassed,
+     keep every glyph visible rather than stuck at opacity 0. */
+  .hero-char { opacity: 1; filter: none; }
 }
