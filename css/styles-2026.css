@@ -1466,6 +1466,64 @@ body.dark-theme .icon-moon {
   https://css-tricks.com/creating-non-rectangular-headers */
 }
 
+/* Homepage hero only: anchor the blue angle to the bottom of the viewport.
+   The hero is a flex column with three logical zones: the text (which grows to
+   fill and vertically-centres in the space above the band) and the angle band
+   pinned to the bottom. Because the band is an in-flow sibling AFTER the text it
+   can never be overlapped: on short/landscape viewports the text can't shrink
+   below its content, the hero grows, and the band drops below the text. */
+#top-module.hero-module {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;                  /* at least one viewport tall; grows with content */
+  background: var(--colour-background); /* top area = page bg; blue comes only from the band */
+}
+
+#top-module .container {
+  width: 100%;                /* override the bootstrap auto-margins that, in a flex
+                                 column, would otherwise shrink the container to content
+                                 and wrap the oversized title */
+  flex: 1 0 auto;             /* fill height above the band, but never shrink
+                                 below content so on short viewports the hero
+                                 grows and the band drops below the text */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;    /* vertically centre the title + sub-copy above the band */
+  padding-top: 6rem;          /* reserve clearance for the fixed header so flex
+                                 centring positions the title BELOW the navbar.
+                                 On short viewports this also forces the hero
+                                 to grow taller than 100dvh, pushing the band
+                                 below the text rather than under it. */
+  padding-bottom: 0;
+}
+
+/* Bootstrap's clearfix pseudos on .container would become flex items here,
+   eating the slack that justify-content:center needs. Suppress them. */
+#top-module .container::before,
+#top-module .container::after { display: none; }
+
+/* The oversized vmin top padding existed to centre the title when the blue sat
+   behind it; flex centring now handles that, so drop it to free room for the band. */
+#top-module .landing-page-title {
+  padding: 0 0 3rem 0;
+}
+
+/* The sub-copy row carried extra padding/margin tuned for the OLD overlapped
+   layout (4rem .padding-btm-show-angle, 1rem p padding, 40-64px p margin-bottom).
+   On short viewports those reservations consumed all of the slack the flex
+   centre needs, so the title got pinned to the top behind the fixed header.
+   Strip them here — the title row's 3rem padding-bottom already separates them. */
+#top-module .padding-btm-show-angle { padding-bottom: 0; }
+#top-module p { margin-bottom: 0; padding-top: 0; padding-bottom: 0; }
+
+#top-module .angle {
+  position: static;   /* override base position:absolute -> join normal flow */
+  flex-shrink: 0;     /* keep full 33dvh; force hero growth instead of squashing */
+  width: 100%;        /* override base width:190% */
+  height: 33dvh;      /* right-side height = 33% up from the bottom */
+  display: block;
+}
+
 
 
 .hero-module {
@@ -2516,36 +2574,22 @@ body.dark-theme .icon-moon {
 
 .social-media-module .container {
 	width: 100%;
+	position: relative;
+	z-index: 1;
 }
 
+/* Top-anchored blue wedge: page-bg pseudo covers everything EXCEPT the
+   triangle (0,0) → (100%,0) → (100%,25%). The remaining blue is the
+   section background showing through. */
 .social-media-module::before {
 	background: var(--colour-background);
 	content: '';
 	display: block;
-	height: 50%;
 	position: absolute;
-	right: 0;
-	left: 0;
-	top: 24px;
+	inset: 0;
 	z-index: -1;
-	transform: skewY(4.3deg);
-	transform-origin: 0%;
-	-webkit-backface-visibility: hidden; /* for Chrome Windows */
-}
-
-.social-media-module::after {
-	background: var(--colour-background);
-	content: '';
-	display: block;
-	height: 46%;
-	position: absolute;
-	right: 0;
-	left: 0;
-	bottom: 0;
-	z-index: -1;
-	/* transform: ; */ /* Not sure what to do with this - Apr 2026 */
-	transform-origin: 0%;
-	-webkit-backface-visibility: hidden; /* for Chrome Windows */
+	clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 100%);
+	-webkit-clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 100%);
 }
 
 .social-media-module h2 {
