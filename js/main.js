@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var EASE = 'cubic-bezier(0.16, 1, 0.3, 1)';
     var heroEl = document.querySelector('#top-module .display-hero');
     var supportEl = document.querySelector('#top-module .body-regular');
-    // Snapshot the original markup so the entrance can be replayed (temp tuner).
+    // Snapshot the original markup so the entrance can be replayed (see __heroEntrance).
     var heroHTML = heroEl ? heroEl.innerHTML : '';
     var supportHTML = supportEl ? supportEl.innerHTML : '';
 
@@ -141,11 +141,10 @@ document.addEventListener('DOMContentLoaded', function() {
         revealByLetter(heroEl, 0.3, 0.06, 0.3, EASE, 6, '.pink-accent');
         revealByLetter(supportEl, 0.6, 0, 0.35, EASE, 3);
 
-        // Pop the dot in with the Web Animations API rather than a CSS animation.
-        // Calling .animate() always plays from the start, so Replay re-runs every
-        // time — CSS-animation restarts (re-inserting the node, animation:none +
-        // reflow, cloneNode) proved unreliable on repeat. Timings come from the
-        // --dot-* vars (tuner-settable) with fallbacks baked in for production.
+        // Pop the dot in with the Web Animations API rather than a CSS animation —
+        // .animate() always plays from the start, so re-triggers replay reliably
+        // (CSS-animation restart tricks proved flaky). Timings read from optional
+        // --dot-* CSS vars with the production values baked in as fallbacks.
         var dotEl = heroEl && heroEl.querySelector('.pink-accent');
         if (dotEl && dotEl.animate) {
             var cs = getComputedStyle(document.documentElement);
@@ -171,5 +170,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     run();
-    window.__heroEntrance = run; // temp-dot-tuner.js calls this to replay
+    window.__heroEntrance = run; // exposed for ad-hoc replay from DevTools
 })();

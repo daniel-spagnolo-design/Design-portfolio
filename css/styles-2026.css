@@ -2903,22 +2903,13 @@ CLEARFIX */
   animation-delay: var(--d, 0s);
 }
 
-/* Pink full-stop "pop". main.js skips .pink-accent in the per-letter reveal so
-   it animates on its own clock: once the "Simple" letters (~0.9s) and support
-   line (~0.95s) have settled, main.js pops the dot in with a slight bounce via
-   the Web Animations API (reliably replayable; see the run() comment). The pop
-   is tuned by these CSS vars, read by main.js — see js/temp-dot-tuner.js:
-     --dot-delay  when the pop starts (after the text settles)
-     --dot-dur    how long the pop takes
-     --dot-ease   easing curve (back-ease-out gives the overshoot/bounce)
-     --dot-start  scale the dot grows from (0 = full pop)
-   The dot must stay transformable even after the 7s failsafe removes .hero-anim,
-   so display:inline-block + transform-origin live on .display-hero .pink-accent
-   (unconditional). If they were scoped under .hero-anim, the dot would revert to
-   display:inline once .hero-anim is gone and transform:scale() would be silently
-   ignored — making any Replay after 7s just fade in with no bounce. Scoped to
-   .display-hero so the case-study .pink-accent eyebrows/spans keep block flow.
-   The .hero-anim rule then only holds it hidden until JS pops it in. */
+/* Pink full-stop "pop". main.js skips .pink-accent in the per-letter reveal
+   and pops the dot in with a slight bounce via the Web Animations API.
+   display:inline-block + transform-origin must stay outside .hero-anim: the
+   7s failsafe strips that class, and on an inline element transform:scale()
+   is silently ignored — so any later re-trigger would just fade in with no
+   bounce. Scoped to .display-hero so the case-study .pink-accent eyebrows
+   and spans keep their normal block/inline flow. */
 .display-hero .pink-accent {
   display: inline-block;
   transform-origin: center bottom;
