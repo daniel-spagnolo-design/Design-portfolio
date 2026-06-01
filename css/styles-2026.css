@@ -1505,7 +1505,7 @@ body.dark-theme .icon-moon {
 /* The oversized vmin top padding existed to centre the title when the blue sat
    behind it; flex centring now handles that, so drop it to free room for the band. */
 #top-module .landing-page-title {
-  padding: 0 0 3rem 0;
+  padding: 0 0 5rem 0;
 }
 
 /* The sub-copy row carried extra padding/margin tuned for the OLD overlapped
